@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Bullet_normal : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //노말은 바라보는 방향으로만 나아가게
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
