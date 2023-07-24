@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class June_Enemy2Bullet : MonoBehaviour
+public class June_EnemyMiddleBullet : MonoBehaviour
 {
     public GameObject Effect;
 
@@ -15,6 +15,7 @@ public class June_Enemy2Bullet : MonoBehaviour
 
     void Start()
     {
+
 
         FindPlayer();
 

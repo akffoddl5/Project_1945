@@ -11,20 +11,39 @@ public class June_PlayerMovement : MonoBehaviour
     public float moveSpeed = 5;
     
     [SerializeField]
-    
 
 
+    bool IsPause;
 
     void Start()
     {
         ani = GetComponent<Animator>();
-        
+        IsPause = false;
     }
 
 
     private void FixedUpdate()
     {
         Movement();
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            /*일시정지 활성화*/
+            if (IsPause == false)
+            {
+                Time.timeScale = 0;
+                IsPause = true;
+                return;
+            }
+
+            /*일시정지 비활성화*/
+            if (IsPause == true)
+            {
+                Time.timeScale = 1;
+                IsPause = false;
+                return;
+            }
+        }
+
 
     }
 

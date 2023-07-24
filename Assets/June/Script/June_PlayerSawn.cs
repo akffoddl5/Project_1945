@@ -16,6 +16,7 @@ public class June_PlayerSawn : MonoBehaviour
         //플레이어 충돌, 조작 끄기
         GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>().enabled = false;  
         GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = false;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = false;
        
 
         StartCoroutine("playerspawn"); //플레이어 맵 안으로 들여오기
@@ -28,6 +29,7 @@ public class June_PlayerSawn : MonoBehaviour
         //플레이어 조작, 충돌 활성
         GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>().enabled = true;
         GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = true;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = true;
         StopCoroutine("playerspawn");
 
     }

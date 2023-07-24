@@ -1,34 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class June_Enemy : MonoBehaviour
+public class June_EnemyMiddleBulletSpawn : MonoBehaviour
 {
     GameObject Obj;
-    
-    
 
-    public float Hp ;
+
+
+    public float Hp;
     public float speed = 1;
     public GameObject Effect;
 
-    //public float Delay = 1f;
+    public float Delay = 3f;
     public Transform ms;
     public GameObject Bullet;
 
 
     void Start()
     {
-        Invoke("CreateBullte", 1f);
+        Invoke("CreateBullte", Delay);
 
     }
     void CreateBullte() //적 총알 생성
     {
-        
-            Instantiate(Bullet, ms.position, Quaternion.identity);
-            Invoke("CreateBullte", 1f);
-        
+        for (int j = 0; j < 360; j += 30)
+            Instantiate(Bullet, ms.position, Quaternion.Euler(0, 0, j));
+        Invoke("CreateBullte", Delay);
+
 
 
     }
@@ -48,14 +47,13 @@ public class June_Enemy : MonoBehaviour
         Hp -= 1; //나중에 bullet_info에서 공격력 가져오고 적용시키기
         Destroy(collision.gameObject);
         Debug.Log(Hp);
-        if(Hp <= 0)
+        if (Hp <= 0)
         {
             Instantiate(Effect, ms.position, Quaternion.identity);
             Destroy(gameObject);
-            
-        }
-        
-    }
 
+        }
+
+    }
 
 }
