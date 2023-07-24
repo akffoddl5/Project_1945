@@ -1,0 +1,3897 @@
+fileFormatVersion: 2
+guid: 6f9d5ff21b58d8848a351c8e6618303d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5ed05cc530341428f2912c192514a7
+      internalID: 18683503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1eccc1c21a28f4aba41e96ff18a2d2
+      internalID: -524999426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43646d7d3afd56e4aa9e64c37c5d0ad3
+      internalID: -1520516870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f8104022f3b984c9859d1c5ecd11ed
+      internalID: 1110280281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7776e4a6e35e8db4bb66f8c4f5cff1a8
+      internalID: 877487069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f79fd5644342d42aecc9bc4c1bab2e
+      internalID: -1572399839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb86e6c64f688bc40b338bdaaab35e53
+      internalID: 2041803781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ae5923d7d8ccf4881952b08450f3fd
+      internalID: -929763825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42257705dcc3ab34794b24f0a0ee25dc
+      internalID: 1460928544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_9
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde0fce718e975d42a511b63c65f8ba5
+      internalID: -1915412221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f094bb3da8e804890d673b1ed186bc
+      internalID: -1830858646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 416
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17912a90799e0e4c87536a6f83e9726
+      internalID: -1227529423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3008c65c5d1271e4f81a24f846b4bfef
+      internalID: 716869733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_13
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04d01a296212564ba497ed6a5cf2487
+      internalID: 818624200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_14
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53097f4c7bf9c1449b27c54aa633315f
+      internalID: -1322960415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3244b4d31e218554e9596c7bb1799bcd
+      internalID: 1764509483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_16
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50efc075b93df044a63bb2aca66c22b
+      internalID: -53407109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20895d19b11d4754b8e73f1bd16aabdc
+      internalID: -1646615469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1adba2a0ff32d4884b92cff18280d6
+      internalID: 1019765064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_19
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7ec4e0e865d5545ab9689f53cc0fc6
+      internalID: -592767624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_20
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9d92e931a8a94458e867f35a2d9a75
+      internalID: 62604349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_21
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176e89aa95a31c54b89dfd9ec933ac9f
+      internalID: 2107607567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_22
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e496dfc0c8f3e469d76193c1cf6608
+      internalID: 1860715138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_23
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 384
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285f3e1a0ed2cd64c8a0ef7ee657ce94
+      internalID: -2027235896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb9765bfb358f64b802166b83089ac4
+      internalID: -1004301407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_25
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edc3bf612f00f245a83157510528b3d
+      internalID: -1661746129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d3a7520d9974d458b0440bd3715d4e
+      internalID: 1980050158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e43f896dbd56247ab4b4bfd0444cdd
+      internalID: -467529809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_28
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f4a4929c71f044fbb5c161d1228ab3
+      internalID: -1265985826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_29
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e36ba6d535d7ef4abd25b597e22de5a
+      internalID: 815513798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_30
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba1988b488377748a20ee94db7a8147
+      internalID: -306035869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_31
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aba6a77586cefe41810e18c0475a726
+      internalID: 83567178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2a6806377dd194399486fbf80d4830
+      internalID: 22727597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_33
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3628127f13e0b4d8e55ba3662928e3
+      internalID: 1778197424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_34
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d32456df2a2ea41bf6bcb239ea67ab
+      internalID: 301566283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_35
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 352
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edd1a33cb709af499d97ed161c88dd9
+      internalID: 1097207499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef4569a2e6f3a443b199a9a24a1eb02
+      internalID: -1613426219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_37
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b08e2183616f214e82b41dbbe0fe710
+      internalID: 1105134624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_38
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc561fb94f083840bf30cdfe5844a12
+      internalID: -1999600177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_39
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8424b0302b73174c8d449e28cb5eda2
+      internalID: -120184505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_40
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df164827c62015b4688941c429c93d6f
+      internalID: 23068761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_41
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2697c1afd9346f45846e29934aeb6e2
+      internalID: -1137710564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_42
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbf3e2979388fc4cbc8c35873e53259
+      internalID: -2568641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_43
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe3d00c7f830514890077b351aca797
+      internalID: -197407197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_44
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ba96ae1ecfbf348a3d94f030335070
+      internalID: 320037150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_45
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d36f606466e68d4db2105dd874fbc2c
+      internalID: 599528954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_46
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5b535f0266ffd498b26de5ea607b80
+      internalID: 1183510362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_47
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 320
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25e7d1987ad861439c307887151fa25
+      internalID: 165264897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_50
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edab4a20137741e4e946a1b977c0999b
+      internalID: 546954726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_51
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1f2124add74db4e953d1f825062a92
+      internalID: -2117529824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_52
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff0cebd6af9ace4cbd553a1e080f3cb
+      internalID: 14779356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_53
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8054e078a192747afa921165cabe19
+      internalID: -722078955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_54
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4fbb521c1acea458dc41195fe40ac1
+      internalID: 446617963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_55
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c613b78c3ed64414fad290ab37bc9ae0
+      internalID: -982261633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_56
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aee092773123f44c9d563f066ecef78
+      internalID: 1047548887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_57
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d99bafe12238c24db871235756b30c2
+      internalID: -308154847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_58
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df6d67676a965b48b3e3417fee55a11
+      internalID: -289695251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_59
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486bd7ae44224f646bd96e3d751efe47
+      internalID: 302865817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_60
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8e39b09ff0bf442b1cf096e952a119
+      internalID: 759012053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_61
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121281aba621e1d46abe88da3385ae43
+      internalID: -1660943318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_62
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0dce1a18a4a6e4a810ce679eeb3acb
+      internalID: 970368873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_63
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 288
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779f72d9de2820746a58fbec0b94d6a4
+      internalID: 821362520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_65
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5562395d49015de4fac87645a1dfa01e
+      internalID: -1228165940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_66
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e14b691f4f57441bad42162e5f1800
+      internalID: -1922787464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_67
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88833fee05dfe784880cc5fe392a1668
+      internalID: 1330300931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_68
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b9a2ac9b52f114c9432f700fb1d1c1
+      internalID: 512182756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_69
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8325ba2c4dda542b1cbebdb8da9f30
+      internalID: 1943632870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_70
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3cfeec7b5d35f84293e729a0737999a
+      internalID: 1813429758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_71
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd74b1dce641beb418091b6a6a2d6ae8
+      internalID: 200533817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_72
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4344a60d41f48a45b50fbb71066be5d
+      internalID: 77060803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_73
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a65d723bbfbc94cb2cfcaf019fb3a7
+      internalID: 1001728448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_74
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156da7a3f57710e4e9dfddfd0f0d5ab9
+      internalID: -743593340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_75
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615879a8d9b58cb4aa8c68f9107508e2
+      internalID: 282107560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_76
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570229dc6f9325542ad6fbd664cc259b
+      internalID: 1639116387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_77
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3177a6b0ee4664fab35ddfcf16d398
+      internalID: -44086385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_78
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eec96d835ca3c944ba2bae6f6b1fb53
+      internalID: 313265576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_79
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 256
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60bb2c4b410be840a0f6cac923f11ae
+      internalID: -809866597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_80
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8289ff429af2ad447816beb2f8e22abf
+      internalID: 501512877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_81
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c23e65f390a9d4fb239c9f6e690f64
+      internalID: -923734987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_82
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee61eb082d1cd74cb25cbccf238d1ac
+      internalID: 143715017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_83
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4a4c1417807fb42a5e62be117492a3
+      internalID: 949300001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_84
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3354cd73609514394783977bbcc9ac
+      internalID: -875458293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_85
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903405fce93f40c40b584efef05abac7
+      internalID: -1048710820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_86
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f86260640297ac4baf64f2056a03e22
+      internalID: -1226520149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_87
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941617a13bd42b24ca15be4b3cfe1ebc
+      internalID: -1463997127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_88
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dcd33c070528740aae80868d42a593
+      internalID: 833894530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_89
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efb881875714eb42add5886c73c4e83
+      internalID: 1686267687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_90
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea8453f7179c8f43a08ab93b1d733b9
+      internalID: -647349254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_91
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d23efcb4901c8748bc4e13cc653f798
+      internalID: -1490810256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_92
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7bf899d5ebd2c14bb8fa14e6aa55363
+      internalID: -1546065866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_93
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb484a19999304d4f88304334864692c
+      internalID: 884157320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_94
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6780ccfd0fc084b809336d9f3c4405
+      internalID: -1058754281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_95
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 224
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63435c5b38b449546bf15b71e7172e2d
+      internalID: 1086015645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_96
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48df9b958af3eb14db80e298db998c2b
+      internalID: 245116064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_97
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3331a66cae75e10469694ded1cdd9ddc
+      internalID: 1761658306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_98
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84c0a67df3808b439f2cb87afb8d5c9
+      internalID: 2052921244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_99
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccc3d893a1962440bfe1e0ea5f3dcfa
+      internalID: 559132120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_100
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6841d1c7d1dd5004bb40b768a4bf7859
+      internalID: 752944470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_101
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d454b887039537448ec2b395f2a6d3f
+      internalID: -1649909098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_102
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79137a473139fa419853ea9f512f242
+      internalID: -83514545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_103
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4eb06e6b9575f499ba317b491e4707
+      internalID: 277581317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_104
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae1bd0cbed04d94aad279133ed83976
+      internalID: 2138758635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_105
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d742f8b89c8bc4b84258699c4bda77
+      internalID: 234237124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_106
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251953b7c46879342891b56685690953
+      internalID: -1933604380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_107
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d9ef8f052732f4a9702eb9420c4ba0
+      internalID: 360408052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_108
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1937a4d5a8ec54e952f2f34981e664
+      internalID: -1997714765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_109
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c761cb0d86a16ba45a51641337c04771
+      internalID: 1858263374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_110
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3ae4cd74583404aac0ab2e96b63f22
+      internalID: 890013570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_111
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 192
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea029924856122c4f86d90670913ccb1
+      internalID: -1089767819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_112
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf656e90b8be5f1409dad94366060017
+      internalID: -648993815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_113
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f157406fffe634abd28ae6e456088e
+      internalID: -1631324195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_114
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74fc16c572d9924e85f115c65055551
+      internalID: 1345584604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_115
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0c0e3e8058fe14fbbd3aecf638642a
+      internalID: -274851871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_116
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa3de34064eab344a802c6fcfe36d5d
+      internalID: 239323737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_117
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76212eda2c9f2554aa4086f5daa17dd1
+      internalID: 926490862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_118
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d835501e4c8da42468227e6c6ceb8cae
+      internalID: 1415911173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_119
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0342a619828ec646ba03f4a972761ac
+      internalID: -252855455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_120
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfd719e79813ac4b87240a2457b9fbc
+      internalID: 1808282135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_121
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16eac94e246fbcf41a3d9f87955ac47d
+      internalID: 293977603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_122
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c1b4a110a40f9409a1727fe58a57cb
+      internalID: -1275529332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_123
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 160
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07894b7fb530137429e0836e9b8e663f
+      internalID: -617749280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_124
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1287f587e342e428dd3461a5decbb0
+      internalID: -774482679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_126
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aad898ad048653448516e218142fb51
+      internalID: -797155414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_128
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563777127c7dcd744aaa4fb08ba3aa52
+      internalID: -137956166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_129
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc5b51df2e1f98419a5a602abec9362
+      internalID: -1300460612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_130
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6013fb3ef686c40947be3d664ce788
+      internalID: 1015092225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_131
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575d402a8d2d9744496f5d23132bd2db
+      internalID: 916088380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_132
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae551e84501dc74d9ff46ee0ebcdb21
+      internalID: 20227458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_133
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cf4124cb95a104d82129fd535153de
+      internalID: 1733179859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_134
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c8cb45ad0d30a408f5cafbbf372bce
+      internalID: 1372090241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_135
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fb262da20c5474a9376212a2c03633
+      internalID: 1667249254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_136
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd05bda2a99fd64cb7c67e218551936
+      internalID: 1300039194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_137
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bb078044ea7334ebea7c707ee22503
+      internalID: 1273917168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_138
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d3c97292c472c4e8ff6e96e5a6a494
+      internalID: 1622097676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_139
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 128
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8770951bde4c8a84a9468d8ac77ffb62
+      internalID: -1497626989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_144
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bce2526d8ccb2140a41b1ba3f1b7576
+      internalID: 2036788133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_145
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d8c0dbe24773145a2e2a87b9c6cfb2
+      internalID: 1582181762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_146
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cbf8b07df35294da0b26c2179c897c
+      internalID: 635428403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_147
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9d5df133dfddd489e82c982657a63b
+      internalID: -1869345928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_148
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d979eb77ac88af48ad92fc0de2609c4
+      internalID: 934255871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_149
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84794a7d6230a5045a57201c5ba6c496
+      internalID: -1697690302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_150
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7a770eed4b1bb47a72b3bc302c0fd5
+      internalID: -1967423447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_151
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842549aa95f4cf846827c7271456227c
+      internalID: -1902252738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_152
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8765b972f05fb334194efd0cf57d9b6d
+      internalID: -2022975827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_153
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9499b12e1a558d34194ca045f67f658a
+      internalID: 1166204926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_154
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1198ac22078c13d45a5ab6bd9e77dbee
+      internalID: -1838063723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_155
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 96
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ec34957edd6584d8b5806210458195
+      internalID: 350342544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_156
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38606a8165a6d12428979d006cde5826
+      internalID: -437586187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_158
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b801fc90274f2084c8807e62a42f61b3
+      internalID: 854550299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_160
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c42ac31f1db5aa499453af9dfc34873
+      internalID: -2022669182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_161
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16818f90aff1ea34aaf04c868d66e02f
+      internalID: 741037781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_162
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9918bd1470e55b44ea542481261aae22
+      internalID: -41661434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_163
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f2300e379289442ba50e16365b257b
+      internalID: -1853063495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_164
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25a0412e88952d4a9dd741cdfe4f3af
+      internalID: 409103370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_165
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609dae892d47e394a9d1df4e27649fcf
+      internalID: -2145838452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_166
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41650376e2d5774a8286dc4c254d13f
+      internalID: -1936621437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_167
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdffba7bb6c2fd74594280bbca717744
+      internalID: -1747692219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_168
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38b37708d09dbe42ab34d88b6fc1895
+      internalID: 152131819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_169
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcaea6a38c6c9f42be4dcf440191719
+      internalID: -242441945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_170
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500a35154401d9a48af5304e1df10429
+      internalID: 1127540868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_171
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 64
+        width: 32.3125
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbab472d4c634144cb45b7d71c09dee0
+      internalID: -2144826939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_176
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4fd8d89adbff74b995838699f05f98
+      internalID: 1349222706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_178
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965d468da0352bb4fbbebdbdb6848946
+      internalID: 2124503319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_180
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3049a33a84e89ec438ef9940db3f6ef2
+      internalID: 546546717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_182
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb198f31d27b0024ba90da905604fef4
+      internalID: -2015051343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_184
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3612153179634349a3ceaea4bb6bc6f
+      internalID: -1537892860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_186
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47db1e21eef9e744f812c6822dde1b7b
+      internalID: 2013766395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_188
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a4a202cdd85c94db607f1300e9fddb
+      internalID: 1687131929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_190
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b97f11cbd093d4b813cd1f83f86d93
+      internalID: -648900795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_0: 18683503
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_1: -524999426
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_10: -1830858646
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_100: 752944470
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_101: -1649909098
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_102: -83514545
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_103: 277581317
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_104: 2138758635
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_105: 234237124
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_106: -1933604380
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_107: 360408052
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_108: -1997714765
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_109: 1858263374
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_11: -1227529423
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_110: 890013570
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_111: -1089767819
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_112: -648993815
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_113: -1631324195
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_114: 1345584604
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_115: -274851871
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_116: 239323737
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_117: 926490862
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_118: 1415911173
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_119: -252855455
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_12: 716869733
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_120: 1808282135
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_121: 293977603
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_122: -1275529332
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_123: -617749280
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_124: -774482679
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_125: 1203825986
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_126: -797155414
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_127: -687633212
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_128: -137956166
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_129: -1300460612
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_13: 818624200
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_130: 1015092225
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_131: 916088380
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_132: 20227458
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_133: 1733179859
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_134: 1372090241
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_135: 1667249254
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_136: 1300039194
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_137: 1273917168
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_138: 1622097676
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_139: -1497626989
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_14: -1322960415
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_140: -1489418784
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_141: 1513809301
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_142: 1057800759
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_143: -461311879
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_144: 2036788133
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_145: 1582181762
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_146: 635428403
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_147: -1869345928
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_148: 934255871
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_149: -1697690302
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_15: 1764509483
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_150: -1967423447
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_151: -1902252738
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_152: -2022975827
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_153: 1166204926
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_154: -1838063723
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_155: 350342544
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_156: -437586187
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_157: 1519527851
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_158: 854550299
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_159: -189226307
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_16: -53407109
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_160: -2022669182
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_161: 741037781
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_162: -41661434
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_163: -1853063495
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_164: 409103370
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_165: -2145838452
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_166: -1936621437
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_167: -1747692219
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_168: 152131819
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_169: -242441945
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_17: -1646615469
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_170: 1127540868
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_171: -2144826939
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_172: 7700865
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_173: -711213037
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_174: -403766384
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_175: -1477548973
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_176: 1349222706
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_177: -190033062
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_178: 2124503319
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_179: 269298763
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_18: 1019765064
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_180: 546546717
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_181: -380668299
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_182: -2015051343
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_183: 21518011
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_184: -1537892860
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_185: -1743562903
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_186: 2013766395
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_187: -1387918810
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_188: 1687131929
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_189: 948610754
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_19: -592767624
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_190: -648900795
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_191: -725806695
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_192: -619446965
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_193: 1821344248
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_194: 662701982
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_195: 1886028484
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_196: 1154920589
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_197: -2139694327
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_198: -44952837
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_199: -591822796
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_2: -1520516870
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_20: 62604349
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_200: 1464668075
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_201: -1317680651
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_202: 1951533476
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_203: 247006261
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_204: 602552290
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_205: 1667521145
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_206: 815117477
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_207: -2048681128
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_21: 2107607567
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_22: 1860715138
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_23: -2027235896
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_24: -1004301407
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_25: -1661746129
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_26: 1980050158
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_27: -467529809
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_28: -1265985826
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_29: 815513798
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_3: 1110280281
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_30: -306035869
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_31: 83567178
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_32: 22727597
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_33: 1778197424
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_34: 301566283
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_35: 1097207499
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_36: -1613426219
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_37: 1105134624
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_38: -1999600177
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_39: -120184505
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_4: 877487069
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_40: 23068761
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_41: -1137710564
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_42: -2568641
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_43: -197407197
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_44: 320037150
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_45: 599528954
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_46: 1183510362
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_47: 165264897
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_48: 2051683254
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_49: 407911191
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_5: -1572399839
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_50: 546954726
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_51: -2117529824
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_52: 14779356
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_53: -722078955
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_54: 446617963
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_55: -982261633
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_56: 1047548887
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_57: -308154847
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_58: -289695251
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_59: 302865817
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_6: 2041803781
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_60: 759012053
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_61: -1660943318
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_62: 970368873
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_63: 821362520
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_64: -1235745016
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_65: -1228165940
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_66: -1922787464
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_67: 1330300931
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_68: 512182756
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_69: 1943632870
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_7: -929763825
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_70: 1813429758
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_71: 200533817
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_72: 77060803
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_73: 1001728448
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_74: -743593340
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_75: 282107560
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_76: 1639116387
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_77: -44086385
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_78: 313265576
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_79: -809866597
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_8: 1460928544
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_80: 501512877
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_81: -923734987
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_82: 143715017
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_83: 949300001
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_84: -875458293
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_85: -1048710820
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_86: -1226520149
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_87: -1463997127
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_88: 833894530
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_89: 1686267687
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_9: -1915412221
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_90: -647349254
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_91: -1490810256
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_92: -1546065866
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_93: 884157320
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_94: -1058754281
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_95: 1086015645
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_96: 245116064
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_97: 1761658306
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_98: 2052921244
+      PC+Computer+-+Touhou+Fuujinroku+Mountain+of+Faith+-+Bosses+and+Enemies_99: 559132120
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
