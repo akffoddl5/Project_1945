@@ -1,0 +1,2472 @@
+fileFormatVersion: 2
+guid: 6938195a84f191f45ba88382d8800f51
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 220
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a68394e681fb349951e218ba02c8ba
+      internalID: -1387237822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 220
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e064a01de6e69c44d871597d5bff5923
+      internalID: 1098951364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 220
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e850c4e4dab7d4caaf15674026ca73
+      internalID: -168519723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 220
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94ae210c87d1ce47be2239a9b78c936
+      internalID: -358346439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 220
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac461622f26bbc48928b2a8c746f368
+      internalID: 174298847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 220
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba40dc309e3c2294b85ecb7b0a43da1a
+      internalID: -246305055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 220
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cac937249314ce4c88e020cc6ab0cfd
+      internalID: 738814145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 220
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485f096315d4ca545994e8b77b6b23b3
+      internalID: 1908449171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 136
+        width: 512
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0edcc00f63200764983c7c3eb222be25
+      internalID: 1904869184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 172
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692fc766003a9bb4a8cea4bb80565597
+      internalID: -993682924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_10
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 173
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed21ac1cfec66724dae6b2c3bd69d4c0
+      internalID: -863948413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 173
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a89da903d50eb4f81c90c2ac86ff69
+      internalID: 22184206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_12
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 174
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8409f54e1deef9c489f51891c75dc62e
+      internalID: 871754981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_13
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 175
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a97a70f73a6b5429a266c3cd55ac33
+      internalID: 1732370661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_14
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 175
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d963e51da805140a8d450223cfc1a1
+      internalID: -230640062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_15
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 175
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e89beca5ac65b41ba155b7dd4d3814
+      internalID: -628952991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_16
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 175
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1869143a0f5a80548b753cb3131185c9
+      internalID: 577021404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_17
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 124
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d833adeba24eeb40a3736b676f4db31
+      internalID: 324538828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_18
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 125
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ed03dc0b655c3499a8ba406751adea
+      internalID: 91804195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_19
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 125
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977a8790c6b2ef24e857d0046a2c3dbe
+      internalID: -675668263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_20
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 126
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ddc6cc0c4f75a45add9f2c3d71a00d
+      internalID: 349423562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_21
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 127
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c9dbdb0ec66894c92c6e2b6eea204e
+      internalID: 960432798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_22
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 127
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae9b4d5df89ff648ae42aabeb0b1764
+      internalID: -1418288822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_23
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 127
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a24fb7ad1180f498a4978b8f7badbd
+      internalID: 1418094515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_24
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 127
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf2cb178faf63d489f9ca7372adc956
+      internalID: -982759711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 107
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1926e50d5f3a95041ae227a4384534e3
+      internalID: -611206250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_26
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 107
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6998f32ea5430e48b7faea2120b6740
+      internalID: -2118359103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_27
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 107
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49c64de236c2f44aa5f8736b253a66a
+      internalID: -267274771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_28
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 108
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05fa544e9c1b6b43b145a95a8bdca43
+      internalID: -1144575329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_29
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41aa35ebd3901ad40b73ec4991a65f8e
+      internalID: 1166901064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_30
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 110
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091cf451daf8d224e873cc90a1ec788e
+      internalID: -545739919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_31
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 111
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39e608702ae6e145b49137b7848054e
+      internalID: -709770345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_32
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 111
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86754b2c847d3d468237c1c4a76a138
+      internalID: 440952479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_33
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472f8f47f26cf7a458d980ea0002cb9b
+      internalID: -1009752382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_34
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 110
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6880ff3e61a954b4b91d5c351a66ea06
+      internalID: 1746026790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_35
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 111
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ce881555472c24487084ab7ba86f3e
+      internalID: -480750506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_36
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 111
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df023bc2853700489b5e83d588cc94f
+      internalID: -1029464165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_37
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 76
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1389b9db61ef48c40b63afa9e0ed850a
+      internalID: -635375907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_38
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 76
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e4d7016a111c2428fe90ea8f5ffd01
+      internalID: 562202219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_39
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 75
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bf93b0fed069a4687b0bf5d2915e7d
+      internalID: 662813018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_40
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 75
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f787104f50ee4e4b906a7ae9f6205bb
+      internalID: -880837846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_41
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 107
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2145446c61ab244899528788c70d9e
+      internalID: 1642618082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_42
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 107
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d29dc5689c41b843a06a970831dcb8b
+      internalID: 1830371576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_43
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 109
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18ebb602a60e854c907a60f90c14f9f
+      internalID: 606132782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_44
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 108
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5435283db5e69f04c9690cf7200377a3
+      internalID: -1248664908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_45
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 107
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0824659696ea7ee46b4dcf34d4c25656
+      internalID: -1123974326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_46
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 107
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d1ba3dd8f425242b3fb1a161c026d8
+      internalID: 2141407919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_47
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 109
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f514d76d697ea546966d8b31d716b9d
+      internalID: 1838791049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_48
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 108
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3094aede029d8a74699e8b0f6477fd9c
+      internalID: 155730607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_49
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 94
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072eb371f85201d43a54b500d9e34319
+      internalID: 1395523661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_50
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 38
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdb72e222921154dacb3c2b6552468c
+      internalID: 1055900592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_51
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 38
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6acf582c4be4d4abd4f3ffbc07b14d
+      internalID: -1096873824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_52
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 37
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc96493671efe242b22d63039051bc7
+      internalID: 173820257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_53
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 37
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2091ca7f4f35d8f449fd0fc5a37c8e23
+      internalID: -633025632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_54
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 45
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f655f384f120b644a6799201fe013b7
+      internalID: -647370337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_55
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 45
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a129aab42db659241a78f857294a7559
+      internalID: -1797256257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_56
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 45
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f24221566a1cd44b1c556dc6a9bb17
+      internalID: 225082030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_57
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 45
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9c38c6163b7bb4fb2a55b1705ab93f
+      internalID: -147299349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_58
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 45
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3da8382b197b1c4ebd794cdd827dec7
+      internalID: -585141415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_59
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 45
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a2c951023908141acc9086a112196c
+      internalID: -574852062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_60
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 45
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c75ef8220b48a4c8a16507b6e469d9
+      internalID: 1420811291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_61
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 45
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7888dab9854d0a54794aefc5d63b364a
+      internalID: -122229731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_62
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 45
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf1a3164d0318c48b9928556890d8b6
+      internalID: 1209453519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_63
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 41
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cc7002d0e80a345b7818f0cc7a1f4c
+      internalID: -2040391839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_64
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 45
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5696822a950f44dad516ce3285c16a
+      internalID: -958883984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_65
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 45
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d1a9785009f6f4c80dbab9a0d82e54
+      internalID: 691379811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_66
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 41
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b96299e37dcb3147b85e3748682f4ab
+      internalID: -819931708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_67
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 45
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e94ee0178d678478687fd03f7d8371
+      internalID: -582372770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_68
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 45
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d13a86031b0daa4a84c742b6f6f03b4
+      internalID: -595844358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_69
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 45
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87339d0e286847c43a136778561d605c
+      internalID: -377248168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_70
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 45
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b83c97042c1e7418d54262d80d5373
+      internalID: -1507695980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_71
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 29
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dce5a32807eac49b40053c9992069e
+      internalID: -2078693039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_72
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 26
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee044cb43ed14fa40a45d19d3b26a64a
+      internalID: -813603282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_73
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 26
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16cb589869fc7142b8068ef5022c5ec
+      internalID: 495158597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_74
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f89324aaa33fe4cb6e6df00161b637
+      internalID: -327129318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_75
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 29
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2abc9e7f8e9fe4182a65979a8de0a3
+      internalID: -270168449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_76
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 29
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7063c653a2bcc429780a3eb9897bd8
+      internalID: 2091606384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_77
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 26
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34777c3295039ca4d9b1ef99b63577a4
+      internalID: -1620612844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_78
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9162795cf42177044afe2e02f5db95eb
+      internalID: -1708823247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_79
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dbd2263e1c5dc458aa80b0cdcc2021
+      internalID: 1583442739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_80
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2fa40701a642a4a942a4dcec38a430
+      internalID: -1990176364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_81
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 29
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b21ba37b785e54eb3a398c815d9c29
+      internalID: -297398026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_82
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25062b7f115cca458ca61a4006b6ce6
+      internalID: -234445204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_83
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 29
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a117d62785bad74881edd76ee193847
+      internalID: -1082933983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_84
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2039ea93b2f42d14eaa63a572509927d
+      internalID: -1542156571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_85
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 29
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da33b14b0daa2b49a05644225c95e1f
+      internalID: -1021322393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_86
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 29
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d284e3b4d4d80943a2b6f84a250cc38
+      internalID: -1845201479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_87
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835e5791aa05bd64f815a57ffb6bba67
+      internalID: 459549630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_88
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 29
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6518e6ad9fce854f9e4c4eb4256dbaa
+      internalID: 1022534104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_89
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 29
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970252ea0fcec954f871ed100212f54b
+      internalID: -741820442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_90
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 29
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e750b41a0be2f4d84cc387ee5eb858
+      internalID: 212906117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_91
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213d2478a318d2c4fa2577c129583dbc
+      internalID: 1919522081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_92
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 29
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15315a9b127f551428f779db598bf42f
+      internalID: 445677091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_93
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 12
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5bda10d5457544590213217a4c0ed9
+      internalID: 1239569832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_94
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0235f5ed0d9f0af408f35ba475ba6390
+      internalID: -1881419737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_95
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 12
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be061c3b8bfb35543858bd45f1ec6577
+      internalID: 254728919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_96
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 12
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efdd490d90dccc409028ad9f80ac893
+      internalID: -2086222526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_97
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115899e97116e9a46ab13235aeed559c
+      internalID: 355487998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_98
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 12
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e30c6ea54fb4c848b661f5033f179c6
+      internalID: -1527523517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_99
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 12
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6426eaf4ec40ce4cb3b80b953dc8ddc
+      internalID: -1801328949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_100
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 12
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e16d4aef9d85364a831f4b49f852ed9
+      internalID: 1375566021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_101
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147a9b0419071fe448e062de032164d0
+      internalID: 512435000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_102
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e422ebb27b4bb47aa59ef0acae8df1
+      internalID: 1365964725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_103
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 12
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9ef5c9026591d47ba87518f51d1967
+      internalID: 853674649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_104
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccdcec65c28a454ab5672e2f67c484e
+      internalID: 1200464879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_105
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 12
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09279070243b94f42b367d3ed1f94d9b
+      internalID: 1800839525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_0: -1387237822
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_1: 1098951364
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_10: -863948413
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_100: 1375566021
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_101: 512435000
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_102: 1365964725
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_103: 853674649
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_104: 1200464879
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_105: 1800839525
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_11: 22184206
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_12: 871754981
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_13: 1732370661
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_14: -230640062
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_15: -628952991
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_16: 577021404
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_17: 324538828
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_18: 91804195
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_19: -675668263
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_2: -168519723
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_20: 349423562
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_21: 960432798
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_22: -1418288822
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_23: 1418094515
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_24: -982759711
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_25: -611206250
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_26: -2118359103
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_27: -267274771
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_28: -1144575329
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_29: 1166901064
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_3: -358346439
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_30: -545739919
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_31: -709770345
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_32: 440952479
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_33: -1009752382
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_34: 1746026790
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_35: -480750506
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_36: -1029464165
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_37: -635375907
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_38: 562202219
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_39: 662813018
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_4: 174298847
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_40: -880837846
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_41: 1642618082
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_42: 1830371576
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_43: 606132782
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_44: -1248664908
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_45: -1123974326
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_46: 2141407919
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_47: 1838791049
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_48: 155730607
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_49: 1395523661
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_5: -246305055
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_50: 1055900592
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_51: -1096873824
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_52: 173820257
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_53: -633025632
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_54: -647370337
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_55: -1797256257
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_56: 225082030
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_57: -147299349
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_58: -585141415
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_59: -574852062
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_6: 738814145
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_60: 1420811291
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_61: -122229731
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_62: 1209453519
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_63: -2040391839
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_64: -958883984
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_65: 691379811
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_66: -819931708
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_67: -582372770
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_68: -595844358
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_69: -377248168
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_7: 1908449171
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_70: -1507695980
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_71: -2078693039
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_72: -813603282
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_73: 495158597
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_74: -327129318
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_75: -270168449
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_76: 2091606384
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_77: -1620612844
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_78: -1708823247
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_79: 1583442739
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_8: 1904869184
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_80: -1990176364
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_81: -297398026
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_82: -234445204
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_83: -1082933983
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_84: -1542156571
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_85: -1021322393
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_86: -1845201479
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_87: 459549630
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_88: 1022534104
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_89: -741820442
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_9: -993682924
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_90: 212906117
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_91: 1919522081
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_92: 445677091
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_93: 1239569832
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_94: -1881419737
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_95: 254728919
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_96: -2086222526
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_97: 355487998
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_98: -1527523517
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Aya Shameimaru_99: -1801328949
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

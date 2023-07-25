@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: bd88c81afb0f9fd41a9734c773061323
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 817
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa56cbf0842cb6e4fba71903608d414a
+      internalID: -559671745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 817
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795cb909d9efe244ca035c8eed617efb
+      internalID: -845686860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_44
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 817
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ebf2fcee29e8a4a867dc9613fbb7cc
+      internalID: 1542422541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 817
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342494874fc4f5f40a2e762280c4c6c5
+      internalID: 774008163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61afddc3548a3fe44990468987f6fd97
+      internalID: 987826423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_47
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 722
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06bb973bc761c74797754e6effca321
+      internalID: 1780657416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_48
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 722
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a11fdb294f81d479effc8129e4e373
+      internalID: 993529947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 627
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c123e4398103e4aa79529555009ebe
+      internalID: -133168741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_52
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 627
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd1ae3e03289bc44b84cd138578edb5
+      internalID: 278829845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_53
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 627
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb7a3f38fdf53e459c7a124da60363d
+      internalID: -1725141635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a407463f80ccc3545947d3c87690278c
+      internalID: -426785524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_57
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 532
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9ac3e97c3f25e4eb7afa7e4d0ffcb4
+      internalID: -1183925189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_58
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 532
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7c0741973bc87408dbe7e87ba2b613
+      internalID: -1933020666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Chireiden Subterranean Animism - Bosses_59
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 532
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc69210b136b614fb431864ebd0407a
+      internalID: 1309017091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_0: -793597437
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_1: 2127166388
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_10: -393921162
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_11: 1238559529
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_12: 1190553059
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_13: -240190578
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_14: 264982587
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_15: 1824934108
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_16: 209330947
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_17: 591115045
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_18: -1418042314
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_19: 1882474354
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_2: 467084439
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_20: -498817815
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_21: 717994725
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_22: -618249966
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_23: -1459963579
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_24: 8717156
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_25: 652055085
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_26: -1090424216
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_27: -1761139222
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_28: -1355249802
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_29: -1169774927
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_3: 1842765505
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_30: -890446382
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_31: -1590647535
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_32: -148524234
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_33: -692173103
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_34: 46013332
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_35: 418068340
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_36: 2136282094
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_37: -1017405084
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_38: 1657397816
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_39: 1929484648
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_4: 1304383182
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_40: -2006599103
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_41: -478443107
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_42: -559671745
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_43: -845686860
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_44: 1542422541
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_45: 774008163
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_46: 987826423
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_47: 1780657416
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_48: 993529947
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_49: 1132858940
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_5: 625921892
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_50: -2009769501
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_51: -133168741
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_52: 278829845
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_53: -1725141635
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_54: -1356480426
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_55: 338635728
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_56: -426785524
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_57: -1183925189
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_58: -1933020666
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_59: 1309017091
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_6: 190306839
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_60: -1484076911
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_61: -248866397
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_62: -1958092365
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_63: -277605599
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_64: 1265579870
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_65: 1881837358
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_66: 300628271
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_67: -1268568337
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_68: 622754036
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_69: -1150253585
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_7: 646895569
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_70: 1809171842
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_71: 16494430
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_72: 463338298
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_73: 1295370418
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_74: -1951533700
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_8: -925145666
+      PC Computer - Touhou Chireiden Subterranean Animism - Bosses_9: -901074204
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

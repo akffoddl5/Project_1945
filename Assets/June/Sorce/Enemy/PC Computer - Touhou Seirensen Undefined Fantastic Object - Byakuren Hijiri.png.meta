@@ -1,0 +1,589 @@
+fileFormatVersion: 2
+guid: 517229a5402572b449bbff4721d9fc2b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 898
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859ed8579f2c1fa47b27fc0c66124bda
+      internalID: 1831539732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 898
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09517bfd9395784daaa7e2934587e23
+      internalID: -735155156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 898
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c527f5ad55848834aa85a367404e4c5e
+      internalID: -882328633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 898
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af10e8782419a248ba4e7c713dad4e7
+      internalID: -1621126775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deae6cb57a67d0844842f815063a28ef
+      internalID: -2121314102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 768
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d162a8fb8bcacf24982a9eab95363439
+      internalID: -1166734803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84859018b07497e43a766354a0733e94
+      internalID: -360878818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 768
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be647cef26b804f4faca4ecc8c841449
+      internalID: -1151246330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 638
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192fec073756b6547b88fa598cbea415
+      internalID: -1361697371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 638
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c5e9456f7bbe24e9dfee1ce56cbda5
+      internalID: 897387054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 638
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7594d60cd29d54382fe70a308f998c
+      internalID: -549193606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 638
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62897a8b310508549bce7419f7fdeb66
+      internalID: -1410372065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 508
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a198bf18ef22e4bbba908b98b165fb
+      internalID: -835155503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 508
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916aaea651b0ffb4da30ed51018e480a
+      internalID: 1776407689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 508
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5215c7bc4d5280847a78206ad9e861cb
+      internalID: 562291843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 508
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51dd29a415e65374ca55d0a53648a0b7
+      internalID: 854642719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_4
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 436
+        width: 69
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006d9c25f87030049871614a47ee8c7b
+      internalID: 439281078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_17
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 355
+        width: 69
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08712b7b2ed46f84bbabea9ce724c4cd
+      internalID: -1453581456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_18
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 37
+        width: 208
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcae2abe0e942b42a12d36d6148cbe1
+      internalID: 1928497367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_0: 1831539732
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_1: -735155156
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_10: 897387054
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_11: -549193606
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_12: -1410372065
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_13: -835155503
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_14: 1776407689
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_15: 562291843
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_16: 854642719
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_17: -1453581456
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_18: 1928497367
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_19: -385912172
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_2: -882328633
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_20: -2042060967
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_21: -2054574755
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_22: 408545961
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_23: 1688925632
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_24: -449991265
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_25: 1610273579
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_26: 999646395
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_27: -622322646
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_28: -771602980
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_29: -45804064
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_3: -1621126775
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_30: -296022165
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_4: 439281078
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_5: -2121314102
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_6: -1166734803
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_7: -360878818
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_8: -1151246330
+      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_9: -1361697371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
