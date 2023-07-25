@@ -3,25 +3,13 @@ using System.Collections.Generic;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class June_EnemySpawn : MonoBehaviour
 {
+    public GameObject[] Spawn;
+
    
-
-    public float Xleft = -2.5f; //맵 좌측 끝
-    public float XRight = 2.5f; //맵 우측 끝
-
-    //적 1
-    public float StartTime1; //시작
-    public float SpawnStop1; //스폰 끝나는 시간
-
-    //적2
-    public float StartTime2; //시작
-    public float SpawnStop2; //스폰 끝나는 시간
-
-    //엘리트 적
-    public float StartTime3; //시작
-    public float SpawnStop3; //스폰 끝나는 시간
 
     //보스
     public float BossStart; //시작
@@ -33,104 +21,175 @@ public class June_EnemySpawn : MonoBehaviour
     public GameObject EnemyMiddle;
     public GameObject Boss;
 
+    Text PlayerWords;
+    Text BossWords;
 
     bool swi1 = true;
     bool swi2 = true;
     bool swi3 = true;
 
+    bool isBoss = false;
 
     void Start()
     {
-        StartCoroutine("RandomSpawn1");   //몬스터 생성 코루틴
-        StartCoroutine("RandomSpawn2");   //몬스터 생성 코루틴
-        StartCoroutine("RandomSpawn3");   //몬스터 생성 코루틴
-        
-        Invoke("Stop1", SpawnStop1);// 
-        Invoke("Stop2", SpawnStop2);// 
-        Invoke("Stop3", SpawnStop3);// 
-
+        Invoke("Boss1SpawnWait", BossStart - 5f);
         Invoke("Boss1Spawn", BossStart);
     }
 
-
-
-    void Stop1()
+    public void Boss1SpawnWait()
     {
-        swi1 = false; //코루틴속 while문 멈추기
-        StopCoroutine("RandomSpawn");
+        isBoss = true;
 
-    }
-    void Stop2()
-    {
-        swi2 = false; // 코루틴속 while문 멈추기
-        StopCoroutine("RandomSpawn2");
-        
-    }
-    void Stop3()
-    {
-        swi3 = false; // 코루틴속 while문 멈추기
-        StopCoroutine("RandomSpawn3");
 
-    }
-    Vector3 B = new Vector3(0, 1.5f, 0);
-
-    //적 1
-    IEnumerator RandomSpawn1()
-    {
-        yield return new WaitForSeconds(StartTime1);
-        while (swi1)
-        {
-            //1초마다
-            yield return new WaitForSeconds(1);
-            //x값 랜덤
-            float X = Random.Range(Xleft, XRight);
-            //x값 랜덤값 y값 자기자신값
-            Vector3 r = new Vector3(X, transform.position.y, 0);
-            //몬스터 생성
-            Instantiate(Enemy1, r, Quaternion.identity);
-        }
-    }
-
-    //적2
-    IEnumerator RandomSpawn2()
-    {
-        yield return new WaitForSeconds(StartTime2);
-        while (swi2) 
-        {
-            //1초마다
-            yield return new WaitForSeconds(2);
-
-            //x값 랜덤
-            float X = Random.Range(Xleft, XRight);
-            //x값 랜덤값 y값 자기자신값
-            Vector3 r = new Vector3(X, transform.position.y, 0);
-            //몬스터 생성
-            Instantiate(Enemy2, r, Quaternion.identity);
-        }
-    }
-
-    //엘리트 적
-    IEnumerator RandomSpawn3()
-    {
-        yield return new WaitForSeconds(StartTime3);
-        while (swi3) 
-        {
-            //1초마다
-            yield return new WaitForSeconds(2);
-
-            //x값 랜덤
-            float X = Random.Range(Xleft, XRight);
-            //x값 랜덤값 y값 자기자신값
-            Vector3 r = new Vector3(X, transform.position.y, 0);
-            //몬스터 생성
-            Instantiate(EnemyMiddle, r, Quaternion.identity);
-        }
     }
     public void Boss1Spawn()
     {
-       // Instantiate(Boss, B, Quaternion.identity);
+        Instantiate(Boss, new Vector3(0, 5f, 0), Quaternion.identity);
+    }
+
+
+
+
+
+    private void FixedUpdate()
+    {
+        if(isBoss != true) 
+        {
+            NormalattackPattern();
+            EliteAttackPatter();
+        }
+        
+    }
+    float lastShootTime;
+    float lastShootTime2;
+    public int patternNum; //패턴 번호
+    public int patternNum2; //패턴 번호
+    public int SpawnRandNum;
+
+   
+
+    void EliteAttackPatter() //엘리트적 패턴
+    {
+        if (Time.time > lastShootTime2 + 8.0f)
+        {
+            lastShootTime2 = Time.time;
+            patternNum2 = Random.Range(1, 3);  //패턴 랜덤
+            StartCoroutine(attack(patternNum2));
+        }
+        IEnumerator attack(int p)
+        {
+            if(p ==1)
+            {
+            Instantiate(EnemyMiddle, Spawn[0].transform.position, Quaternion.Euler(0, 0, 30));
+            Instantiate(EnemyMiddle, Spawn[2].transform.position, Quaternion.Euler(0, 0, -30));
+            yield return new WaitForSeconds(0.5f);
+            }
+            if (p == 2)
+            {
+                Instantiate(EnemyMiddle, Spawn[3].transform.position, Quaternion.Euler(0, 0, 90));
+                Instantiate(EnemyMiddle, Spawn[4].transform.position, Quaternion.Euler(0, 0, -90));
+                yield return new WaitForSeconds(0.5f);
+            }
+            if(p == 3)
+            {
+                Instantiate(EnemyMiddle, Spawn[1].transform.position, Quaternion.Euler(0, 0, 0));
+                yield return new WaitForSeconds(1f);
+                Instantiate(EnemyMiddle, Spawn[2].transform.position, Quaternion.Euler(0, 0, -15));
+                yield return new WaitForSeconds(1f); 
+                Instantiate(EnemyMiddle, Spawn[0].transform.position, Quaternion.Euler(0, 0, 15));
+                
+            }
+        }
 
     }
+
+    void NormalattackPattern()
+    {
+        if (Time.time > lastShootTime + 3.0f)
+        {
+            lastShootTime = Time.time;
+            patternNum = Random.Range(1, 5);  //패턴 랜덤
+            SpawnRandNum = Random.Range(0, 8);
+            StartCoroutine(attack(patternNum));
+        }
+        IEnumerator attack(int p)
+        {
+
+            if (p == 1)  //3방향 일직선 5번번
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    Instantiate(Enemy1, Spawn[SpawnRandNum].transform.position, Quaternion.Euler(0,0,315));
+                    Instantiate(Enemy1, Spawn[SpawnRandNum].transform.position, Quaternion.Euler(0, 0, 45));
+                    yield return new WaitForSeconds(0.5f);
+                }
+                
+            }
+            if (p == 2)  //3번 자리에서 4번방향으로 유도
+            {
+                for (int i = 0; i < 6; i++)
+                {
+                    Instantiate(Enemy2, Spawn[SpawnRandNum].transform.position, Quaternion.Euler(0, 0, 90));
+
+                    yield return new WaitForSeconds(0.5f);
+                }
+            }
+            if (p == 3)  //7번 자리에서 2번방향으로 && 8번 자리에서 0번 방향으로
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    Instantiate(Enemy2, Spawn[8].transform.position, Quaternion.Euler(0, 0, -120));
+                    Instantiate(Enemy2, Spawn[7].transform.position, Quaternion.Euler(0, 0, 120));
+
+                    yield return new WaitForSeconds(0.8f);
+                }
+            }
+            if (p == 4)  //7번 자리에서 2번방향으로 && 8번 자리에서 0번 방향으로
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    Instantiate(Enemy2, Spawn[0].transform.position, Quaternion.Euler(0, 0, 20));
+                    Instantiate(Enemy2, Spawn[2].transform.position, Quaternion.Euler(0, 0, -20));
+
+                    yield return new WaitForSeconds(0.8f);
+                }
+                for (int i = 0; i< 3;i++)
+                {
+                    Instantiate(Enemy1, Spawn[3].transform.position, Quaternion.Euler(0, 0, 45));
+                    Instantiate(Enemy1, Spawn[4].transform.position, Quaternion.Euler(0, 0, -45));
+                }
+            }
+            if (p == 5)  //7번 자리에서 2번방향으로 && 8번 자리에서 0번 방향으로
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    Instantiate(Enemy1, Spawn[1].transform.position, Quaternion.Euler(0, 0, 20));
+                    Instantiate(Enemy1, Spawn[1].transform.position, Quaternion.Euler(0, 0, -20));
+
+                    yield return new WaitForSeconds(0.8f);
+                }
+                for (int i = 0; i < 3; i++)
+                {
+                    Instantiate(Enemy1, Spawn[0].transform.position, Quaternion.Euler(0, 0, 45));
+                   
+                }
+            }
+
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 2445989886434898815}
   - component: {fileID: 6097486839405230424}
   - component: {fileID: 2800950729410416891}
+  - component: {fileID: 5735650382970647596}
   m_Layer: 0
   m_Name: EnemyMiddle
   m_TagString: Untagged
@@ -65,7 +66,7 @@ Transform:
   m_Children:
   - {fileID: 7270484807503994928}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1210894868057276045
 SpriteRenderer:
@@ -193,3 +194,21 @@ MonoBehaviour:
   Delay: 2
   ms: {fileID: 7270484807503994928}
   Bullet: {fileID: 0}
+--- !u!114 &5735650382970647596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8242121583507774824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7110213482579444fa37ec17c277218a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hp: 0
+  speed: 1
+  Effect: {fileID: 5629975725361973959, guid: ec73fe60faa912849aa57f0900b39aaf, type: 3}
+  Delay: 3
+  ms: {fileID: 7270484807503994928}
+  Bullet: {fileID: 2436310027941189906, guid: ad6d49da2bb70634c9db8dd9c820bc37, type: 3}

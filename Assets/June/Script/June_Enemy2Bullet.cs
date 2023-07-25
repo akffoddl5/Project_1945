@@ -24,8 +24,11 @@ public class June_Enemy2Bullet : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player");
         //플레이어 찾기
         //플레이어 찾기
-        dir = target.transform.position - transform.position; //a-b == a를 바라보는  b의 방향
-        dirNo = dir.normalized;//방향만 잡아주기
+        if (target != null)
+        {
+            dir = target.transform.position - transform.position; //a-b == a를 바라보는  b의 방향
+            dirNo = dir.normalized;//방향만 잡아주기
+        }
     }
 
     void Update()

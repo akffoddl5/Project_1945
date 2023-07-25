@@ -13,21 +13,21 @@ public class June_Enemy : MonoBehaviour
     public float speed = 1;
     public GameObject Effect;
 
-    public float Delay = 2f;
+    //public float Delay = 1f;
     public Transform ms;
     public GameObject Bullet;
 
 
     void Start()
     {
-        Invoke("CreateBullte", Delay);
+        Invoke("CreateBullte", 1f);
 
     }
     void CreateBullte() //Àû ÃÑ¾Ë »ý¼º
     {
         
             Instantiate(Bullet, ms.position, Quaternion.identity);
-            Invoke("CreateBullte", Delay);
+            Invoke("CreateBullte", 1f);
         
 
 
