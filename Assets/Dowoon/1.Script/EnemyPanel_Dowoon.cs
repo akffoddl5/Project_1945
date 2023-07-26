@@ -36,6 +36,7 @@ public class EnemyPanel_Dowoon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(StartPanel());
        // SetPanel(9);
     }
 
@@ -45,22 +46,14 @@ public class EnemyPanel_Dowoon : MonoBehaviour
         switch(_dir)
         {
             case Direction.Left:
-
+                transform.Translate(new Vector2(-1, 0) * 2.5f * Time.deltaTime);
                 break;
             case Direction.Right:
                 transform.Translate(new Vector2(1, 0) * 2.5f * Time.deltaTime);
                 break;
         }
 
-        if(transform.position.x >= 0f && transform.position.x <= 1.5f && !b_isEnemyActive)
-        {    
-                b_isEnemyActive = true;
-                rotatePos = transform.position;
-                rotatePos.x += 0.55f;
-
-            StartCoroutine(SetEnemyIsAttack());
-
-        }
+       
 
         if(b_isEnemyActive)
         {
@@ -68,6 +61,20 @@ public class EnemyPanel_Dowoon : MonoBehaviour
         }
     }
 
+    IEnumerator StartPanel()
+    {
+        yield return new WaitForSeconds(3.0f);
+       
+            b_isEnemyActive = true;
+            rotatePos = transform.position;
+
+    
+
+
+            StartCoroutine(SetEnemyIsAttack());
+
+        
+    }
     IEnumerator SetEnemyIsAttack()
     {
         int count = 0;

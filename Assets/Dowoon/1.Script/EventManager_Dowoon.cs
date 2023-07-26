@@ -33,12 +33,14 @@ public class EventManager_Dowoon : MonoBehaviour
         var first = Instantiate(Wall);
         first.transform.position = new Vector3(-13.5f, 1.5f, 0);
         first.GetComponent<EnemyPanel_Dowoon>().SetPanel(4,Direction.Right);
-        
 
 
 
+        yield return new WaitForSeconds(5);
 
-
+        var second = Instantiate(Wall);
+        second.transform.position = new Vector3(11f, 1.5f, 0);
+        second.GetComponent<EnemyPanel_Dowoon>().SetPanel(8, Direction.Left);
 
 
         StopCoroutine(SpawnEvent());

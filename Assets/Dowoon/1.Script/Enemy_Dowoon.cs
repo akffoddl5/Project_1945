@@ -56,7 +56,7 @@ public class Enemy_Dowoon : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player_bullet"))
         {
-
+            
         }
     }
 
