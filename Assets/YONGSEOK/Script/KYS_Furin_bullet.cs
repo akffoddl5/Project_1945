@@ -48,7 +48,7 @@ public class KYS_Furin_bullet : MonoBehaviour
             Vector2 direction = new Vector2(x, y).normalized;
 
             //Debug.Log(Quaternion.LookRotation(new Vector3(direction.x, direction.y, 0)).eulerAngles);
-            Debug.Log(direction);
+            //Debug.Log(direction);
             // ÃÑ¾Ë »ý¼º
             GameObject bullet = Instantiate(normal_bullet, transform.position, Quaternion.identity);
             bullet.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(direction, 1f);
@@ -132,7 +132,7 @@ public class KYS_Furin_bullet : MonoBehaviour
         {
             float dir_x = Mathf.Cos((210 + angle * i) / 180 * Mathf.PI);
             float dir_y = Mathf.Sin((210 + angle * i) / 180 * Mathf.PI);
-            Debug.Log(dir_x + " " + dir_y);
+            //Debug.Log(dir_x + " " + dir_y);
             GameObject tmp = Instantiate(normal_bullet, transform.position, Quaternion.identity);
             tmp.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(dir_x, dir_y), 1f);
             //GameObject tmp = Instantiate(normal_bullet, transform.position, Quaternion.Euler(new Vector3(0, 0, 60 + 15 * i)));

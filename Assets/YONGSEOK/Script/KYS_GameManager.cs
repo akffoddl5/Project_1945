@@ -7,6 +7,7 @@ public class KYS_GameManager : MonoBehaviour
 {
     public GameObject boss_Furin;
     public GameObject boss_toong;
+    public GameObject unit_boori;
     public GameObject warning_text;
 
     public static bool isFurin_die = false;
@@ -15,26 +16,31 @@ public class KYS_GameManager : MonoBehaviour
 
     private void Start()
     {
-        //StartCoroutine(Furin_init());   
+        StartCoroutine(Furin_init());
+        StartCoroutine(Unit_boori_init());
     }
 
     private void Update()
     {
         if (isFurin_die)
         {
-            Debug.Log("toong init");
             StartCoroutine(Toong_init());
+            
             isFurin_die = false;
         }
     }
 
+    IEnumerator Unit_boori_init()
+    {
+        Instantiate(unit_boori);
+        yield return new WaitForSeconds(10);
+    }
 
 
     IEnumerator Boss_Furin_init()
     {
         yield return new WaitForSeconds(1);
         Instantiate(boss_Furin, new Vector2(0.2f, 3.2f), Quaternion.identity);
-
     }
 
     IEnumerator Boss_Toong_init()

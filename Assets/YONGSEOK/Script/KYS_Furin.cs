@@ -22,7 +22,8 @@ public class KYS_Furin : MonoBehaviour
         hp -= att;
         if (hp <= 0)
         {
-            GameManager.isFurin_die = true;
+            KYS_GameManager.isFurin_die = true;
+            Debug.Log("furin die !!!!!!!!!!! " + KYS_GameManager.isFurin_die);
             Destroy(gameObject);
         }
     }
