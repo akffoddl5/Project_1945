@@ -16,4 +16,6 @@ public class Bullet_Dowoon : MonoBehaviour
         transform.Translate(new Vector3(0, 1, 0) * 8.3f * Time.deltaTime);
 
     }
+
+  
 }
