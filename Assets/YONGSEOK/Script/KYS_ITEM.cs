@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class KYS_ITEM : MonoBehaviour
 {
-    //public static Dictionary<string,GameObject> item_dic = new Dictionary<string,GameObject>(); // ITEM MANGER 가 가지고 있는걸로
+    
 
     float valuable_x_max;
     float valuable_x_min;
