@@ -28,7 +28,10 @@ public class KYS_Player_move : MonoBehaviour
     private string anim_left = "Player_left";
     private string anim_right = "Player_right";
     private string anim_down = "Player_down";
+    private string anim_spin = "Player_spin";
 
+    //레이저관련 변수
+    private bool isRazor = false;
 
     private void Awake()
     {
@@ -42,7 +45,17 @@ public class KYS_Player_move : MonoBehaviour
         float axis_X = Input.GetAxisRaw("Horizontal");
         float axis_Y = Input.GetAxisRaw("Vertical");
 
-        if (axis_Y < 0) animator.Play(anim_down);
+        if (Input.GetKeyUp(KeyCode.Z))
+        {
+            isRazor = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z) || isRazor)
+        {
+            isRazor = true;
+            animator.Play(anim_spin);
+            Razor();
+        }else if(axis_Y < 0) animator.Play(anim_down);
         else if (axis_X > 0) animator.Play(anim_right);
         else if (axis_X < 0) animator.Play(anim_left);
         else animator.Play(anim_idle);
@@ -51,6 +64,40 @@ public class KYS_Player_move : MonoBehaviour
         rb.velocity = new Vector2(axis_X, axis_Y ) * speed* Time.deltaTime ;
         Dash(rb.velocity);
     }
+
+
+    //z스킬 레이저
+    public void Razor()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 9f);
+        List<GameObject> enemy_list = new List<GameObject> ();
+        List<GameObject> coord_list = new List<GameObject> ();
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i].CompareTag("ENEMY"))
+            {
+                enemy_list.Add(colliders[i].gameObject);
+                Debug.Log(colliders[i].name);
+            }
+        }
+
+        for (int i = 0; i < enemy_list.Count; i++)
+        {
+            GameObject tmp_empty = GameObject.Instantiate(new GameObject("empty_"+i.ToString()), enemy_list[i].transform.position, Quaternion.identity);
+            coord_list.Add(tmp_empty);
+            
+        }
+
+        
+
+        
+
+        
+        
+        
+
+    }
+    
 
     public void Dash(Vector2 preVelocity)
     {
