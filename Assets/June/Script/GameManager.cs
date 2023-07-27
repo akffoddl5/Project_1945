@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     {
         if (isFurin_die)
         {
-            Debug.Log("toong init");
+            //Debug.Log("toong init");
             StartCoroutine(Toong_init());
             isFurin_die = false;
         }
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         var tmpColor = warning_text.GetComponent<Text>().color;
         while (true) {
-            Debug.Log("watning repeat");
+            //Debug.Log("watning repeat");
             tmpColor.a = 0;
             warning_text.GetComponent<Text>().color = tmpColor;
             yield return new WaitForSeconds(0.1f);
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Furin_init()
     {
-        Debug.Log("watning init");
+        //Debug.Log("watning init");
         warning_text.SetActive(true);
         var a= StartCoroutine(Warning_repeat());
         yield return new WaitForSeconds(3);
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Toong_init()
     {
-        Debug.Log("watning init");
+        //Debug.Log("watning init");
         warning_text.SetActive(true);
         var a = StartCoroutine(Warning_repeat());
         yield return new WaitForSeconds(3);

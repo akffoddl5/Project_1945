@@ -33,7 +33,7 @@ public class KYS_ITEM : MonoBehaviour
         valuable_y_max = Camera.main.transform.position.y + (field_size_y - item_size_y / 2.0f);
         valuable_y_min = Camera.main.transform.position.y - (field_size_y - item_size_y / 2.0f);
 
-        Debug.Log(item_size_x + " " + item_size_y + " " + valuable_x_max + " " + valuable_x_min + " " + valuable_y_max + " " + valuable_y_min);
+        //Debug.Log(item_size_x + " " + item_size_y + " " + valuable_x_max + " " + valuable_x_min + " " + valuable_y_max + " " + valuable_y_min);
 
         rb = GetComponent<Rigidbody2D>();
         int ran_idx = Random.Range(0, 4);
@@ -54,5 +54,17 @@ public class KYS_ITEM : MonoBehaviour
         if (current_y <= valuable_y_min || current_y >= valuable_y_max) rb.velocity = new Vector2(rb.velocity.x, -rb.velocity.y);
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (collision.transform.Find("Bullet_GEN").GetComponent<KYS_Player_Bullet_GEN>().shoot_cool_max > 4f)
+            {
+                collision.transform.Find("Bullet_GEN").GetComponent<KYS_Player_Bullet_GEN>().shoot_cool_max -= 3f;
+            }
+            Destroy(gameObject);
+        }
+    }
+
+
 }

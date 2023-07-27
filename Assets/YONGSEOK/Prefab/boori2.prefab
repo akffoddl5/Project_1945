@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8959760584950723641}
   - component: {fileID: 3503203053650302819}
   - component: {fileID: 1424653118969427275}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: boori2
   m_TagString: ENEMY
   m_Icon: {fileID: 0}

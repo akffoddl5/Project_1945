@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,7 +29,7 @@ public class KYS_GameManager : MonoBehaviour
     {
         if (isFurin_die)
         {
-            
+            ITEM_MANAGER.instance.GetItem(Vector3.zero, Quaternion.identity);
             StartCoroutine(Toong_init());
             
             isFurin_die = false;
@@ -67,7 +68,6 @@ public class KYS_GameManager : MonoBehaviour
         var tmpColor = warning_text.GetComponent<Text>().color;
         while (true)
         {
-            Debug.Log("watning repeat");
             tmpColor.a = 0;
             warning_text.GetComponent<Text>().color = tmpColor;
             yield return new WaitForSeconds(0.1f);
@@ -82,7 +82,6 @@ public class KYS_GameManager : MonoBehaviour
 
     IEnumerator Furin_init()
     {
-        Debug.Log("watning init");
         warning_text.SetActive(true);
         var a = StartCoroutine(Warning_repeat());
         yield return new WaitForSeconds(3);

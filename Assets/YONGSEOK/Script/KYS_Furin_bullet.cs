@@ -132,11 +132,8 @@ public class KYS_Furin_bullet : MonoBehaviour
         {
             float dir_x = Mathf.Cos((210 + angle * i) / 180 * Mathf.PI);
             float dir_y = Mathf.Sin((210 + angle * i) / 180 * Mathf.PI);
-            //Debug.Log(dir_x + " " + dir_y);
             GameObject tmp = Instantiate(normal_bullet, transform.position, Quaternion.identity);
             tmp.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(dir_x, dir_y), 1f);
-            //GameObject tmp = Instantiate(normal_bullet, transform.position, Quaternion.Euler(new Vector3(0, 0, 60 + 15 * i)));
-            //Debug.Log(angle * i + " <>  " + point + "  " + i + " " + tmp.name + " " + tmp.transform.rotation);
         }
     }
 
