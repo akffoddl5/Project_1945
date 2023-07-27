@@ -13,21 +13,21 @@ public class KYS_GameManager : MonoBehaviour
     public static bool isFurin_die = false;
     public static bool isToong_die = false;
 
-    public GameObject kys_item;
 
 
     private void Start()
     {
+        ITEM_MANAGER.instance.ItemSetting(Charactor.용석);
+        //ITEM_Manager.instance.ItemSetting(Charactor.용석);
         StartCoroutine(Furin_init());
         StartCoroutine(Unit_boori_init());
-        ITEM_MANAGER.item_dic.Add("kys_item", kys_item);
+        ITEM_MANAGER.instance.GetItem(Vector3.zero, Quaternion.identity);
     }
 
     private void Update()
     {
         if (isFurin_die)
         {
-            Instantiate(ITEM_MANAGER.item_dic["kys_item"]);
             
             StartCoroutine(Toong_init());
             
