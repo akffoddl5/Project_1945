@@ -20,7 +20,7 @@ public class Enemy_Dowoon : MonoBehaviour
     {
         renderer = GetComponent<SpriteRenderer>();
 
-        StartCoroutine(TripleShot());
+     //   StartCoroutine(TripleShot());
     }
 
     private void Update()

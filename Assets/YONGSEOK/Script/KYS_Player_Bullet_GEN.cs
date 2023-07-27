@@ -9,6 +9,7 @@ public class KYS_Player_Bullet_GEN : MonoBehaviour
     [SerializeField]
     float shoot_cool = 0f;  //60 FRAME 공격
     float guid_cool = 0f;
+    public float shoot_cool_max = 10f;
     int current_generator = 0;
     int current_generator2 = 0;
 
@@ -24,7 +25,7 @@ public class KYS_Player_Bullet_GEN : MonoBehaviour
             
             generators[current_generator].GetComponent<KYS_Bullet_generator>().Shoot();
 
-            shoot_cool = 1 * 10 * Time.deltaTime;
+            shoot_cool = shoot_cool_max * Time.deltaTime;
         }
 
         //3,4 유도 자동공격
