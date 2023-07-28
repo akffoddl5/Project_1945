@@ -9,10 +9,11 @@ public class June_PlayerShooting : MonoBehaviour
     public Transform pos = null; //미사일 발사
     public float FireSpeed = 0.2f;
     public GameObject Lazer;
+    public float PlayerDamage ;
 
     void Start()
     {
-
+        PlayerDamage = 1;
         StartCoroutine("AutoFire");
    
     }
@@ -22,7 +23,9 @@ public class June_PlayerShooting : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J))
         {
-            Instantiate(bullet, pos.position, Quaternion.identity);
+            
+            var _bullet =Instantiate(bullet, pos.position, Quaternion.identity); 
+            _bullet.GetComponent<Bullet_info>().att = PlayerDamage;
         }
 
       
@@ -34,7 +37,8 @@ public class June_PlayerShooting : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.X) == true)
             {
-                Instantiate(bullet, pos.position, Quaternion.identity);
+                var _bullet = Instantiate(bullet, pos.position, Quaternion.identity);
+                _bullet.GetComponent<Bullet_info>().att = PlayerDamage;
 
             }
             yield return new WaitForSeconds(FireSpeed);
