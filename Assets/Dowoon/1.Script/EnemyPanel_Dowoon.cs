@@ -11,7 +11,9 @@ public enum Direction
 
 public class EnemyPanel_Dowoon : MonoBehaviour
 {
-  
+
+    public const int MAX_COUNT = 20;
+
     public Direction _dir
         = Direction.Left;
 
@@ -24,7 +26,8 @@ public class EnemyPanel_Dowoon : MonoBehaviour
     public Vector3 rotatePos = Vector3.zero;
 
 
-    List<GameObject> enemyArray = new List<GameObject>();
+    GameObject[] enemyArray = new GameObject[MAX_COUNT];
+    int currCount = 0;
     bool b_isEnemyActive = false;
     int maxCol = 4;
 
@@ -36,6 +39,7 @@ public class EnemyPanel_Dowoon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(StartPanel());
        // SetPanel(9);
     }
 
@@ -45,22 +49,14 @@ public class EnemyPanel_Dowoon : MonoBehaviour
         switch(_dir)
         {
             case Direction.Left:
-
+                transform.Translate(new Vector2(-1, 0) * 4.5f * Time.deltaTime);
                 break;
             case Direction.Right:
-                transform.Translate(new Vector2(1, 0) * 2.5f * Time.deltaTime);
+                transform.Translate(new Vector2(1, 0) * 4.5f * Time.deltaTime);
                 break;
         }
 
-        if(transform.position.x >= 0f && transform.position.x <= 1.5f && !b_isEnemyActive)
-        {    
-                b_isEnemyActive = true;
-                rotatePos = transform.position;
-                rotatePos.x += 0.55f;
-
-            StartCoroutine(SetEnemyIsAttack());
-
-        }
+       
 
         if(b_isEnemyActive)
         {
@@ -68,12 +64,27 @@ public class EnemyPanel_Dowoon : MonoBehaviour
         }
     }
 
+    IEnumerator StartPanel()
+    {
+        yield return new WaitForSeconds(2.0f);
+       
+            b_isEnemyActive = true;
+            rotatePos = transform.position;
+
+    
+
+
+            StartCoroutine(SetEnemyIsAttack());
+
+        
+    }
     IEnumerator SetEnemyIsAttack()
     {
         int count = 0;
-        while (count < enemyArray.Count)
+        while (count < currCount)
         {
             enemyArray[count].GetComponent<Enemy_Dowoon>().isAttackAble = true;
+            enemyArray[count].GetComponent<BoxCollider2D>().enabled = true;
             yield return new WaitForSeconds(0.15f);
 
 
@@ -88,21 +99,23 @@ public class EnemyPanel_Dowoon : MonoBehaviour
         deg += Time.deltaTime * objSpeed;
         if (deg < 360)
         {
-            for (int i = 0; i < enemyArray.Count; i++)
+            for (int i = 0; i < currCount; i++)
             {
-                if (enemyArray[i].GetComponent<Enemy_Dowoon>().isArrive)
+                if (enemyArray[i] && enemyArray[i].GetComponent<Enemy_Dowoon>().isArrive)
                 {
-                    var rad = Mathf.Deg2Rad * (deg + (i * (360 / enemyArray.Count)));
+                    var rad = Mathf.Deg2Rad * (deg + (i * (360 / currCount)));
                     var x = circleR * Mathf.Sin(rad);
                     var y = circleR * Mathf.Cos(rad);
+                    if(enemyArray[i] != null)
                     enemyArray[i].transform.position = rotatePos + new Vector3(x, y);
                 }
                 else
                 {
-                    var rad = Mathf.Deg2Rad * (deg + (i * (360 / enemyArray.Count)));
+                    var rad = Mathf.Deg2Rad * (deg + (i * (360 / currCount)));
                     var x = circleR * Mathf.Sin(rad);
                     var y = circleR * Mathf.Cos(rad);
-                    enemyArray[i].GetComponent<Enemy_Dowoon>().SetGoalPos(rotatePos + new Vector3(x, y));
+                    if (enemyArray[i] != null)
+                        enemyArray[i].GetComponent<Enemy_Dowoon>().SetGoalPos(rotatePos + new Vector3(x, y));
                 }
 
                 //  enemyArray[i].transform.rotation = Quaternion.Euler(0, 0, (deg + (i * (360 / enemyArray.Count))) * -1);
@@ -116,6 +129,7 @@ public class EnemyPanel_Dowoon : MonoBehaviour
     }
     public void SetPanel(int enemyCount, Direction _di)
     {
+        currCount = enemyCount;
         _dir = _di;
         float yOffset = 0;
         int offsetCount = 0;
@@ -129,7 +143,9 @@ public class EnemyPanel_Dowoon : MonoBehaviour
             }
             var monster = Instantiate(monsterPrefab);
             monster.transform.parent = transform;
-            enemyArray.Add(monster);
+            monster.GetComponent<Enemy_Dowoon>().Panel = this.gameObject;
+            enemyArray[i] = monster;
+            
 
             var offsetPos = spawnPos.transform.position;
             offsetPos.x += offset.x * offsetCount;
@@ -143,10 +159,32 @@ public class EnemyPanel_Dowoon : MonoBehaviour
 
    void LaunchEnemy()
     {
-        for(int i=0; i<enemyArray.Count; ++i)
+        for(int i=0; i<currCount; ++i)
         {
             var monster = enemyArray[i].GetComponent<Enemy_Dowoon>();
         }
 
     }
+
+    int GetIndexToFind(GameObject enemy)
+    {
+        for (int i = 0; i < currCount; ++i)
+        {
+            if (enemyArray[i] == enemy)
+                return i;
+        }
+        return 0;
+
+
+    }
+
+    public void DestroyEnemy(GameObject enemy)
+    {
+        int idx = GetIndexToFind(enemy);
+
+        enemyArray[idx] = null;
+        Destroy(enemy);
+    }
+
+
 }

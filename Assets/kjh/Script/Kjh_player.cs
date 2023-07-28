@@ -11,133 +11,195 @@ public class Kjh_player : MonoBehaviour
     public float movespeed = 1.3f;
     Vector3 move;
     public float boost = 50.0f;
-
+    
     Animator anim;
- 
-     
+   
+
     void Start()
     {
 
-        anim= GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
     }
 
 
     void Update()
     {
-
-        runAll();
-
-
         Move();
-        
-       
+        Key();
+        Movetree();
+
+
+
 
 
     }
 
     public void Move()
-    {    
-        
+    {
+
         moveX = Input.GetAxis("Horizontal") * Time.deltaTime * movespeed;//x,y버튼누르면 각각 숫자+ -1 나옴
         moveY = Input.GetAxis("Vertical") * Time.deltaTime * movespeed;
 
         Boost();
 
         move = new Vector3(moveX, moveY, 0);
+        
 
         transform.Translate(move);
       
-        
+
+
     }
 
     public void Boost()//부스트(주는 함수
     {
+
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && (moveX >= -0.5))
+        {
+            moveX *= boost;
+
+        }
+
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && (moveX <= 0.5))
+        {
+
+            moveX *= boost;
+
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && (moveY >= -0.5))
+        {
+            moveY *= boost;
+
+        }
+
+
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && (moveY <= 0.5))
+        {
+
+            moveY *= boost;
+
+        }
        
-
-                if (Input.GetKeyDown(KeyCode.Z) && (moveX >= -0.5))
-                {
-                    moveX *= boost;
-                        
-                }
-
-                else if (Input.GetKeyDown(KeyCode.Z) && (moveX <= 0.5))
-                {
-
-                    moveX *= boost;
-                   
-                }
+    }
 
 
-                if (Input.GetKeyDown(KeyCode.Z) && (moveY >= -0.5))
-                {
-                    moveY *= boost;
 
-                }
+    void Movetree()//총을 쏘는방향
+    {
+        moveX = Input.GetAxis("Horizontal");
+        moveY = Input.GetAxis("Vertical");
+        float movefact = (Input.GetAxis("Horizontal") * Input.GetAxis("Vertical"));
+        if ((Input.GetAxis("Vertical")) >= 0.5f)
+        {
+
+            anim.SetFloat("Vertical", moveX);
+            
+        }
+        else if ((Input.GetAxis("Vertical")) <= -0.5f)
+        {
+
+            anim.SetFloat("Vertical", moveX);
+
+        }
+
+        if ((Input.GetAxis("Horizontal")) >= 0.5f)
+        {
+
+            anim.SetFloat("Horizontal", moveY);
+
+        }
+        else if ((Input.GetAxis("Horizontal")) <= -0.5f)
+        {
+
+            anim.SetFloat("Horizontal", moveY);
+
+        }
 
 
-                else if (Input.GetKeyDown(KeyCode.Z) && (moveY <= 0.5))
-                {
 
-                    moveY *= boost;
-                   
-                }
+        if (movefact != 0)
+        {
+            anim.SetBool("Arrow", true);
+        }
+        else
+        {
+            anim.SetBool("Arrow", false);
+        }
+
+
+
+
+    }
+    void Key()//스페셜 키
+
+             
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            anim.SetBool("Zkey", true);
+
+        }
+        if (Input.GetKeyUp(KeyCode.Z))
+        {
+            anim.SetBool("Zkey", false);
+
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetBool("Space", true);
+
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            anim.SetBool("Space", false);
+
+
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))//대쉬상채 좌우반전시
+        {
            
-    }
-   
-
-
-    void runAll()
-    {
-        run1();
-        run2();
-        runGB();
-
-    }
-
-    void run1()
-    {
-
-        if (Input.GetKeyDown(KeyCode.UpArrow) && Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            anim.SetBool("runB", true);
-
-            if (Input.GetKeyUp(KeyCode.UpArrow) && Input.GetKeyUp(KeyCode.DownArrow))
+            if (Input.GetAxis("Horizontal")>=0.5)
             {
-                anim.SetBool("runB", false);
-
-
+                anim.SetBool("Swhich", true);
             }
+           else if (Input.GetAxis("Horizontal") <= -0.5)
+            {
+                anim.SetBool("Swhich", true);
+            }
+            if (Input.GetAxis("Horizontal") == 0)
+            {
+                anim.SetBool("Swhich", false);
+            }
+
+            if (Input.GetAxis("Vertical") !=0)
+            {
+                anim.SetBool("Swhich", true);
+            }
+            if (Input.GetAxis("Vertical") == 0)
+            {
+                anim.SetBool("Swhich", false);
+            }
+
+
+
         }
-        
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            anim.SetBool("Swhich", false);
+
+
+        }
 
     }
-
-    void run2()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            anim.SetFloat("runF",-0.5f);
-            anim.SetBool("runB", true);
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            anim.SetFloat("runF", 0.5f);
-            anim.SetBool("runB", true);
-        }
-    }
-
-    void runGB()
-    {
-        if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow)) && Input.GetKeyDown(KeyCode.Z))// 궁극기
-        {
-            anim.SetBool("runGB", true);
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            anim.SetBool("runGB", false);
-        }
-                
-    }
-
 }
+
+ 
+

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f0be7c8717d73e94b8e16a518702e292
+guid: 8a26aa882d4e71b4bbe228e98776c334
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -139,10 +139,10 @@ TextureImporter:
       name: BoomMonster 1_0
       rect:
         serializedVersion: 2
-        x: 89
-        y: 95
-        width: 839
-        height: 705
+        x: 0
+        y: 0
+        width: 1010
+        height: 1014
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bc3535115a8d904285b12f659ec02af
-      internalID: -1836525435
+      spriteID: 33c316ee9cb7f89448277bfbbfd0bf6f
+      internalID: 309338913
       vertices: []
       indices: 
       edges: []
@@ -167,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BoomMonster 1_0: -1836525435
+      BoomMonster 1_0: 309338913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

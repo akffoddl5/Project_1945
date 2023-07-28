@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,16 +15,21 @@ public class KYS_GameManager : MonoBehaviour
     public static bool isToong_die = false;
 
 
+
     private void Start()
     {
+        ITEM_MANAGER.instance.ItemSetting(Charactor.용석);
+        //ITEM_Manager.instance.ItemSetting(Charactor.용석);
         StartCoroutine(Furin_init());
         StartCoroutine(Unit_boori_init());
+        ITEM_MANAGER.instance.GetItem(Vector3.zero, Quaternion.identity);
     }
 
     private void Update()
     {
         if (isFurin_die)
         {
+            ITEM_MANAGER.instance.GetItem(Vector3.zero, Quaternion.identity);
             StartCoroutine(Toong_init());
             
             isFurin_die = false;
@@ -32,8 +38,16 @@ public class KYS_GameManager : MonoBehaviour
 
     IEnumerator Unit_boori_init()
     {
-        Instantiate(unit_boori);
-        yield return new WaitForSeconds(10);
+        while (true)
+        {
+            float rand_x = Random.Range(-2.0f, 2.0f);
+            float rand_y = Random.Range(1.0f, 3.0f);
+
+
+            Instantiate(unit_boori, new Vector3(rand_x, rand_y, 0), Quaternion.identity);
+            yield return new WaitForSeconds(10);
+        }
+        
     }
 
 
@@ -54,7 +68,6 @@ public class KYS_GameManager : MonoBehaviour
         var tmpColor = warning_text.GetComponent<Text>().color;
         while (true)
         {
-            Debug.Log("watning repeat");
             tmpColor.a = 0;
             warning_text.GetComponent<Text>().color = tmpColor;
             yield return new WaitForSeconds(0.1f);
@@ -69,7 +82,6 @@ public class KYS_GameManager : MonoBehaviour
 
     IEnumerator Furin_init()
     {
-        Debug.Log("watning init");
         warning_text.SetActive(true);
         var a = StartCoroutine(Warning_repeat());
         yield return new WaitForSeconds(3);
