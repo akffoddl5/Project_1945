@@ -39,6 +39,6 @@ public class Player_Dowoon : MonoBehaviour
     public void ShotBullet()
     {
         
-        Instantiate(bulletPrefab,bulletPos.transform.position, Quaternion.identity);
+        Instantiate(bulletPrefab,bulletPos.transform.position, bulletPos.transform.rotation);
     }
 }

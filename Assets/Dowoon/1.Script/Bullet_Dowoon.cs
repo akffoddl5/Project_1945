@@ -17,7 +17,7 @@ public class Bullet_Dowoon : MonoBehaviour
    public virtual void  Update()
     {
         Fly();
-
+        Debug.Log("부모업데이트");
     }
 
     public virtual void Fly()
@@ -26,7 +26,7 @@ public class Bullet_Dowoon : MonoBehaviour
     }
 
     public void SetDirection(Vector3 _Dir)
-    {
+    { 
         Dir = _Dir;
     }
 
