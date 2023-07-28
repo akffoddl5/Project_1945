@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  IsPause: 0
 --- !u!58 &8535881740668316994
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -202,10 +203,8 @@ MonoBehaviour:
   bullet: {fileID: 7880416945810600541, guid: 4a69f7683fa6a3f429a582d1b1bd2e9f, type: 3}
   pos: {fileID: 7707448698858755905}
   FireSpeed: 0.2
-  Gage: {fileID: 0}
-  Gage_Prefab: {fileID: 0}
-  gValue: 0
   Lazer: {fileID: 0}
+  PlayerDamage: 1
 --- !u!1 &6429021181634501276
 GameObject:
   m_ObjectHideFlags: 0

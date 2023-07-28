@@ -22,7 +22,7 @@ public class KYS_Toong : MonoBehaviour
         hp -= att;
         if (hp <= 0)
         {
-            GameManager.isToong_die = true;
+            KYS_GameManager.isToong_die = true;
             Destroy(gameObject);
         }
     }

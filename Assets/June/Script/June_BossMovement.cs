@@ -24,7 +24,6 @@ public class June_BossMovement : MonoBehaviour
         gameObject.GetComponent<CircleCollider2D>().enabled = false;
         gameObject.GetComponent<June_BossBullet>().enabled = false;
 
-      
         StartCoroutine("BossSpawn"); //플레이어 맵 안으로 들여오기
         Invoke("Stop", 1);
     }
@@ -34,6 +33,13 @@ public class June_BossMovement : MonoBehaviour
     {
         BossHp = gameObject.GetComponent<June_Enemy>().Hp;
         BossHpBar.fillAmount = BossHp/BossOriginHp;
+
+        StopCoroutine("playerspawn");
+
+    }
+    private void FixedUpdate()
+    {
+     
     }
 
     void Stop()
@@ -42,7 +48,6 @@ public class June_BossMovement : MonoBehaviour
         //보스 조작, 충돌 활성
         gameObject.GetComponent<CircleCollider2D>().enabled = true;
         gameObject.GetComponent<June_BossBullet>().enabled = true;
-        StopCoroutine("playerspawn");
 
     }
     IEnumerator BossSpawn()
@@ -60,4 +65,10 @@ public class June_BossMovement : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
     }
 
+
+
+
+
+
+    
 }

@@ -639,7 +639,7 @@ MonoBehaviour:
   dash_trail_h: {fileID: 5653396337059646219, guid: 90da9cde0f2a3304d87e865cf7eccb6f, type: 3}
   dash_trail_u: {fileID: 984290702037926216, guid: 3c8a3de41852a604398e73e92fcabd65, type: 3}
   dash_trail_d: {fileID: 3099290336464114111, guid: bb5ceb3f12d1c0441af82fc06a2e057b, type: 3}
-  obj_Razor: {fileID: 0}
+  obj_Razor: {fileID: 3608374792007439216, guid: 94a6a58ceed12e44d8b42721b1b6370c, type: 3}
 --- !u!50 &529289670
 Rigidbody2D:
   serializedVersion: 4

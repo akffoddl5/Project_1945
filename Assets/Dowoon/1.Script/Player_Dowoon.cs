@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player_Dowoon : MonoBehaviour
 {
-    float moveSpeed = 5.5f;
+    float moveSpeed = 10.5f;
     Animator anim;
     [SerializeField]    
     GameObject bulletPos;
