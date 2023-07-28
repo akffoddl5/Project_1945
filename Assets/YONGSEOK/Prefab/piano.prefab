@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5332102092450090123}
   - component: {fileID: 6519550135724169511}
-  - component: {fileID: -3672165927547447843}
+  - component: {fileID: 3971021679328722514}
   m_Layer: 0
   m_Name: piano
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &6519550135724169511
 SpriteRenderer:
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &-3672165927547447843
+--- !u!114 &3971021679328722514
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,10 +94,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3608374792007439216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7f217a2e14122549841d74a9dcaf10f, type: 3}
+  m_Script: {fileID: 11500000, guid: 83f69cd0b94d8304e8b1870038860d8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Virtual_coord: {x: 0, y: 0, z: 0}
-  my_coord: {x: 0, y: 0, z: 0}
-  v1: {x: 0, y: 0, z: 0}
-  v2: {x: 0, y: 0, z: 0}
+  current_t: 0

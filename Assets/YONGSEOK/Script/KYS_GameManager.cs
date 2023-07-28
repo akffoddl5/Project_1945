@@ -18,6 +18,7 @@ public class KYS_GameManager : MonoBehaviour
 
     private void Start()
     {
+        
         ITEM_MANAGER.instance.ItemSetting(Charactor.용석);
         //ITEM_Manager.instance.ItemSetting(Charactor.용석);
         StartCoroutine(Furin_init());
