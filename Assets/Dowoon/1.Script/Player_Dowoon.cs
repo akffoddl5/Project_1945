@@ -26,8 +26,8 @@ public class Player_Dowoon : MonoBehaviour
         transform.Translate( new Vector3(1,0,0) * h * moveSpeed * Time.deltaTime);
         transform.Translate( new Vector3(0,1,0)* v * moveSpeed * Time.deltaTime);
 
-      //  anim.SetFloat("h", h);
-      //  anim.SetFloat("v", v);
+        anim.SetFloat("h", h);
+        anim.SetFloat("v", v);
 
 
         if(Input.GetKeyDown(KeyCode.Space))
