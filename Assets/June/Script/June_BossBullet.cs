@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class June_BossBullet : MonoBehaviour
 {
@@ -14,6 +17,7 @@ public class June_BossBullet : MonoBehaviour
 
     public GameObject Bullet1; //그냥 일직선 총알
     public GameObject Bullet2; //플레이어 타게팅 총알
+    public GameObject Bullet_Boss;
 
     float lastShootTime;
 
@@ -40,6 +44,16 @@ public class June_BossBullet : MonoBehaviour
     }
 
 
+
+           
+
+        
+
+    
+
+
+
+
     void attackPattern()
     {
         BossHP = gameObject.GetComponent<June_Enemy>().Hp;
@@ -62,8 +76,41 @@ public class June_BossBullet : MonoBehaviour
     }
 
 
-    IEnumerator attack(int p)
+
+    public float speed = 3f;
+
+    float x, y;
+
+  
+
+    
+    IEnumerator attack(int p) //패턴 함수들
     {
+        if(p ==0)
+        {
+          
+           
+           
+           GameObject bullet = Instantiate(Bullet_Boss, ms.position, Quaternion.Euler(0, 0, 180));
+           June_BossBulletInfo BossBullet = bullet.GetComponent<June_BossBulletInfo>();
+            for (int x = 0; x < 20; x++)
+               {
+                   // y = (x * MathF.Sin(MathF.Log(2.6f) * x * 10));
+           
+                   y = (x * MathF.Sin(x * 10));
+                   BossBullet.SetDir(new Vector2(y, x));
+                   BossBullet.SetSpeed(1.5f);
+               
+                yield return new WaitForSeconds(0.4f);
+
+            }
+           
+           
+
+        }
+
+
+
         if (p == 1)  //3방향 일직선 5번번
         {
             for (int i = 0; i < 5; i++)
@@ -131,13 +178,6 @@ public class June_BossBullet : MonoBehaviour
             }
         }
     }
-
-
-
-
-
-
-
 
 
 
