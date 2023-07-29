@@ -205,6 +205,8 @@ MonoBehaviour:
   FireSpeed: 0.2
   Lazer: {fileID: 0}
   PlayerDamage: 1
+  ChatgeShoot: {fileID: 1788012318234375813, guid: 335d83e344451e646960f1874a7515da, type: 3}
+  activationTime: 1.5
 --- !u!1 &6429021181634501276
 GameObject:
   m_ObjectHideFlags: 0

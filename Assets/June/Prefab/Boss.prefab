@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6252198066539436827}
   - component: {fileID: 3022092160089985567}
   - component: {fileID: 5271237871496459787}
+  - component: {fileID: 518196230451886938}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -126,8 +127,6 @@ MonoBehaviour:
   Hp: 100
   speed: 0
   Effect: {fileID: 5629975725361973959, guid: ec73fe60faa912849aa57f0900b39aaf, type: 3}
-  HowMuchPower: 10
-  PowerObject: {fileID: 2295688114630085264, guid: 12ddc601e5eb4854b89c06b81cf8898c, type: 3}
   ms: {fileID: 9193348634617184469}
   Bullet: {fileID: 916147535996563982, guid: d9a0942bf05c8e04794b08572e8e5904, type: 3}
 --- !u!114 &6252198066539436827
@@ -137,7 +136,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483943229268207722}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b07696c9101d684083ccb5b96fa25b5, type: 3}
   m_Name: 
@@ -199,6 +198,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BossHpBar: {fileID: 0}
   BossHpBar_Prefab: {fileID: 0}
+  moveSpeed: 2
+  minX: -2.3
+  maxX: 2.3
+  minY: 1
+  maxY: 4.3
+--- !u!114 &518196230451886938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483943229268207722}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da418de59b47fe4eba08e473637849c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogText: {fileID: 0}
+  dialogue:
+  - "\uB098\uB294 \uB9C8\uC9C0\uB9C9 \uD76C\uB9DD\uC774\uB2E4. \uB108\uB97C \uC4F0\uB7EC\uD2B8\uB9AC\uACE0
+    \uBAA8\uB450\uC758 \uBBF8\uB798\uB97C \uC9C0\uD0AC \uAC83\uC774\uB2E4"
+  - "\uD558\uD558\uD558, \uC5B4\uC11C\uC640\uB77C \uC778\uAC04. \uB0B4 \uC55E\uC5D0
+    \uBB34\uB98E \uAFC7\uACE0 \uC815\uBCF5\uB2F9\uD558\uB77C."
+  - "\uC751\uC560 \uD574\uC918"
+  - ...
+  - "\uB204\uAD6C\uC57C?"
+  wordSpeed: 0.02
+  playerisclose: 0
+  Txttime: {fileID: 0}
+  Aya: {fileID: 0}
+  dncmgh: {fileID: 0}
 --- !u!1 &6917463424675441457
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,9 @@ public class June_PlayerSawn : MonoBehaviour
     public GameObject Player ;
     private bool CarryPlayer = true; //플레이어가 맵에 도착 시 false
 
+    public GameObject Item;
+    public int CountDestroy;
+
     void Start()
     {
         Instantiate(Player, new Vector3(0,-6,0), Quaternion.identity); //플렝이어 생성
@@ -35,7 +38,7 @@ public class June_PlayerSawn : MonoBehaviour
     }
     void Update()
     {
-      
+     
     }
 
     IEnumerator playerspawn()

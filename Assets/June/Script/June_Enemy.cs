@@ -28,7 +28,7 @@ public class June_Enemy : MonoBehaviour
     {
         
             Instantiate(Bullet, ms.position, Quaternion.identity);
-            Invoke("CreateBullte", 1f);
+            Invoke("CreateBullte", 1.4f);
         
 
 
@@ -53,6 +53,9 @@ public class June_Enemy : MonoBehaviour
         if(Hp <= 0)
         {
             Instantiate(Effect, ms.position, Quaternion.identity);
+            GameObject.Find("SpawnManager").GetComponent<June_PlayerSawn>().CountDestroy++;
+            if (GameObject.Find("SpawnManager").GetComponent<June_PlayerSawn>().CountDestroy % 4 == 0)
+                Instantiate(GameObject.Find("SpawnManager").GetComponent<June_PlayerSawn>().Item, ms.position, Quaternion.identity);
             Destroy(gameObject);
 
            

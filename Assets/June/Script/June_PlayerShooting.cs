@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +12,26 @@ public class June_PlayerShooting : MonoBehaviour
     public GameObject Lazer;
     public float PlayerDamage ;
 
+
+
+    public GameObject ChatgeShoot; 
+    public float activationTime = 1.5f;
+
+    private float timePressed = 0f;
+    private bool isZKeyPressed = false;
+
     void Start()
     {
         PlayerDamage = 1;
-        StartCoroutine("AutoFire");
-   
+        StartCoroutine(AutoFire());
+    
     }
+    private void OnEnable()
+    {
+       // StartCoroutine(AutoFire());
+    }
+
+ 
 
     void Update()
     {
@@ -26,11 +41,35 @@ public class June_PlayerShooting : MonoBehaviour
             
             var _bullet =Instantiate(bullet, pos.position, Quaternion.identity); 
             _bullet.GetComponent<Bullet_info>().att = PlayerDamage;
+
+            isZKeyPressed = true;
+            timePressed = 0f;
         }
 
-      
+        if (isZKeyPressed && Input.GetKey(KeyCode.Z))
+        {
+            timePressed += Time.deltaTime;
+        }
+        if (isZKeyPressed && Input.GetKeyUp(KeyCode.Z))
+        {
+            isZKeyPressed = false;
+            // Z 키를 누르고 있던 시간이 activationTime보다 크면 게임 오브젝트 생성
+            if (timePressed >= activationTime)
+            {
+                CreateGameObject();
+            }
+        }
 
     }
+
+    private void CreateGameObject()
+    {
+        // gameObjectToCreate 프리팹을 현재 플레이어 위치에 생성
+        var _bullet = Instantiate(ChatgeShoot, pos.position, Quaternion.identity);
+        _bullet.GetComponent<Bullet_info>().att = PlayerDamage;
+    }
+
+
     IEnumerator AutoFire()
     {
         for (; ; )
