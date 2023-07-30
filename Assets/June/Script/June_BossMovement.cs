@@ -27,6 +27,9 @@ public class June_BossMovement : MonoBehaviour
 
         BossOriginHp = gameObject.GetComponent<June_Enemy>().Hp;
 
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>().enabled = false;//배경음 끄고 보스 bgm on
+
+        
         gameObject.GetComponent<CircleCollider2D>().enabled = false; //튕그는 벽들과의 충돌 막기
         gameObject.GetComponent<June_BossBullet>().enabled = false;
 
@@ -92,6 +95,8 @@ public class June_BossMovement : MonoBehaviour
             GameObject.Find("BossEnergy").transform.Translate(0, -60 * Time.deltaTime, 0);
             GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = false;
             GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = false;
+
+           
 
             gameObject.transform.Translate(0, -2 * Time.deltaTime, 0); //보스 생성 위치로부터 맵으로 끌고 오기.
 

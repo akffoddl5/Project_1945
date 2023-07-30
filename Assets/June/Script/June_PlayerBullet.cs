@@ -11,8 +11,6 @@ public class June_PlayerBullet : MonoBehaviour
     public GameObject Effect;
     public Sprite[] Sprites;
     public float Speed = 4.0f;
-    public int ItemCount;
-    public GameObject item;
 
    
     // Start is called before the first frame update
@@ -27,6 +25,8 @@ public class June_PlayerBullet : MonoBehaviour
     {
         transform.Translate(Vector3.right * Speed * Time.deltaTime);
 
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
         if(GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 1) //powerup에 따라서 총알 스프라이트 변경
             spriteRenderer.sprite = Sprites[0];
         if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 2)
@@ -35,6 +35,9 @@ public class June_PlayerBullet : MonoBehaviour
             spriteRenderer.sprite = Sprites[2];
         if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 4)
             spriteRenderer.sprite = Sprites[3];
+
+        
+        }
 
     }
 

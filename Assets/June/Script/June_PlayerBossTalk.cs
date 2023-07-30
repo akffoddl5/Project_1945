@@ -23,6 +23,7 @@ public class June_PlayerBossTalk : MonoBehaviour
 
     private void Start()
     {
+        index= 0;
         Aya = GameObject.Find("Canvas").transform.GetChild(4).gameObject;
         dncmgh = GameObject.Find("Canvas").transform.GetChild(5).gameObject;
         // GameObject.Find("PlayerTxt").GetComponent<Text>();
@@ -85,8 +86,9 @@ public class June_PlayerBossTalk : MonoBehaviour
         StartCoroutine(CharactorFadeOutStart(0f, dncmgh));
        Aya.SetActive(false);
        dncmgh.SetActive(false);
-        GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = true;
+       GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = true;
         GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = true;
+       
     }
 
      IEnumerator Typing()

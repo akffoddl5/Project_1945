@@ -26,11 +26,12 @@ public class June_Enemy : MonoBehaviour
     }
     void CreateBullte() //적 총알 생성
     {
-        
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
             Instantiate(Bullet, ms.position, Quaternion.identity);
             Invoke("CreateBullte", 1.4f);
-        
 
+        }
 
     }
     void Update()
@@ -45,6 +46,10 @@ public class June_Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+
+        if (collision.gameObject.CompareTag("Player_bullet")) //Player에게 닿았을 때
+        {
         // collison   = 트리거 작동시킨 충돌체 
         //  즉 collision.gameobject =  총알 
         Hp -= collision.gameObject.GetComponent<Bullet_info>().att; //나중에 bullet_info에서 공격력 가져오고 적용시키기
@@ -59,6 +64,8 @@ public class June_Enemy : MonoBehaviour
             Destroy(gameObject);
 
            
+        }
+            
         }
         
     }
