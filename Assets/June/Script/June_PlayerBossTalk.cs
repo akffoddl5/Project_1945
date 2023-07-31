@@ -21,21 +21,25 @@ public class June_PlayerBossTalk : MonoBehaviour
     public GameObject dncmgh;
 
 
+   
+
     private void Start()
     {
         index= 0;
+       
+        
+
         Aya = GameObject.Find("Canvas").transform.GetChild(4).gameObject;
         dncmgh = GameObject.Find("Canvas").transform.GetChild(5).gameObject;
-        // GameObject.Find("PlayerTxt").GetComponent<Text>();
+       
+
         StopAllCoroutines();
         StartCoroutine(FadeInStart());
-       // StartCoroutine(CharactorFadeInStart(Aya));
-
         StartCoroutine(Typing());
     }
     private void Update()
     {
-
+        
         if (index % 2 == 0)
         {
             StartCoroutine(CharactorFadeInStart(1f, Aya));
@@ -45,6 +49,7 @@ public class June_PlayerBossTalk : MonoBehaviour
         }
         if (index % 2 != 0 )
         {
+
             StartCoroutine(CharactorFadeInStart(1f, dncmgh));
             StartCoroutine(CharactorFadeOutStart(0.5f, Aya));
         }
@@ -72,11 +77,16 @@ public class June_PlayerBossTalk : MonoBehaviour
             Invoke("DestroyTheTxt", 2f);
 
 
+
         }
 
-       
+
     }
-    
+    private void OnEnable()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = false;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = false;
+    }
     void DestroyTheTxt()
     {
         StartCoroutine(FadeOutStart());
@@ -105,7 +115,7 @@ public class June_PlayerBossTalk : MonoBehaviour
 
     public IEnumerator CharactorFadeInStart(float i,GameObject charactor)
     {
-        for (float f = 0f; f < i; f += 0.02f)
+        for (float f = 0f; f < i; f += 0.2f)
         {
             Color c3 = charactor.GetComponent<Image>().color;
             c3.a = f;
@@ -116,7 +126,7 @@ public class June_PlayerBossTalk : MonoBehaviour
     public IEnumerator CharactorFadeOutStart(float i,GameObject charactor)
     {
 
-        for (float f = 1f; f > i; f -= 0.02f)
+        for (float f = 1f; f > i; f -= 0.2f)
         {
             Color c3 = charactor.GetComponent<Image>().color;
             c3.a = f;
@@ -134,14 +144,18 @@ public class June_PlayerBossTalk : MonoBehaviour
         GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(true);
         for (float f = 0.5f; f >0; f -= 0.02f)
         {
+            Color c = GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<Image>().color;
+            c.a = f;
             Color c1 = GameObject.Find("Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color;
-            c1.a = f; 
+            c.a = f; 
             Color c2 = GameObject.Find("Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color;
             c2.a = f;
 
+            GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<Image>().color = c;
             GameObject.Find("Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color = c1;
             GameObject.Find("Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color = c2;
             yield return new WaitForSeconds(0);
+            GameObject.Find("Canvas").transform.GetChild(1).gameObject.SetActive(false);
             GameObject.Find("Canvas").transform.GetChild(2).gameObject.SetActive(false);
             GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(false);
         }
@@ -152,11 +166,14 @@ public class June_PlayerBossTalk : MonoBehaviour
         GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(true);
         for (float f = 0f; f < 0.5; f += 0.02f)
         {
+            Color c = GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<Image>().color;
+            c.a = f; 
             Color c1 = GameObject.Find("Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color;
             c1.a = f;
             Color c2 = GameObject.Find("Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color;
             c2.a = f;
 
+            GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<Image>().color = c;
             GameObject.Find("Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color = c1;
             GameObject.Find("Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color = c2;
             yield return null;

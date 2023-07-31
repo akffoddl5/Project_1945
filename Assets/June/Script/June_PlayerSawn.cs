@@ -38,7 +38,19 @@ public class June_PlayerSawn : MonoBehaviour
     }
     void Update()
     {
-     
+     if(Input.GetKeyDown(KeyCode.R))
+        {
+            Instantiate(Player, new Vector3(0, -2, 0), Quaternion.identity); //플렝이어 생성
+
+            //플레이어 충돌, 조작 끄기
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>().enabled = false;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = false;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = false;
+
+
+            StartCoroutine("playerspawn"); //플레이어 맵 안으로 들여오기
+            Invoke("Stop", 1);
+        }
     }
 
     IEnumerator playerspawn()
