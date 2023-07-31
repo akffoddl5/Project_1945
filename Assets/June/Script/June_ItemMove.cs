@@ -38,6 +38,10 @@ public class June_ItemMove : MonoBehaviour
         valuable_x_min = Camera.main.transform.position.x - (field_size_x - item_size_x / 2.0f);
         valuable_y_max = Camera.main.transform.position.y + (field_size_y - item_size_y / 2.0f);
         valuable_y_min = Camera.main.transform.position.y - (field_size_y - item_size_y / 2.0f);
+        //valuable_x_max = 2.5f;
+        //valuable_x_min = -2.5f;
+        //valuable_y_max = 4.5f;
+        //valuable_y_min = -4.5f;
 
         //Debug.Log(item_size_x + " " + item_size_y + " " + valuable_x_max + " " + valuable_x_min + " " + valuable_y_max + " " + valuable_y_min);
 
@@ -60,12 +64,12 @@ public class June_ItemMove : MonoBehaviour
         if (current_y <= valuable_y_min || current_y >= valuable_y_max) rb.velocity = new Vector2(rb.velocity.x, -rb.velocity.y);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) //충돌 이벤트
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player")) //Player에게 닿았을 때
         {
             //GameObject.GetComponent<Bullet_info>().att +=1;
-            collision.gameObject.GetComponent<June_PlayerShooting>().PlayerDamage++;
+            collision.gameObject.GetComponent<June_PlayerShooting>().PlayerDamage++; //PlayerShooting의 플레이어 데미지 증가시키기
             Destroy(gameObject);
         }
     }

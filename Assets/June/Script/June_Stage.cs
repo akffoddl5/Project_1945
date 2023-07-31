@@ -7,6 +7,8 @@ public class Stage : MonoBehaviour
 {
     public float scrollSpeed = 0.01f;
     Material myMaterial;
+    
+
     void Start()
     {
         myMaterial = GetComponent<Renderer>().material; //마테리얼 가져오기
