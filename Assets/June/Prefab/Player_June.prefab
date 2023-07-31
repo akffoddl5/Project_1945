@@ -211,7 +211,8 @@ MonoBehaviour:
   Lazer: {fileID: 0}
   PlayerDamage: 1
   PlayerCharg: {fileID: 0}
-  activationTime: 4
+  Spell: {fileID: 700375181934918612, guid: 9456ccfc60b00c24b9c2768508671f62, type: 3}
+  activationTime: 3
 --- !u!1 &6215403327559558817
 GameObject:
   m_ObjectHideFlags: 0

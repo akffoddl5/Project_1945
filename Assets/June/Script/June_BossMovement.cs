@@ -47,7 +47,7 @@ public class June_BossMovement : MonoBehaviour
 
     private Vector3 GetRandomPosition()
     {
-        // 보스가 이동 가능한 랜덤한 위치를 반환합니다.
+        // 보스가 이동 가능한 랜덤한 위치를 반환
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
         return new Vector3(randomX, randomY, transform.position.z);
@@ -63,7 +63,7 @@ public class June_BossMovement : MonoBehaviour
             MoveTowardsTarget();
         }
 
-        // 일정 시간마다 새로운 위치로 이동합니다.
+        // 일정 시간마다 새로운 위치로 이동
         if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
         {
             targetPosition = GetRandomPosition();
@@ -79,9 +79,14 @@ public class June_BossMovement : MonoBehaviour
         CarryBoss = false; //코루틴속 while문 멈추기
         //보스 조작, 충돌 활성
         gameObject.GetComponent<CircleCollider2D>().enabled = true;
-        //gameObject.GetComponent<June_BossBullet>().enabled = true;
         StopCoroutine(BossSpawn());
+       
+        
+        
+        //개인 프로젝트에서는 보스 불릿 주석, playertalk는 주석 풀기
+       // gameObject.GetComponent<June_BossBullet>().enabled = true;
         gameObject.GetComponent<June_PlayerBossTalk>().enabled = true;
+       
 
     }
     IEnumerator BossSpawn()
@@ -92,12 +97,7 @@ public class June_BossMovement : MonoBehaviour
         {
             
             yield return new WaitForSeconds(0.01f); //지연
-            GameObject.Find("BossEnergy").transform.Translate(0, -60 * Time.deltaTime, 0);
-            GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = false;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = false;
-
-           
-
+            GameObject.Find("BossEnergy").transform.Translate(0, -100 * Time.deltaTime, 0);
             gameObject.transform.Translate(0, -2 * Time.deltaTime, 0); //보스 생성 위치로부터 맵으로 끌고 오기.
 
         }
