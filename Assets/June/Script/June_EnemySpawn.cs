@@ -24,9 +24,9 @@ public class June_EnemySpawn : MonoBehaviour
     Text PlayerWords;
     Text BossWords;
 
-    bool swi1 = true;
-    bool swi2 = true;
-    bool swi3 = true;
+    //bool swi1 = true;
+    //bool swi2 = true;
+    //bool swi3 = true;
 
     bool isBoss = false;
 
