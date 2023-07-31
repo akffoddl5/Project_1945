@@ -30,6 +30,18 @@ public class KYS_Boori : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        //Debug.Log(collision.name);
+        if (collision.CompareTag("Player_bullet"))
+        {
+            float att = collision.gameObject.GetComponent<Bullet_info>().att;
+            GetDamage(att);
+            Destroy(collision.gameObject);
+        }
+    }
+  
+
     private void GetDamage(float att)
     {
         hp -= att;

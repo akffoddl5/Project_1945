@@ -13,18 +13,28 @@ public class KYS_Razor3 : MonoBehaviour
     public float current_t = 0;
     List<Vector3> enemy_list = new List<Vector3>();
     List<GameObject> complete_list = new List<GameObject>();
+    float life_time = 3f;
 
     private void Start()
     {
         my_coord = GameObject.FindGameObjectWithTag("Player").transform;
         Research(my_coord.position);
-        
+       // tag = "Player_bullet";
 
     }
 
     private void Update()
     {
         current_t += speed * Time.deltaTime;
+        life_time -= Time.deltaTime;
+
+        if (life_time < 0)
+        {
+            Debug.Log("life time by ");
+            life_time = 5f;
+            tag = "Player_bullet";
+            Destroy(gameObject,0.5f);
+        }
         if (target != null && current_t <= 1)
         {
             //if(current_t > 0.8) gameObject.tag = "Player_bullet";
@@ -44,7 +54,11 @@ public class KYS_Razor3 : MonoBehaviour
                 transform.position = next_vector[0];
             else
             {
-                Destroy(gameObject);
+               // Debug.Log("tag ¹Ù²Þ");
+                tag = "Player_bullet";
+                Destroy(gameObject,0.3f);
+                target = null;
+                //Destroy(gameObject);
             }
             //float angle = Mathf.Atan2(next_vector[0].y, next_vector[0].x) * Mathf.Rad2Deg;
 
@@ -54,7 +68,7 @@ public class KYS_Razor3 : MonoBehaviour
         {
             //Research();
             //if(target == null) Destroy(gameObject);
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
@@ -106,7 +120,7 @@ public class KYS_Razor3 : MonoBehaviour
         enemy_list.Clear();
         enemy_list.Add(start);
         //enemy_list.Add(my_coord.position);
-        ////enemy_list.Insert(1, my_coord.position + new Vector3(0,-2,0));
+        //enemy_list.Insert(1, my_coord.position + new Vector3(0,-2,0));
         //enemy_list.Insert(1, new Vector3(-2.8f, -5f, 0));
         //enemy_list.Insert(1, new Vector3(-2.8f, -5, 0));
         //enemy_list.Insert(1, new Vector3(2.8f, -5, 0));
