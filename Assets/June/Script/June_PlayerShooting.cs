@@ -15,7 +15,7 @@ public class June_PlayerShooting : MonoBehaviour
     public Image PlayerCharg;
 
     
-    public float activationTime =1f;
+    public float activationTime =4f;
 
     private float timePressed = 0f;
     private bool isZKeyPressed = false;
@@ -49,7 +49,7 @@ public class June_PlayerShooting : MonoBehaviour
 
         if (isZKeyPressed && Input.GetKey(KeyCode.Z))
         {
-            PlayerCharg.fillAmount += 0.002f; //付过柳 积己 加档
+            PlayerCharg.fillAmount += 0.005f; //付过柳 积己 加档
             timePressed += Time.deltaTime;
         }
         if (isZKeyPressed && Input.GetKeyUp(KeyCode.Z))

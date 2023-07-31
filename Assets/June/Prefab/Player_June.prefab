@@ -211,7 +211,7 @@ MonoBehaviour:
   Lazer: {fileID: 0}
   PlayerDamage: 1
   PlayerCharg: {fileID: 0}
-  activationTime: 1
+  activationTime: 4
 --- !u!1 &6215403327559558817
 GameObject:
   m_ObjectHideFlags: 0
