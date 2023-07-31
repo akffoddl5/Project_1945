@@ -1,11 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Tilemaps;
 using UnityEngine;
-
+using static UnityEngine.GraphicsBuffer;
+using Random = UnityEngine.Random;
 public class Boss_Mouse_Dowoon : Enemy_Dowoon
 {
-
+    public GameObject target_player;
     public enum BossState
     {
         Idle = 0,
@@ -37,6 +40,14 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     [Header("패턴 2 포지션")]
     public Vector3 Pattern2_Start;
      public Vector3 Pattern2_End;
+    public Vector3 Pattern2_3;
+    public Vector3 Pattern2_4;
+    public Vector3 Pattern2_5;
+    public Vector3 Pattern2_6;
+
+
+    [Header("패턴 2 Prefab")]
+    public GameObject TaskBar;
     [Header("패턴 3 포지션")]
     public Vector3 Pattern3_Start;
 
@@ -50,12 +61,17 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
     
     GameObject go_box;
-    // Start is called before the first frame update
-    void Start()
-    {
 
+
+    // Start is called before the first frame update
+    public override void Start()
+    {
+        target_player = GameObject.FindGameObjectWithTag("Player");
         patternDelay = 2.0f;
-       StartCoroutine( PatternSetter());
+        StartCoroutine(PatternSetter());
+
+        renderer = Boss_Sprite.GetComponent<SpriteRenderer>();
+        // StartCoroutine(Pattern1_Shot());
     }
 
     // Update is called once per frame
@@ -87,13 +103,13 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     IEnumerator Pattern_1()
     {
         // 포인트 1로 이동
-        var dist = 100f;
-        while(dist >= 0.2f)
+        
+       
+        while(true)
         {
-            var goal = Pattern1_Start;
-            var dir = Pattern1_Start - transform.position;
-            transform.Translate(dir * moveSpeed * Time.deltaTime);
-            dist = Vector3.Distance(goal, transform.position);
+           var v = MoveToGoal(Pattern1_Start);
+            if (v <= 0.2f)
+                break;
 
             yield return new WaitForEndOfFrame();
 
@@ -102,16 +118,18 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         yield return new WaitForSeconds(0.45f);
 
        
-        dist = 100;
+  
 
         // 포인트 2로 이동 및 드래그박스 생성
         go_box = Instantiate(boxPrefab, Box_Generator.position, Quaternion.identity);
+        Destroy(go_box, 10f);
         var startPos = Box_Generator.position;
 
-        while (dist >= 0.2f)
+        while ( true)
         {
-            var goal = Pattern1_End; ;
-            var dir = Pattern1_End - transform.position;
+            var v = MoveToGoal(Pattern1_End);
+            if (v <= 0.2f)
+                break;
 
             float minX = Mathf.Abs(startPos.x - Box_Generator.position.x);
             float minY = Mathf.Abs(startPos.y - Box_Generator.position.y);
@@ -120,8 +138,6 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             go_box.transform.position = offset;
             go_box.transform.localScale = new Vector3(minX, minY,0);
 
-           transform.Translate(dir * moveSpeed * Time.deltaTime);
-             dist = Vector3.Distance(goal, transform.position);
            
             yield return new WaitForFixedUpdate();
 
@@ -132,20 +148,20 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
 
 
-        dist = 100;
+      
         // 다음위치로 이동하여 드래그박스 투하 
 
-        go_box.GetComponent<Rigidbody2D>().gravityScale = 0.6f;
+        go_box.GetComponent<Rigidbody2D>().gravityScale = 2.0f;
 
-        while (dist >= 0.2f)
+        while (true)
         {
-            var goal = Pattern1_DragEnd; ;
-            var dir = goal - transform.position;
+          
 
-            transform.Translate(dir * moveSpeed * Time.deltaTime);
-            dist = Vector3.Distance(goal, transform.position);
+            var v = MoveToGoal(Pattern1_DragEnd);
+            if (v <= 0.2f)
+                break;
 
-      
+
             yield return new WaitForFixedUpdate();
         }
 
@@ -153,7 +169,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         while (Boss_Sprite.transform.localEulerAngles.z <= 130)
         {
             Boss_Sprite.transform.Rotate(new Vector3(0, 0, 300 * Time.deltaTime));
-            Debug.Log(transform.localEulerAngles.z);
+           
             if(Boss_Sprite.transform.localEulerAngles.z >= 130)
             {
          
@@ -166,22 +182,28 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         yield return new WaitForSeconds(0.2f);
         var shot = StartCoroutine(Pattern1_Shot());
-        dist = 100;
-
-        while (dist >= 0.6f)
+      
+        var offSetSpeed = 1.0f;
+        while (true)
         {
-            var goal = Pattern1_MoveToShot;
-            var dir = goal - transform.position;
-            Debug.Log("거리 :[드래그]" + dist);
-            transform.Translate(dir * (moveSpeed/3) * Time.deltaTime);
-            dist = Vector3.Distance(goal, transform.position);
+         
+            var v = MoveToGoal(Pattern1_MoveToShot, offSetSpeed);
+            if (v <= 0.2f)
+                break;
+            if (v > 5.0f)
+                offSetSpeed = 0.1f;
+            else if (v <= 3.0f)
+                offSetSpeed = 1f;
 
-            if (dist <= 2.0)
+
+        
+
+            if (v <= 2.0)
             {
                 if(shot != null)
                 StopCoroutine(shot);
             }
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForFixedUpdate();
         }
 
 
@@ -198,34 +220,98 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     IEnumerator Pattern_2()
     {
 
-        var dist = 100f;
+        
 
-        while (dist >= 0.2f)
+        while (true)
         {
-            var goal = Pattern2_Start;
-            var dir = goal - transform.position;
-            transform.Translate(dir * moveSpeed * Time.deltaTime);
-            dist = Vector3.Distance(goal, transform.position);
+           var v = MoveToGoal(Pattern2_Start);
+            if(v <= 0.2f)
+            {
+                break;
+            }
 
             yield return new WaitForEndOfFrame();
-
         }
 
         yield return new WaitForSeconds(0.5f);
 
-         dist = 100f;
-        while (dist >= 0.2f)
+        var bar = Instantiate(TaskBar, Box_Generator.position, Quaternion.identity);
+        bar.transform.parent = Box_Generator.transform;
+
+       
+        while(true)
         {
-            var goal = Pattern2_End;
-            var dir = goal - transform.position;
-            transform.Translate(dir * moveSpeed * Time.deltaTime);
-            dist = Vector3.Distance(goal, transform.position);
+            var v = MoveToGoal(Pattern2_End);
+            if (v <= 0.2f)
+            {
+                break;
+            }
 
             yield return new WaitForEndOfFrame();
 
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.1f);
+
+        bar.transform.parent = null;
+
+        //크롬 집으러감
+        while (true)
+        {
+            var v = MoveToGoal(Pattern2_3,0.3f);
+            if (v <= 0.2f)
+            {
+                break;
+            }
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        yield return new WaitForSeconds(0.1f);
+
+        var chrome = bar.GetComponent<TaskBar_Dowoon>().Icon_Chrome;
+
+        chrome.transform.parent = transform;
+
+        // 크롬 집고 내려옴 
+        while (true)
+        {
+            var v = MoveToGoal(Pattern2_4);
+            if (v <= 0.2f)
+            {
+                break;
+            }
+
+            yield return new WaitForEndOfFrame();
+
+        }
+
+
+        yield return new WaitForSeconds(0.1f);
+
+        chrome.transform.parent = null;
+      var rotateStart =   StartCoroutine(chrome.GetComponent<Chrome_Dowoon>().RotateStart());
+        var shot = StartCoroutine(Pattern2_Shot());
+
+
+        //TO DO :좌우로 움직이는 코루틴 실행 하기
+        // 좌 우로 움직이는 코루틴 종료 시 다음 실행 
+        //  보스들 패턴에 캐릭터가 맞으면 죽게하기 
+         while (true)
+         {
+            var v = MoveToGoal(Pattern2_5);
+      
+            if (v <= 0.3f)
+            { 
+                var local = Boss_Sprite.transform.localEulerAngles;
+                local.z = 130;
+                Boss_Sprite.transform.localEulerAngles = local;
+                break;
+            }
+            yield return new WaitForEndOfFrame();
+         }
+
+        yield return new WaitForSeconds(1212.1f);
 
         EndPattern(1.0f);
 
@@ -252,44 +338,123 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         yield return null;
     }
 
+    IEnumerator MoveSide()
+    {
+        yield return new WaitForSeconds(0.4f);
 
 
+    }
+    float MoveToGoal(Vector3 GoalPos)
+    {
+        var dist = 100f;
+       
+        var dir = GoalPos - transform.position;
+        transform.Translate(dir * moveSpeed * Time.deltaTime);
+
+        dist = Vector3.Distance(GoalPos, transform.position);
+        
+
+        return dist;
+    }
+
+    float MoveToGoal(Vector3 GoalPos, float offset)
+    {
+        var dist = 100f;
+
+        var dir = GoalPos - transform.position;
+        transform.Translate(dir * moveSpeed * offset * Time.deltaTime);
+
+        dist = Vector3.Distance(GoalPos, transform.position);
 
 
+        return dist;
+    }
 
     IEnumerator Pattern1_Shot()
     {
-
-        while (true)
+        GameObject[] bullets = new GameObject[30];
+        for(int i=0; i< bullets.Length;i++)
         {
-            var bullet = Instantiate(bulletPrefab, Bullet_Generator.position, Quaternion.Euler(0, 0, 0));
-            bullet.GetComponent<Bullet_Dowoon>().SetDirection(new Vector3(0, -1, 0));
+            bullets[i] = Instantiate(bulletPrefab, Bullet_Generator.position, Quaternion.Euler(0, 0, 0));
+            bullets[i].SetActive(false);
+        }
 
-            yield return new WaitForSeconds(0.15f);
+
+        for( int i=0; i< bullets.Length; ++i)
+        {
+
+            bullets[i].SetActive(true);
+            bullets[i].GetComponent<Bullet_Dowoon>().SetDirection(new Vector3(0, -1, 0));
+            bullets[i].transform.position = Bullet_Generator.position;
+            yield return new WaitForSeconds(0.12f);
+           
+
         }
     }
+
 
     IEnumerator Pattern2_Shot()
     {
-
+        List<Transform> bullets = new List<Transform>();
         while (true)
         {
-            var bullet = Instantiate(bulletPrefab, Bullet_Generator.position, Quaternion.Euler(0, 0, 0));
-            var bullet2 = Instantiate(bulletPrefab, Bullet_Generator.position, Quaternion.Euler(0, 0, 0));
-            bullet.GetComponent<Bullet_Dowoon>().SetDirection(new Vector3(0, -1, 0));
 
-            yield return new WaitForSeconds(0.15f);
+            for (int i = 0; i < 360; i += 13)
+            {
+                //총알 생성
+                GameObject temp = Instantiate(bulletPrefab);
+
+                //2초후 삭제
+                Destroy(temp, 4f);
+
+                //총알 생성 위치를 (0,0) 좌표로 한다.
+                temp.transform.position = Bullet_Generator.transform.position;
+
+                //?초후에 Target에게 날아갈 오브젝트 수록
+                bullets.Add(temp.transform);
+
+                //Z에 값이 변해야 회전이 이루어지므로, Z에 i를 대입한다.
+                temp.transform.rotation = Quaternion.Euler(0, 0, i);
+
+                
+
+              
+            }
+            StartCoroutine(BulletToTarget(bullets));
+            yield return new WaitForSeconds(1.4f);
+            //총알을 Target 방향으로 이동시킨다.
+
         }
     }
 
+    private IEnumerator BulletToTarget(IList<Transform> objects)
+    {
+        //0.5초 후에 시작
+        yield return new WaitForSeconds(0.5f);
 
+        for (int i = 0; i < objects.Count; i++)
+        {
+            //현재 총알의 위치에서 플레이의 위치의 벡터값을 뻴셈하여 방향을 구함
+            Vector3 targetDirection = target_player.transform.position - objects[i].position;
+
+            //x,y의 값을 조합하여 Z방향 값으로 변형함. -> ~도 단위로 변형
+            float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+
+            //Target 방향으로 이동
+            objects[i].rotation = Quaternion.Euler(0, 0, angle);
+            objects[i].GetComponent<Bullet_Dowoon>().b_localDirection = true;
+        }
+
+        //데이터 해제
+        objects.Clear();
+    }
     private void ChoosePattern()
     {
         while (true)
         {
             int randomNum = Random.Range((int)BossState.Idle, (int)BossState.Pattern3);
-
-
+                        
+           
             switch (randomNum)
             {
                 case 0:
@@ -344,12 +509,17 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
     void EndPattern(float _delay)
     {
-
+        Debug.Log("패턴 끝" + currPattern);
 
         patternDelay = _delay;
         isPatternStart = false;
+
         currPattern = BossState.Idle;
-        
+
+
+        var rot = Boss_Sprite.transform.localEulerAngles;
+        rot.z = 0;
+        Boss_Sprite.transform.localEulerAngles = rot;
 
         StartCoroutine(PatternSetter());
     }

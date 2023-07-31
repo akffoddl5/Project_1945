@@ -5,8 +5,10 @@ using UnityEngine;
 public class Bullet_Dowoon : MonoBehaviour
 {
 
-     Vector3 Dir = new Vector3(0, 1, 0);
+    Vector3 Dir = Vector3.zero;
     public float bullet_Speed;
+
+    public bool b_localDirection = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +19,21 @@ public class Bullet_Dowoon : MonoBehaviour
    public virtual void  Update()
     {
         Fly();
-        Debug.Log("부모업데이트");
+        
     }
 
     public virtual void Fly()
     {
-        transform.Translate(Dir * bullet_Speed * Time.deltaTime);
+        if (b_localDirection)
+            transform.Translate(Vector2.right * bullet_Speed * Time.deltaTime);
+        else
+        {
+            if (Dir != Vector3.zero)
+                transform.Translate(Dir * bullet_Speed * Time.deltaTime);
+            else
+                transform.Translate(new Vector3(0, 1, 0) * bullet_Speed * Time.deltaTime);
+
+        }
     }
 
     public void SetDirection(Vector3 _Dir)
