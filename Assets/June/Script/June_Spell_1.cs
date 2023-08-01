@@ -20,6 +20,7 @@ public class June_Spell_1 : MonoBehaviour
         }
 
 
+
         if (collision.gameObject != GameObject.FindGameObjectWithTag("ENEMY"))
             Destroy(collision.gameObject);
 
