@@ -16,14 +16,19 @@ public class June_PlayerShooting : MonoBehaviour
     public Image PlayerCharg;
     public GameObject Spell;
 
-    
+    Image cutimage;
+
+
     public float activationTime =4f;
 
     private float timePressed = 0f;
     private bool isZKeyPressed = false;
 
+    
     void Start()
     {
+        cutimage = transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Image>();
+
         PlayerDamage = 1;
         StartCoroutine(AutoFire());
         PlayerCharg = GameObject.Find("ChargeMagic").GetComponent<Image>();
@@ -42,10 +47,19 @@ public class June_PlayerShooting : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // Time.timeScale = 0;
+            transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(0).gameObject.SetActive(true);
+            
+
+            Color c = cutimage.color; // 컷씬 컬러
+            c.a = 0.8f;
+            cutimage.color = c;
             StartCoroutine(SpellShoot());
+            
+            
 
             Instantiate(Spell,new Vector3(-2.5f,-7f,0), Quaternion.identity);
+            
         }
         else
     //        Time.timeScale = 1;
@@ -91,23 +105,31 @@ public class June_PlayerShooting : MonoBehaviour
     
     IEnumerator SpellShoot()
     {
+        
         Time.timeScale = 0;
-        StartCoroutine(FadeInStart());
-        for(int i = 0; i < 8; i++) 
-        GameObject.Find("Canvas").transform.GetChild(6).transform.position += new Vector3(100, 0, 0);
-        yield return new WaitForSecondsRealtime(1);
-        GameObject.Find("Canvas").transform.GetChild(6).transform.position = new Vector3(-810, 0, 0);
 
+        for (int i = 0; i < 10; i++)
+       {
+          
+            
+           transform.GetChild(0).transform.GetChild(1).transform.position += new Vector3(80, 0, 0);
+           transform.GetChild(0).transform.GetChild(2).transform.position += new Vector3(110, -110, 0);
+        yield return new WaitForSecondsRealtime(0.01f);
 
+       }
+       
+        yield return new WaitForSecondsRealtime(1f);
+        
+        transform.GetChild(0).transform.GetChild(1).transform.position = new Vector3(-810, 0, 0);
+        transform.GetChild(0).transform.GetChild(2).transform.position += new Vector3(-1100, 1100, 0);
+        Color c = cutimage.color;
+        c.a = 0;
+        cutimage.color = c;
+        //yield return StartCoroutine(); //메모 해두기
 
         Time.timeScale = 1;
     }
 
-    IEnumerator playerSpellShow()
-    {
-        GameObject.Find("Canvas").transform.GetChild(6).transform.position +=new Vector3(100, 0, 0);
-        yield return new WaitForSeconds(0.1f);
-    }
 
 
     IEnumerator AutoFire()
@@ -126,31 +148,5 @@ public class June_PlayerShooting : MonoBehaviour
     }
 
 
-    public IEnumerator FadeOutStart()
-    {
-        GameObject.Find("Canvas").transform.GetChild(2).gameObject.SetActive(true);
-        for (float f = 0.8f; f > 0; f -= 0.02f)
-        {
-            Color c = GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<Image>().color;
-            c.a = f;
-           
-
-            GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<Image>().color = c;
-            yield return new WaitForSeconds(0);
-            GameObject.Find("Canvas").transform.GetChild(1).gameObject.SetActive(false);
-         
-        }
-    }
-    //페이드 인
-    public IEnumerator FadeInStart()
-    {
-        GameObject.Find("Canvas").transform.GetChild(2).gameObject.SetActive(true);
-        for (float f = 0f; f < 0.8; f += 0.02f)
-        {
-            Color c = GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<Image>().color;
-            c.a = f;
-            GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<Image>().color = c;
-            yield return null;
-        }
-    }
+    
 }
