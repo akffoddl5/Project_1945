@@ -32,35 +32,38 @@ public class Kjh_player : MonoBehaviour
 
     float CoolTime = 0;
     bool coolTime = true;
-    public GameObject bulletpos;
-    
 
-   
+    //public GameObject bulletpos;
+    //public GameObject pbullet;
+
+
+
     void Start()
     {
 
         anim = GetComponent<Animator>();
-       
-    }
-    private void bullet()
-    {
-
-
-        
-
-
-
 
     }
+    //private void bullet()
+    //{
+
+    //    for (float i = 2; i < 6; i++)
+    //    {
+    //        Quaternion quaternion = Quaternion.Euler(0f, 0f, 22.5f*i);
+    //        Instantiate(pbullet,bulletpos.transform.position ,quaternion);
+
+    //    }
+
+    //}
 
     void Update()
     {
         Move();
-        
-        Times();
+
+        TimeAcction();
         Key();
         Movetree();
-        bullet();
+        //bullet();
 
 
         //dashTime += Time.deltaTime;
@@ -354,7 +357,7 @@ public class Kjh_player : MonoBehaviour
         }
     }
 
-    void Times()// 애니메이션 누름  구별
+    void TimeAcction()// 애니메이션 누름  구별
     {
         if (stopTimes == true)
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
