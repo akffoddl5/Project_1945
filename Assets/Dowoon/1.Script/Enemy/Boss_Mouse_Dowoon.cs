@@ -330,7 +330,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         var shot = StartCoroutine(Pattern2_Shot());
     
 
-        yield return StartCoroutine(MoveSide(Pattern2_6,Pattern2_5,2.3f,12));
+        yield return StartCoroutine(MoveSide(Pattern2_6,Pattern2_5,2.3f,8));
         StopCoroutine(shot);
         var s = Boss_Sprite.transform.localEulerAngles;
         s.z = 0;
@@ -338,9 +338,9 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         bar.transform.parent = Box_Generator.transform;
         var barPos = bar.transform.position;
-        barPos.x = 1.3f;
+        barPos.x = -8.3f;
         bar.transform.position = barPos;
-        yield return StartCoroutine(MoveSide(Pattern2_8, Pattern2_7, 0.08f, 8));
+        yield return StartCoroutine(MoveSide(Pattern2_8, Pattern2_7, 0.08f, 4));
         var bar_Mail = bar.GetComponent<TaskBar_Dowoon>().Icon_Mail;
         var bar_Shop = bar.GetComponent<TaskBar_Dowoon>().Icon_Shop;
 
@@ -365,7 +365,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
                 bar_Mail.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 
                 Destroy(bar, 6f);
-                Destroy(chrome);
+                chrome.SetActive(false);
                 yield return new WaitForSeconds(0.5f);
                 break;
             }
