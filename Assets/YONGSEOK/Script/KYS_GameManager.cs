@@ -14,12 +14,14 @@ public class KYS_GameManager : MonoBehaviour
     public static bool isFurin_die = false;
     public static bool isToong_die = false;
 
+    public GameObject fadePanel;
 
 
     private void Start()
     {
-        
-        ITEM_MANAGER.instance.ItemSetting(Charactor.용석);
+        StopCoroutine(Fade_in());
+
+		ITEM_MANAGER.instance.ItemSetting(Charactor.용석);
         //ITEM_Manager.instance.ItemSetting(Charactor.용석);
         StartCoroutine(Furin_init());
         StartCoroutine(Unit_boori_init());
@@ -46,7 +48,7 @@ public class KYS_GameManager : MonoBehaviour
 
 
             Instantiate(unit_boori, new Vector3(rand_x, rand_y, 0), Quaternion.identity);
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(3);
         }
         
     }
@@ -101,4 +103,24 @@ public class KYS_GameManager : MonoBehaviour
         warning_text.SetActive(false);
         Instantiate(boss_toong, new Vector2(0.2f, 3.2f), Quaternion.identity);
     }
+
+    IEnumerator Fade_in()
+    {
+        float a = 1;
+        Color tmp = fadePanel.GetComponent<Image>().color;
+        while (tmp.a > 0)
+        {
+            tmp.a -= Time.deltaTime * 1f;
+            fadePanel.GetComponent<Image>().color = tmp;
+
+			yield return new WaitForSeconds(1);
+		}
+		
+    }
+
+	IEnumerator Fade_out()
+	{
+        
+		yield return null;
+	}
 }

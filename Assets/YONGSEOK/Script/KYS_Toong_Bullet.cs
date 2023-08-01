@@ -65,6 +65,7 @@ public class KYS_Toong_Bullet : MonoBehaviour
     //»ï°¢Çü ½î±â
     IEnumerator IE_Shoot_Triangle(float _radius, Vector3 _dir, int _bullet_val)
     {
+        
         yield return new WaitForSeconds(1);
         //Shoot_Triangle(2f, Vector3.zero);
         Shoot_Triangle(_radius, _dir, _bullet_val);

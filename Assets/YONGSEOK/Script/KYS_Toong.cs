@@ -5,8 +5,9 @@ using UnityEngine;
 public class KYS_Toong : MonoBehaviour
 {
     public float hp = 500;
+	public GameObject dieEffect;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+	private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log(collision.name);
         if (collision.CompareTag("Player_bullet"))
@@ -22,7 +23,9 @@ public class KYS_Toong : MonoBehaviour
         hp -= att;
         if (hp <= 0)
         {
-            KYS_GameManager.isToong_die = true;
+			GameObject a = Instantiate(dieEffect, transform.position, Quaternion.identity);
+			Destroy(a, 0.6f);
+			KYS_GameManager.isToong_die = true;
             Destroy(gameObject);
         }
     }

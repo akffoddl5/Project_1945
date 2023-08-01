@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 500
+  dieEffect: {fileID: 4208831749957786760, guid: bb195bece00128a459ccf5bedc0dbdbb, type: 3}
 --- !u!61 &-3137591153283031940
 BoxCollider2D:
   m_ObjectHideFlags: 0

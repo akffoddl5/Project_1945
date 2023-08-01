@@ -44,8 +44,11 @@ public class KYS_Razor3 : MonoBehaviour
 
 
             enemy_list.Insert(0, my_coord.position);
-            enemy_list.Insert(1, new Vector3(-3,7,0));
-            enemy_list.Insert(1, new Vector3(3, 7, 0));
+            enemy_list.Insert(1, my_coord.position + new Vector3(1,-5,0));
+            enemy_list.Insert(1, my_coord.position + new Vector3(-10, -10, 0));
+            enemy_list.Insert(1, my_coord.position + new Vector3(10, -5, 0));
+            //enemy_list.Insert(1, my_coord.position + new Vector3(5, 3, 0));
+            //enemy_list.Insert(1, new Vector3(3, 7, 0));
 
 
             List<Vector3> next_vector = Belzier_recursive(tmp, current_t);
