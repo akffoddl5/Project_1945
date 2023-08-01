@@ -7,6 +7,7 @@ public class EventManager_Dowoon : MonoBehaviour
 {
     public GameObject Wall;
     public GameObject WindowIcon;
+    public GameObject Boss_mouse;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,12 @@ public class EventManager_Dowoon : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         CreateWall(Wall, new Vector3(11f, 4.5f, 0), 12, Direction.Left);
+
+
+        yield return new WaitForSeconds(5);
+        CreateAndSetGoal(Boss_mouse, Boss_mouse.GetComponent<Boss_Mouse_Dowoon>().SpawnPos, Boss_mouse.GetComponent<Boss_Mouse_Dowoon>().Spawn_arrivePos);
+
+
 
         StopCoroutine(SpawnEvent());
     }

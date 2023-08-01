@@ -13,7 +13,7 @@ public class Jiwon_player : MonoBehaviour
 
 	Vector3 bulletRotate = new Vector3(0, 0, 0);
 
-	float moveSpeed = 3.0f;
+	float moveSpeed = 7.0f;
 	float shootcool = 0.3f;
 	bool isShootPossible = false;
 	float axisH, axisV;

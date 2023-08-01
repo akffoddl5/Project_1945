@@ -7,10 +7,9 @@ using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class UI_topText : MonoBehaviour
 {
-	float blinkTime;
 	bool isAUp = false;
 
-	private void FixedUpdate()
+    private void FixedUpdate()
 	{
 		ChangeColor();
 	}
@@ -20,17 +19,17 @@ public class UI_topText : MonoBehaviour
 		Color tmp = transform.GetComponent<Text>().color;
 		if (!isAUp)
 		{
-			tmp.a -= 0.05f;
-			if (tmp.a <= 0.5)
+			tmp.a -= 0.03f;
+			if (tmp.a <= 0.2f)
 			{
-				tmp.a = 0.5f;
+				tmp.a = 0.2f;
 				isAUp = true;
 			} 
 			transform.GetComponent<Text>().color = tmp;
 		}
 		else
 		{
-			tmp.a += 0.05f;
+			tmp.a += 0.03f;
 			if (tmp.a >= 1)
 			{
 				tmp.a = 1f;

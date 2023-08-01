@@ -5,58 +5,69 @@ using UnityEngine;
 
 public class KYS_Razor3 : MonoBehaviour
 {
-    Vector3 target = Vector3.zero;
+    GameObject target = null;
     Transform my_coord;
     Vector3 Virtual_coord = new Vector3(0, -10, 0);
     Vector3 v1, v2;
-    float speed = 1f;
+    float speed = 2f;
     public float current_t = 0;
     List<Vector3> enemy_list = new List<Vector3>();
+    List<GameObject> complete_list = new List<GameObject>();
+    float life_time = 3f;
 
     private void Start()
     {
         my_coord = GameObject.FindGameObjectWithTag("Player").transform;
-        Research();
+        Research(my_coord.position);
+       // tag = "Player_bullet";
 
-
-    }
-
-    void OnDrawGizmosSelected()
-    {
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(transform.position, 0.1f);
     }
 
     private void Update()
     {
         current_t += speed * Time.deltaTime;
-        if (target != Vector3.zero && current_t <= 1)
+        life_time -= Time.deltaTime;
+
+        if (life_time < 0)
         {
-            List<Vector3> tmp = new List<Vector3>();
-            tmp.Add(my_coord.position);
-            tmp.Add(new Vector3(0,5));
-            tmp.Add(new Vector3(-2,-5));
-            tmp.Add(new Vector3(4,-5));
-            tmp.Add(new Vector3(0,10));
-            //tmp.Add(new Vector3(-2, -35));
-            //tmp.Add(new Vector3(0, 35));
+            Debug.Log("life time by ");
+            life_time = 5f;
+            tag = "Player_bullet";
+            Destroy(gameObject,0.5f);
+        }
+        if (target != null && current_t <= 1)
+        {
+            //if(current_t > 0.8) gameObject.tag = "Player_bullet";
+            if (current_t > 0.98)
+            {
+                complete_list.Add(target);
+                Research(target.transform.position);
+                if (target != null) current_t = 0;
+                
+            }
 
 
-            enemy_list.Insert(0, my_coord.position);
-            enemy_list.Insert(1, my_coord.position + new Vector3(1,-5,0));
-            enemy_list.Insert(1, my_coord.position + new Vector3(-10, -10, 0));
-            enemy_list.Insert(1, my_coord.position + new Vector3(10, -5, 0));
-            //enemy_list.Insert(1, my_coord.position + new Vector3(5, 3, 0));
-            //enemy_list.Insert(1, new Vector3(3, 7, 0));
+            List<Vector3> next_vector = Belzier_recursive(enemy_list, current_t);
+            //Debug.Log(target + " " + enemy_list.Count);
+            //transform.rotation = Quaternion.FromToRotation(transform.position, next_vector[0]);
+            if (next_vector.Count > 0)
+                transform.position = next_vector[0];
+            else
+            {
+               // Debug.Log("tag ¹Ù²Þ");
+                tag = "Player_bullet";
+                Destroy(gameObject,0.3f);
+                target = null;
+                //Destroy(gameObject);
+            }
+            //float angle = Mathf.Atan2(next_vector[0].y, next_vector[0].x) * Mathf.Rad2Deg;
 
-
-            List<Vector3> next_vector = Belzier_recursive(tmp, current_t);
-            //Debug.Log(next_vector);
-            transform.position = next_vector[0];
+            //transform.rotation = Quaternion.AngleAxis(angle - 90 + 90 + 90, Vector3.forward);
         }
         else
         {
+            //Research();
+            //if(target == null) Destroy(gameObject);
             Destroy(gameObject);
         }
     }
@@ -81,7 +92,8 @@ public class KYS_Razor3 : MonoBehaviour
             if (i == _points.Count - 1) break;
             Vector3 v1 = _points[i];
             Vector3 v2 = _points[i + 1];
-            next_list.Add(Vector3.Lerp(v1, v2, t));
+            next_list.Add(Vector3.Lerp(v1, v2,  t));
+            // next_list.Add(Vector3.Lerp(v1, v2, t  * t));
             //next_list.add(Vector3.Lerp(v1, v2, t));
         }
 
@@ -91,27 +103,42 @@ public class KYS_Razor3 : MonoBehaviour
             return next_list;
         }
 
-        Debug.Log("count : " + next_list.Count);
+        //Debug.Log("count : " + next_list.Count);
 
         return Belzier_recursive(next_list, t);
     }
 
-    public void Research()
+    public void Research(Vector3 start)
     {
         v1 = transform.position;
         v2 = Virtual_coord;
+        target = null;
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 90f);
         //List<GameObject> enemy_list = new List<GameObject>();
         List<GameObject> coord_list = new List<GameObject>();
-        for (int i = 0; i < colliders.Length; i++)
-        {
-            if (colliders[i].CompareTag("ENEMY"))
+        enemy_list.Clear();
+        enemy_list.Add(start);
+        //enemy_list.Add(my_coord.position);
+        //enemy_list.Insert(1, my_coord.position + new Vector3(0,-2,0));
+        //enemy_list.Insert(1, new Vector3(-2.8f, -5f, 0));
+        //enemy_list.Insert(1, new Vector3(-2.8f, -5, 0));
+        //enemy_list.Insert(1, new Vector3(2.8f, -5, 0));
+        //enemy_list.Insert(1, new Vector3(2.8f, -5, 0));
+        //enemy_list.Insert(1, new Vector3(2.8f, 0, 0));
+        //enemy_list.Insert(1, new Vector3(2.8f, 0, 0));
+        //enemy_list.Insert(1, new Vector3(-2.8f, 0, 0));
+        //enemy_list.Insert(1, new Vector3(-2.8f, 0, 0));
+        for (int i = 0; i < colliders.Length; i++) { 
+            if (colliders[i].CompareTag("ENEMY") && !complete_list.Contains(colliders[i].gameObject))
             {
                 enemy_list.Add(colliders[i].gameObject.transform.position);
-                Debug.Log(colliders[i].name);
+                target = colliders[i].gameObject;
+                //break;
+                //Debug.Log(colliders[i].name);
+
             }
         }
-        target = enemy_list[enemy_list.Count-1];
+        
     }
 }

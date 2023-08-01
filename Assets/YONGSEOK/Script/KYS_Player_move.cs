@@ -13,8 +13,8 @@ public class KYS_Player_move : MonoBehaviour
 
 
     //대시관련 변수
-    private float dash_speed = 2.5f;
-    private float dash_time = 0.035f;         //약 0.1초
+    private float dash_speed = 3.5f;
+    private float dash_time = 0.085f;         //약 0.1초
     private float dash_cool_time = 3f;  // 약 3초
     private Vector2 pre_velocity;
     public GameObject dash_trail_h;              //잔상 오브젝트

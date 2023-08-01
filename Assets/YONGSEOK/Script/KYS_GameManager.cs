@@ -44,7 +44,7 @@ public class KYS_GameManager : MonoBehaviour
         while (true)
         {
             float rand_x = Random.Range(-2.0f, 2.0f);
-            float rand_y = Random.Range(1.0f, 3.0f);
+            float rand_y = Random.Range(-1f, 3.0f);
 
 
             Instantiate(unit_boori, new Vector3(rand_x, rand_y, 0), Quaternion.identity);
