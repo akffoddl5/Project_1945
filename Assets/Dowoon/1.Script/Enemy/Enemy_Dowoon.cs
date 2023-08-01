@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Enemy_Dowoon : MonoBehaviour
 {
     public  int hp = 4;
+    public int maxHp = 150;
     public SpriteRenderer renderer;
     public bool isOpen;
     public bool isAttackAble = false;
@@ -91,6 +92,11 @@ public abstract class Enemy_Dowoon : MonoBehaviour
                 co_colorChange = StartCoroutine(colorChange());
             }
 
+            if(collision.gameObject.GetComponent<Bullet_Dowoon>() !=null)
+            {
+                collision.gameObject.GetComponent<Bullet_Dowoon>().DestroySelf();
+            }
+
             if( hp <= 0)
             {
                 hp = 0;
@@ -154,4 +160,6 @@ public abstract class Enemy_Dowoon : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
+   
 }

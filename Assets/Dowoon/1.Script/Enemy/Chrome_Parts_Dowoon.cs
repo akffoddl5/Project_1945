@@ -21,4 +21,12 @@ public class Chrome_Parts_Dowoon : MonoBehaviour
         //transform.Translate(0, 0.2f*Time.deltaTime, 0);
         
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log(" ÆÄÃ÷¸ÂÀ½");
+        }
+    }
 }

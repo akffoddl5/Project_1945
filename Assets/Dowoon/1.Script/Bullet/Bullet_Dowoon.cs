@@ -10,13 +10,12 @@ public class Bullet_Dowoon : MonoBehaviour
 
     public bool b_localDirection = false;
     // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
-        
+        Invoke("DestroySelf", 5f);
     }
-
     // Update is called once per frame
-   public virtual void  Update()
+    public virtual void  Update()
     {
         Fly();
         
@@ -34,6 +33,7 @@ public class Bullet_Dowoon : MonoBehaviour
                 transform.Translate(new Vector3(0, 1, 0) * bullet_Speed * Time.deltaTime);
 
         }
+
     }
 
     public void SetDirection(Vector3 _Dir)
@@ -41,5 +41,20 @@ public class Bullet_Dowoon : MonoBehaviour
         Dir = _Dir;
     }
 
+
+    public virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("플레이어 맞음");
+            DestroySelf();
+        }
+
+    }
+
+  public void DestroySelf()
+    {
+        ObjectPool_Dowoon.ReturnBullet(this);
+    }
 
 }

@@ -80,7 +80,7 @@ public class Chrome_Dowoon : MonoBehaviour
                     if (objSpeed <= 250)
                         objSpeed += speedOffset * Time.deltaTime;
 
-                    if(circleR >= 10)
+                    if(circleR >= 12)
                         _isIncrease = false;
 
                     yield return new WaitForEndOfFrame();

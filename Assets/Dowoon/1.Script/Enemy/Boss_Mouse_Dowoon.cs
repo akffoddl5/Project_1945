@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 using Random = UnityEngine.Random;
 public class Boss_Mouse_Dowoon : Enemy_Dowoon
 {
     public GameObject target_player;
+    public GameObject HpBar;
+    public GameObject HpBarObject;
     public enum BossState
     {
         Idle = 0,
@@ -38,12 +41,17 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     public GameObject boxPrefab;
     public GameObject _boss_bulletPrefab;
     [Header("패턴 2 포지션")]
-    public Vector3 Pattern2_Start;
-     public Vector3 Pattern2_End;
-    public Vector3 Pattern2_3;
-    public Vector3 Pattern2_4;
-    public Vector3 Pattern2_5;
-    public Vector3 Pattern2_6;
+    public Vector3 Pattern2_Start; // 패턴시작 드래그
+     public Vector3 Pattern2_End; // 드래그 끝
+    public Vector3 Pattern2_3; // 크롬
+    public Vector3 Pattern2_4; // 가운데 
+    public Vector3 Pattern2_5; // 좌상단
+    public Vector3 Pattern2_6; // 우상단  5/6반복
+    public Vector3 Pattern2_7; // 우상단 [태스크바] 
+    public Vector3 Pattern2_8; // 태스크바 바로 아래  7/8반복
+    public Vector3 Pattern2_9; // 태스크바 왼쪽 [던지기]
+
+
 
 
     [Header("패턴 2 Prefab")]
@@ -72,6 +80,11 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         renderer = Boss_Sprite.GetComponent<SpriteRenderer>();
         // StartCoroutine(Pattern1_Shot());
+
+        var Canvas = GameObject.FindGameObjectWithTag("Canvas");
+        HpBarObject = Instantiate(HpBar, Canvas.transform);
+        HpBarObject.GetComponent<Slider>().value = (float)hp / maxHp ; 
+
     }
 
     // Update is called once per frame
@@ -81,11 +94,12 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             GoToGoalPos();
 
 
+        SetHpValue();
         //if(!isPatternStart && Boss_Sprite.transform.localEulerAngles.z >= 0)
         //{
 
         //    Boss_Sprite.transform.Rotate(new Vector3(0, 0, -330 * Time.deltaTime));
-            
+
         //    if(Boss_Sprite.transform.localEulerAngles.z <= 0)
         //    {
         //        var local = Boss_Sprite.transform.localEulerAngles;
@@ -291,7 +305,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         chrome.transform.parent = null;
       var rotateStart =   StartCoroutine(chrome.GetComponent<Chrome_Dowoon>().RotateStart());
-        var shot = StartCoroutine(Pattern2_Shot());
+      
 
 
         //TO DO :좌우로 움직이는 코루틴 실행 하기
@@ -311,12 +325,63 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
          }
 
-        yield return new WaitForSeconds(1212.1f);
+        yield return new WaitForSeconds(1f);
+
+        var shot = StartCoroutine(Pattern2_Shot());
+    
+
+        yield return StartCoroutine(MoveSide(Pattern2_6,Pattern2_5,2.3f,12));
+        StopCoroutine(shot);
+        var s = Boss_Sprite.transform.localEulerAngles;
+        s.z = 0;
+        Boss_Sprite.transform.localEulerAngles = s;
+
+        bar.transform.parent = Box_Generator.transform;
+        var barPos = bar.transform.position;
+        barPos.x = 1.3f;
+        bar.transform.position = barPos;
+        yield return StartCoroutine(MoveSide(Pattern2_8, Pattern2_7, 0.08f, 8));
+        var bar_Mail = bar.GetComponent<TaskBar_Dowoon>().Icon_Mail;
+        var bar_Shop = bar.GetComponent<TaskBar_Dowoon>().Icon_Shop;
+
+        while(true)
+        {
+            var v = MoveToGoal(Pattern2_9);
+
+            if(v <= 0.2f)
+            {
+                bar.transform.parent = null;
+                bar.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+                bar.GetComponent<Rigidbody2D>().AddForce(-Vector3.right * 2.5f, ForceMode2D.Impulse);
+
+                var barlocal = bar.transform.localEulerAngles;
+                barlocal.z = 35;
+                bar.transform.localEulerAngles = barlocal;
+
+                bar_Shop.GetComponent<Rigidbody2D>().AddForce(-Vector2.right * 1.1f, ForceMode2D.Impulse);
+                bar_Shop.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+
+                bar_Mail.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 3.1f, ForceMode2D.Impulse);
+                bar_Mail.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+
+                Destroy(bar, 6f);
+                Destroy(chrome);
+                yield return new WaitForSeconds(0.5f);
+                break;
+            }
+
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        yield return new WaitForSeconds(2.0f);
+
 
         EndPattern(1.0f);
 
 
     }
+
 
 
 
@@ -338,9 +403,37 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         yield return null;
     }
 
-    IEnumerator MoveSide()
+    IEnumerator MoveSide(Vector3 goal1, Vector2 goal2, float moveTime, int _moveCount)
     {
-        yield return new WaitForSeconds(0.4f);
+        var isRight = true;
+        var dist = 0.0f;
+        int moveCount = _moveCount;
+        while (moveCount >= 0)
+        {
+            if(isRight)
+            {
+                dist = MoveToGoal(goal2);
+
+                if(dist <= 0.2f)
+                {
+                    yield return new WaitForSeconds(moveTime);
+                    isRight = false;
+                    moveCount--;
+                }
+            }
+            else
+            {
+                dist = MoveToGoal(goal1);
+
+                if (dist <= 0.2f)
+                {
+                    yield return new WaitForSeconds(moveTime);
+                    isRight = true;
+                    moveCount--;
+                }      
+            }
+            yield return new WaitForEndOfFrame();
+        }
 
 
     }
@@ -421,7 +514,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
               
             }
             StartCoroutine(BulletToTarget(bullets));
-            yield return new WaitForSeconds(1.4f);
+            yield return new WaitForSeconds(4.0f);
             //총알을 Target 방향으로 이동시킨다.
 
         }
@@ -430,7 +523,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     private IEnumerator BulletToTarget(IList<Transform> objects)
     {
         //0.5초 후에 시작
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
 
         for (int i = 0; i < objects.Count; i++)
         {
@@ -539,5 +632,9 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
     }
 
+    public void SetHpValue()
+    {
+        HpBarObject.GetComponent<Slider>().value = (float)hp / maxHp;
+    }
 }
 

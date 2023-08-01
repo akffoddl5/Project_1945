@@ -38,7 +38,17 @@ public class Player_Dowoon : MonoBehaviour
 
     public void ShotBullet()
     {
-        
-        Instantiate(bulletPrefab,bulletPos.transform.position, bulletPos.transform.rotation);
+        var pos = bulletPos.transform.position;
+        var b1 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
+        b1.transform.position = pos;
+
+        pos.x -= 0.6f;
+        pos.y -= 0.4f;
+        var b2 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
+        b2.transform.position = pos;
+        pos.x += 1.2f;
+        var b3 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
+        b3.transform.position = pos;
+       
     }
 }
