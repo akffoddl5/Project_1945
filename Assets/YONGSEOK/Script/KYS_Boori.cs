@@ -33,7 +33,7 @@ public class KYS_Boori : MonoBehaviour
 		{
 			float att = collision.gameObject.GetComponent<Bullet_info>().att;
 			GetDamage(att);
-			Destroy(collision.gameObject);
+			//Destroy(collision.gameObject);
 		}
 	}
 
