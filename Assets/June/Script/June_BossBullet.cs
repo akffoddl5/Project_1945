@@ -28,19 +28,23 @@ public class June_BossBullet : MonoBehaviour
     {
         
         BossOrginHP = gameObject.GetComponent<June_Enemy>().Hp; //오리지널 Hp저장 ==> 패턴 변화를 위해서
-        Invoke("CreateBullte", Delay);
+       // Invoke("CreateBullte", Delay);
 
     }
 
     void CreateBullte()
     {
-            Invoke("CreateBullte", Delay);
+           // Invoke("CreateBullte", Delay);
     }
 
 
-    void  FixedUpdate()
+    void FixedUpdate()
     {
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
+
         attackPattern();
+        }
     }
 
 
@@ -126,9 +130,13 @@ public class June_BossBullet : MonoBehaviour
         {
             for (int i = 0; i < 10; i++) 
             {
-                Instantiate(Bullet2, ms.position, ms.transform.rotation);
+                if (GameObject.FindGameObjectWithTag("Player") != null)
+                {
+
+                    Instantiate(Bullet2, ms.position, ms.transform.rotation);
                 Instantiate(Bullet2, ms.position, Quaternion.Euler(0, 0, 35));
                 Instantiate(Bullet2, ms.position, Quaternion.Euler(0, 0, -35));
+                }
 
                 yield return new WaitForSeconds(0.2f);
             }
@@ -172,7 +180,8 @@ public class June_BossBullet : MonoBehaviour
             {
 
                 for (int j = 0; j < 360; j += 10)
-                    Instantiate(Bullet2, ms.position, Quaternion.Euler(0, 0, j));
+                    if (GameObject.FindGameObjectWithTag("Player") != null)
+                        Instantiate(Bullet2, ms.position, Quaternion.Euler(0, 0, j));
 
                 yield return new WaitForSeconds(0.2f);
             }

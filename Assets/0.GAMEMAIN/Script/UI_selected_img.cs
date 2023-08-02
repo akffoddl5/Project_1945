@@ -101,10 +101,11 @@ public class UI_selected_img : MonoBehaviour
 			// 선택한 캐릭터를 1번 스테이지에 넣는 건 어떻게 하지??
 			// 짝꿍이 만든 아이템 매니저로 하면 됨
 			ITEM_MANAGER.instance.ItemSetting((Charactor)now_characterNum);
+			
 			//Debug.Log((Charactor)now_characterNum);
 
 			// 페이드 아웃 함수 실행
-			UI_Manager.instance.CharacterSelect_FadeOut();
+			UI_Manager.instance.CharacterSelect_FadeOut((Charactor)now_characterNum);
 			// 1번 스테이지 불러오기
 			//SceneManager.LoadScene("");
 		}

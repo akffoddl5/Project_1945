@@ -10,8 +10,8 @@ public class Enemy_Folder_Dowoon : Enemy_Dowoon
     public override void Start()
     {
         shootDelay = 2.0f;
-        maxHp = 50;
-        hp = 50;
+        maxHp = 10;
+        hp = 10;
         renderer = GetComponent<SpriteRenderer>();
     }
 
@@ -32,7 +32,8 @@ public class Enemy_Folder_Dowoon : Enemy_Dowoon
     {
         if (collision.gameObject.CompareTag("Player_bullet"))
         {
-            hp -= 2;
+
+            hp -= (int)collision.GetComponent<Bullet_info>().att;
             if (co_colorChange == null)
                 co_colorChange = StartCoroutine(colorChange());
             else if (co_colorChange != null)

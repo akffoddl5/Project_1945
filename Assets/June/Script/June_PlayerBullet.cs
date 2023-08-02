@@ -12,7 +12,7 @@ public class June_PlayerBullet : MonoBehaviour
     public Sprite[] Sprites;
     public float Speed = 4.0f;
 
-   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,16 +27,16 @@ public class June_PlayerBullet : MonoBehaviour
 
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
-        if(GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 1) //powerup에 따라서 총알 스프라이트 변경
-            spriteRenderer.sprite = Sprites[0];
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 2)
-            spriteRenderer.sprite = Sprites[1];
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 3)
-            spriteRenderer.sprite = Sprites[2];
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 4)
-            spriteRenderer.sprite = Sprites[3];
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 1) //powerup에 따라서 총알 스프라이트 변경
+                spriteRenderer.sprite = Sprites[0];
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 2)
+                spriteRenderer.sprite = Sprites[1];
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 3)
+                spriteRenderer.sprite = Sprites[2];
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 4)
+                spriteRenderer.sprite = Sprites[3];
 
-        
+
         }
 
     }
@@ -49,7 +49,11 @@ public class June_PlayerBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
+        if (collision.CompareTag("ENEMY"))
+        {
+            Destroy(gameObject);
 
+        }
+       
+    }
 }

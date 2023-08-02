@@ -14,7 +14,7 @@ public class KYS_Toong : MonoBehaviour
         {
             float att = collision.gameObject.GetComponent<Bullet_info>().att;
             GetDamage(att);
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
         }
     }
 

@@ -20,28 +20,39 @@ public class June_PlayerGuidBullet : MonoBehaviour
     {
         initialPosition = transform.position;
         startPoint = transform;
-       
+
     }
 
     private void Update()
     {
         endPoint = GameObject.FindGameObjectWithTag("ENEMY").transform;
-       
 
-        if (timeElapsed < duration)
+        if (GameObject.FindGameObjectWithTag("ENEMY") != null)
         {
-            // 경과 시간에 따른 t 값을 계산합니다.
-            float t = timeElapsed / duration;
 
-            // 4차 베지어 곡선 함수를 사용하여 새로운 위치를 계산합니다.
-            Vector3 newPos = CalculateBezierPoint(startPoint.position, startPoint.position+new Vector3(0,-2,0), startPoint.position + new Vector3(0, 4, 0), endPoint.position, t);
+            if (timeElapsed < duration)
+            {
+                // 경과 시간에 따른 t 값을 계산합니다.
+                float t = timeElapsed / duration;
 
-            // 오브젝트를 새로운 위치로 이동시킵니다.z
-            transform.position = newPos;
+                // 4차 베지어 곡선 함수를 사용하여 새로운 위치를 계산합니다.
+                Vector3 newPos = CalculateBezierPoint(startPoint.position, startPoint.position + new Vector3(0, -0.5f, 0), startPoint.position + new Vector3(0, 1, 0), endPoint.position, t);
 
-            // 경과 시간을 증가시킵니다.
-            timeElapsed += Time.deltaTime;
+                // 오브젝트를 새로운 위치로 이동시킵니다.z
+                transform.position = newPos;
+
+                // 경과 시간을 증가시킵니다.
+                timeElapsed += Time.deltaTime;
+            }
         }
+        else
+        {
+            transform.Translate(Vector3.up * 3 * Time.deltaTime);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
     }
 
     public void ResetPosition()

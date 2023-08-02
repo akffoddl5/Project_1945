@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 1975800928930226148}
   - component: {fileID: 3738588303701855999}
   - component: {fileID: 4413774286305866066}
-  - component: {fileID: 5337968873698263599}
   - component: {fileID: -6922212093563445996}
   - component: {fileID: -3800322091437692654}
   m_Layer: 0
   m_Name: Pbullet
-  m_TagString: Untagged
+  m_TagString: Player_bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5106900149531664869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.085, y: -3.122, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.013711999, y: 0.013711999, z: 0.013711999}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,20 +108,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5337968873698263599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5106900149531664869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8756b3cae3076ec46876825c417351c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletpos: {fileID: 0}
-  pBullet: {fileID: 5106900149531664869}
 --- !u!50 &-6922212093563445996
 Rigidbody2D:
   serializedVersion: 4
@@ -179,7 +164,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

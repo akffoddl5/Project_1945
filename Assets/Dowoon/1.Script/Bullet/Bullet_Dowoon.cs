@@ -46,7 +46,7 @@ public class Bullet_Dowoon : Bullet_info
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("플레이어 맞음");
+           
             DestroySelf();
         }
 
