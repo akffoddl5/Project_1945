@@ -59,7 +59,7 @@ public class Chrome_Dowoon : MonoBehaviour
         radiusOffset = 0.5f;
         bool _isIncrease = true;
         while(true)
-        {
+        { 
             if (_isIncrease)
             {
                 var scale = transform.localScale;

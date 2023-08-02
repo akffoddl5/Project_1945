@@ -39,15 +39,18 @@ public class Player_Dowoon : MonoBehaviour
     public void ShotBullet()
     {
         var pos = bulletPos.transform.position;
-        var b1 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
+        var b1 = Instantiate(bulletPrefab, bulletPos.transform.position, Quaternion.identity);
+        var b2 = Instantiate(bulletPrefab, bulletPos.transform.position, Quaternion.identity);
+        var b3 = Instantiate(bulletPrefab, bulletPos.transform.position, Quaternion.identity);
+        //    var b1 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
         b1.transform.position = pos;
 
         pos.x -= 0.6f;
         pos.y -= 0.4f;
-        var b2 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
+      //  var b2 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
         b2.transform.position = pos;
         pos.x += 1.2f;
-        var b3 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
+       // var b3 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
         b3.transform.position = pos;
        
     }
