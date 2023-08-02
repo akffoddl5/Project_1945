@@ -3801,7 +3801,7 @@ MonoBehaviour:
   nextSceneName: Dowoon
   nowSceneName: CharacterSelect 1
   DW_Player: {fileID: 3123102898389325431, guid: 75cdc1ba529cbdc4686f2766d074530e, type: 3}
-  JW_Player: {fileID: 9088680435639480255, guid: 2bd120148c04a9141a4b7c50dca37c3c, type: 3}
+  JW_Player: {fileID: 1842248885612756666, guid: 44df98dbb1462444e9d42d82b3c78389, type: 3}
   YS_Player: {fileID: 4301782336552380483, guid: d292f89de55b9d94b8c3ff913537d037, type: 3}
   JH_Player: {fileID: 4080676344576105198, guid: 3a9755dfcaa2a4a4d9ce2e1b6e876802, type: 3}
   SJ_Player: {fileID: 4376021467994993349, guid: 742af034470ec9d4894d353d554eea72, type: 3}

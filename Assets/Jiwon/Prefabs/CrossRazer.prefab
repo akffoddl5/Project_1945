@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 805743592026528148}
   - component: {fileID: 805743592026528149}
   - component: {fileID: 805743592026528146}
+  - component: {fileID: 6490966604810142979}
   m_Layer: 0
   m_Name: Razer
   m_TagString: ENEMY
@@ -158,6 +159,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6490966604810142979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805743592026528147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4962752b9881ba42b9d6208b412299b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &805743592826429999
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +183,7 @@ GameObject:
   - component: {fileID: 805743592826429987}
   - component: {fileID: 805743592826429984}
   - component: {fileID: 805743592826429985}
+  - component: {fileID: 8484331703278202278}
   m_Layer: 0
   m_Name: Razer(1)
   m_TagString: ENEMY
@@ -316,6 +330,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8484331703278202278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805743592826429999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4962752b9881ba42b9d6208b412299b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &805743593032823216
 GameObject:
   m_ObjectHideFlags: 0
