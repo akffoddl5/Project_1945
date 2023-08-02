@@ -165,9 +165,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489d3332f987afe4bbb0b13414b1b4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 4
+  maxHp: 150
+  renderer: {fileID: 0}
   isOpen: 0
   isAttackAble: 0
   isArrive: 0
+  moveSpeed: 8.5
   goalPos: {x: 0, y: 0, z: 0}
   bulletPrefab: {fileID: 2126723350830418770, guid: 57baad23b5aa6f548b4065f51f1f1280, type: 3}
   Panel: {fileID: 0}
+  folder_sprite: {fileID: 0}

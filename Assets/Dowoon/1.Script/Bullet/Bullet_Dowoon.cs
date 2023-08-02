@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet_Dowoon : MonoBehaviour
+public class Bullet_Dowoon : Bullet_info
 {
 
     Vector3 Dir = Vector3.zero;
