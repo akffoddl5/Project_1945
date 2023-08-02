@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jiwon_Boss_bullet : MonoBehaviour
+public class BossBullet_Jiwon : MonoBehaviour
 {
 	float speed = 3f;
 	Rigidbody2D rb;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jiwon_CrossRazer : MonoBehaviour
+public class CrossRazer_Jiwon : MonoBehaviour
 {
     float speedUpTime = 0f; // 스피드가 3초에 한 번 올라감
     float minSpeed = 20;

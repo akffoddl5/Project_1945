@@ -4,7 +4,7 @@ using System.Reflection;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Jiwon_Boss : MonoBehaviour
+public class Boss_Jiwon : MonoBehaviour
 {
 	float maxHp = 50;
 	float nowHp;
@@ -212,7 +212,7 @@ public class Jiwon_Boss : MonoBehaviour
 				float y = Mathf.Sin(angle * Mathf.PI / 180.0f);
 
 				Vector2 dir = new Vector2(x, y);
-				b.GetComponent<Jiwon_Boss_bullet>().SetDir(dir);
+				b.GetComponent<BossBullet_Jiwon>().SetDir(dir);
 			}
 
 			CheckCount++;
@@ -255,7 +255,7 @@ public class Jiwon_Boss : MonoBehaviour
 					//Debug.Log(scalar + " " + dir + " " + cal_angle + " " + current_angle2);
 
 					GameObject tmp = Instantiate(Pref_bossBullet, transform.position + tmp2, Quaternion.identity);
-					tmp.GetComponent<Jiwon_Boss_bullet>().SetDir(dir);
+					tmp.GetComponent<BossBullet_Jiwon>().SetDir(dir);
 				}
 			}
 			yield return new WaitForSeconds(5f);
@@ -287,7 +287,7 @@ public class Jiwon_Boss : MonoBehaviour
 				// Sin(각도), 라디안 단위의 각도 표현을 위해 PI/180을 곱함
 				float y = Mathf.Sin(angle * Mathf.PI / 180.0f);
 				// 발사체 이동 방향 설정
-				clone.GetComponent<Jiwon_Boss_bullet>().SetDir(new Vector2(x, y));
+				clone.GetComponent<BossBullet_Jiwon>().SetDir(new Vector2(x, y));
 			}
 			// 발사체가 생성되는 시작 각도 설정을 위한 변수
 			weightAngle += 10;

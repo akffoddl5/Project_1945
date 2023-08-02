@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jiwon_playerBullet : MonoBehaviour
+public class PlayerBullet_Jiwon : MonoBehaviour
 {
 	Rigidbody2D rb;
     float speed = 10f;
