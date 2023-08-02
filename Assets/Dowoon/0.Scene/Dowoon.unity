@@ -511,6 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb20678f75bf5c48a47c56bc86e04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  current_character: 0
   SJ_item_list: []
   JW_item_list: []
   JH_item_list: []
@@ -1218,6 +1219,18 @@ PrefabInstance:
     - target: {fileID: 3123102898389325431, guid: 75cdc1ba529cbdc4686f2766d074530e, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001247307160880926, guid: 75cdc1ba529cbdc4686f2766d074530e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119071254268106231, guid: 75cdc1ba529cbdc4686f2766d074530e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119071254268106231, guid: 75cdc1ba529cbdc4686f2766d074530e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414828015896605013, guid: 75cdc1ba529cbdc4686f2766d074530e, type: 3}
       propertyPath: m_RootOrder
