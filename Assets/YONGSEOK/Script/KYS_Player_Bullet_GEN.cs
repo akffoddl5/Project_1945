@@ -29,16 +29,16 @@ public class KYS_Player_Bullet_GEN : MonoBehaviour
         }
 
         //3,4 유도 자동공격
-        guid_cool -= Time.deltaTime;
-        if (guid_cool <= 0)
-        {
-            current_generator2++;
-            if (current_generator2 >= generators_guide.Length) current_generator2 = 0;
+        //guid_cool -= Time.deltaTime;
+        //if (guid_cool <= 0)
+        //{
+        //    current_generator2++;
+        //    if (current_generator2 >= generators_guide.Length) current_generator2 = 0;
 
-            generators_guide[current_generator2].GetComponent<KYS_Bullet_generator>().Shoot();
+        //    generators_guide[current_generator2].GetComponent<KYS_Bullet_generator>().Shoot();
 
-            guid_cool = 1 * 90 * Time.deltaTime;
-        }
+        //    guid_cool = 1 * 90 * Time.deltaTime;
+        //}
         
 
         

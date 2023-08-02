@@ -38,4 +38,13 @@ public class KYS_Enemy_Bullet_normal : MonoBehaviour
         transform.Translate(dir * speed * Time.deltaTime);
 
     }
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			collision.gameObject.SetActive(false);
+			//Destroy(collision.gameObject);
+		}
+	}
 }

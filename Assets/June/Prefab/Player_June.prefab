@@ -182,7 +182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4376021467994993349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.286, y: 15.750023, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -366,6 +366,14 @@ MonoBehaviour:
   PlayerCharg: {fileID: 0}
   Spell: {fileID: 700375181934918612, guid: 9456ccfc60b00c24b9c2768508671f62, type: 3}
   activationTime: 3
+  m_missilePrefab: {fileID: 5862707670822519475, guid: 4de9785013d46234e8bcd4162070658d, type: 3}
+  m_target: {fileID: 0}
+  m_speed: 2
+  m_distanceFromStart: 6
+  m_distanceFromEnd: 3
+  m_shotCount: 12
+  m_interval: 0.15
+  m_shotCountEveryInterval: 2
 --- !u!1 &5792122939224745723
 GameObject:
   m_ObjectHideFlags: 0
