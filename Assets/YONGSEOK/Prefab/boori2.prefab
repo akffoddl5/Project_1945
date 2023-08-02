@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8959760584950723641}
   - component: {fileID: 3503203053650302819}
   - component: {fileID: 1424653118969427275}
-  - component: {fileID: 639102214509616228}
   m_Layer: 6
   m_Name: boori2
   m_TagString: ENEMY
@@ -101,7 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 90
-  hp: 500
+  hp: 30
+  dieEffect: {fileID: 4208831749957786760, guid: bb195bece00128a459ccf5bedc0dbdbb, type: 3}
+  bullet_razor: {fileID: 2419837078462518057, guid: cd59f5c4e5cdc2041b467f0002627639, type: 3}
 --- !u!50 &3503203053650302819
 Rigidbody2D:
   serializedVersion: 4
@@ -174,17 +175,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.94, y: 3.63}
   m_EdgeRadius: 0
---- !u!114 &639102214509616228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3506008557456652107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcdd325c158756047a3dbfb07325a64a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
-  hp: 50

@@ -5,20 +5,21 @@ using UnityEngine;
 
 public enum Charactor
 {
-        신준 = 1,
-        지원 = 2,
-        정현 = 3,
-        도운 = 4,
-        용석 = 5,
+    신준 = 1,
+    지원 = 2,
+    정현 = 3,
+    도운 = 4,
+    용석 = 5,
 }
 
 public class ITEM_MANAGER : MonoBehaviour
 {
     public static ITEM_MANAGER instance;
     public static List<GameObject> self_item_list = new List<GameObject>(); // 본인 아이템 리스트
+    public Charactor current_character;
 
-    //각자 아이템 등록해주세요.
-    public  List<GameObject> SJ_item_list = new List<GameObject>(); // 신준씨 아이템 리스트
+	//각자 아이템 등록해주세요.
+	public  List<GameObject> SJ_item_list = new List<GameObject>(); // 신준씨 아이템 리스트
     public  List<GameObject> JW_item_list = new List<GameObject>(); // 지원씨 아이템 리스트
     public  List<GameObject> JH_item_list = new List<GameObject>(); // 정현씨 아이템 리스트
     public  List<GameObject> DW_item_list = new List<GameObject>(); // 도운씨 아이템 리스트
@@ -38,8 +39,8 @@ public class ITEM_MANAGER : MonoBehaviour
     public void ItemSetting(Charactor a)
     {
         self_item_list = dict2[a].ToList<GameObject>();
-
-    }
+        current_character = a;
+	}
 
 
     

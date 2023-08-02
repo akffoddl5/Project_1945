@@ -1,4 +1,4 @@
-using Microsoft.Unity.VisualStudio.Editor;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -55,15 +55,15 @@ public class Chrome_Dowoon : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        speedOffset = 10.4f;
-        radiusOffset = 0.5f;
+        speedOffset = 15.4f;
+        radiusOffset = 1.0f;
         bool _isIncrease = true;
         while(true)
         { 
             if (_isIncrease)
             {
                 var scale = transform.localScale;
-                if (scale.x <= 1.5f)
+                if (scale.x <= 0.89f)
                 {
                     scale.x += 0.01f;
                     scale.y += 0.01f;
@@ -77,10 +77,10 @@ public class Chrome_Dowoon : MonoBehaviour
                 
                     circleR += radiusOffset * Time.deltaTime;
 
-                    if (objSpeed <= 250)
+                    if (objSpeed <= 350)
                         objSpeed += speedOffset * Time.deltaTime;
 
-                    if(circleR >= 12)
+                    if(circleR >= 6)
                         _isIncrease = false;
 
                     yield return new WaitForEndOfFrame();

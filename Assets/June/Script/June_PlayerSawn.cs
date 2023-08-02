@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
-using UnityEditorInternal;
+
 using UnityEngine;
 
 public class June_PlayerSawn : MonoBehaviour
@@ -9,12 +9,13 @@ public class June_PlayerSawn : MonoBehaviour
     public GameObject Player ;
     private bool CarryPlayer = true; //플레이어가 맵에 도착 시 false
 
-    public GameObject Item;
-    public int CountDestroy;
+    
 
     void Start()
     {
         Instantiate(Player, new Vector3(0,-6,0), Quaternion.identity); //플렝이어 생성
+
+
 
         //플레이어 충돌, 조작 끄기
         GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>().enabled = false;  

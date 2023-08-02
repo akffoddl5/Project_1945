@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
@@ -83,7 +82,9 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         var Canvas = GameObject.FindGameObjectWithTag("Canvas");
         HpBarObject = Instantiate(HpBar, Canvas.transform);
-        HpBarObject.GetComponent<Slider>().value = (float)hp / maxHp ; 
+        HpBarObject.GetComponent<Slider>().value = (float)hp / maxHp ;
+
+        moveSpeed = 4.0f;
 
     }
 
@@ -165,7 +166,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
       
         // 다음위치로 이동하여 드래그박스 투하 
 
-        go_box.GetComponent<Rigidbody2D>().gravityScale = 2.0f;
+        go_box.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 
         while (true)
         {
@@ -204,9 +205,9 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             var v = MoveToGoal(Pattern1_MoveToShot, offSetSpeed);
             if (v <= 0.2f)
                 break;
-            if (v > 5.0f)
-                offSetSpeed = 0.1f;
-            else if (v <= 3.0f)
+            if (v > 3.0f)
+                offSetSpeed = 0.3f;
+            else if (v <= 2.3f)
                 offSetSpeed = 1f;
 
 
@@ -338,7 +339,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         bar.transform.parent = Box_Generator.transform;
         var barPos = bar.transform.position;
-        barPos.x = -8.3f;
+       // barPos.x = -8.3f;
         bar.transform.position = barPos;
         yield return StartCoroutine(MoveSide(Pattern2_8, Pattern2_7, 0.08f, 4));
         var bar_Mail = bar.GetComponent<TaskBar_Dowoon>().Icon_Mail;
@@ -502,10 +503,10 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
                 //총알 생성 위치를 (0,0) 좌표로 한다.
                 temp.transform.position = Bullet_Generator.transform.position;
-
+                Destroy(temp, 5f);
                 //?초후에 Target에게 날아갈 오브젝트 수록
                 bullets.Add(temp.transform);
-
+                
                 //Z에 값이 변해야 회전이 이루어지므로, Z에 i를 대입한다.
                 temp.transform.rotation = Quaternion.Euler(0, 0, i);
 
@@ -523,19 +524,22 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     private IEnumerator BulletToTarget(IList<Transform> objects)
     {
         //0.5초 후에 시작
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.35f);
 
         for (int i = 0; i < objects.Count; i++)
         {
-            //현재 총알의 위치에서 플레이의 위치의 벡터값을 뻴셈하여 방향을 구함
-            Vector3 targetDirection = target_player.transform.position - objects[i].position;
+            if (objects[i] != null)
+            {
+                //현재 총알의 위치에서 플레이의 위치의 벡터값을 뻴셈하여 방향을 구함
+                Vector3 targetDirection = target_player.transform.position - objects[i].position;
 
-            //x,y의 값을 조합하여 Z방향 값으로 변형함. -> ~도 단위로 변형
-            float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+                //x,y의 값을 조합하여 Z방향 값으로 변형함. -> ~도 단위로 변형
+                float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
 
-            //Target 방향으로 이동
-            objects[i].rotation = Quaternion.Euler(0, 0, angle);
-            objects[i].GetComponent<Bullet_Dowoon>().b_localDirection = true;
+                //Target 방향으로 이동
+                objects[i].rotation = Quaternion.Euler(0, 0, angle);
+                objects[i].GetComponent<Bullet_Dowoon>().b_localDirection = true;
+            }
         }
 
         //데이터 해제

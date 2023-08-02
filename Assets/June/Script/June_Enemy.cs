@@ -53,14 +53,13 @@ public class June_Enemy : MonoBehaviour
         // collison   = 트리거 작동시킨 충돌체 
         //  즉 collision.gameobject =  총알 
         Hp -= collision.gameObject.GetComponent<Bullet_info>().att; //나중에 bullet_info에서 공격력 가져오고 적용시키기
-        Destroy(collision.gameObject);
         Debug.Log(Hp);
         if(Hp <= 0)
         {
             Instantiate(Effect, ms.position, Quaternion.identity);
-            GameObject.Find("SpawnManager").GetComponent<June_PlayerSawn>().CountDestroy++;
-            if (GameObject.Find("SpawnManager").GetComponent<June_PlayerSawn>().CountDestroy % 4 == 0)
-                Instantiate(GameObject.Find("SpawnManager").GetComponent<June_PlayerSawn>().Item, ms.position, Quaternion.identity);
+            GameObject.Find("SpawnManager").GetComponent<June_EnemySpawn>().CountDestroy++;
+            if (GameObject.Find("SpawnManager").GetComponent<June_EnemySpawn>().CountDestroy % 4 == 0)
+                Instantiate(GameObject.Find("SpawnManager").GetComponent<June_EnemySpawn>().Item, ms.position, Quaternion.identity);
             Destroy(gameObject);
 
            

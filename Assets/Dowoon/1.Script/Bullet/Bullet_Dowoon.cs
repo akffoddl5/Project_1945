@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet_Dowoon : MonoBehaviour
+public class Bullet_Dowoon : Bullet_info
 {
 
     Vector3 Dir = Vector3.zero;
@@ -46,7 +46,7 @@ public class Bullet_Dowoon : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("플레이어 맞음");
+           
             DestroySelf();
         }
 

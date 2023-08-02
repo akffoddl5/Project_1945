@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 457908646168745788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.04, y: 1.39, z: 0}
-  m_LocalScale: {x: 0.6982, y: 0.9625, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.45, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8027294483884433756}
@@ -98,8 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9d7cceb602fb74baf8f8fbb75ed831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dir: 1
   spawnPos: {fileID: 9157880165186973350}
   monsterPrefab: {fileID: 8987401911967810894, guid: 434940866d665e248a4dd4381a57f7a2, type: 3}
+  rotatePos: {x: 0, y: 0, z: 0}
 --- !u!1 &9157880165186973350
 GameObject:
   m_ObjectHideFlags: 0

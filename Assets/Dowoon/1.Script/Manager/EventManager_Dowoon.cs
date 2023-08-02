@@ -32,21 +32,21 @@ public class EventManager_Dowoon : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        CreateWall(Wall, new Vector3(-13f, 1.5f, 0), 4, Direction.Right);
+        CreateWall(Wall, new Vector3(-10f, 1.5f, 0), 4, Direction.Right);
 
         yield return new WaitForSeconds(5);
 
-        CreateWall(Wall, new Vector3(11, 1.5f, 0), 8, Direction.Left);
+        CreateWall(Wall, new Vector3(8, 1.5f, 0), 8, Direction.Left);
 
 
 
         yield return new WaitForSeconds(5);
 
-        CreateAndSetGoal(WindowIcon, new Vector3(10, 6.5f, 0), new Vector3(7, 6.5f, 0));
+        CreateAndSetGoal(WindowIcon, new Vector3(8, 3.5f, 0), new Vector3(5.5f, 3.5f, 0));
        
 
         yield return new WaitForSeconds(1);
-        CreateAndSetGoal(WindowIcon, new Vector3(-3, 5.5f, 0), new Vector3(1, 5.5f, 0));
+        CreateAndSetGoal(WindowIcon, new Vector3(-3, 2.5f, 0), new Vector3(1, 2.5f, 0));
         yield return new WaitForSeconds(2);
 
         CreateWall(Wall, new Vector3(11f, 4.5f, 0), 12, Direction.Left);

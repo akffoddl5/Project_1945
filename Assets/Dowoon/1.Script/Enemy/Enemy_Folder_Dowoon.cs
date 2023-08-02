@@ -5,11 +5,14 @@ using UnityEngine;
 public class Enemy_Folder_Dowoon : Enemy_Dowoon
 {
     // Start is called before the first frame update
+
+ 
     public override void Start()
     {
         shootDelay = 2.0f;
-        maxHp = 50;
-        hp = 50;
+        maxHp = 10;
+        hp = 10;
+        renderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -29,7 +32,16 @@ public class Enemy_Folder_Dowoon : Enemy_Dowoon
     {
         if (collision.gameObject.CompareTag("Player_bullet"))
         {
-            hp -= 2;
+
+            hp -= (int)collision.GetComponent<Bullet_info>().att;
+            if (co_colorChange == null)
+                co_colorChange = StartCoroutine(colorChange());
+            else if (co_colorChange != null)
+            {
+                StopCoroutine(co_colorChange);
+
+                co_colorChange = StartCoroutine(colorChange());
+            }
 
             if (hp <= 0)
             {
@@ -39,5 +51,17 @@ public class Enemy_Folder_Dowoon : Enemy_Dowoon
         }
     }
 
-   
+    IEnumerator colorChange()
+    {
+
+
+        if (renderer != null)
+        {
+            renderer.material.color = Color.red;
+        }
+
+        yield return new WaitForSeconds(0.15f);
+
+        renderer.material.color = Color.white;
+    }
 }

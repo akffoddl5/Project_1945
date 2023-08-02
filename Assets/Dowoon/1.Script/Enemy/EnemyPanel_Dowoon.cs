@@ -17,7 +17,7 @@ public class EnemyPanel_Dowoon : MonoBehaviour
     public Direction _dir
         = Direction.Left;
 
-    Vector2 offset = new Vector3(2, 1.5f);
+    Vector2 offset = new Vector3(1, 0.3f);
     [SerializeField]
     public GameObject spawnPos;
     [SerializeField]
