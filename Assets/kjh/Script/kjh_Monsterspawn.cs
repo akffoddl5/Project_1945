@@ -56,16 +56,17 @@ public class Kjh_Monster : MonoBehaviour
         // lightMR = GameObject.Find("LightMonster").transform.Find("Canvars").transform.Find("Panel").gameObject;
         boomcoroutin();
 
-        lightMR = GameObject.Find("Circle");
-    }
 
+
+    }
 
     void Update()
     {
         LightM2();
-        
-        j += Time.deltaTime;
-        Debug.Log(CountAll);
+
+
+        LighBim();
+       
 
     }
 
@@ -80,13 +81,13 @@ public class Kjh_Monster : MonoBehaviour
         Invoke("toFuntion", a);
 
 
-        if (CountAll% 7 == 1)
+        if (CountAll % 7 == 1)
         {
 
             Invoke("fish_dir", 2);
         }
 
-        if (CountAll % 13== 1)
+        if (CountAll % 5 == 1)
         {
 
             Invoke("LightM", 2);
@@ -122,7 +123,7 @@ public class Kjh_Monster : MonoBehaviour
 
         boom2 = Instantiate(boom, boomT.position, Quaternion.identity);
         boom2.GetComponent<Rigidbody2D>().velocity = boomV * speed;
-
+        Destroy(boom2, 10);
 
         yield return new WaitForSeconds(5);
 
@@ -142,7 +143,7 @@ public class Kjh_Monster : MonoBehaviour
         fishV.y = -fishY;
         fish1 = Instantiate(fish, fishT.position, Quaternion.identity);
         fish1.GetComponent<Rigidbody2D>().AddForce(fishV * speedF);
-
+        Destroy(fish1, 10);
     }
     void LightM()
     {
@@ -151,8 +152,8 @@ public class Kjh_Monster : MonoBehaviour
 
 
         lightM1 = Instantiate(lightM, lightMT.position, Quaternion.identity);
+        Destroy(lightM1,10);
 
-       
     }
 
 
@@ -163,27 +164,32 @@ public class Kjh_Monster : MonoBehaviour
 
 
         lightM1.transform.position = Vector2.SmoothDamp(lightM1.transform.position, Vector2.zero, ref vel, speedL);
-        j = 0;
-        LighBim();
+
+
 
 
     }
     void LighBim()
     {
-
-
-
-        if (j>=2)
+        if (lightM != null)
         {
-            lightMR.transform.localScale = new Vector3(j*1000, j*1000, 0);
-          
-           
-            if (j >= 5)
-            {
-                j = 0;
-               Destroy(lightMR);
-            Destroy(lightM1);
+            j += Time.deltaTime;
 
+            lightMR = GameObject.Find("Circle");
+
+
+            if (j >= 2)
+            {
+                lightMR.transform.localScale = new Vector3(j * 1000, j * 1000, 0);
+
+
+                if (j >= 5)
+                {
+                    j = 0;
+
+                    Destroy(lightM1);
+
+                }
             }
 
         }
@@ -195,18 +201,6 @@ public class Kjh_Monster : MonoBehaviour
     }
 
 
-    private void Del()
-    {
-        GameObject gm = GameObject.Find("player");
-        if (gm.transform.position.x >= 8 || gm.transform.position.x <= -8 || gm.transform.position.y >= 8 || gm.transform.position.x <= -8)
-        {
-            Destroy(fish);
-            Destroy(fish1);
-            Destroy(boom);
-            Destroy(boom2);
-         
-        }
-    }
-
+   
 
 }
