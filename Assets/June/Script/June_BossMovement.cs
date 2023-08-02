@@ -22,7 +22,8 @@ public class June_BossMovement : MonoBehaviour
     private Vector3 targetPosition;
 
 
-    private bool isbossTalk;
+    private bool isbossTalk5;
+    private bool isbossTalk3;
 
     void Start()
     {
@@ -32,7 +33,8 @@ public class June_BossMovement : MonoBehaviour
 
         GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>().enabled = false;//배경음 끄고 보스 bgm on
 
-        isbossTalk = true;
+        isbossTalk5 = true;
+        isbossTalk3 = true;
         gameObject.GetComponent<CircleCollider2D>().enabled = false; //튕그는 벽들과의 충돌 막기
         gameObject.GetComponent<June_BossBullet>().enabled = false;
 
@@ -71,9 +73,13 @@ public class June_BossMovement : MonoBehaviour
             targetPosition = GetRandomPosition();
         }
         
-        if(BossHp <= BossOriginHp /2)
+        if(BossHpBar.fillAmount == 0.9f && isbossTalk5)
         {
-            showBossTxt();
+            StartCoroutine(showBossTxt5());
+        }
+        if (BossHpBar.fillAmount == 0.25f && isbossTalk3)
+        {
+            StartCoroutine(showBossTxt3());
         }
 
 
@@ -85,15 +91,42 @@ public class June_BossMovement : MonoBehaviour
 
 
 
-    void showBossTxt()
+    //void showBossTxt()
+    //{
+        
+    //    for (int i = 0; i < 10; i++)
+    //    {
+    //        transform.GetChild(1).transform.GetChild(0).transform.position += new Vector3(110, 0, 0)*Time.deltaTime;
+
+    //    }
+    //    transform.GetChild(1).transform.GetChild(0).transform.position = new Vector3(-1100, 638, 0);
+    //    isbossTalk5 = false;
+    //}
+    
+    IEnumerator showBossTxt5()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            transform.GetChild(1).transform.GetChild(1).transform.position += new Vector3(110, 0, 0);
+            yield return new WaitForSeconds(0.1f);
+
+        }
+        yield return new WaitForSeconds(1f);
+        transform.GetChild(1).transform.GetChild(1).transform.position = new Vector3(-1100, 638, 0);
+        isbossTalk5 = false;
+    }
+    IEnumerator showBossTxt3()
     {
         for (int i = 0; i < 10; i++)
         {
             transform.GetChild(1).transform.GetChild(0).transform.position += new Vector3(110, 0, 0);
+            yield return new WaitForSeconds(0.1f);
 
         }
+        yield return new WaitForSeconds(1f);
+        transform.GetChild(1).transform.GetChild(0).transform.position = new Vector3(-1100, 638, 0);
+        isbossTalk3 = false;
     }
-
     void Stop()
     {
         CarryBoss = false; //코루틴속 while문 멈추기
