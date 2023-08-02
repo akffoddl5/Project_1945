@@ -71,8 +71,7 @@ public class June_PlayerShooting : MonoBehaviour
         {
             
            GameObject missile = Instantiate(m_missilePrefab,pos.position,Quaternion.identity);
-                    //missile.GetComponent<June_PlayerGuidBullet>().Init(this.gameObject.transform, m_speed, m_distanceFromStart, m_distanceFromEnd);
-                    missile.GetComponent<Bullet_info>().att = PlayerDamage;
+           missile.GetComponent<Bullet_info>().att = PlayerDamage;
 
         }
 
@@ -89,8 +88,8 @@ public class June_PlayerShooting : MonoBehaviour
             
             
 
-            Instantiate(Spell,new Vector3(-2.5f,-7f,0), Quaternion.identity);
-            
+            GameObject spell = Instantiate(Spell,new Vector3(-2.5f,-7f,0), Quaternion.identity);
+            spell.GetComponent<Bullet_info>().att = PlayerDamage+10;
         }
         else
     //        Time.timeScale = 1;
