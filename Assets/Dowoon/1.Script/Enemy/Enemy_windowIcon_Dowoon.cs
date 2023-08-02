@@ -9,10 +9,6 @@ public class Enemy_windowIcon_Dowoon : Enemy_Dowoon
     public Transform[] bullet_Genrator;
     public GameObject[] bullet_Prefab;
     // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
 
     // Update is called once per frame
     

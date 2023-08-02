@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 4
+  maxHp: 150
+  renderer: {fileID: 0}
   isOpen: 0
   isAttackAble: 0
   isArrive: 0
@@ -105,12 +107,27 @@ MonoBehaviour:
   goalPos: {x: 0, y: 0, z: 0}
   bulletPrefab: {fileID: 0}
   Panel: {fileID: 0}
+  target_player: {fileID: 0}
+  HpBar: {fileID: 7618312784381822102, guid: d5e1eb8ed9e745f4c9897c3b82c3edb9, type: 3}
   currPattern: 0
-  Pattern1_Start: {x: -4.36, y: 10.93, z: 0}
-  Pattern1_End: {x: 5.51, y: 5.59, z: 0}
-  Pattern2_Start: {x: 5.15, y: 11.43, z: 0}
-  Pattern2_End: {x: -3.9, y: -7.3, z: 0}
-  Pattern3_Start: {x: 0.2, y: 7.5, z: 0}
+  lastPattern: 0
   SpawnPos: {x: 4.7, y: 17.3, z: 0}
   Spawn_arrivePos: {x: -0.1, y: 9.9, z: 0}
+  Pattern1_Start: {x: -4.36, y: 10.93, z: 0}
+  Pattern1_End: {x: 5.51, y: 5.59, z: 0}
+  Pattern1_DragEnd: {x: 0, y: 0, z: 0}
+  Pattern1_MoveToShot: {x: 0, y: 0, z: 0}
+  Box_Generator: {fileID: 0}
+  Bullet_Generator: {fileID: 0}
+  boxPrefab: {fileID: 0}
+  _boss_bulletPrefab: {fileID: 0}
+  Pattern2_Start: {x: 5.15, y: 11.43, z: 0}
+  Pattern2_End: {x: -3.9, y: -7.3, z: 0}
+  Pattern2_3: {x: 0, y: 0, z: 0}
+  Pattern2_4: {x: 0, y: 0, z: 0}
+  Pattern2_5: {x: 0, y: 0, z: 0}
+  Pattern2_6: {x: 0, y: 0, z: 0}
+  TaskBar: {fileID: 0}
+  Pattern3_Start: {x: 0.2, y: 7.5, z: 0}
+  Boss_Sprite: {fileID: 0}
   isPatternStart: 0

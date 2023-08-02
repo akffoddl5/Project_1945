@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3735089537329003991
 SpriteRenderer:
@@ -100,7 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 90
-  hp: 500
+  hp: 30
+  dieEffect: {fileID: 4208831749957786760, guid: bb195bece00128a459ccf5bedc0dbdbb, type: 3}
+  bullet_razor: {fileID: 2419837078462518057, guid: cd59f5c4e5cdc2041b467f0002627639, type: 3}
 --- !u!50 &3503203053650302819
 Rigidbody2D:
   serializedVersion: 4
@@ -157,7 +159,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

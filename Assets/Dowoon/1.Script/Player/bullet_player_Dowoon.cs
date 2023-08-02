@@ -11,4 +11,6 @@ public class bullet_player_Dowoon : Bullet_Dowoon
         Fly();
       
     }
+
+
 }

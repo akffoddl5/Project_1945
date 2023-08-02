@@ -5,11 +5,18 @@ using UnityEngine;
 public class Player_Dowoon : MonoBehaviour
 {
     float moveSpeed = 10.5f;
+    public float PowerGauge = 0f;
+    public const float MAX_POWER_GAUGE = 100f;
+
+
     Animator anim;
     [SerializeField]    
     GameObject bulletPos;
     [SerializeField]
-    GameObject bulletPrefab; 
+    GameObject bulletPrefab;
+    [SerializeField]
+    GameObject Gauge_slider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,11 +41,36 @@ public class Player_Dowoon : MonoBehaviour
         {
             ShotBullet();
         }       
+
+        if(PowerGauge >= 50)
+        {
+
+        }
     }
 
     public void ShotBullet()
     {
+        var pos = bulletPos.transform.position;
+        var b1 = Instantiate(bulletPrefab, bulletPos.transform.position, Quaternion.identity);
+        var b2 = Instantiate(bulletPrefab, bulletPos.transform.position, Quaternion.identity);
+        var b3 = Instantiate(bulletPrefab, bulletPos.transform.position, Quaternion.identity);
+        //    var b1 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
+        b1.transform.position = pos;
+
+        pos.x -= 0.6f;
+        pos.y -= 0.4f;
+      //  var b2 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
+        b2.transform.position = pos;
+        pos.x += 1.2f;
+       // var b3 = ObjectPool_Dowoon.GetBullet(BulletType.Player);
+        b3.transform.position = pos;
+       
+    }
+
+    IEnumerator UseBoom()
+    {
         
-        Instantiate(bulletPrefab,bulletPos.transform.position, bulletPos.transform.rotation);
+
+        yield return new WaitForSeconds(0.5f);
     }
 }
