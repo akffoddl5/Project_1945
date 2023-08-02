@@ -58,47 +58,20 @@ public class June_PlayerShooting : MonoBehaviour
     private void OnEnable()
     {
        // StartCoroutine(AutoFire());
-    }
+    } 
 
     int CrowCount = 0;
 
       
-    IEnumerator CreateMissile()
-    {
-        if(GameObject.FindGameObjectWithTag("ENEMY")!=null)
-        {
-        int _shotCount = m_shotCount;
-        while (_shotCount > 0)
-        {
-            for (int i = 0; i < m_shotCountEveryInterval; i++)
-            {
-                if (_shotCount > 0)
-                {
-                    GameObject missile = Instantiate(m_missilePrefab);
-                    //missile.GetComponent<June_PlayerGuidBullet>().Init(this.gameObject.transform, m_speed, m_distanceFromStart, m_distanceFromEnd);
-                    missile.GetComponent<Bullet_info>().att = PlayerDamage;
-                    _shotCount--;
-                }
-            }
-            yield return new WaitForSeconds(m_interval);
-        }
-        yield return null;
-
-        }
-        else
-            yield return null;
-    }
-
+    
     void Update()
     {
         m_target = GameObject.FindGameObjectWithTag("ENEMY");
         if (Input.GetKeyDown(KeyCode.V))
         {
-            // Shot.
-           // StartCoroutine(CreateMissile());
+            
            GameObject missile = Instantiate(m_missilePrefab,pos.position,Quaternion.identity);
-                    //missile.GetComponent<June_PlayerGuidBullet>().Init(this.gameObject.transform, m_speed, m_distanceFromStart, m_distanceFromEnd);
-                    missile.GetComponent<Bullet_info>().att = PlayerDamage;
+           missile.GetComponent<Bullet_info>().att = PlayerDamage;
 
         }
 
@@ -115,8 +88,8 @@ public class June_PlayerShooting : MonoBehaviour
             
             
 
-            Instantiate(Spell,new Vector3(-2.5f,-7f,0), Quaternion.identity);
-            
+            GameObject spell = Instantiate(Spell,new Vector3(-2.5f,-7f,0), Quaternion.identity);
+            spell.GetComponent<Bullet_info>().att = PlayerDamage+10;
         }
         else
     //        Time.timeScale = 1;

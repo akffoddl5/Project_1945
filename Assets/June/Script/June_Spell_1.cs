@@ -13,22 +13,29 @@ public class June_Spell_1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (collision.gameObject == GameObject.FindGameObjectWithTag("Player"))
+        // 충돌한 오브젝트가 Player 태그를 가진 경우 무시합니다.
+        if (collision.CompareTag("Player"))
         {
             return;
         }
 
+        // 충돌한 오브젝트가 Wall 태그를 가진 경우 무시합니다.
+        if (collision.CompareTag("Wall"))
+        {
+            return;
+        }
 
-
-        if (collision.gameObject != GameObject.FindGameObjectWithTag("ENEMY"))
+        // ENEMY 태그를 가진 오브젝트가 아닌 경우 충돌한 오브젝트를 파괴합니다.
+        if (!collision.CompareTag("ENEMY"))
+        {
             Destroy(collision.gameObject);
+        }
 
-       
-
-        if (collision.gameObject == GameObject.FindGameObjectWithTag("ENEMY"))
-            collision.gameObject.GetComponent<June_Enemy>().Hp -= gameObject.GetComponent<Bullet_info>().att+10;
-
+        //// ENEMY 태그를 가진 오브젝트인 경우 해당 오브젝트의 HP를 감소시킵니다.
+        //if (collision.CompareTag("ENEMY"))
+        //{
+            //collision.gameObject.GetComponent<June_Enemy>().Hp -= gameObject.GetComponent<Bullet_info>().att + 10;
+        //}
     }
     void Update()
     {

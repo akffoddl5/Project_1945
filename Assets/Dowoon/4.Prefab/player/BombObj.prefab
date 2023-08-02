@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Direction: {x: 0, y: 0}
-  bombSprite: {fileID: 7013231132000287006, guid: 2313afaa51a05724ea9e761fb28821f1, type: 3}
+  bombSprite: {fileID: 7013231132000287006, guid: 609afca40e89ee84f85bba6d372a2dd6, type: 3}
