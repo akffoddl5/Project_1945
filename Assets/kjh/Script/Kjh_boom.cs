@@ -42,7 +42,7 @@ public class Kjh_boom : MonoBehaviour
 
         if (CountDeB == 2)
             {
-            Kjh_Monster.CountZ++;
+            //Kjh_Monster.CountZ++;
             
                 Destroy(gameObject);
                 CountDeB = 0;

@@ -40,7 +40,7 @@ public class Kjh_LightM : MonoBehaviour
 
         if (CountDeL == 10)
         {
-            Kjh_Monster.CountZ++;
+            //Kjh_Monster.CountZ++;
 
             Destroy(gameObject);
             CountDeL = 0;

@@ -186,20 +186,18 @@ public class Kjh_player : MonoBehaviour
     }
     void Key()//½ºÆä¼È Å°
     {
-        if (Kjh_Monster.CountZ >= 6 && Input.GetKey(KeyCode.Z))
-        {
+        
             
-            if (Input.GetKey(KeyCode.Z))
+            if ((Kjh_Monster.CountZ >= 6)&&Input.GetKey(KeyCode.Z))
             {
                 anim.SetBool("Zkey", true);
                 Kjh_Monster.CountZ = 0;
                 
             }
-            if (!Input.GetKey(KeyCode.Z))
-            {
-                anim.SetBool("Zkey", false);
+        if (!Input.GetKey(KeyCode.Z))
+        {
+            anim.SetBool("Zkey", false);
 
-            }
         }
 
         if (Input.GetKey(KeyCode.Space))
@@ -246,7 +244,7 @@ public class Kjh_player : MonoBehaviour
             stop = false;
             stopTimes = false;
         }
-        if((anim.GetBool("Control") == false)&&(Kjh_fish.ex ==false))
+        if((anim.GetBool("Control") == false))//&&(Kjh_fish.ex ==false))
         {
             stop = true;
             stopTimes = true;

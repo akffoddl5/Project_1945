@@ -163,8 +163,8 @@ public class Kjh_Monster : MonoBehaviour
 
 
         lightM1.transform.position = Vector2.SmoothDamp(lightM1.transform.position, Vector2.zero, ref vel, speedL);
-
-         LighBim();
+        j = 0;
+        LighBim();
 
 
     }
@@ -195,7 +195,18 @@ public class Kjh_Monster : MonoBehaviour
     }
 
 
-
+    private void Del()
+    {
+        GameObject gm = GameObject.Find("player");
+        if (gm.transform.position.x >= 8 || gm.transform.position.x <= -8 || gm.transform.position.y >= 8 || gm.transform.position.x <= -8)
+        {
+            Destroy(fish);
+            Destroy(fish1);
+            Destroy(boom);
+            Destroy(boom2);
+         
+        }
+    }
 
 
 }
