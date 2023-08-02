@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 using static UnityEditor.PlayerSettings;
 
 public class Kjh_player : MonoBehaviour
@@ -16,10 +17,10 @@ public class Kjh_player : MonoBehaviour
     public float boost = 50.0f;
 
     Animator anim;
-    bool stop = true;
+   
     bool stopTimes = true;
 
-
+    public static bool stop;
 
     float dashTime = 0;
     bool dash = false;
@@ -28,15 +29,12 @@ public class Kjh_player : MonoBehaviour
 
     float BoostTime = 0;
 
-
+   
 
     float CoolTime = 0;
     bool coolTime = true;
 
-    //public GameObject bulletpos;
-    //public GameObject pbullet;
-
-
+ 
 
     void Start()
     {
@@ -44,43 +42,24 @@ public class Kjh_player : MonoBehaviour
         anim = GetComponent<Animator>();
 
     }
-    //private void bullet()
-    //{
 
-    //    for (float i = 2; i < 6; i++)
-    //    {
-    //        Quaternion quaternion = Quaternion.Euler(0f, 0f, 22.5f*i);
-    //        Instantiate(pbullet,bulletpos.transform.position ,quaternion);
-
-    //    }
-
-    //}
 
     void Update()
     {
-        Move();
+        Move(true);
 
         TimeAcction();
         Key();
         Movetree();
-        //bullet();
-
-
-        //dashTime += Time.deltaTime;
-        //if (dashTime >= 1)
-        //{
-        //    dash = false;
-
-
-        //}
-
+       
 
 
 
     }
 
-    public void Move()
+    public void Move(bool b)
     {
+        stop = b;
         if (stop == true)
         {
 
@@ -99,92 +78,7 @@ public class Kjh_player : MonoBehaviour
         }
     }
 
-    //public void Boost()//부스트(주는 함수
-    //{
-    //    moveX = Input.GetAxis("Horizontal") * Time.deltaTime;
-    //    moveY = Input.GetAxis("Vertical") * Time.deltaTime;
-    //    if (coolTime == true)
-    //    {
 
-    //        if (Input.GetKeyDown(KeyCode.LeftShift) && (moveX >= -0.5))
-    //        {
-    //            for (BoostTime = 0; BoostTime >= 1; BoostTime += 0.4f)
-    //            {
-    //                moveX *= boost;
-    //                coolTime = false;
-
-
-    //                Instantiate(gameObject, gameObject.transform.position/3, Quaternion.identity);
-    //                for (CoolTime = 0; CoolTime >= 3; BoostTime += Time.deltaTime)
-    //                {
-
-    //                    coolTime = true;
-
-    //                }
-    //            }
-
-    //        }
-
-    //        else if (Input.GetKeyDown(KeyCode.LeftShift) && (moveX <= 0.5))
-    //        {
-    //            for (BoostTime = 0; BoostTime >= 1; BoostTime += 0.4f)
-    //            {
-    //                moveX *= boost;
-    //                coolTime = false;
-
-    //                Instantiate(gameObject, gameObject.transform.position/3, Quaternion.identity);
-    //                for (CoolTime = 0; CoolTime >= 3; BoostTime += Time.deltaTime)
-    //                {
-
-    //                    coolTime = true;
-
-    //                }
-    //            }
-
-
-    //        }
-
-
-    //        if (Input.GetKeyDown(KeyCode.LeftShift) && (moveY >= -0.5))
-    //        {
-    //            for (BoostTime = 0; BoostTime >= 1; BoostTime += 0.4f)
-    //            {
-    //                moveX *= boost;
-    //                coolTime = false;
-
-    //                Instantiate(gameObject, gameObject.transform.position/3, Quaternion.identity);
-    //                for (CoolTime = 0; CoolTime >= 3; BoostTime += Time.deltaTime)
-    //                {
-
-    //                    coolTime = true;
-
-    //                }
-    //            }
-
-    //        }
-
-
-    //        else if (Input.GetKeyDown(KeyCode.LeftShift) && (moveY <= 0.5))
-    //        {
-
-    //            for (BoostTime = 0; BoostTime >= 1; BoostTime += 0.4f)
-    //            {
-    //                moveX *= boost;
-    //                coolTime = false;
-
-    //                Instantiate(gameObject, gameObject.transform.position/3, Quaternion.identity);
-    //                for (CoolTime = 0; CoolTime >= 3; BoostTime += Time.deltaTime)
-    //                {
-    //                    coolTime = true;
-
-
-    //                }
-
-    //            }
-
-    //        }
-    //    }
-    //}
 
 
     public void Boost()//부스트(주는 함수
@@ -291,20 +185,22 @@ public class Kjh_player : MonoBehaviour
 
     }
     void Key()//스페셜 키
-
-
     {
-        if (Input.GetKey(KeyCode.Z))
+        if (Kjh_Monster.CountZ >= 6 && Input.GetKey(KeyCode.Z))
         {
-            anim.SetBool("Zkey", true);
+            
+            if (Input.GetKey(KeyCode.Z))
+            {
+                anim.SetBool("Zkey", true);
+                Kjh_Monster.CountZ = 0;
+                
+            }
+            if (!Input.GetKey(KeyCode.Z))
+            {
+                anim.SetBool("Zkey", false);
 
+            }
         }
-        if (!Input.GetKey(KeyCode.Z))
-        {
-            anim.SetBool("Zkey", false);
-
-        }
-
 
         if (Input.GetKey(KeyCode.Space))
         {
@@ -324,7 +220,7 @@ public class Kjh_player : MonoBehaviour
             anim.SetBool("Shift", true);
 
         }
-        if(!Input.GetKey(KeyCode.LeftShift))
+        if (!Input.GetKey(KeyCode.LeftShift))
         {
             anim.SetBool("Shift", false);
 
@@ -350,12 +246,13 @@ public class Kjh_player : MonoBehaviour
             stop = false;
             stopTimes = false;
         }
-        if (anim.GetBool("Control") == false)
+        if((anim.GetBool("Control") == false)&&(Kjh_fish.ex ==false))
         {
             stop = true;
             stopTimes = true;
         }
     }
+
 
     void TimeAcction()// 애니메이션 누름  구별
     {
@@ -377,35 +274,14 @@ public class Kjh_player : MonoBehaviour
         }
 
     }
-    //void Swhich()// 데쉬시 1초안에 좌우반전
-    //{
-      
-    //    if (Input.GetKeyUp(KeyCode.LeftArrow)&&Input.GetKey(KeyCode.RightArrow))
-    //    {
-           
-    //            anim.SetBool("filp>R", true);
 
-
-
-
-    //    }
-    //    else if(Input.GetKeyUp(KeyCode.RightArrow) && Input.GetKey(KeyCode.LeftArrow))
-    //    {
-    //        anim.SetBool("filp>L", true);
-    //    }
-
-        
-    //    Invoke("filpStop", 0.5f);
-    //}
-
-    //void filpStop()
-    //{
-
-    //    anim.SetBool("filp>L", false);
-    //    anim.SetBool("filp>R", false);
-    //}
-
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("ENEMY"))
+        {
+            Destroy(gameObject);
+        }
+    }
 
 }
 

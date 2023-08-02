@@ -6,9 +6,10 @@ public class Kjh_to : MonoBehaviour
 {
     
     // Start is called before the first frame update
+
     void Start()
     {
-        
+        Destroy(gameObject, 1f);
     }
 
     // Update is called once per frame
@@ -24,8 +25,9 @@ public class Kjh_to : MonoBehaviour
         {
             Destroy(gameObject);
            
-          collision.gameObject.GetComponent<Transform>().Translate(0,-10,0);
-            
+            float toY= collision.gameObject.GetComponent<Transform>().position.y;
+            toY = toY - 1;
+            collision.gameObject.GetComponent<Transform>().position = new Vector3(0, toY, 0);
         }
     }
 

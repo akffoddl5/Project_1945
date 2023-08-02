@@ -5,7 +5,8 @@ using UnityEngine;
 public abstract class Enemy_Dowoon : MonoBehaviour
 {
     public  int hp = 4;
-    SpriteRenderer renderer;
+    public int maxHp = 150;
+    public SpriteRenderer renderer;
     public bool isOpen;
     public bool isAttackAble = false;
     public bool isArrive = false;
@@ -20,7 +21,9 @@ public abstract class Enemy_Dowoon : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject Panel;
 
-    private void Start()
+    public Coroutine co_colorChange;
+
+    public virtual void Start()
     {
         renderer = GetComponent<SpriteRenderer>();
 
@@ -32,14 +35,24 @@ public abstract class Enemy_Dowoon : MonoBehaviour
         if(!isArrive)
         GoToGoalPos();
     }
+    
 
-    void OnHitByBullet()
+    
+
+    IEnumerator colorChange()
     {
-        if(renderer != null)
+
+
+        if (renderer != null)
         {
-           
+            renderer.material.color = Color.red;
         }
+
+        yield return new WaitForSeconds(0.15f);
+
+        renderer.material.color = Color.white;
     }
+
     public virtual void GoToGoalPos()
     {
         var dir = goalPos - transform.position;
@@ -69,6 +82,20 @@ public abstract class Enemy_Dowoon : MonoBehaviour
         if(collision.gameObject.CompareTag("Player_bullet"))
         {
             hp -= (int)collision.GetComponent<Bullet_info>().att;
+
+            if (co_colorChange == null)
+                co_colorChange = StartCoroutine(colorChange());
+            else if (co_colorChange != null)
+            {
+                StopCoroutine(co_colorChange);
+
+                co_colorChange = StartCoroutine(colorChange());
+            }
+
+            if(collision.gameObject.GetComponent<Bullet_Dowoon>() !=null)
+            {
+                collision.gameObject.GetComponent<Bullet_Dowoon>().DestroySelf();
+            }
 
             if( hp <= 0)
             {
@@ -133,4 +160,6 @@ public abstract class Enemy_Dowoon : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
+   
 }

@@ -18,6 +18,7 @@ public class KYS_GameManager : MonoBehaviour
 
     private void Start()
     {
+        
         ITEM_MANAGER.instance.ItemSetting(Charactor.용석);
         //ITEM_Manager.instance.ItemSetting(Charactor.용석);
         StartCoroutine(Furin_init());
@@ -41,11 +42,11 @@ public class KYS_GameManager : MonoBehaviour
         while (true)
         {
             float rand_x = Random.Range(-2.0f, 2.0f);
-            float rand_y = Random.Range(1.0f, 3.0f);
+            float rand_y = Random.Range(-1f, 3.0f);
 
 
             Instantiate(unit_boori, new Vector3(rand_x, rand_y, 0), Quaternion.identity);
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(2);
         }
         
     }

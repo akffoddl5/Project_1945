@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Jiwon_Boss : MonoBehaviour
 {
-	float maxHp = 500;
+	float maxHp = 50;
 	float nowHp;
 
 	bool isPhase_02;
