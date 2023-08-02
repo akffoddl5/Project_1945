@@ -39,6 +39,7 @@ public class UI_Manager : MonoBehaviour
     {
 		_Init();
 		co_fadeIn = StartCoroutine(FadeIn());
+		SceneManager.LoadScene("Jiwon");
 	}
 
 	void _Init()

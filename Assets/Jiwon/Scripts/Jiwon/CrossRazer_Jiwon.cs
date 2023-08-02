@@ -13,7 +13,7 @@ public class CrossRazer_Jiwon : MonoBehaviour
 
     // G color
     public SpriteRenderer razer1, razer2;
-	IEnumerator Co_GUpDown;
+	Coroutine Co_GUpDown;
     bool isGUp = false;
     float GMin = 0f;
     float GMax = 1f;
@@ -21,8 +21,7 @@ public class CrossRazer_Jiwon : MonoBehaviour
     void Start()
     {
         speed = minSpeed;
-        Co_GUpDown = GColor();
-        StartCoroutine(Co_GUpDown);
+        Co_GUpDown = StartCoroutine(GColor());
 	}
 	private void FixedUpdate()
 	{
