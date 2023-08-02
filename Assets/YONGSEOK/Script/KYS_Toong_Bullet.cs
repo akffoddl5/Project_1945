@@ -40,7 +40,7 @@ public class KYS_Toong_Bullet : MonoBehaviour
             for (int i = 0; i < gameObjects.Count; i++)
             {
                 for (int j = 0; j < gameObjects[i].Count; j++) {
-                    gameObjects[i][j].GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0,-1),1f);
+                    gameObjects[i][j].GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0,-1),0.3f);
                 }
             }
             gameObjects.Clear();

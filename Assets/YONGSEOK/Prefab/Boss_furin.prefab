@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bbed2f2467e95840aeb722315bd44d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 500
+  hp: 300
   dieEffect: {fileID: 4208831749957786760, guid: bb195bece00128a459ccf5bedc0dbdbb, type: 3}
 --- !u!61 &2901354831761553407
 BoxCollider2D:

@@ -19,20 +19,17 @@ public class KYS_GameManager : MonoBehaviour
 
     private void Start()
     {
-        StopCoroutine(Fade_in());
+        StartCoroutine(Fade_in());
 
-		ITEM_MANAGER.instance.ItemSetting(Charactor.용석);
-        //ITEM_Manager.instance.ItemSetting(Charactor.용석);
         StartCoroutine(Furin_init());
         StartCoroutine(Unit_boori_init());
-        ITEM_MANAGER.instance.GetItem(Vector3.zero, Quaternion.identity);
     }
 
     private void Update()
     {
         if (isFurin_die)
         {
-            ITEM_MANAGER.instance.GetItem(Vector3.zero, Quaternion.identity);
+            //ITEM_MANAGER.instance.GetItem(Vector3.zero, Quaternion.identity);
             StartCoroutine(Toong_init());
             
             isFurin_die = false;
@@ -106,16 +103,17 @@ public class KYS_GameManager : MonoBehaviour
 
     IEnumerator Fade_in()
     {
-        float a = 1;
+		float a = 1;
         Color tmp = fadePanel.GetComponent<Image>().color;
+		//Debug.Log(tmp.a);
         while (tmp.a > 0)
         {
-            tmp.a -= Time.deltaTime * 1f;
+            tmp.a -= Time.deltaTime * 2f;
+            //Debug.Log(tmp.a);
             fadePanel.GetComponent<Image>().color = tmp;
 
-			yield return new WaitForSeconds(1);
+			yield return new WaitForSeconds(0.05f);
 		}
-		
     }
 
 	IEnumerator Fade_out()
