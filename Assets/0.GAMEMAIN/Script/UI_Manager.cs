@@ -89,8 +89,8 @@ public class UI_Manager : MonoBehaviour
 		now_Player_Instance = Instantiate(now_Player, new Vector3(0, -2, 0), Quaternion.identity);
 		
 	
-		KYS_Player_move tmp1 = now_Player_Instance.GetComponent<KYS_Player_move>();
-		if (tmp1 != null) tmp1.enabled = false;
+		//KYS_Player_move tmp1 = now_Player_Instance.GetComponent<KYS_Player_move>();
+		//if (tmp1 != null) tmp1.enabled = false;
 		
 		DontDestroyOnLoad(now_Player_Instance);
 		StartCoroutine(LoadScene(1));
@@ -174,7 +174,7 @@ public class UI_Manager : MonoBehaviour
 			Debug.Log(oper.progress);
 		}
 		StartCoroutine(FadeIn());
-		Debug.Log("start cor");
+		//Debug.Log("start cor");
 		//SceneManager.LoadScene(scene_dict[stage]);
 
 
