@@ -9,7 +9,8 @@ public class June_EnemySpawn : MonoBehaviour
 {
     public GameObject[] Spawn;
 
-   
+    public GameObject Item;
+    public int CountDestroy;
 
     //보스
     public float BossStart; //시작

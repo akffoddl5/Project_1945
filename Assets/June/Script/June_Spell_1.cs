@@ -13,19 +13,19 @@ public class June_Spell_1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // 충돌한 오브젝트가 Player 태그를 가진 경우 무시합니다.
+        // 충돌한 오브젝트가 Player 태그를 가진 경우 무시
         if (collision.CompareTag("Player"))
         {
             return;
         }
 
-        // 충돌한 오브젝트가 Wall 태그를 가진 경우 무시합니다.
+        // 충돌한 오브젝트가 Wall 태그를 가진 경우 무시
         if (collision.CompareTag("Wall"))
         {
             return;
         }
 
-        // ENEMY 태그를 가진 오브젝트가 아닌 경우 충돌한 오브젝트를 파괴합니다.
+        // ENEMY 태그를 가진 오브젝트가 아닌 경우 충돌한 오브젝트를 파괴
         if (!collision.CompareTag("ENEMY"))
         {
             Destroy(collision.gameObject);
