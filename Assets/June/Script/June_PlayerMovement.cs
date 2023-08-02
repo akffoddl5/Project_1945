@@ -10,6 +10,8 @@ public class June_PlayerMovement : MonoBehaviour
     Animator ani; //애니메이터 가져올 변수
     public float moveSpeed = 5;
     
+
+
     [SerializeField]
 
 

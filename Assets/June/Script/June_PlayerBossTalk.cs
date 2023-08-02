@@ -23,7 +23,7 @@ public class June_PlayerBossTalk : MonoBehaviour
 
    
 
-    private void Start()
+    public void Start()
     {
         index= 0;
        
@@ -84,8 +84,8 @@ public class June_PlayerBossTalk : MonoBehaviour
     }
     private void OnEnable()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = false;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = false;
+      //  GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = false;
+       // GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = false;
     }
     void DestroyTheTxt()
     {
@@ -96,8 +96,8 @@ public class June_PlayerBossTalk : MonoBehaviour
         StartCoroutine(CharactorFadeOutStart(0f, dncmgh));
        Aya.SetActive(false);
        dncmgh.SetActive(false);
-       GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = true;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = true;
+     //  GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = true;
+      //  GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = true;
        
     }
 

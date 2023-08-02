@@ -20,6 +20,8 @@ public class June_PlayerShooting : MonoBehaviour
 
     Image cutimage;
 
+    public GameObject Item;
+    public int CountDestroy;
 
     public float activationTime =4f;
 
