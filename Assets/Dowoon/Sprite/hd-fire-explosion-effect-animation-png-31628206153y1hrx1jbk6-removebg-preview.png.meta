@@ -1,0 +1,945 @@
+fileFormatVersion: 2
+guid: 8ccae336c9e15d842b8cd7cc7f7f761b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 381
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242b1f7e988d6a34f9a49a3c3b6d2793
+      internalID: 541496123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 381
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e850a0a6894a04a9d4bdb0ac3bd3fc
+      internalID: 148818927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 380
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2569e818ddfccc42a53392558098e09
+      internalID: 1722785595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 379
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cef854a364111a42951207e9e3e144c
+      internalID: 1210043165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 378
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42472b643f85ac043a505e7b050149f0
+      internalID: 1153772712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 377
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4731cbee2f47351418c5f5d3c33e83dd
+      internalID: -1202325073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 303
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1578e64d34b95fe4b913b986d5659d49
+      internalID: -1100588316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 302
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd592de453d33d48aec328e7cf3a503
+      internalID: -625602051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 301
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3edcc662fe51042b11d580b7517f2c
+      internalID: -1556831255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 299
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7823317c1f5552c449636b8904e03405
+      internalID: -170595074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 299
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa98e102aad28743baf5b87843fb9a3
+      internalID: -1587917232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 299
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48767ec25052d7244b558b431171f235
+      internalID: -251728988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 298
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a02c87d2789a94ab16a51d043e65d9
+      internalID: -1870264029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 297
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f063fa79ccc6974a8c0b2b4b9d7cb65
+      internalID: -1858751146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 224
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b57ec7aa2d94424da26eab3228b378e
+      internalID: -263275934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 225
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b191660b4f2b7449930903e21d3098
+      internalID: 540220059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 225
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb64e9278cd4ec449573bbdfa2af00d
+      internalID: -130254348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 225
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf91334bc14965e4db4ccf73ec67b103
+      internalID: -148853380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 225
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681732394112dae48aeb6ede8fe55f97
+      internalID: -1405001846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 225
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d67e9a6b2e949a4f9b07ef45a1432ee
+      internalID: 951537989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 225
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a65d9190ce936d448b23ccd7b7c2b0e
+      internalID: -1572518985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 225
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c91d03ffae692d4487fabd3f43ac619
+      internalID: -1688580207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 152
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d3200f71ebf80479d18f7c4bce9212
+      internalID: 2125337573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 152
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a92d75b85041b14db7761e816fac754
+      internalID: -1538853833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 152
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c7e2a42df1f9349acb619c35371f6a
+      internalID: 1796738051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 152
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0d9a0caa2f6594bbc9ecb05c97e9d3
+      internalID: 1653627815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 152
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d7fdb194eb3e1409ee23a916a37040
+      internalID: -2015077860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 152
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959da78f8cad84841a28578b1cd57249
+      internalID: 1242650217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 151
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1682089da43bb7e40b1c3191f448ed41
+      internalID: -1406424448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 151
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5fbf6fa68d06e44a21e2769f0cff3f
+      internalID: -209434177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 79
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c4f006740060641a7802563fa7723d
+      internalID: -507752897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 79
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8906d3f3fe9e44b4f9595fc5e9bdea94
+      internalID: -1007952006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 79
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0df62ee728e414f8579329bd7e2d5f
+      internalID: -971460454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 80
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7e0ea734cb0d248b707b1c5802acdc
+      internalID: -2107717682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 84
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d253db7c27d9441ac48849170d815d
+      internalID: 1068656661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 84
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097547f1fb85d794abec426619d8e748
+      internalID: 1745067348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_0: 541496123
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_1: 148818927
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_10: -1587917232
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_11: -251728988
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_12: -1870264029
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_13: -1858751146
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_14: -263275934
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_15: 540220059
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_16: -130254348
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_17: -148853380
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_18: -1405001846
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_19: 951537989
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_2: 1722785595
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_20: -1572518985
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_21: -1688580207
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_22: 2125337573
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_23: -1538853833
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_24: 1796738051
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_25: 1653627815
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_26: -2015077860
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_27: 1242650217
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_28: -1406424448
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_29: -209434177
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_3: 1210043165
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_30: -507752897
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_31: -1007952006
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_32: -971460454
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_33: -2107717682
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_34: 1068656661
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_35: 1745067348
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_4: 1153772712
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_5: -1202325073
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_6: -1100588316
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_7: -625602051
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_8: -1556831255
+      hd-fire-explosion-effect-animation-png-31628206153y1hrx1jbk6-removebg-preview_9: -170595074
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

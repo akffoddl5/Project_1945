@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Dowoon : MonoBehaviour
 {
     float moveSpeed = 10.5f;
     public float PowerGauge = 0f;
     public const float MAX_POWER_GAUGE = 100f;
+    public GameObject BombGameObject;
+    public GameObject BombEffectSprite;
+
 
 
     Animator anim;
@@ -17,9 +21,15 @@ public class Player_Dowoon : MonoBehaviour
     [SerializeField]
     GameObject Gauge_slider;
 
+    [SerializeField]
+    GameObject Gauge_slider_fill;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        PowerGauge = MAX_POWER_GAUGE;
+        ChangeGaugeValue();
         anim = GetComponent<Animator>();
         //bulletPos = GetComponentInChildren<GameObject>();
     }
@@ -40,14 +50,34 @@ public class Player_Dowoon : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             ShotBullet();
+            PowerGauge += 3f;
+            if (PowerGauge >= MAX_POWER_GAUGE)
+                PowerGauge = MAX_POWER_GAUGE;
+            ChangeGaugeValue();
         }       
 
         if(PowerGauge >= 50)
         {
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                PowerGauge -= 50;
+               var cour=  StartCoroutine(UseBoom());
+                ChangeGaugeValue();
 
+            }
         }
+
+        SetGaugePos();
     }
 
+    public void SetGaugePos()
+    {
+        var pos = Camera.main.WorldToScreenPoint(transform.position);
+        pos.y -= 60f;
+     
+        Gauge_slider.transform.position = pos;
+        
+    }
     public void ShotBullet()
     {
         var pos = bulletPos.transform.position;
@@ -67,10 +97,56 @@ public class Player_Dowoon : MonoBehaviour
        
     }
 
+    public void ChangeGaugeValue()
+    {
+        var val = (float)PowerGauge / MAX_POWER_GAUGE;
+
+        if( val < 0.5f)
+        {
+            Gauge_slider_fill.GetComponent<Image>().color = Color.red;
+        }
+        else if ( val >= 0.5f)
+        {
+            Gauge_slider_fill.GetComponent<Image>().color = Color.green;
+        }
+
+
+        Gauge_slider.GetComponent<Slider>().value = val;
+
+    }
     IEnumerator UseBoom()
     {
         
 
-        yield return new WaitForSeconds(0.5f);
+        GameObject[] BombObj = new GameObject[3];
+  
+        
+
+            float intervalangle = 180 / BombObj.Length; // 발사체 사이의 각도
+
+        for (int i = 0; i < BombObj.Length; i++)
+        {
+            BombObj[i] = Instantiate(BombGameObject, transform.position, Quaternion.identity);
+
+            // 발사체가 각도 구하기 x, y
+            float angle = 60 + i * 30;
+         
+                // 각도를 이용해서 x, y 좌표를 구하기
+                float x = Mathf.Cos(angle * Mathf.PI / 180.0f); // 라디안 각도 까먹었음. 다음에는 까먹지 말기
+                float y = Mathf.Sin(angle * Mathf.PI / 180.0f);
+
+                Vector2 dir = new Vector2(x, y);
+                BombObj[i].GetComponent<BombObject>().Direction = dir;
+            BombObj[i].GetComponent<BombObject>().StartCoroutine(BombObj[i].GetComponent<BombObject>().InstantiateBoom());
+                
+            }
+
+        yield return new WaitForSeconds(0.2f);
+
+
+
+            
+        
+      
     }
 }

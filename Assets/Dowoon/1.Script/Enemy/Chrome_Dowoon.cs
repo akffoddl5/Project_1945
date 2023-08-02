@@ -63,7 +63,7 @@ public class Chrome_Dowoon : MonoBehaviour
             if (_isIncrease)
             {
                 var scale = transform.localScale;
-                if (scale.x <= 1.5f)
+                if (scale.x <= 0.89f)
                 {
                     scale.x += 0.01f;
                     scale.y += 0.01f;
@@ -80,7 +80,7 @@ public class Chrome_Dowoon : MonoBehaviour
                     if (objSpeed <= 350)
                         objSpeed += speedOffset * Time.deltaTime;
 
-                    if(circleR >= 12)
+                    if(circleR >= 6)
                         _isIncrease = false;
 
                     yield return new WaitForEndOfFrame();

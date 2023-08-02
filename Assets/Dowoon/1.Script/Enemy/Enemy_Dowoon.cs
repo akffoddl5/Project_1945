@@ -81,6 +81,7 @@ public abstract class Enemy_Dowoon : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player_bullet"))
         {
+          
             hp -= (int)collision.GetComponent<Bullet_info>().att;
 
             if (co_colorChange == null)
@@ -92,10 +93,10 @@ public abstract class Enemy_Dowoon : MonoBehaviour
                 co_colorChange = StartCoroutine(colorChange());
             }
 
-            if(collision.gameObject.GetComponent<Bullet_Dowoon>() !=null)
-            {
-                collision.gameObject.GetComponent<Bullet_Dowoon>().DestroySelf();
-            }
+            //if(collision.gameObject.GetComponent<Bullet_Dowoon>() !=null)
+            //{
+            //    collision.gameObject.GetComponent<Bullet_Dowoon>().DestroySelf();
+            //}
 
             if( hp <= 0)
             {
@@ -117,7 +118,7 @@ public abstract class Enemy_Dowoon : MonoBehaviour
         {
 
             var b = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-
+            Destroy(b, 5f);
             var _dir = (target.transform.position - transform.position).normalized;
 
             b.GetComponent<Bullet_Dowoon>().SetDirection(_dir);

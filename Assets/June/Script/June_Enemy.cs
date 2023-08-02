@@ -53,7 +53,6 @@ public class June_Enemy : MonoBehaviour
         // collison   = 트리거 작동시킨 충돌체 
         //  즉 collision.gameobject =  총알 
         Hp -= collision.gameObject.GetComponent<Bullet_info>().att; //나중에 bullet_info에서 공격력 가져오고 적용시키기
-        Destroy(collision.gameObject);
         Debug.Log(Hp);
         if(Hp <= 0)
         {
