@@ -12,7 +12,7 @@ public class Bullet_Dowoon : Bullet_info
     // Start is called before the first frame update
     private void OnEnable()
     {
-        Invoke("DestroySelf", 5f);
+       // Invoke("DestroySelf", 5f);
     }
     // Update is called once per frame
     public virtual void  Update()
@@ -55,6 +55,24 @@ public class Bullet_Dowoon : Bullet_info
   public void DestroySelf()
     {
         ObjectPool_Dowoon.ReturnBullet(this);
+    }
+
+
+   public IEnumerator StopBullet(float t)
+    {
+
+        yield return new WaitForSeconds(t);
+
+        bullet_Speed = 1.0f;
+
+
+        while(bullet_Speed > 0)
+        {
+            bullet_Speed -= Time.deltaTime;
+
+            yield return new WaitForEndOfFrame();
+        }
+
     }
 
 }
