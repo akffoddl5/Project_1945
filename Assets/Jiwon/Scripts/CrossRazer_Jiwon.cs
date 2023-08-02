@@ -21,8 +21,7 @@ public class CrossRazer_Jiwon : MonoBehaviour
     void Start()
     {
         speed = minSpeed;
-
-		Co_GUpDown = StartCoroutine(GColor());
+        Co_GUpDown = StartCoroutine(GColor());
 	}
 	private void FixedUpdate()
 	{

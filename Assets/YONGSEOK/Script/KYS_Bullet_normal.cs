@@ -11,4 +11,13 @@ public class KYS_Bullet_normal : MonoBehaviour
     {
          transform.Translate(transform.up * speed * Time.deltaTime);
     }
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		//Debug.Log(collision.name);
+		if (collision.CompareTag("ENEMY"))
+		{
+			Destroy(gameObject,0.02f);
+		}
+	}
 }

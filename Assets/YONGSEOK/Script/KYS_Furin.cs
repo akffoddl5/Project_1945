@@ -14,7 +14,7 @@ public class KYS_Furin : MonoBehaviour
         if (collision.CompareTag("Player_bullet")) {
             float att = collision.gameObject.GetComponent<Bullet_info>().att;
             GetDamage(att);
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
         }
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class UI_Manager : MonoBehaviour
 {
 	public static UI_Manager instance;
@@ -54,11 +55,11 @@ public class UI_Manager : MonoBehaviour
 		prefab_dict.Add(Charactor.도운, DW_Player);
 		prefab_dict.Add(Charactor.용석, YS_Player);
 
-		scene_dict.Add(1, "Dowoon");
+		scene_dict.Add(2, "Dowoon");
 		scene_dict.Add(3, "YONGSEOK");
-		scene_dict.Add(2, "Jiwon");
+		scene_dict.Add(5, "Jiwon");
 		scene_dict.Add(4, "kjh_sceen1");
-		scene_dict.Add(5, "June_Scene");
+		scene_dict.Add(1, "June_Scene");
 
 		current_stage = 1;
 	}
@@ -67,6 +68,7 @@ public class UI_Manager : MonoBehaviour
     {
 		_Init();
 		co_fadeIn = StartCoroutine(FadeIn());
+		SceneManager.LoadScene("Jiwon");
 	}
 
 	void _Init()
@@ -86,13 +88,7 @@ public class UI_Manager : MonoBehaviour
 
 		now_Player = prefab_dict[a];
 		nowSceneName = scene_dict[current_stage];
-		now_Player_Instance = Instantiate(now_Player, new Vector3(0, -2, 0), Quaternion.identity);
 		
-	
-		//KYS_Player_move tmp1 = now_Player_Instance.GetComponent<KYS_Player_move>();
-		//if (tmp1 != null) tmp1.enabled = false;
-		
-		DontDestroyOnLoad(now_Player_Instance);
 		StartCoroutine(LoadScene(1));
 		
 	}
@@ -100,7 +96,7 @@ public class UI_Manager : MonoBehaviour
 
 	void GameClear_UI()
 	{
-		StartCoroutine(FadeOut());
+		co_fadeOut = StartCoroutine(FadeOut());
 
 		gameStatus.text = "Game Clear";
 		obj_nextBtn.GetComponent<Button>().interactable = true;
@@ -114,7 +110,7 @@ public class UI_Manager : MonoBehaviour
 
 	void GameOver_UI()
 	{
-		StartCoroutine(FadeOut());
+		co_fadeOut = StartCoroutine(FadeOut());
 
 		gameStatus.text = "Game Over";
 		obj_nextBtn.GetComponent<Button>().interactable = false;
@@ -162,6 +158,8 @@ public class UI_Manager : MonoBehaviour
 		yield break;
 	}
 
+	
+
 	IEnumerator LoadScene(int stage)
 	{
 		StartCoroutine(FadeOut());
@@ -173,7 +171,7 @@ public class UI_Manager : MonoBehaviour
 			yield return null;
 			Debug.Log(oper.progress);
 		}
-		StartCoroutine(FadeIn());
+		//StartCoroutine(FadeIn());
 		//Debug.Log("start cor");
 		//SceneManager.LoadScene(scene_dict[stage]);
 
@@ -181,7 +179,16 @@ public class UI_Manager : MonoBehaviour
 	}
 
 
+	private void OnLevelWasLoaded(int level)
+	{
+		StopCoroutine(FadeOut());
+		GameObject a = GameObject.FindGameObjectWithTag("Player");
+		Destroy(a);
+		StartCoroutine(FadeIn());
 
+		now_Player_Instance = Instantiate(now_Player, new Vector3(0, -4, 0), Quaternion.identity);
+		DontDestroyOnLoad(now_Player_Instance);
+	}
 
 
 }
