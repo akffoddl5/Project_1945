@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Boss_Jiwon : MonoBehaviour
 {
-	float maxHp = 50;
+	float maxHp = 500;
 	float nowHp;
 
 	bool isPhase_02;
@@ -312,6 +312,7 @@ public class Boss_Jiwon : MonoBehaviour
 	// 벽에 부딪히면 튕겨야 하니까 OnCollisionEnter2D
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
+		// 보스랑 벽 충돌
 		if (collision.gameObject.CompareTag("Wall"))
 		{
 			// Vector2.Reflect(입사각, 법선)
@@ -322,10 +323,16 @@ public class Boss_Jiwon : MonoBehaviour
 
 			rb.AddForce(dir*reflectPower);
 		}
+		// 플레이어와 보스 충돌
+		if (collision.gameObject.CompareTag("Player"))
+		{
+			Destroy(collision.gameObject);
+		}
 	}
-	//플레이어의 총알에 닿으면 체력이 까이도록
+
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
+		// 보스랑 플레이어 총알 충돌
         if (collision.CompareTag("Player_bullet"))
         {
 			nowHp -= collision.gameObject.GetComponent<Bullet_info>().att;

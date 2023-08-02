@@ -56,15 +56,6 @@ public class Player_Jiwon : MonoBehaviour
 
 	}
 
-
-	// 보스나 보스의 총알에 맞으면 플레이어 삭제
-	private void OnCollisionEnter2D(Collision2D collision)
-	{
-		if (collision.gameObject.CompareTag("ENEMY"))
-		{
-			Destroy(gameObject);
-		}
-	}
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.CompareTag("ENEMY"))
