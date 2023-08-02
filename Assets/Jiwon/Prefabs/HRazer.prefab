@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8300425768225245950}
   m_Layer: 0
   m_Name: HRazer
-  m_TagString: Monster_bullet
+  m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

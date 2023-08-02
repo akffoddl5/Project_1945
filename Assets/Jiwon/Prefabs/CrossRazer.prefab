@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 805743592026528146}
   m_Layer: 0
   m_Name: Razer
-  m_TagString: Monster_bullet
+  m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 805743592826429985}
   m_Layer: 0
   m_Name: Razer(1)
-  m_TagString: Monster_bullet
+  m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 8851284109131632311}
   m_Layer: 0
   m_Name: CrossRazer
-  m_TagString: Monster_bullet
+  m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
