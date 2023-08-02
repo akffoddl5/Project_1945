@@ -17,12 +17,27 @@ public class UI_Manager : MonoBehaviour
 	public string nextSceneName;
 	public string nowSceneName;
 
+	public GameObject DW_Player;
+	public GameObject JW_Player;
+	public GameObject YS_Player;
+	public GameObject JH_Player;
+	public GameObject SJ_Player;
+	public GameObject now_Player;
+	public GameObject now_Player_Instance;
+
+	public Dictionary<Charactor, GameObject> prefab_dict = new Dictionary<Charactor, GameObject>();
+	public Dictionary<int, string> scene_dict = new Dictionary<int, string>();
+
+	
+
+	public int current_stage = 1;
 
 	Coroutine co_fadeIn;
 	Coroutine co_fadeOut;
 
 	private void Awake()
 	{
+		
 		if (instance == null)
 		{
 			instance = this;
@@ -31,8 +46,21 @@ public class UI_Manager : MonoBehaviour
 		else
 		{
 			Destroy(gameObject);
-
 		}
+
+		prefab_dict.Add(Charactor.신준, SJ_Player);
+		prefab_dict.Add(Charactor.지원, JW_Player);
+		prefab_dict.Add(Charactor.정현, JH_Player);
+		prefab_dict.Add(Charactor.도운, DW_Player);
+		prefab_dict.Add(Charactor.용석, YS_Player);
+
+		scene_dict.Add(1, "Dowoon");
+		scene_dict.Add(3, "YONGSEOK");
+		scene_dict.Add(2, "Jiwon");
+		scene_dict.Add(4, "kjh_sceen1");
+		scene_dict.Add(5, "June_Scene");
+
+		current_stage = 1;
 	}
 
 	void Start()
@@ -49,25 +77,30 @@ public class UI_Manager : MonoBehaviour
 		obj_reBtn.SetActive(false);
 	}
 
-	public void CharacterSelect_FadeOut()
+	
+
+	public void CharacterSelect_FadeOut(Charactor a)
 	{
-		co_fadeOut = StartCoroutine(FadeOut());
+		//StartCoroutine(FadeOut());
+		Debug.Log(current_stage);
 
-		gameStatus.gameObject.SetActive(false);
-		obj_nextBtn.SetActive(false);
-		obj_reBtn.SetActive(false);
-
-
-		if (obj_panel.GetComponent<Image>().color.a >= 1)
-		{
-			StopCoroutine(co_fadeOut);
-		}
+		now_Player = prefab_dict[a];
+		nowSceneName = scene_dict[current_stage];
+		now_Player_Instance = Instantiate(now_Player, new Vector3(0, -2, 0), Quaternion.identity);
+		
+	
+		KYS_Player_move tmp1 = now_Player_Instance.GetComponent<KYS_Player_move>();
+		if (tmp1 != null) tmp1.enabled = false;
+		
+		DontDestroyOnLoad(now_Player_Instance);
+		StartCoroutine(LoadScene(1));
+		
 	}
 
 
 	void GameClear_UI()
 	{
-		co_fadeOut = StartCoroutine(FadeOut());
+		StartCoroutine(FadeOut());
 
 		gameStatus.text = "Game Clear";
 		obj_nextBtn.GetComponent<Button>().interactable = true;
@@ -77,15 +110,11 @@ public class UI_Manager : MonoBehaviour
 		obj_nextBtn.gameObject.SetActive(true);
 		obj_reBtn.gameObject.SetActive(true);
 
-		if (obj_panel.GetComponent<Image>().color.a >= 1)
-		{
-			StopCoroutine(co_fadeOut);
-		}
 	}
 
 	void GameOver_UI()
 	{
-		co_fadeOut = StartCoroutine(FadeOut());
+		StartCoroutine(FadeOut());
 
 		gameStatus.text = "Game Over";
 		obj_nextBtn.GetComponent<Button>().interactable = false;
@@ -95,10 +124,6 @@ public class UI_Manager : MonoBehaviour
 		obj_nextBtn.gameObject.SetActive(true);
 		obj_reBtn.gameObject.SetActive(true);
 
-		if (obj_panel.GetComponent<Image>().color.a >= 1)
-		{
-			StopCoroutine(co_fadeOut);
-		}
 	}
 
 	public void NextBtn()
@@ -110,6 +135,8 @@ public class UI_Manager : MonoBehaviour
 		SceneManager.LoadScene(nowSceneName);
 	}
 
+	
+
 	// 어두운 화면에서 게임 화면으로 전환됨
 	IEnumerator FadeIn()
 	{
@@ -120,6 +147,7 @@ public class UI_Manager : MonoBehaviour
 			//Debug.Log(obj_panel.GetComponent<Image>().color.a);
 			obj_panel.GetComponent<Image>().color -= tmp;
 		}
+		yield break;
 	}
 
 	IEnumerator FadeOut()
@@ -131,6 +159,29 @@ public class UI_Manager : MonoBehaviour
 			//Debug.Log(obj_panel.GetComponent<Image>().color.a);
 			obj_panel.GetComponent<Image>().color += tmp;
 		}
+		yield break;
 	}
+
+	IEnumerator LoadScene(int stage)
+	{
+		StartCoroutine(FadeOut());
+		yield return new WaitForSeconds(1);
+
+		AsyncOperation oper = SceneManager.LoadSceneAsync(scene_dict[stage]);
+		while (!oper.isDone)
+		{
+			yield return null;
+			Debug.Log(oper.progress);
+		}
+		StartCoroutine(FadeIn());
+		Debug.Log("start cor");
+		//SceneManager.LoadScene(scene_dict[stage]);
+
+
+	}
+
+
+
+
 
 }
