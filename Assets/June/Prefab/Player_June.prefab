@@ -365,6 +365,8 @@ MonoBehaviour:
   PlayerDamage: 1
   PlayerCharg: {fileID: 0}
   Spell: {fileID: 700375181934918612, guid: 9456ccfc60b00c24b9c2768508671f62, type: 3}
+  Item: {fileID: 0}
+  CountDestroy: 0
   activationTime: 3
   m_missilePrefab: {fileID: 5862707670822519475, guid: 4de9785013d46234e8bcd4162070658d, type: 3}
   m_target: {fileID: 0}
@@ -387,7 +389,7 @@ GameObject:
   - component: {fileID: 7736641001900565431}
   - component: {fileID: 59763480040887279}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: SpellCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -730,7 +732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -845,7 +847,7 @@ GameObject:
   - component: {fileID: 6900402856380084814}
   - component: {fileID: 7398041520793379883}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MagicCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
