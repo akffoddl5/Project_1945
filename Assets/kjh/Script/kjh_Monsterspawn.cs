@@ -56,7 +56,7 @@ public class Kjh_Monster : MonoBehaviour
 
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player");
         anim = boom.GetComponent<Animator>();
         LightM();
         // lightMR = GameObject.Find("LightMonster").transform.Find("Canvars").transform.Find("Panel").gameObject;
@@ -82,8 +82,11 @@ public class Kjh_Monster : MonoBehaviour
         {
             yield return new WaitForSeconds(9);
             //Instantiate(fish);
-            fish_dir();
+            //fish_dir();
             //Invoke("fish_dir", 5);
+            fish1 = Instantiate(fish, fishT.position, Quaternion.identity);
+
+            fish1.GetComponent<Rigidbody2D>().AddForce(Vector2.down * speedF);
 
         }
     }
@@ -156,8 +159,8 @@ public class Kjh_Monster : MonoBehaviour
     }
     void fish_dir()
     {
-
-        fish.transform.SetParent(player.transform);
+        
+            fish.transform.SetParent(player.transform);
 
         Vector3 fishV = player.transform.position - fishT.localPosition;
         fishV = fishV.normalized;
@@ -165,10 +168,12 @@ public class Kjh_Monster : MonoBehaviour
         fishY = fishV.y;
         fishY = Mathf.Abs(fishY);
         fishV.y = -fishY;
-        fish1 = Instantiate(fish, fishT.position, Quaternion.identity);
+
+            fish1 = Instantiate(fish, fishT.position, Quaternion.identity);
         
-        fish1.GetComponent<Rigidbody2D>().AddForce(fishV * speedF);
-        Destroy(fish1, 10);
+            fish1.GetComponent<Rigidbody2D>().AddForce(fishV * speedF);
+            Destroy(fish1, 10);
+        
     }
     void LightM()
     {
