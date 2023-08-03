@@ -60,7 +60,7 @@ public class June_Enemy : MonoBehaviour
             GameObject.Find("SpawnManager").GetComponent<June_EnemySpawn>().CountDestroy++;
             if (GameObject.Find("SpawnManager").GetComponent<June_EnemySpawn>().CountDestroy % 4 == 0)
                 Instantiate(GameObject.Find("SpawnManager").GetComponent<June_EnemySpawn>().Item, ms.position, Quaternion.identity);
-            Destroy(gameObject);
+                Destroy(gameObject);
 
            
         }
