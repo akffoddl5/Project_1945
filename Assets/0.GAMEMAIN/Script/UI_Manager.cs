@@ -64,12 +64,12 @@ public class UI_Manager : MonoBehaviour
 		scene_dict.Add(3, "Dowoon");
 		scene_dict.Add(2, "YONGSEOK");
 		scene_dict.Add(5, "Jiwon");
-		scene_dict.Add(1, "Jiwon");
-		//scene_dict.Add(1, "kjh_sceen1");
+		//scene_dict.Add(1, "Jiwon");
+		scene_dict.Add(1, "kjh_sceen1");
 		scene_dict.Add(4, "June_Scene");
 		scene_dict.Add(6, "GameEnd");
 		scene_dict.Add(7, "GameEnd");
-		scene_dict.Add(8, "GameEnd");
+		scene_dict.Add(0, "CharacterSelect 1");
 
 
 		current_stage = 1;
@@ -414,7 +414,7 @@ public class UI_Manager : MonoBehaviour
         yield break;
     }
 
-    IEnumerator LoadScene(int stage)
+    public IEnumerator LoadScene(int stage)
     {
         StartCoroutine(FadeOut());
         yield return new WaitForSeconds(1);
