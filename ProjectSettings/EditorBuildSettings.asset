@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Dowoon/0.Scene/Dowoon.unity
     guid: 890b486a43d2e9440b8757829a438bf6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Jiwon/Jiwon.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/YONGSEOK/YONGSEOK.unity
     guid: 8d5b242e3996f814588081972fa62156
-  - enabled: 1
+  - enabled: 0
     path: Assets/June/June_Scene.unity
     guid: 9bb3ca85f2b4a744580eda4eb4bacddf
-  - enabled: 1
+  - enabled: 0
     path: Assets/kjh/Sceen/kjh_sceen1.unity
     guid: 8727db434e2595b428856ccc206ea93c
   m_configObjects: {}

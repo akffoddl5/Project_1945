@@ -56,10 +56,10 @@ public class UI_Manager : MonoBehaviour
 		prefab_dict.Add(Charactor.용석, YS_Player);
 
 		scene_dict.Add(2, "Dowoon");
-		scene_dict.Add(3, "YONGSEOK");
+		scene_dict.Add(1, "YONGSEOK");
 		scene_dict.Add(5, "Jiwon");
 		scene_dict.Add(4, "kjh_sceen1");
-		scene_dict.Add(1, "June_Scene");
+		scene_dict.Add(3, "June_Scene");
 
 		current_stage = 1;
 	}
@@ -68,7 +68,6 @@ public class UI_Manager : MonoBehaviour
     {
 		_Init();
 		co_fadeIn = StartCoroutine(FadeIn());
-		SceneManager.LoadScene("Jiwon");
 	}
 
 	void _Init()
@@ -77,14 +76,27 @@ public class UI_Manager : MonoBehaviour
 		gameStatus.gameObject.SetActive(false);
 		obj_nextBtn.SetActive(false);
 		obj_reBtn.SetActive(false);
+
+		SceneManager.sceneLoaded += test;
 	}
+	
+	
+
+	public void test(Scene arg0, LoadSceneMode arg1)
+	{
+		Debug.Log("test 시작");
+		StartCoroutine(FadeIn());
+		StartCoroutine(Playerspawn());
+	}
+
+	
 
 	
 
 	public void CharacterSelect_FadeOut(Charactor a)
 	{
 		//StartCoroutine(FadeOut());
-		Debug.Log(current_stage);
+		//Debug.Log(current_stage);
 
 		now_Player = prefab_dict[a];
 		nowSceneName = scene_dict[current_stage];
@@ -94,7 +106,7 @@ public class UI_Manager : MonoBehaviour
 	}
 
 
-	void GameClear_UI()
+	public void GameClear_UI()
 	{
 		co_fadeOut = StartCoroutine(FadeOut());
 
@@ -107,6 +119,8 @@ public class UI_Manager : MonoBehaviour
 		obj_reBtn.gameObject.SetActive(true);
 
 	}
+
+
 
 	void GameOver_UI()
 	{
@@ -124,14 +138,54 @@ public class UI_Manager : MonoBehaviour
 
 	public void NextBtn()
 	{
-		SceneManager.LoadScene(nextSceneName);
+		current_stage++;
+
+		StartCoroutine(LoadScene(current_stage));
 	}
 	public void RestartBtn()
 	{
 		SceneManager.LoadScene(nowSceneName);
 	}
 
-	
+	IEnumerator Playerspawn()
+	{
+		if (GameObject.FindGameObjectWithTag("Player") != now_Player_Instance)
+		{
+			Debug.Log("플레이어 삭제됨");
+			Destroy(GameObject.FindGameObjectWithTag("Player"));
+		}
+
+		if (now_Player_Instance == null)
+		{
+			now_Player_Instance = Instantiate(now_Player, new Vector3(0, -6, 0), Quaternion.identity);
+		}
+
+		//스폰 전처리
+		now_Player_Instance.transform.position = new Vector3(0, -6, 0);
+
+		//다형성으로 2D콜라이더 전부 Disable
+        if (now_Player_Instance.GetComponent<Collider2D>() != null)
+        {
+           now_Player_Instance.GetComponent<Collider2D>().enabled =  false;
+        }
+
+
+        //스폰중..
+        while (true)
+		{
+			//1초마다
+			yield return new WaitForSeconds(0.01f); //지연
+			now_Player_Instance.transform.Translate(0, 3 * Time.deltaTime, 0); //플레이어 생성 위치로부터 맵으로 끌고 오기.
+
+			if (now_Player_Instance.transform.position.y > -2)  break;
+
+		}
+
+		//스폰후처리
+		now_Player_Instance.GetComponent<Collider2D>().enabled = true;
+	}
+
+
 
 	// 어두운 화면에서 게임 화면으로 전환됨
 	IEnumerator FadeIn()
@@ -169,7 +223,7 @@ public class UI_Manager : MonoBehaviour
 		while (!oper.isDone)
 		{
 			yield return null;
-			Debug.Log(oper.progress);
+			//Debug.Log(oper.progress);
 		}
 		//StartCoroutine(FadeIn());
 		//Debug.Log("start cor");
@@ -179,16 +233,16 @@ public class UI_Manager : MonoBehaviour
 	}
 
 
-	private void OnLevelWasLoaded(int level)
-	{
-		StopCoroutine(FadeOut());
-		GameObject a = GameObject.FindGameObjectWithTag("Player");
-		Destroy(a);
-		StartCoroutine(FadeIn());
+	//private void OnLevelWasLoaded(int level)
+	//{
+	//	StopCoroutine(FadeOut());
+	//	GameObject a = GameObject.FindGameObjectWithTag("Player");
+	//	Destroy(a);
+	//	StartCoroutine(FadeIn());
 
-		now_Player_Instance = Instantiate(now_Player, new Vector3(0, -4, 0), Quaternion.identity);
-		DontDestroyOnLoad(now_Player_Instance);
-	}
+	//	now_Player_Instance = Instantiate(now_Player, new Vector3(0, -4, 0), Quaternion.identity);
+	//	DontDestroyOnLoad(now_Player_Instance);
+	//}
 
 
 }

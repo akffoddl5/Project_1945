@@ -26,7 +26,7 @@ public class Kjh_to : MonoBehaviour
             Destroy(gameObject);
            
             float toY= collision.gameObject.GetComponent<Transform>().position.y;
-            toY = toY - 1;
+            toY = toY - 5;
             collision.gameObject.GetComponent<Transform>().position = new Vector3(0, toY, 0);
         }
     }

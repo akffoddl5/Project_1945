@@ -27,6 +27,8 @@ public class kjh_pbullet : MonoBehaviour
     static int countK = 0;
 
 
+    
+
     GameObject[] bulletObj = new GameObject[8];
 
 
@@ -51,9 +53,11 @@ public class kjh_pbullet : MonoBehaviour
 
         bullet();
         Knife();
-
+        Del();
     }
 
+
+    
     void bullet()
     {
         //if (ismove && Input.GetKey(KeyCode.Space))
@@ -74,22 +78,38 @@ public class kjh_pbullet : MonoBehaviour
             {
                 bulletObj[5] = Instantiate(pbullet, pbulletF.position, pbulletF.transform.rotation);
                 bulletObj[5].GetComponent<Rigidbody2D>().velocity = Vector3.up * speed;
-
+                Destroy(bulletObj[5],10);
             }
             else if (!Input.GetKey(KeyCode.Z) && Input.GetKey(KeyCode.LeftArrow))
             {
                 bulletObj[6] = Instantiate(pbullet, pbulletL.position, pbulletL.transform.rotation);
                 bulletObj[6].GetComponent<Rigidbody2D>().velocity = Vector3.left * speed;
-
+                Destroy(bulletObj[6], 10);
             }
             else if (!Input.GetKey(KeyCode.Z) && Input.GetKey(KeyCode.RightArrow))
             {
                 bulletObj[7] = Instantiate(pbullet, pbulletR.position, pbulletR.transform.rotation);
                 bulletObj[7].GetComponent<Rigidbody2D>().velocity = Vector3.right * speed;
+                Destroy(bulletObj[7], 10);
             }
 
 
 
+
+        }
+
+        
+    }
+    private void Del()
+    {
+        GameObject gm = GameObject.FindGameObjectWithTag("Player_bullet");
+        if (gm.transform.position.x>=8|| gm.transform.position.x <=-8|| gm.transform.position.y >= 8|| gm.transform.position.x <= -8)
+        {
+
+            Destroy(bulletObj[5]);
+            Destroy(bulletObj[6]);
+            Destroy(bulletObj[7]);
+            Destroy(bulletObj[8]);
 
         }
     }
@@ -97,73 +117,73 @@ public class kjh_pbullet : MonoBehaviour
     void Knife()
     {
 
-        if (Kjh_Monster.CountZ >=6&& Input.GetKeyDown(KeyCode.Z))
+
+
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            bulletObj[0] = Instantiate(knife, knifeF.position, knifeF.transform.rotation);
+            bulletObj[1] = Instantiate(knife, knifeL1.position, knifeL1.transform.rotation);
+            bulletObj[2] = Instantiate(knife, knifeL2.position, knifeL2.transform.rotation);
+            bulletObj[3] = Instantiate(knife, knifeR1.position, knifeR1.transform.rotation);
+            bulletObj[4] = Instantiate(knife, knifeR2.position, knifeR2.transform.rotation);
+
+
+            bulletObj[0].transform.SetParent(knifeF);
+            bulletObj[1].transform.SetParent(knifeL1);
+            bulletObj[2].transform.SetParent(knifeL2);
+            bulletObj[3].transform.SetParent(knifeR1);
+            bulletObj[4].transform.SetParent(knifeR2);
+
+
+        }
+
+        ///bulletObj[a].transform.position = knifeT[a].position;
+
+
+        if (Input.GetKey(KeyCode.Z) && Input.GetKeyDown(KeyCode.Space))
         {
 
+            countK++;
 
-            if (Input.GetKeyDown(KeyCode.Z))
+
+            if (countK == 1)
             {
-                bulletObj[0] = Instantiate(knife, knifeF.position, knifeF.transform.rotation);
-                bulletObj[1] = Instantiate(knife, knifeL1.position, knifeL1.transform.rotation);
-                bulletObj[2] = Instantiate(knife, knifeL2.position, knifeL2.transform.rotation);
-                bulletObj[3] = Instantiate(knife, knifeR1.position, knifeR1.transform.rotation);
-                bulletObj[4] = Instantiate(knife, knifeR2.position, knifeR2.transform.rotation);
 
 
-                bulletObj[0].transform.SetParent(knifeF);
-                bulletObj[1].transform.SetParent(knifeL1);
-                bulletObj[2].transform.SetParent(knifeL2);
-                bulletObj[3].transform.SetParent(knifeR1);
-                bulletObj[4].transform.SetParent(knifeR2);
+                //Destroy(bulletObj[0]);
+                bulletObj[0].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
+            }
+            if (countK == 2)
+            {
 
+                Debug.Log(countK);
+                //Destroy(bulletObj[1]);
+                bulletObj[1].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);
+
+            }
+            if (countK == 3)
+            {
+
+
+                // Destroy(bulletObj[3]);
+                bulletObj[3].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
+            }
+            if (countK == 4)
+            {
+
+
+                //Destroy(bulletObj[2]);
+                bulletObj[2].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
+            }
+            if (countK == 5)
+            {
+
+                // Destroy(bulletObj[4]);
+                bulletObj[4].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
 
             }
 
-            ///bulletObj[a].transform.position = knifeT[a].position;
-
-
-            if (Input.GetKey(KeyCode.Z) && Input.GetKeyDown(KeyCode.Space))
-            {
-
-                countK++;
-
-
-                if (countK == 1)
-                {
-
-
-                    //Destroy(bulletObj[0]);
-                    bulletObj[0].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
-                }
-                if (countK == 2)
-                {
-
-                    Debug.Log(countK);
-                    //Destroy(bulletObj[1]);
-                    bulletObj[1].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);
-
-                }
-                if (countK == 3)
-                {
-
-
-                    // Destroy(bulletObj[3]);
-                    bulletObj[3].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
-                }
-                if (countK == 4)
-                {
-
-
-                    //Destroy(bulletObj[2]);
-                    bulletObj[2].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
-                }
-                if (countK == 5)
-                {
-
-                    // Destroy(bulletObj[4]);
-                    bulletObj[4].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
-
-                }
 
 
 
@@ -171,10 +191,9 @@ public class kjh_pbullet : MonoBehaviour
 
 
 
-
-                //bulletObj[0].GetComponent<Rigidbody2D>().velocity = Vector3.up * Time.deltaTime * speed;//몬스터 따라가기할거임
-            }
+            //bulletObj[0].GetComponent<Rigidbody2D>().velocity = Vector3.up * Time.deltaTime * speed;//몬스터 따라가기할거임
         }
+
 
 
         if (!Input.GetKey(KeyCode.Z))
@@ -212,7 +231,7 @@ public class kjh_pbullet : MonoBehaviour
 
 
     }
-   
+
 }
 
 

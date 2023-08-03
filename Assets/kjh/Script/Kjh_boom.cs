@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+
 
 public class Kjh_boom : MonoBehaviour
 {
     public GameObject to;
-
+    //using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
     int CountDeB = 0;
     // Start is called before the first frame update
     void Start()
@@ -42,7 +42,7 @@ public class Kjh_boom : MonoBehaviour
 
         if (CountDeB == 2)
             {
-            Kjh_Monster.CountZ++;
+            //Kjh_Monster.CountZ++;
             
                 Destroy(gameObject);
                 CountDeB = 0;
