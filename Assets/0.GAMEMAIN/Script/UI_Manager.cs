@@ -84,9 +84,9 @@ public class UI_Manager : MonoBehaviour
 
 	public void test(Scene arg0, LoadSceneMode arg1)
 	{
-		Debug.Log("test 시작");
 		StartCoroutine(FadeIn());
 		StartCoroutine(Playerspawn());
+		Debug.Log("스폰 시작, 페이드인 시작");
 	}
 
 	

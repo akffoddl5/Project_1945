@@ -13,7 +13,7 @@ public class kjh_pbullet : MonoBehaviour
 
     public GameObject pbullet;
     public GameObject knife;
-    float speed = 3.0f;
+    float speed = 15.0f;
     float speedK = 100000.0f;
     public Transform pbulletF;
     public Transform pbulletL;
