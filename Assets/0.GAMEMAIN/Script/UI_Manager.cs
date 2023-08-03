@@ -35,13 +35,16 @@ public class UI_Manager : MonoBehaviour
 	public AudioSource audioSource_clear;
 	public int current_stage = 1;
 
+    bool b_first = true;
+
     Coroutine co_fadeIn;
     Coroutine co_fadeOut;
     Coroutine co_revive;
-
+    Coroutine co_reverseMove;
+    Coroutine co_move;
     private void Awake()
     {
-
+        SetResolutionScreen();
         if (instance == null)
         {
             instance = this;
@@ -72,8 +75,10 @@ public class UI_Manager : MonoBehaviour
 		current_stage = 1;
 	}
 
+    
     void Start()
     {
+        SetResolutionScreen();
         _Init();
         co_fadeIn = StartCoroutine(FadeIn());
     }
@@ -88,9 +93,21 @@ public class UI_Manager : MonoBehaviour
         obj_nextBtn.SetActive(false);
         obj_reBtn.SetActive(false);
 
-		SceneManager.sceneLoaded += test;
+        if (b_first)
+        {
+            SceneManager.sceneLoaded += test;
+            b_first = false;
+        }
 	}
 
+
+    public void SetResolutionScreen()
+    {
+
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        Screen.SetResolution(540, 960, true);
+       
+    }
 
 	public IEnumerator Sound_Kill()
 	{
@@ -101,11 +118,15 @@ public class UI_Manager : MonoBehaviour
 			Debug.Log(Camera.main.gameObject.GetComponent<AudioSource>().volume);
 			Camera.main.gameObject.GetComponent<AudioSource>().volume -= 0.2f;
 			yield return new WaitForSeconds(1f);
-			if (Camera.main.gameObject.GetComponent<AudioSource>().volume <= 0f)
-			{
-				Camera.main.gameObject.GetComponent<AudioSource>().volume = 0f;
-				break;
-			}
+
+            if (Camera.main)
+            {
+                if (Camera.main.gameObject.GetComponent<AudioSource>().volume <= 0f)
+                {
+                    Camera.main.gameObject.GetComponent<AudioSource>().volume = 0f;
+                    break;
+                }
+            }
 		}
 		yield return new WaitForSeconds(0.5f);
 		//audioSource_clear.Play();
@@ -118,8 +139,14 @@ public class UI_Manager : MonoBehaviour
 	{
 		StartCoroutine(FadeIn());
         //Debug.Log(arg0 + "   로드댐 " + arg0.name + " " + arg1.ToString());
-        if(arg0.name != "GameEnd")
-		    StartCoroutine(Playerspawn());
+        if (arg0.name != "GameEnd")
+        {
+          
+
+
+            StartCoroutine(Playerspawn());
+
+        }
 		//Debug.Log("스폰 시작, 페이드인 시작");
 	}
 
@@ -159,10 +186,19 @@ public class UI_Manager : MonoBehaviour
 
 	public void GameClear_UI()
 	{
-		Debug.Log("clear ui");
-		StartCoroutine(PlayerReverseSpawn());
+        StartCoroutine(GameClear());
+
+	
 		
-		StartCoroutine(FadeOut(2f));
+
+	}
+
+    public IEnumerator GameClear()
+    {
+        Debug.Log("clear ui");
+        StartCoroutine(PlayerReverseSpawn());
+        StartCoroutine(Sound_Kill());
+        yield return StartCoroutine(FadeOut(2f));
 
         gameStatus.text = "Game Clear";
         obj_nextBtn.GetComponent<Button>().interactable = true;
@@ -171,12 +207,7 @@ public class UI_Manager : MonoBehaviour
         gameStatus.gameObject.SetActive(true);
         obj_nextBtn.gameObject.SetActive(true);
         obj_reBtn.gameObject.SetActive(true);
-
-		StartCoroutine(Sound_Kill());
-		
-
-	}
-
+    }
 
     //void GameOver_UI()
     //{
@@ -233,19 +264,10 @@ public class UI_Manager : MonoBehaviour
             now_Player_Instance.GetComponent<Collider2D>().enabled = false;
         }
 
+         StartCoroutine(PlayerMove(1.0f,1.5f));
+        yield return StartCoroutine(PlayerBlink());
 
-        //스폰중..
-        while (true)
-        {
-            //1초마다
-            yield return new WaitForSeconds(0.01f); //지연
-            now_Player_Instance.transform.Translate(0, 3 * Time.deltaTime, 0); //플레이어 생성 위치로부터 맵으로 끌고 오기.
-
-            if (now_Player_Instance.transform.position.y > -4) break;
-
-        }
-
-		now_Player_Instance.GetComponent<Collider2D>().enabled = true;
+        now_Player_Instance.GetComponent<Collider2D>().enabled = true;
 	}
     IEnumerator Playerspawn()
     {
@@ -272,21 +294,64 @@ public class UI_Manager : MonoBehaviour
 
 
         //스폰중..
-        while (true)
-        {
-            //1초마다
-            yield return new WaitForSeconds(0.01f); //지연
-            now_Player_Instance.transform.Translate(0, 3 * Time.deltaTime, 0); //플레이어 생성 위치로부터 맵으로 끌고 오기.
-
-            if (now_Player_Instance.transform.position.y > -4) break;
-
-        }
-
+        StartCoroutine(PlayerMove(1.0f,1.5f));
+        yield return StartCoroutine(PlayerBlink());
       
 
 		b_isGameStart = true;	
         //스폰후처리 (콜라이더 다시 킬지 말지)
         now_Player_Instance.GetComponent<Collider2D>().enabled = true;
+
+        
+       
+    }
+    IEnumerator PlayerBlink()
+    {
+        SpriteRenderer spr = null;
+        if (now_Player_Instance)
+        {
+            if (now_Player_Instance.GetComponent<SpriteRenderer>())
+            {
+                spr = now_Player_Instance.GetComponent<SpriteRenderer>();
+               
+            }
+        }
+        int blinkCount = 0;
+        while (blinkCount++ <= 25)
+        {
+           
+            yield return new WaitForSeconds(0.1f);
+            var c = spr.color;
+        
+            c.a = spr.color.a >= 1f ? 0.3f : 1f;
+           
+            spr.color = c;
+        }
+        var c2 = spr.color;
+        c2.a = 1f;
+        spr.color = c2;
+
+        yield return new WaitForSeconds(0.1f);
+    }
+    IEnumerator PlayerMove(float time, float speed)
+    {
+        float t = 0;
+        now_Player_Instance.GetComponent<Collider2D>().isTrigger = true;
+        while (true)
+        {
+            //1초마다
+            yield return new WaitForFixedUpdate(); //지연
+
+            now_Player_Instance.transform.Translate(0, speed * Time.deltaTime, 0); //플레이어 생성 위치로부터 맵으로 끌고 오기.
+
+            t += Time.deltaTime;
+            if (t >= time)
+            {
+               
+                now_Player_Instance.GetComponent<Collider2D>().isTrigger = false;
+                 break;
+            }
+        }
     }
 
     IEnumerator PlayerReverseSpawn()
@@ -301,17 +366,11 @@ public class UI_Manager : MonoBehaviour
 
 
         //리버스 스폰중..
-        while (true)
-        {
-            //1초마다
-            yield return new WaitForSeconds(0.01f); //지연
-            now_Player_Instance.transform.Translate(0, 9 * Time.deltaTime, 0); //플레이어 생성 위치로부터 맵으로 끌고 오기.
-
-            if (now_Player_Instance.transform.position.y > 6) break;
-
-        }
+        co_reverseMove  = StartCoroutine(PlayerMove(2.0f,4.0f));
 
         //yield return new WaitForSeconds(1);
+
+        yield return new WaitForSeconds(0.1f);
 
     }
 
@@ -323,7 +382,7 @@ public class UI_Manager : MonoBehaviour
         Color tmp = new Color(0f, 0f, 0f, 0.05f);
         while (obj_panel.GetComponent<Image>().color.a > 0)
         {
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.02f);
             //Debug.Log(obj_panel.GetComponent<Image>().color.a);
             obj_panel.GetComponent<Image>().color -= tmp;
         }

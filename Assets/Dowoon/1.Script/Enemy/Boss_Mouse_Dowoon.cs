@@ -273,7 +273,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         bullets.Clear();
 
-        for (int i = 0; i < 40; ++i)
+        for (int i = 0; i < 60; ++i)
         {
 
             //총알 생성
@@ -312,24 +312,26 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
                 offset = -22f;
             }
 
-            temp.transform.rotation = Quaternion.Euler(0, 0, 45 + (i * offset)+i);
-            temp2.transform.rotation = Quaternion.Euler(0, 0, 135 + (i * offset)+i);
-            temp3.transform.rotation = Quaternion.Euler(0, 0, 225 + (i * offset)-i);
-            temp4.transform.rotation = Quaternion.Euler(0, 0, 315 + (i * offset)-i);
+            temp.transform.rotation = Quaternion.Euler(0, 0, 45 + (i * offset)+(i*3));
+            temp2.transform.rotation = Quaternion.Euler(0, 0, 135 + (i * offset)+ (i * 3));
+            temp3.transform.rotation = Quaternion.Euler(0, 0, 225 + (i * offset)- (i * 3));
+            temp4.transform.rotation = Quaternion.Euler(0, 0, 315 + (i * offset)- (i * 3));
 
             temp.gameObject.tag = "Obstacle";
             temp2.gameObject.tag = "Obstacle";
             temp3.gameObject.tag = "Obstacle";
             temp4.gameObject.tag = "Obstacle";
 
-             var t = 2.0f - (i * 0.05f);
+
+            // 사라지는 시간 
+             var t = 2.0f - (i * 0.033f);
             //var t = 2.0f;
            StartCoroutine(temp.GetComponent<Bullet_Dowoon>().StopBullet(t));
             StartCoroutine(temp2.GetComponent<Bullet_Dowoon>().StopBullet(t));
             StartCoroutine(temp3.GetComponent<Bullet_Dowoon>().StopBullet(t));
             StartCoroutine(temp4.GetComponent<Bullet_Dowoon>().StopBullet(t));
 
-            var bulletTime = 0.1f + (i * 0.01f);
+            var bulletTime = 0.05f;
          //  var bulletTime = 0.05f;
             yield return new WaitForSeconds(bulletTime);
         } 
