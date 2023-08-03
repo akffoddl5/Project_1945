@@ -26,9 +26,9 @@ public class Ending : MonoBehaviour
 	bool isSpawnYS = false;
 	bool isSpawnSJ = false;
 
-	Vector2 bg_startPosition = new Vector2(-0.68f, 17f);
+	Vector2 bg_startPosition = new Vector2(0f, 17f);
 	Vector2 vec_moveBg = Vector2.down;
-	float moveBgSpeed = 1.5f;
+	float moveBgSpeed = 2f;
 
 	private void Start()
 	{
@@ -68,19 +68,14 @@ public class Ending : MonoBehaviour
 		//isSpawnJH
 		if (background.transform.position.y <= 1f && !isSpawnJH)
 		{
-			GameObject fish = Instantiate(pref_JH_fish, new Vector2(0, 3), Quaternion.identity);
-			GameObject li = Instantiate(pref_JH_light, new Vector2(0, 3), Quaternion.identity);
-
-			Destroy(fish, 10f);
-			Destroy(li, 10f);
-
+			StartCoroutine(Monster_jh());
 			isSpawnJH = true;
 		}
 		// pref_JW_Boss
 		if (background.transform.position.y < -16f && !isSpawnJW)
 		{
 			GameObject jw = Instantiate(pref_JW_Boss, new Vector2(0, 3.5f), Quaternion.identity);
-			Destroy(jw, 10f);
+			Destroy(jw, 8f);
 			isSpawnJW = true;
 		}
 		// YS_Boss
@@ -89,8 +84,8 @@ public class Ending : MonoBehaviour
 			GameObject poo = Instantiate(pref_YS_Poo, new Vector2(1.5f, 3), Quaternion.identity);
 			GameObject toong = Instantiate(pref_YS_Toong, new Vector2(-1.5f, 3), Quaternion.identity);
 
-			Destroy(poo, 10f);
-			Destroy(toong, 10f);
+			Destroy(poo, 7f);
+			Destroy(toong, 7f);
 
 			isSpawnYS = true;
 		}
@@ -101,6 +96,14 @@ public class Ending : MonoBehaviour
 			Destroy(dw, 13.5f);
 			isSpawnDW = true;
 		}
+	}
+	IEnumerator Monster_jh()
+	{
+		GameObject fish1 = Instantiate(pref_JH_fish, new Vector2(0f, 2.5f), Quaternion.identity);
+		yield return new WaitForSeconds(3f);
+		GameObject li = Instantiate(pref_JH_light, new Vector2(0f, 3f), Quaternion.identity);
+		yield return new WaitForSeconds(3f);
+		GameObject fish2 = Instantiate(pref_JH_fish, new Vector2(0f, 2.5f), Quaternion.identity);
 	}
 
 	public void RestertBtn()

@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 2152004261004114196}
   - component: {fileID: 7528338099335521700}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: DW_ending
   m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,12 +238,12 @@ MonoBehaviour:
   bulletPrefab: {fileID: 9166502449777518786, guid: ffe282a8e0a7f9e4ebedc5a01427db0f, type: 3}
   Panel: {fileID: 0}
   target_player: {fileID: 0}
-  HpBar: {fileID: 7618312784381822102, guid: d5e1eb8ed9e745f4c9897c3b82c3edb9, type: 3}
+  HpBar: {fileID: 0}
   HpBarObject: {fileID: 0}
   boom1: {fileID: 4589569213402873778, guid: c1fa44149e8e7e048a7442106fdc8b55, type: 3}
   boom2: {fileID: 6798699764392326260, guid: 46cb77e71d8c5fa44afd9b8b9d1d1257, type: 3}
-  currPattern: 1
-  lastPattern: 1
+  currPattern: 2
+  lastPattern: 2
   SpawnPos: {x: 4.7, y: 17.3, z: 0}
   Spawn_arrivePos: {x: -0.1, y: 9.9, z: 0}
   Pattern1_Start: {x: -2.2, y: 4.2, z: 0}

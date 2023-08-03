@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1952426254487006911}
   - component: {fileID: 4360326991887394515}
   m_Layer: 0
-  m_Name: Boss_JUNE
+  m_Name: SJ_ending
   m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
