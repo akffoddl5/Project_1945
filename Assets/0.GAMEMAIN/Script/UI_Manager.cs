@@ -114,7 +114,9 @@ public class UI_Manager : MonoBehaviour
 	public void test(Scene arg0, LoadSceneMode arg1)
 	{
 		StartCoroutine(FadeIn());
-		StartCoroutine(Playerspawn());
+        //Debug.Log(arg0 + "   로드댐 " + arg0.name + " " + arg1.ToString());
+        if(arg0.name != "GameEnd")
+		    StartCoroutine(Playerspawn());
 		//Debug.Log("스폰 시작, 페이드인 시작");
 	}
 
@@ -123,11 +125,14 @@ public class UI_Manager : MonoBehaviour
     {
         while (true)
         {
+            //Debug.Log("check 중..");
             if (b_isGameStart)
             {
+                //Debug.Log("check 중22..");
                 if (now_Player_Instance == null)
                 {
-                    Debug.Log("부활 ui 오픈");
+                    //Debug.Log("check 중33..");
+                    //Debug.Log("부활 ui 오픈");
                     GetComponent<UI_Revive>().SetSelectUI(true);
                   
 
@@ -173,19 +178,19 @@ public class UI_Manager : MonoBehaviour
 	}
 
 
-    void GameOver_UI()
-    {
-        co_fadeOut = StartCoroutine(FadeOut());
+    //void GameOver_UI()
+    //{
+    //    co_fadeOut = StartCoroutine(FadeOut());
 
-        gameStatus.text = "Game Over";
-        obj_nextBtn.GetComponent<Button>().interactable = false;
-        obj_reBtn.GetComponent<Button>().interactable = true;
+    //    gameStatus.text = "Game Over";
+    //    obj_nextBtn.GetComponent<Button>().interactable = false;
+    //    obj_reBtn.GetComponent<Button>().interactable = true;
 
-        gameStatus.gameObject.SetActive(true);
-        obj_nextBtn.gameObject.SetActive(true);
-        obj_reBtn.gameObject.SetActive(true);
+    //    gameStatus.gameObject.SetActive(true);
+    //    obj_nextBtn.gameObject.SetActive(true);
+    //    obj_reBtn.gameObject.SetActive(true);
 
-    }
+    //}
 
     public void NextBtn()
     {
