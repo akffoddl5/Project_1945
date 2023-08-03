@@ -201,6 +201,9 @@ public class Kjh_Monster : MonoBehaviour
     }
 
 
-   
+    private void OnBecameInvisible()
+    {
+      Destroy(gameObject);
+    }
 
 }

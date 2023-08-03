@@ -19,6 +19,7 @@ public class Kjh_fish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("CountDeF"+CountDeF);
         Kjh_player move = new Kjh_player();
         if (ex == false)
         {
@@ -52,7 +53,7 @@ public class Kjh_fish : MonoBehaviour
         if (collision.gameObject.CompareTag("Player_bullet"))
         {
             CountDeF++;
-            Destroy(collision.gameObject);
+           
                 
         }
         if (GameObject.Find("knife"))
@@ -60,17 +61,13 @@ public class Kjh_fish : MonoBehaviour
             CountDeF += 5;
         }
 
-        if (CountDeF == 40)
+        if (CountDeF >= 200)
         {
             //Kjh_Monster.CountZ++;
             Destroy(gameObject);
-            CountDeF = 0;
+            UI_Manager.instance.GameClear_UI();
         }
-        else if(CountDeF >= 40)
-        {
-            Destroy(gameObject);
-            CountDeF = 0;
-        }
+        
     
     }
 }
