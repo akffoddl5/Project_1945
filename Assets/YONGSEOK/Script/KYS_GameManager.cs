@@ -19,8 +19,6 @@ public class KYS_GameManager : MonoBehaviour
 
     private void Start()
     {
-        UI_Manager.instance.GameClear_UI();
-
 		//StartCoroutine(Fade_in());
 
         StartCoroutine(Furin_init());

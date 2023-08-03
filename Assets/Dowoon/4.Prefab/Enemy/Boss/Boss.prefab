@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 5089258321827956734}
   - component: {fileID: 5897895224067749220}
   - component: {fileID: 2152004261004114196}
+  - component: {fileID: 1563468916587547280}
   m_Layer: 0
   m_Name: Boss
   m_TagString: ENEMY
@@ -212,7 +213,7 @@ Transform:
   m_Children:
   - {fileID: 7370383001713598017}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5897895224067749220
 MonoBehaviour:
@@ -226,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e05beddcd7c0c48a117c32e3d50c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 525
+  hp: 555
   maxHp: 555
   renderer: {fileID: 6441015236602401552, guid: 62deb3721c0c23147a87310b8f1502af, type: 3}
   isOpen: 0
@@ -239,14 +240,22 @@ MonoBehaviour:
   target_player: {fileID: 0}
   HpBar: {fileID: 7618312784381822102, guid: d5e1eb8ed9e745f4c9897c3b82c3edb9, type: 3}
   HpBarObject: {fileID: 0}
-  currPattern: 2
-  lastPattern: 2
+  currPattern: 1
+  lastPattern: 1
   SpawnPos: {x: 4.7, y: 17.3, z: 0}
   Spawn_arrivePos: {x: -0.1, y: 9.9, z: 0}
   Pattern1_Start: {x: -2.2, y: 4.2, z: 0}
   Pattern1_End: {x: 1.7, y: 1, z: 0}
   Pattern1_DragEnd: {x: 2.6, y: 1, z: 0}
   Pattern1_MoveToShot: {x: -2.4, y: 1, z: 0}
+  Pattern1_SpinShotPos: {x: 0.09, y: 0.46, z: 0}
+  Pattern1_SpinDragStart: {x: -4.67, y: 5.87, z: 0}
+  Pattern1_SpinDragEnd: {x: 5.31, y: -6.43, z: 0}
+  Pattern1_DragMoveStartPos: {x: -0.16, y: 0.03, z: 0}
+  Pattern1_DragMove_1: {x: -1.44, y: -2.94, z: 0}
+  Pattern1_DragMove_2: {x: 1.86, y: -3.8, z: 0}
+  Pattern1_DragMove_3: {x: 0.02, y: -0.49, z: 0}
+  Pattern1_DragMove_4: {x: 0.45, y: -3.15, z: 0}
   Box_Generator: {fileID: 4773551227397551526}
   Bullet_Generator: {fileID: 6082290147015952353}
   boxPrefab: {fileID: 8574876344816132997, guid: 1a220f67635fdd347bf657d876f78f20, type: 3}
@@ -260,6 +269,10 @@ MonoBehaviour:
   Pattern2_7: {x: 1.6, y: 4, z: 0}
   Pattern2_8: {x: 2.2, y: 3.3, z: 0}
   Pattern2_9: {x: 0.8, y: 3.6, z: 0}
+  Pattern2_10: {x: -0.065552294, y: -2.5005171, z: 0}
+  bullets: []
+  chrome: {fileID: 0}
+  bar: {fileID: 0}
   TaskBar: {fileID: 8454114730923549344, guid: bb48dfee631ec31468254031d683006f, type: 3}
   Pattern3_Start: {x: 0.2, y: 7.5, z: 0}
   Boss_Sprite: {fileID: 968175514683306612}
@@ -309,3 +322,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0222945, y: 3.4760845}
   m_EdgeRadius: 0
+--- !u!95 &1563468916587547280
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9135706629845420815}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d63738abf0f639c438aaf9b642068250, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

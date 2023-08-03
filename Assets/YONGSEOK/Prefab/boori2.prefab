@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 90
-  hp: 30
+  hp: 15
   dieEffect: {fileID: 4208831749957786760, guid: bb195bece00128a459ccf5bedc0dbdbb, type: 3}
   bullet_razor: {fileID: 2419837078462518057, guid: cd59f5c4e5cdc2041b467f0002627639, type: 3}
 --- !u!50 &3503203053650302819

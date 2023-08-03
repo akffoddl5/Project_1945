@@ -7,7 +7,7 @@ public class June_Enemy : MonoBehaviour
 {
     GameObject Obj;
 
-    
+    public List<GameObject> PlayerItem;
 
     public float Hp ;
     public float speed = 1;
@@ -22,6 +22,16 @@ public class June_Enemy : MonoBehaviour
     void Start()
     {
         Invoke("CreateBullte", 1f);
+        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.신준)
+        { PlayerItem = GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().SJ_item_list; }
+        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.지원)
+        { PlayerItem = GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().JW_item_list; }
+        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.도운)
+        { PlayerItem = GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().DW_item_list; }
+        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.정현)
+        { PlayerItem = GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().JH_item_list; }
+        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.용석)
+        { PlayerItem = GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().YS_item_list; }
 
     }
     void CreateBullte() //적 총알 생성
@@ -59,7 +69,7 @@ public class June_Enemy : MonoBehaviour
             Instantiate(Effect, ms.position, Quaternion.identity);
             GameObject.Find("SpawnManager").GetComponent<June_EnemySpawn>().CountDestroy++;
             if (GameObject.Find("SpawnManager").GetComponent<June_EnemySpawn>().CountDestroy % 4 == 0)
-                Instantiate(GameObject.Find("SpawnManager").GetComponent<June_EnemySpawn>().Item, ms.position, Quaternion.identity);
+                    Instantiate(PlayerItem[0], ms.position, Quaternion.identity);
                 Destroy(gameObject);
 
            

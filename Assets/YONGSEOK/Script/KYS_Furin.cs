@@ -26,6 +26,7 @@ public class KYS_Furin : MonoBehaviour
 			GameObject a = Instantiate(dieEffect, transform.position, Quaternion.identity);
 			Destroy(a, 0.6f);
 			KYS_GameManager.isFurin_die = true;
+            ITEM_MANAGER.instance.GetItem(transform.position, Quaternion.identity);
             //Debug.Log("furin die !!!!!!!!!!! " + KYS_GameManager.isFurin_die);
             Destroy(gameObject);
         }
