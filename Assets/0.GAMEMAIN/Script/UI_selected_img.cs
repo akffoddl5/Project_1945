@@ -95,6 +95,10 @@ public class UI_selected_img : MonoBehaviour
 			// 선택됨 체크
 			isSelected = true;
 
+			if(now_characterNum ==1 )
+			{
+				GameObject.Find("Button").transform.GetChild(1).GetComponent<AudioSource>().Play();
+			}
 			// 0번은 랜덤이니까 엔터 눌렀을 때 0번 인덱스라면 랜덤으로 바꿔주기
 			if (now_characterNum == 0) now_characterNum = Random.Range(1, 6);
 
