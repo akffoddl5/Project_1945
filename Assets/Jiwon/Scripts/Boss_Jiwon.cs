@@ -336,12 +336,11 @@ public class Boss_Jiwon : MonoBehaviour
         if (collision.CompareTag("Player_bullet"))
         {
 			nowHp -= collision.gameObject.GetComponent<Bullet_info>().att;
-			Destroy(collision.gameObject); // 총알 삭제
 
 			// 부딪히다가 hp가 0이 되면 자신도 삭제
 			if (nowHp <= 0)
 			{
-				//Dead함수 만들어서 거기에 Destroy 넣기
+				ITEM_MANAGER.instance.GetItem(transform.position, Quaternion.identity);
 				Destroy(gameObject);
 			}
 

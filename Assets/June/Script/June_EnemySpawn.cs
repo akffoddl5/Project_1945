@@ -52,7 +52,7 @@ public class June_EnemySpawn : MonoBehaviour
 
 
 
-    private void FixedUpdate()
+    private void Update()
     {
         if(isBoss != true) 
         {

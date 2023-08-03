@@ -25,4 +25,12 @@ public class PlayerBullet_Jiwon : MonoBehaviour
 		else if (rotate.z == 180) dir = Vector2.down;
 		else dir = Vector2.left;
 	}
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		// 보스에 닿으면 총알이 사라지도록
+		if (collision.CompareTag("ENEMY"))
+		{
+			Destroy(gameObject);
+		}
+	}
 }
