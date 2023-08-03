@@ -99,8 +99,8 @@ public class KYS_Enemy_Razor : MonoBehaviour
 	{
 		if (collision.CompareTag("Player"))
 		{
-			collision.gameObject.SetActive(false);
-			//Destroy(collision.gameObject);
+			//collision.gameObject.SetActive(false);
+			Destroy(collision.gameObject);
 		}
 	}
 

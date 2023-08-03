@@ -37,6 +37,7 @@ public class UI_Manager : MonoBehaviour
 
     Coroutine co_fadeIn;
     Coroutine co_fadeOut;
+    Coroutine co_revive;
 
     private void Awake()
     {
@@ -59,8 +60,9 @@ public class UI_Manager : MonoBehaviour
 
 		scene_dict.Add(3, "Dowoon");
 		scene_dict.Add(2, "YONGSEOK");
+		scene_dict.Add(5, "Jiwon");
 		scene_dict.Add(1, "Jiwon");
-		scene_dict.Add(5, "kjh_sceen1");
+		//scene_dict.Add(1, "kjh_sceen1");
 		scene_dict.Add(4, "June_Scene");
 		scene_dict.Add(6, "GameEnd");
 		scene_dict.Add(7, "GameEnd");
@@ -74,13 +76,14 @@ public class UI_Manager : MonoBehaviour
     {
         _Init();
         co_fadeIn = StartCoroutine(FadeIn());
-        
-
     }
 
-    void _Init()
+    public void _Init()
     {
-        obj_panel.GetComponent<Image>().color = Color.black; // 검정색으로 시작해서 페이드인 되어야 함
+        if (GetComponent<UI_Revive>()._isSlectAble == true)
+            GetComponent<UI_Revive>().SetSelectUI(false);
+
+		obj_panel.GetComponent<Image>().color = Color.black; // 검정색으로 시작해서 페이드인 되어야 함
         gameStatus.gameObject.SetActive(false);
         obj_nextBtn.SetActive(false);
         obj_reBtn.SetActive(false);
@@ -120,11 +123,9 @@ public class UI_Manager : MonoBehaviour
 		//Debug.Log("스폰 시작, 페이드인 시작");
 	}
 
-
-    public IEnumerator CheckPlayerDie()
-    {
-        while (true)
-        {
+	public void Update()
+	{
+      
             //Debug.Log("check 중..");
             if (b_isGameStart)
             {
@@ -134,14 +135,13 @@ public class UI_Manager : MonoBehaviour
                     //Debug.Log("check 중33..");
                     //Debug.Log("부활 ui 오픈");
                     GetComponent<UI_Revive>().SetSelectUI(true);
-                  
+
 
                 }
             }
-
-            yield return new WaitForSeconds(0.5f);
-        }
+        
     }
+
 
 
     public void CharacterSelect_FadeOut(Charactor a)
@@ -282,8 +282,9 @@ public class UI_Manager : MonoBehaviour
 
         }
 
-        b_isGameStart = true;
-        StartCoroutine(CheckPlayerDie());
+      
+
+		b_isGameStart = true;	
         //스폰후처리 (콜라이더 다시 킬지 말지)
         now_Player_Instance.GetComponent<Collider2D>().enabled = true;
     }
@@ -354,14 +355,13 @@ public class UI_Manager : MonoBehaviour
         yield break;
     }
 
-
-
     IEnumerator LoadScene(int stage)
     {
         StartCoroutine(FadeOut());
         yield return new WaitForSeconds(1);
 
         AsyncOperation oper = SceneManager.LoadSceneAsync(scene_dict[stage]);
+
         while (!oper.isDone)
         {
             yield return null;

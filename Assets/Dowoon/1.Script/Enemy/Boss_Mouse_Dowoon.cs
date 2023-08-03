@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.PlayerSettings;
-using static UnityEngine.GraphicsBuffer;
+
 using Random = UnityEngine.Random;
 public class Boss_Mouse_Dowoon : Enemy_Dowoon
 {

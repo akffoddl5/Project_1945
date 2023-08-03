@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/0.GAMEMAIN/CharacterSelect 1.unity
+    guid: 8b7379df6a7494e058bbd132aa172cde
+  - enabled: 1
     path: Assets/Dowoon/0.Scene/Dowoon.unity
     guid: 890b486a43d2e9440b8757829a438bf6
   - enabled: 1

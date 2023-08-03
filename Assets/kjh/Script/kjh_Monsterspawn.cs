@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.PlasticSCM.Editor.WebApi;
+
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+
 
 public class Kjh_Monster : MonoBehaviour
 {
@@ -112,6 +112,7 @@ public class Kjh_Monster : MonoBehaviour
 
     void toFuntion()
     {
+        if(boom2 != null && to != null)
             Instantiate(to, boom2.transform.position, Quaternion.identity);
            
         
