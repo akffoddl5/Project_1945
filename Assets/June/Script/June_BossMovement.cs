@@ -157,7 +157,12 @@ public class June_BossMovement : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
     }
 
+    private void OnDestroy()
+    {
+        Debug.Log("аж╠щ");
+        UI_Manager.instance.GameClear_UI();
+    }
 
-   
+
 
 }
