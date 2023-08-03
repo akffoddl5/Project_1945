@@ -7,6 +7,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class June_ItemMove : MonoBehaviour
@@ -69,6 +70,8 @@ public class June_ItemMove : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")) //Player에게 닿았을 때
         {
             //GameObject.GetComponent<Bullet_info>().att +=1;
+             AudioSource Item = GetComponent<AudioSource>();
+            Item.Play();
             collision.gameObject.GetComponent<June_PlayerShooting>().PlayerDamage++; //PlayerShooting의 플레이어 데미지 증가시키기
             Destroy(gameObject);
         }

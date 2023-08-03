@@ -12,7 +12,6 @@ public class June_CrowBullet : MonoBehaviour
    
     void Start()
     {
-
     }
 
     void Update()
