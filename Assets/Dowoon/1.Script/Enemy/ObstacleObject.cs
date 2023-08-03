@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Chrome_Parts_Dowoon : MonoBehaviour
+public class ObstacleObject : MonoBehaviour
 {
 
     public GameObject rotateTarget;
     public GameObject spr;
+
+    public bool b_isCollideAble; 
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +29,11 @@ public class Chrome_Parts_Dowoon : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log(" 파츠맞음");
+            if(b_isCollideAble) 
+            {
+                Debug.Log(" 방해물 맞음");
+            }
+          
         }
     }
 }

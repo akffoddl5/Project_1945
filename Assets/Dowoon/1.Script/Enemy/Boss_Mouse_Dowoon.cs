@@ -60,8 +60,11 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     public Vector3 Pattern2_9; // 태스크바 왼쪽 [던지기]
     public Vector3 Pattern2_10; // 크롬 가운데 아래 총알발사 
 
+    public List<Transform> bullets = new List<Transform>();
+    public GameObject chrome;
+    public GameObject bar;
 
-
+    GameObject go_box;
 
     [Header("패턴 2 Prefab")]
     public GameObject TaskBar;
@@ -77,7 +80,6 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     float patternDelay = 1.0f;
 
 
-    GameObject go_box;
 
 
     // Start is called before the first frame update
@@ -90,10 +92,12 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         renderer = Boss_Sprite.GetComponent<SpriteRenderer>();
         // StartCoroutine(Pattern1_Shot());
 
-        var Canvas = GameObject.FindGameObjectWithTag("Canvas");
-        HpBarObject = Instantiate(HpBar, Canvas.transform);
-        HpBarObject.GetComponent<Slider>().value = (float)hp / maxHp;
-
+        if (HpBar != null)
+        {
+            var Canvas = GameObject.FindGameObjectWithTag("Canvas");
+            HpBarObject = Instantiate(HpBar, Canvas.transform);
+            HpBarObject.GetComponent<Slider>().value = (float)hp / maxHp;
+        }
         moveSpeed = 4.0f;
 
     }
@@ -143,6 +147,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         // 포인트 2로 이동 및 드래그박스 생성
         go_box = Instantiate(boxPrefab, Box_Generator.position, Quaternion.identity);
+        go_box.GetComponent<ObstacleObject>().b_isCollideAble = true;
         Destroy(go_box, 10f);
         var startPos = Box_Generator.position;
 
@@ -261,7 +266,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     IEnumerator Pattern1_Shot2()
     {
 
-        List<Transform> bullets = new List<Transform>();
+        bullets.Clear();
 
         for (int i = 0; i < 40; ++i)
         {
@@ -526,7 +531,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         yield return new WaitForSeconds(0.5f);
 
-        var bar = Instantiate(TaskBar, Box_Generator.position, Quaternion.identity);
+        bar = Instantiate(TaskBar, Box_Generator.position, Quaternion.identity);
         bar.transform.parent = Box_Generator.transform;
 
        
@@ -560,7 +565,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         }
         yield return new WaitForSeconds(0.1f);
 
-        var chrome = bar.GetComponent<TaskBar_Dowoon>().Icon_Chrome;
+         chrome = bar.GetComponent<TaskBar_Dowoon>().Icon_Chrome;
 
         chrome.transform.parent = transform;
 
@@ -583,6 +588,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         chrome.transform.parent = null;
       var rotateStart =   StartCoroutine(chrome.GetComponent<Chrome_Dowoon>().RotateStart());
       
+        
 
 
         //TO DO :좌우로 움직이는 코루틴 실행 하기
@@ -687,7 +693,31 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     }
 
 
+    public override void  Die()
+    {
+        if(chrome != null)
+            Destroy(chrome);
+        if(bar != null)
+            Destroy(bar);
+        if (HpBarObject != null)
+            Destroy(HpBarObject);
 
+        if (bullets.Count > 0)
+        {
+            for(int i=0; i<bullets.Count;++i)
+            {
+                if (bullets[i] != null)
+                Destroy(bullets[i].gameObject);
+                
+            }
+        }
+
+
+        StopAllCoroutines();
+
+        Destroy(this.gameObject);
+        
+    }
 
     IEnumerator Pattern_3()
     {
@@ -792,7 +822,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     IEnumerator Pattern2_Shot2()
     {
         int count = 2;
-        List<Transform> bullets = new List<Transform>();
+        bullets.Clear();
         while (count >0)
         {
             for (int i = 0; i < 40; i += 2)
@@ -832,7 +862,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
     IEnumerator Pattern2_Shot()
     {
-        List<Transform> bullets = new List<Transform>();
+        bullets.Clear();
         while (true)
         {
 
