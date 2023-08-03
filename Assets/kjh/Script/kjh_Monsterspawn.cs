@@ -27,7 +27,7 @@ public class Kjh_Monster : MonoBehaviour
     public Transform boomT;
     public Transform fishT;
 
-    float speed = 2.0f;
+    float speed = 6.0f;
     float speedF = 100.0f;
     float speedL = 0.5f;
 
@@ -77,14 +77,18 @@ public class Kjh_Monster : MonoBehaviour
 
         Invoke("boomcoroutin", 4);
 
-        int a = Random.Range(2, 6);
+        float a = Random.Range(1, 2.5f);
         Invoke("toFuntion", a);
 
 
-        if (CountAll % 7 == 1)
+        if (CountAll %17 == 1)
         {
 
-            Invoke("fish_dir", 2);
+            
+            if (Kjh_fish.CountDeF <= 200)
+            {
+                Invoke("fish_dir", 2);
+            }
         }
 
         if (CountAll % 5 == 1)

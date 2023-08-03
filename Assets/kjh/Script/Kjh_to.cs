@@ -23,10 +23,10 @@ public class Kjh_to : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            Destroy(gameObject);
+         
            
             float toY= collision.gameObject.GetComponent<Transform>().position.y;
-            toY = toY - 5;
+            toY = toY +3;
             collision.gameObject.GetComponent<Transform>().position = new Vector3(0, toY, 0);
         }
     }

@@ -2006,8 +2006,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Space
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: filp>L
+  - m_ConditionMode: 2
+    m_ConditionEvent: Control
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2116018183606096984}

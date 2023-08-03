@@ -8,7 +8,7 @@ public class Kjh_fish : MonoBehaviour
 {
     float time;
     public static bool ex =true;
-    int CountDeF=0;
+    public static int CountDeF =0;
 
     // Start is called before the first frame update
     void Start()
