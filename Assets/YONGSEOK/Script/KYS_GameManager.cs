@@ -34,7 +34,29 @@ public class KYS_GameManager : MonoBehaviour
             
             isFurin_die = false;
         }
+
+        if (isToong_die)
+        {
+
+			StartCoroutine(KYS_GameManager.Sound_Kill());
+            isToong_die = false;
+		}
     }
+
+    public static IEnumerator Sound_Kill()
+    {
+        while (true)
+        {
+            Debug.Log(Camera.main.gameObject.GetComponent<AudioSource>().volume);
+		    Camera.main.gameObject.GetComponent<AudioSource>().volume -= 0.2f;
+            yield return new WaitForSeconds(1f);
+            if (Camera.main.gameObject.GetComponent<AudioSource>().volume < 0f)
+            {
+				Camera.main.gameObject.GetComponent<AudioSource>().volume = 0f;
+				yield break;
+            }
+        }
+	}
 
     IEnumerator Unit_boori_init()
     {

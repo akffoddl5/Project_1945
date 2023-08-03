@@ -8,13 +8,23 @@ public class KYS_Toong_Bullet : MonoBehaviour
     public GameObject normal_bullet;
     public GameObject guide_bullet;
     List<List<GameObject> > gameObjects = new List<List<GameObject> >();
-    
+    public AudioSource audioSource;
 
     private void Start()
     {
         StartCoroutine(IE_Shoot_Controll());
-        //StartCoroutine(IE_Shoot_Square(3f, Vector3.zero));
-        //StartCoroutine(IE_Shoot_Triangle(7.5f, new Vector3(0,0,90)));
+		StartCoroutine(AudioPlay());
+		//StartCoroutine(IE_Shoot_Square(3f, Vector3.zero));
+		//StartCoroutine(IE_Shoot_Triangle(7.5f, new Vector3(0,0,90)));
+	}
+
+    IEnumerator AudioPlay()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(8f);
+		    audioSource.Play();
+        }
     }
 
     IEnumerator IE_Shoot_Controll()
@@ -47,7 +57,7 @@ public class KYS_Toong_Bullet : MonoBehaviour
             yield return new WaitForSeconds(5);
 
             StartCoroutine(IE_Shoot_Circle());
-            StartCoroutine(IE_Shoot_flower());
+            //StartCoroutine(IE_Shoot_flower());
             yield return new WaitForSeconds(5);
 
             StartCoroutine(IE_Shoot_flower());
@@ -267,7 +277,7 @@ public class KYS_Toong_Bullet : MonoBehaviour
         float start_x_radian = -1f;
         float end_x_radian = 1f;
         float current_x = -1f;
-        int point = 20;
+        int point = 15;
         float interval = (end_x_radian - start_x_radian) / (float)point;
 
 
@@ -299,14 +309,14 @@ public class KYS_Toong_Bullet : MonoBehaviour
             GameObject a7 = Instantiate(current_bullet, transform.position + new Vector3(-tmp3_x + offset_x, tmp3_y, 0), Quaternion.identity);
             GameObject a8 = Instantiate(current_bullet, transform.position + new Vector3(-tmp4_x + offset_x, tmp4_y, 0), Quaternion.identity);
 
-            a1.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 1f);
-            a2.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 1f);
-            a3.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 1f);
-            a4.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 1f);
-            a5.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 1f);
-            a6.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 1f);
-            a7.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 1f);
-            a8.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 1f);
+            a1.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
+            a2.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
+            a3.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
+            a4.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
+            a5.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
+            a6.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
+            a7.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
+            a8.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
 
 
         }

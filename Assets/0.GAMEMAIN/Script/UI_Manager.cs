@@ -86,7 +86,7 @@ public class UI_Manager : MonoBehaviour
 	{
 		StartCoroutine(FadeIn());
 		StartCoroutine(Playerspawn());
-		Debug.Log("스폰 시작, 페이드인 시작");
+		//Debug.Log("스폰 시작, 페이드인 시작");
 	}
 
 	
@@ -152,6 +152,7 @@ public class UI_Manager : MonoBehaviour
 
 	IEnumerator Playerspawn()
 	{
+		_Init();
 		if (GameObject.FindGameObjectWithTag("Player") != now_Player_Instance)
 		{
 			Debug.Log("플레이어 삭제됨");

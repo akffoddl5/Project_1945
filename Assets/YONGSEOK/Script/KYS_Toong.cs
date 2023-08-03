@@ -6,6 +6,8 @@ public class KYS_Toong : MonoBehaviour
 {
     public float hp = 500;
 	public GameObject dieEffect;
+    
+    
 
 	private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -26,8 +28,8 @@ public class KYS_Toong : MonoBehaviour
 			GameObject a = Instantiate(dieEffect, transform.position, Quaternion.identity);
 			Destroy(a, 0.6f);
 			KYS_GameManager.isToong_die = true;
-            Destroy(gameObject);
 			UI_Manager.instance.GameClear_UI();
+            Destroy(gameObject);
 		}
     }
 }
