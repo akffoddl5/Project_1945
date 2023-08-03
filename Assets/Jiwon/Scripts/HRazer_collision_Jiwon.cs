@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CrossRazerCollision : MonoBehaviour
+public class HRazer_collision_Jiwon : MonoBehaviour
 {
 	void OnTriggerEnter2D(Collider2D collision)
 	{
