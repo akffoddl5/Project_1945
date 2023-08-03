@@ -27,6 +27,7 @@ public class KYS_Toong : MonoBehaviour
 			Destroy(a, 0.6f);
 			KYS_GameManager.isToong_die = true;
             Destroy(gameObject);
-        }
+			UI_Manager.instance.GameClear_UI();
+		}
     }
 }

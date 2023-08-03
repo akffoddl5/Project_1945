@@ -342,6 +342,7 @@ public class Boss_Jiwon : MonoBehaviour
 			{
 				ITEM_MANAGER.instance.GetItem(transform.position, Quaternion.identity);
 				Destroy(gameObject);
+				UI_Manager.instance.GameClear_UI();
 			}
 
         }
