@@ -55,10 +55,10 @@ public class UI_Manager : MonoBehaviour
 		prefab_dict.Add(Charactor.도운, DW_Player);
 		prefab_dict.Add(Charactor.용석, YS_Player);
 
-		scene_dict.Add(3, "Dowoon");
+		scene_dict.Add(1, "Dowoon");
 		scene_dict.Add(2, "YONGSEOK");
 		scene_dict.Add(5, "Jiwon");
-		scene_dict.Add(1, "kjh_sceen1");
+		scene_dict.Add(3, "kjh_sceen1");
 		scene_dict.Add(4, "June_Scene");
 
 		current_stage = 1;
@@ -79,8 +79,24 @@ public class UI_Manager : MonoBehaviour
 
 		SceneManager.sceneLoaded += test;
 	}
-	
-	
+
+
+	public static IEnumerator Sound_Kill()
+	{
+		while (true)
+		{
+			Debug.Log(Camera.main.gameObject.GetComponent<AudioSource>().volume);
+			Camera.main.gameObject.GetComponent<AudioSource>().volume -= 0.2f;
+			yield return new WaitForSeconds(1f);
+			if (Camera.main.gameObject.GetComponent<AudioSource>().volume < 0f)
+			{
+				Camera.main.gameObject.GetComponent<AudioSource>().volume = 0f;
+				yield break;
+			}
+		}
+	}
+
+
 
 	public void test(Scene arg0, LoadSceneMode arg1)
 	{
@@ -119,6 +135,8 @@ public class UI_Manager : MonoBehaviour
 		gameStatus.gameObject.SetActive(true);
 		obj_nextBtn.gameObject.SetActive(true);
 		obj_reBtn.gameObject.SetActive(true);
+
+		StartCoroutine(Sound_Kill());
 
 	}
 

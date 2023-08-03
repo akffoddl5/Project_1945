@@ -768,10 +768,14 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         Instantiate(boom2,transform.position, Quaternion.identity);
 		UI_Manager.instance.GameClear_UI();
+
 		yield return new WaitForSeconds(0.1f);
 
         Destroy(this.gameObject);
     }
+
+
+
     IEnumerator Pattern_3()
     {
 
