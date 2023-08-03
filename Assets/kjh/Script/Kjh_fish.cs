@@ -6,6 +6,7 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 
 public class Kjh_fish : MonoBehaviour
 {
+    public AudioSource finish;
     float time;
     public static bool ex =true;
     public static int CountDeF =0;
@@ -28,26 +29,28 @@ public class Kjh_fish : MonoBehaviour
         }
     }
 
-    //private void OnTriggerStay2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        other.GetComponent<Kjh_player>().Move(false);
-    //        // other.gameObject << 面倒茄 按眉 
-    //        if (time >=2)
-    //        {
-    //            other.GetComponent<Kjh_player>().Move(true);
-    //            time = 0;
-    //            ex = true;
-    //        }
-    //    }
-    //}
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    ex = false;
-    //}
+	//private void OnTriggerStay2D(Collider2D other)
+	//{
+	//    if (other.CompareTag("Player"))
+	//    {
+	//        other.GetComponent<Kjh_player>().Move(false);
+	//        // other.gameObject << 面倒茄 按眉 
+	//        if (time >=2)
+	//        {
+	//            other.GetComponent<Kjh_player>().Move(true);
+	//            time = 0;
+	//            ex = true;
+	//        }
+	//    }
+	//}
+	//private void OnTriggerExit2D(Collider2D collision)
+	//{
+	//    ex = false;
+	//}
 
-    private void OnTriggerEnter2D(Collider2D collision)
+	
+
+	private void OnTriggerEnter2D(Collider2D collision)
     {
         Kjh_Monster.CountAll++;
         if (collision.gameObject.CompareTag("Player_bullet"))
@@ -61,11 +64,14 @@ public class Kjh_fish : MonoBehaviour
             CountDeF += 5;
         }
 
-        if (CountDeF >= 200)
+        if (CountDeF >= 25)
         {
             //Kjh_Monster.CountZ++;
             Destroy(gameObject);
+            gameObject.SetActive(false);
+            
             UI_Manager.instance.GameClear_UI();
+            Instantiate(finish);
         }
         
     
