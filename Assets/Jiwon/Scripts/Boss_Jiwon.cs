@@ -6,6 +6,11 @@ using UnityEngine;
 
 public class Boss_Jiwon : MonoBehaviour
 {
+	AudioSource audioSource;
+
+	public AudioClip sun_colSound;
+	public AudioClip sun_die;
+
 	float maxHp = 500;
 	float nowHp;
 
@@ -25,13 +30,13 @@ public class Boss_Jiwon : MonoBehaviour
 
 	// HRazer 관련 변수
 	// -3에서 1.5 사이의 값에서 레이저가 생성됨
-	float minHRazerY = -4.5f, maxHRazerY=1.5f;
+	float minHRazerY = -4.5f, maxHRazerY = 1.5f;
 	float hRazer_scaleY = 1f; //레이저의 y크기
 
 	const int WARN_COUNT = 3; // 3번 깜빡거림
 
 
-	int circleCount=0;
+	int circleCount = 0;
 
 	//float speed = 3f;
 
@@ -43,12 +48,14 @@ public class Boss_Jiwon : MonoBehaviour
 
 	// [붕어빵] 보스 총알
 	GameObject objCross;
-	
+
 	Rigidbody2D rb;
 
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
+		audioSource = GetComponent<AudioSource>();
+
 		nowHp = maxHp; // 현재 체력을 최대 체력으로 설정하기
 
 		isPhase_02 = false;
@@ -69,7 +76,7 @@ public class Boss_Jiwon : MonoBehaviour
 			{
 				case 0:
 					// 오른쪽 아래 대각선으로 날아가도록 reflectDir 초기화 
-					shootFirstDir = (new Vector2 (1, -1)).normalized;
+					shootFirstDir = (new Vector2(1, -1)).normalized;
 					break;
 				case 1:
 					// 왼쪽 아래 대각선으로 날아가도록 reflectDir 초기화
@@ -85,7 +92,7 @@ public class Boss_Jiwon : MonoBehaviour
 	{
 		// 이거 GetDamage() 만들어서 처리해주도록 바꾸고
 		// Destroy같은 걸 딱 한 번만 실행하도록 하는 함수를 만들기
-			// if문이 업데이트에 있으면 계속 조건이 맞는지 확인하게 돼서 
+		// if문이 업데이트에 있으면 계속 조건이 맞는지 확인하게 돼서 
 
 		// 체력이 70퍼가 되면 crossRazer 삭제 + 맵의 위로 이동
 		if (!isPhase_02 && (nowHp <= maxHp * (70 / 100.0f)) && (nowHp > maxHp * (30 / 100.0f)))
@@ -119,7 +126,7 @@ public class Boss_Jiwon : MonoBehaviour
 		}
 
 		//체력이 30% 이하로 떨어지면 공튀기기처럼 보스 자체도 튕기면서 총알 쏘도록
-		if ((nowHp <= maxHp*(30/100.0f)) && !isPhase_03)
+		if ((nowHp <= maxHp * (30 / 100.0f)) && !isPhase_03)
 		{
 			isPhase_03 = true;
 
@@ -216,7 +223,7 @@ public class Boss_Jiwon : MonoBehaviour
 			}
 
 			CheckCount++;
-			
+
 			if (CheckCount >= countBullet)
 			{
 				CheckCount = 0;
@@ -293,7 +300,7 @@ public class Boss_Jiwon : MonoBehaviour
 			weightAngle += 10;
 
 			circleCount++;
-			if(circleCount >= 3) 
+			if (circleCount >= 3)
 			{
 				circleCount = 0;
 				yield return new WaitForSeconds(3);
@@ -320,8 +327,11 @@ public class Boss_Jiwon : MonoBehaviour
 			// 반사각: 내 위치 - contacts[0].point를 뺀 것 == collision.contacts[0].normal(법선)이 알아서 해줌
 			Vector2 inDir = collision.contacts[0].point - (Vector2)transform.position;
 			var dir = Vector2.Reflect(inDir, collision.contacts[0].normal).normalized;
+			rb.AddForce(dir * reflectPower);
 
-			rb.AddForce(dir*reflectPower);
+			// 오디오 재생
+			audioSource.PlayOneShot(sun_colSound);
+
 		}
 		// 플레이어와 보스 충돌
 		if (collision.gameObject.CompareTag("Player"))
@@ -333,19 +343,22 @@ public class Boss_Jiwon : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		// 보스랑 플레이어 총알 충돌
-        if (collision.CompareTag("Player_bullet"))
-        {
+		if (collision.CompareTag("Player_bullet"))
+		{
 			nowHp -= collision.gameObject.GetComponent<Bullet_info>().att;
 
 			// 부딪히다가 hp가 0이 되면 자신도 삭제
 			if (nowHp <= 0)
 			{
+				// die 효과음 재생
+				audioSource.PlayOneShot(sun_die);
+
 				ITEM_MANAGER.instance.GetItem(transform.position, Quaternion.identity);
 				Destroy(gameObject);
 				UI_Manager.instance.GameClear_UI();
 			}
 
-        }
-    }
+		}
+	}
 
 }
