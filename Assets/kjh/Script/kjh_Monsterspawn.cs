@@ -71,23 +71,23 @@ public class Kjh_Monster : MonoBehaviour
         LightM2();
 
 
-        LighBim();
+      
        
 
     }
 
     void boomcoroutin()
     {
-
+        
         StartCoroutine(Boom());
 
-        Invoke("boomcoroutin", 4);
+        Invoke("boomcoroutin", 2);
 
         float a = Random.Range(1, 2.5f);
         Invoke("toFuntion", a);
 
 
-        if (CountAll %17 == 1)
+        if (CountAll %5 == 1)
         {
 
             
@@ -99,7 +99,7 @@ public class Kjh_Monster : MonoBehaviour
             }
         }
 
-        if (CountAll % 5 == 1)
+        if (CountAll % 3 == 1)
         {
 
             Invoke("LightM", 2);
@@ -177,10 +177,11 @@ public class Kjh_Monster : MonoBehaviour
     {
 
 
-        if(lightM1 != null)
-        lightM1.transform.position = Vector2.SmoothDamp(lightM1.transform.position, Vector2.zero, ref vel, speedL);
-
-
+        if (lightM1 != null)
+        {
+            lightM1.transform.position = Vector2.SmoothDamp(lightM1.transform.position, Vector2.zero, ref vel, speedL);
+			LighBim();
+		}
 
 
     }

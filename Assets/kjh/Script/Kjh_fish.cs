@@ -20,7 +20,7 @@ public class Kjh_fish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("CountDeF"+CountDeF);
+        //Debug.Log("CountDeF"+CountDeF);
         Kjh_player move = new Kjh_player();
         if (ex == false)
         {

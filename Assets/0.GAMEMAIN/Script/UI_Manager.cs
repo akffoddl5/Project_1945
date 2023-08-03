@@ -29,8 +29,10 @@ public class UI_Manager : MonoBehaviour
 	public Dictionary<Charactor, GameObject> prefab_dict = new Dictionary<Charactor, GameObject>();
 	public Dictionary<int, string> scene_dict = new Dictionary<int, string>();
 
-	
 
+	public AudioSource audioSource_slide;
+	public AudioSource audioSource_select;
+	public AudioSource audioSource_clear;
 	public int current_stage = 1;
 
 	Coroutine co_fadeIn;
@@ -55,11 +57,15 @@ public class UI_Manager : MonoBehaviour
 		prefab_dict.Add(Charactor.도운, DW_Player);
 		prefab_dict.Add(Charactor.용석, YS_Player);
 
-		scene_dict.Add(1, "Dowoon");
+		scene_dict.Add(3, "Dowoon");
 		scene_dict.Add(2, "YONGSEOK");
 		scene_dict.Add(5, "Jiwon");
-		scene_dict.Add(3, "kjh_sceen1");
+		scene_dict.Add(1, "kjh_sceen1");
 		scene_dict.Add(4, "June_Scene");
+		scene_dict.Add(6, "GameEnd");
+		scene_dict.Add(7, "GameEnd");
+		scene_dict.Add(8, "GameEnd");
+
 
 		current_stage = 1;
 	}
@@ -81,19 +87,24 @@ public class UI_Manager : MonoBehaviour
 	}
 
 
-	public static IEnumerator Sound_Kill()
+	public IEnumerator Sound_Kill()
 	{
+		if (Camera.main.gameObject.GetComponent<AudioSource>() == null) yield break;
+		
 		while (true)
 		{
 			Debug.Log(Camera.main.gameObject.GetComponent<AudioSource>().volume);
 			Camera.main.gameObject.GetComponent<AudioSource>().volume -= 0.2f;
 			yield return new WaitForSeconds(1f);
-			if (Camera.main.gameObject.GetComponent<AudioSource>().volume < 0f)
+			if (Camera.main.gameObject.GetComponent<AudioSource>().volume <= 0f)
 			{
 				Camera.main.gameObject.GetComponent<AudioSource>().volume = 0f;
-				yield break;
+				break;
 			}
 		}
+		yield return new WaitForSeconds(0.5f);
+		//audioSource_clear.Play();
+
 	}
 
 
@@ -124,6 +135,7 @@ public class UI_Manager : MonoBehaviour
 
 	public void GameClear_UI()
 	{
+		Debug.Log("clear ui");
 		StartCoroutine(PlayerReverseSpawn());
 		
 		StartCoroutine(FadeOut(2f));
@@ -137,10 +149,9 @@ public class UI_Manager : MonoBehaviour
 		obj_reBtn.gameObject.SetActive(true);
 
 		StartCoroutine(Sound_Kill());
+		
 
 	}
-
-	
 
 
 	void GameOver_UI()
@@ -162,10 +173,12 @@ public class UI_Manager : MonoBehaviour
 		current_stage++;
 
 		StartCoroutine(LoadScene(current_stage));
+		audioSource_select.Play();
 	}
 	public void RestartBtn()
 	{
-		SceneManager.LoadScene(nowSceneName);
+		SceneManager.LoadScene(current_stage);
+		audioSource_select.Play();
 	}
 
 	IEnumerator Playerspawn()

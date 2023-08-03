@@ -112,6 +112,8 @@ public class UI_selected_img : MonoBehaviour
 			UI_Manager.instance.CharacterSelect_FadeOut((Charactor)now_characterNum);
 			// 1번 스테이지 불러오기
 			//SceneManager.LoadScene("");
+
+			UI_Manager.instance.audioSource_select.Play();
 		}
 
 	}
@@ -132,6 +134,8 @@ public class UI_selected_img : MonoBehaviour
 
 			// 정보 초기화
 			InitInfo();
+
+			UI_Manager.instance.audioSource_slide.Play();
 		}
 		if (Input.GetKeyDown(KeyCode.LeftArrow))
 		{
@@ -147,7 +151,11 @@ public class UI_selected_img : MonoBehaviour
 
 			// 정보 초기화
 			InitInfo();
+
+			UI_Manager.instance.audioSource_slide.Play();
 		}
+
+		
 	}
 
 	void MakeInfo()

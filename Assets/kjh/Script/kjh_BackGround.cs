@@ -20,7 +20,6 @@ public class kjh_BackGround : MonoBehaviour
 
 		if (Kjh_fish.CountDeF >= 25)
 		{
-			StartCoroutine(Sound_Kill());
 			if (GameObject.Find("Monstermanager") != null)
 			{
 				Destroy(GameObject.Find("Monstermanager"),3);
@@ -29,19 +28,6 @@ public class kjh_BackGround : MonoBehaviour
 
 	}
 
-	public static IEnumerator Sound_Kill()
-	{
-		while (true)
-		{
-			Debug.Log(Camera.main.gameObject.GetComponent<AudioSource>().volume);
-			Camera.main.gameObject.GetComponent<AudioSource>().volume -= 0.2f;
-			yield return new WaitForSeconds(1f);
-			if (Camera.main.gameObject.GetComponent<AudioSource>().volume < 0f)
-			{
-				Camera.main.gameObject.GetComponent<AudioSource>().volume = 0f;
-				yield break;
-			}
-		}
-	}
+
 
 }
