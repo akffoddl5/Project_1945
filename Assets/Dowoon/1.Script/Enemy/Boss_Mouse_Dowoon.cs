@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings;
 using static UnityEngine.GraphicsBuffer;
 using Random = UnityEngine.Random;
 public class Boss_Mouse_Dowoon : Enemy_Dowoon
@@ -20,6 +21,10 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
 
     }
+
+    [Header("Æø¹ß")]
+    public GameObject boom1 = null;
+    public GameObject boom2 = null;
 
     public BossState currPattern = BossState.Idle;
     public BossState lastPattern = BossState.Idle;
@@ -109,6 +114,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             GoToGoalPos();
 
 
+        if (HpBar != null && HpBarObject != null)
         SetHpValue();
         //if(!isPatternStart && Boss_Sprite.transform.localEulerAngles.z >= 0)
         //{
@@ -702,6 +708,11 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         if (HpBarObject != null)
             Destroy(HpBarObject);
 
+        if(GetComponent<BoxCollider2D>() != null)
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+        }
+
         if (bullets.Count > 0)
         {
             for(int i=0; i<bullets.Count;++i)
@@ -715,10 +726,52 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         StopAllCoroutines();
 
-        Destroy(this.gameObject);
-        
+
+        var local = Boss_Sprite.transform.localEulerAngles;
+        local.z = 0;
+        Boss_Sprite.transform.localEulerAngles = local;
+        GetComponent<Animator>().SetBool("b_die", true);
+
+
+        StartCoroutine(Boss_Die());
     }
 
+
+    IEnumerator Boss_Die()
+    {
+        int count = 0;
+        var x = 0.0f;
+        var y = 0.0f;
+
+        while (count <= 15)
+        {
+           
+
+            x = Random.Range(-0.8f, 0.8f);
+            y = Random.Range(-0.8f, 0.8f);
+
+            var pos = transform.position;
+                pos.x += x;
+            pos.y += y;
+            Instantiate(boom1, pos, Quaternion.identity);
+            count++;
+
+            if (count % 6 == 0)
+                yield return new WaitForSeconds(0.5f);
+            else
+            yield return new WaitForSeconds(0.2f);
+        }
+
+
+
+
+
+        Instantiate(boom2,transform.position, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.1f);
+
+        Destroy(this.gameObject);
+    }
     IEnumerator Pattern_3()
     {
 
