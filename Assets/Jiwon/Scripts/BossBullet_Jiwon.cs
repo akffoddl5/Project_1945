@@ -24,10 +24,9 @@ public class BossBullet_Jiwon : MonoBehaviour
 		//rb.velocity = v;
 
 	}
-	private void OnCollisionEnter2D(Collision2D collision)
+	void OnTriggerEnter2D(Collider2D collision)
 	{
-		// 플레이어와 보스 총알이 충돌했을 때
-		if (collision.gameObject.CompareTag("Player"))
+		if (collision.CompareTag("Player"))
 		{
 			Destroy(collision.gameObject);
 		}

@@ -10,7 +10,7 @@ public class Ending : MonoBehaviour
 	public GameObject btn_close;
 
 	Vector2 vec_moveBg = Vector2.down;
-	float moveBgSpeed = 3f;
+	float moveBgSpeed = 1f;
 
 	private void Start()
 	{
