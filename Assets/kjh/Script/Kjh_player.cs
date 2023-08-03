@@ -230,7 +230,7 @@ public class Kjh_player : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftControl))
         {
             anim.SetBool("Control", true);
-
+      
 
 
         }
@@ -240,22 +240,16 @@ public class Kjh_player : MonoBehaviour
 
 
         }
-        if (anim.GetBool("Control") == true)
-        {
-            stop = false;
-            stopTimes = false;
-        }
-        if((anim.GetBool("Control") == false))//&&(Kjh_fish.ex ==false))
-        {
-            stop = true;
-            stopTimes = true;
-        }
+
+
+       
+       
     }
 
 
     void TimeAcction()// 애니메이션 누름  구별
     {
-        if (stopTimes == true)
+      //  if (stopTimes == true)
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
             {
                 anim.SetBool("Times", true);

@@ -26,7 +26,7 @@ public class Kjh_LightM : MonoBehaviour
         {
 
 
-            Destroy(collision.gameObject);
+           
 
 
             CountDeL++;
