@@ -8,6 +8,12 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 
 public class Kjh_Monster : MonoBehaviour
 {
+    public AudioSource fishs;
+    public AudioSource booms;
+    public AudioSource tos;
+    public AudioSource lights;
+    
+
 
     public GameObject player;
 
@@ -87,6 +93,7 @@ public class Kjh_Monster : MonoBehaviour
             
             if (Kjh_fish.CountDeF <= 200)
             {
+                Instantiate(fishs);
                 Invoke("fish_dir", 2);
             }
         }
@@ -107,6 +114,7 @@ public class Kjh_Monster : MonoBehaviour
         if (boom != null)
         {
             Instantiate(to, boom2.transform.position, Quaternion.identity);
+            Instantiate(tos);
         }
 
 
@@ -127,6 +135,7 @@ public class Kjh_Monster : MonoBehaviour
 
         boom2 = Instantiate(boom, boomT.position, Quaternion.identity);
         boom2.GetComponent<Rigidbody2D>().velocity = boomV * speed;
+        Instantiate(booms);
         Destroy(boom2, 10);
 
         yield return new WaitForSeconds(5);
@@ -146,6 +155,7 @@ public class Kjh_Monster : MonoBehaviour
         fishY = Mathf.Abs(fishY);
         fishV.y = -fishY;
         fish1 = Instantiate(fish, fishT.position, Quaternion.identity);
+        
         fish1.GetComponent<Rigidbody2D>().AddForce(fishV * speedF);
         Destroy(fish1, 10);
     }
@@ -154,8 +164,8 @@ public class Kjh_Monster : MonoBehaviour
 
 
 
-
         lightM1 = Instantiate(lightM, lightMT.position, Quaternion.identity);
+        
         Destroy(lightM1,10);
 
     }
@@ -177,16 +187,21 @@ public class Kjh_Monster : MonoBehaviour
     {
         if (lightM != null)
         {
+            if (j == 0)
+                Invoke("bim", 1.2f);
+
+
             j += Time.deltaTime;
 
             lightMR = GameObject.Find("Circle");
 
+           
+            
 
             if (j >= 2)
             {
                 lightMR.transform.localScale = new Vector3(j * 1000, j * 1000, 0);
-
-
+                
                 if (j >= 5)
                 {
                     j = 0;
@@ -204,6 +219,11 @@ public class Kjh_Monster : MonoBehaviour
 
     }
 
+    void bim()
+    {
+        Instantiate(lights);
+
+    }
 
     private void OnBecameInvisible()
     {
