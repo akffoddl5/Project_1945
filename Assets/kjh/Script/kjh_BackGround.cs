@@ -5,7 +5,7 @@ using UnityEngine;
 public class kjh_BackGround : MonoBehaviour
 {
     Material myMaterial;
-    public float scrollSpeed=5.0f;
+     float scrollSpeed=0.03f;
     void Start()
     {
         myMaterial = GetComponent<Renderer>().material;

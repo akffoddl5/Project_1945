@@ -10,6 +10,13 @@ using UnityEngine.UIElements;
 
 public class kjh_pbullet : MonoBehaviour
 {
+    public AudioSource looks;
+    public AudioSource knifs1;
+    public AudioSource knifs2;
+    public AudioSource knifs3;
+    public AudioSource knifs4;
+    public AudioSource knifs5;
+
 
     public GameObject pbullet;
     public GameObject knife;
@@ -53,7 +60,7 @@ public class kjh_pbullet : MonoBehaviour
 
         bullet();
         Knife();
-      //  Del();
+        //  Del();
     }
 
 
@@ -82,7 +89,7 @@ public class kjh_pbullet : MonoBehaviour
 
 
             }
-            else if (!Input.GetKey(KeyCode.Z)&&Input.GetKey(KeyCode.LeftControl))
+            else if (!Input.GetKey(KeyCode.Z) && Input.GetKey(KeyCode.LeftControl))
             {
                 bulletObj[5] = Instantiate(pbullet, pbulletF.position, pbulletF.transform.rotation);
                 bulletObj[5].GetComponent<Rigidbody2D>().velocity = Vector3.up * speed;
@@ -153,9 +160,13 @@ public class kjh_pbullet : MonoBehaviour
 
         ///bulletObj[a].transform.position = knifeT[a].position;
 
-
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Instantiate(looks);
+        }
         if (Input.GetKey(KeyCode.Z) && Input.GetKeyDown(KeyCode.Space))
         {
+            
 
             countK++;
 
@@ -166,6 +177,8 @@ public class kjh_pbullet : MonoBehaviour
 
                 //Destroy(bulletObj[0]);
                 bulletObj[0].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
+                Instantiate(knifs1);
+
             }
             if (countK == 2)
             {
@@ -173,7 +186,7 @@ public class kjh_pbullet : MonoBehaviour
                 Debug.Log(countK);
                 //Destroy(bulletObj[1]);
                 bulletObj[1].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);
-
+                Instantiate(knifs2);
             }
             if (countK == 3)
             {
@@ -181,6 +194,8 @@ public class kjh_pbullet : MonoBehaviour
 
                 // Destroy(bulletObj[3]);
                 bulletObj[3].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
+
+                Instantiate(knifs3);
             }
             if (countK == 4)
             {
@@ -188,12 +203,17 @@ public class kjh_pbullet : MonoBehaviour
 
                 //Destroy(bulletObj[2]);
                 bulletObj[2].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
+
+
+                Instantiate(knifs4);
             }
             if (countK == 5)
             {
 
                 // Destroy(bulletObj[4]);
                 bulletObj[4].GetComponent<Rigidbody2D>().AddForce(Vector3.up * Time.deltaTime * speedK);//몬스터 따라가기할거임
+
+                Instantiate(knifs5);
 
             }
 
@@ -244,7 +264,7 @@ public class kjh_pbullet : MonoBehaviour
 
 
     }
-    
+
 }
 
 
