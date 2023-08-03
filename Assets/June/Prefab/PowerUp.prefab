@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &8873423780305228012
 SpriteRenderer:
@@ -175,7 +175,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 01870e3252df8ff438a617aab7fb7cfa, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.131
+  m_Volume: 0.787
   m_Pitch: 1
   Loop: 0
   Mute: 0
