@@ -50,7 +50,7 @@ public class June_PlayerShooting : MonoBehaviour
     {
 
 
-        bool isZinput =false;
+        isZinput =false;
 
         cutimage = transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Image>();
 

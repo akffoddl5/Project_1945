@@ -85,6 +85,7 @@ public class UI_Revive : MonoBehaviour
             
 
 
+
             if(Input.GetKeyDown(KeyCode.Return))
             {
                 GameObject instanceObject = null;
@@ -107,6 +108,8 @@ public class UI_Revive : MonoBehaviour
                         break;
 
                 }
+                ITEM_MANAGER.instance.current_character = (Charactor)(index + 1);
+
                 UI_Manager.instance.now_Player = instanceObject;
                 UI_Manager.instance.Revive();
                 Debug.Log("∫Œ»∞µ ");

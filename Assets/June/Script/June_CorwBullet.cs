@@ -36,7 +36,7 @@ public class June_CrowBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       
+       Destroy(gameObject);
     }
 
 }

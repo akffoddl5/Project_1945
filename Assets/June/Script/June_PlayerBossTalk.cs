@@ -11,7 +11,7 @@ public class June_PlayerBossTalk : MonoBehaviour
 
     public Text dialogText;
     public string[] dialogue;
-    int index;
+    int June_Index;
 
     public float wordSpeed;
     public bool playerisclose;
@@ -30,32 +30,42 @@ public class June_PlayerBossTalk : MonoBehaviour
 
     public void Start()
     {
-        index = 0;
+        June_Index = 0;
+       
+
+        Aya = GameObject.Find("June_Canvas").transform.GetChild(4).gameObject;
+        dncmgh = GameObject.Find("June_Canvas").transform.GetChild(5).gameObject;
+        Jiwon = GameObject.Find("June_Canvas").transform.GetChild(6).gameObject;
+        jung = GameObject.Find("June_Canvas").transform.GetChild(7).gameObject;
+        Yong = GameObject.Find("June_Canvas").transform.GetChild(8).gameObject;
+        Do = GameObject.Find("June_Canvas").transform.GetChild(9).gameObject;
 
 
 
-        Aya = GameObject.Find("Canvas").transform.GetChild(4).gameObject;
-        dncmgh = GameObject.Find("Canvas").transform.GetChild(5).gameObject;
-        Jiwon = GameObject.Find("Canvas").transform.GetChild(6).gameObject;
-        jung = GameObject.Find("Canvas").transform.GetChild(7).gameObject;
-        Yong = GameObject.Find("Canvas").transform.GetChild(8).gameObject;
-        Do = GameObject.Find("Canvas").transform.GetChild(9).gameObject;
-
-        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.신준)
+        if (ITEM_MANAGER.instance.current_character == Charactor.신준)
         { playerselection = Aya; }
-        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.지원)
+        if (ITEM_MANAGER.instance.current_character == Charactor.지원)
         { playerselection = Jiwon; }
-        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.도운)
-        { playerselection = Do; }
-        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.정현)
+        if (ITEM_MANAGER.instance.current_character == Charactor.정현)
         { playerselection = jung; }
-        if (GameObject.Find("Fade_UI").GetComponent<ITEM_MANAGER>().current_character == Charactor.용석)
+        if (ITEM_MANAGER.instance.current_character == Charactor.도운)
+        { playerselection = Do; }
+        if (ITEM_MANAGER.instance.current_character == Charactor.용석)
         { playerselection = Yong; }
+
+
 
         StopAllCoroutines();
         StartCoroutine(FadeInStart());
         StartCoroutine(Typing());
+
+
+
+
     }
+
+    
+
     private void Update()
     {
 
@@ -63,14 +73,14 @@ public class June_PlayerBossTalk : MonoBehaviour
 
 
 
-        if (index % 2 == 0)
+        if (June_Index % 2 == 0)
         {
             StartCoroutine(CharactorFadeInStart(1f, playerselection));
             StartCoroutine(CharactorFadeOutStart(0.5f, dncmgh));
 
 
         }
-        if (index % 2 != 0)
+        if (June_Index % 2 != 0)
         {
 
             StartCoroutine(CharactorFadeInStart(1f, dncmgh));
@@ -85,15 +95,15 @@ public class June_PlayerBossTalk : MonoBehaviour
 
     public void NextLine()
     {
-        if (index < dialogue.Length - 1)
+        if (June_Index < dialogue.Length - 1)
         {
-            index++;
+            June_Index++;
             GameObject.Find("PlayerTxt").GetComponent<Text>().text = " ";
             StartCoroutine(Typing());
 
 
         }
-        if (index == dialogue.Length - 1)
+        if (June_Index == dialogue.Length - 1)
         {
 
 
@@ -107,14 +117,13 @@ public class June_PlayerBossTalk : MonoBehaviour
     }
     private void OnEnable()
     {
-        //  GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = false;
-        // GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = false;
+        
     }
     void DestroyTheTxt()
     {
         StartCoroutine(FadeOutStart());
         gameObject.GetComponent<June_BossBullet>().enabled = true;
-        GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(false);
+        GameObject.Find("June_Canvas").transform.GetChild(3).gameObject.SetActive(false);
         StartCoroutine(CharactorFadeOutStart(0f, playerselection));
         StartCoroutine(CharactorFadeOutStart(0f, dncmgh));
         Aya.SetActive(false);
@@ -123,14 +132,13 @@ public class June_PlayerBossTalk : MonoBehaviour
         jung.SetActive(false);
         Yong.SetActive(false);
         Do .SetActive(false);
-        //  GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerMovement>().enabled = true;
-        //  GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().enabled = true;
+        
 
     }
 
     IEnumerator Typing()
     {
-        foreach (char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[June_Index].ToCharArray())
         {
             GameObject.Find("PlayerTxt").GetComponent<Text>().text += letter;
             yield return new WaitForSeconds(wordSpeed);
@@ -168,36 +176,36 @@ public class June_PlayerBossTalk : MonoBehaviour
     //페이드 아웃
     public IEnumerator FadeOutStart()
     {
-        GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(true);
+        GameObject.Find("June_Canvas").transform.GetChild(3).gameObject.SetActive(true);
         for (float f = 0.5f; f > 0; f -= 0.02f)
         {
 
-            Color c1 = GameObject.Find("Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color;
+            Color c1 = GameObject.Find("June_Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color;
             c1.a = f;
-            Color c2 = GameObject.Find("Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color;
+            Color c2 = GameObject.Find("June_Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color;
             c2.a = f;
 
-            GameObject.Find("Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color = c1;
-            GameObject.Find("Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color = c2;
+            GameObject.Find("June_Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color = c1;
+            GameObject.Find("June_Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color = c2;
             yield return new WaitForSeconds(0);
-            GameObject.Find("Canvas").transform.GetChild(2).gameObject.SetActive(false);
-            GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(false);
+            GameObject.Find("June_Canvas").transform.GetChild(2).gameObject.SetActive(false);
+            GameObject.Find("June_Canvas").transform.GetChild(3).gameObject.SetActive(false);
         }
     }
     //페이드 인
     public IEnumerator FadeInStart()
     {
-        GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(true);
+        GameObject.Find("June_Canvas").transform.GetChild(3).gameObject.SetActive(true);
         for (float f = 0f; f < 0.5; f += 0.02f)
         {
 
-            Color c1 = GameObject.Find("Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color;
+            Color c1 = GameObject.Find("June_Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color;
             c1.a = f;
-            Color c2 = GameObject.Find("Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color;
+            Color c2 = GameObject.Find("June_Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color;
             c2.a = f;
 
-            GameObject.Find("Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color = c1;
-            GameObject.Find("Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color = c2;
+            GameObject.Find("June_Canvas").transform.GetChild(2).gameObject.GetComponent<Image>().color = c1;
+            GameObject.Find("June_Canvas").transform.GetChild(3).gameObject.GetComponent<Image>().color = c2;
             yield return null;
         }
     }
