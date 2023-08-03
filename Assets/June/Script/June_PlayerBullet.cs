@@ -51,6 +51,7 @@ public class June_PlayerBullet : MonoBehaviour
     {
         if (collision.CompareTag("ENEMY"))
         {
+            
             Destroy(gameObject);
 
         }
