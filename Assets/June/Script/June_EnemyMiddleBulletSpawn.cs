@@ -44,8 +44,7 @@ public class June_EnemyMiddleBulletSpawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Hp -= 1; //나중에 bullet_info에서 공격력 가져오고 적용시키기
-        Destroy(collision.gameObject);
+        Hp -= collision.gameObject.GetComponent<Bullet_info>().att;
         Debug.Log(Hp);
         if (Hp <= 0)
         {

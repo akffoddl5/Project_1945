@@ -59,7 +59,7 @@ public class June_PlayerMovement : MonoBehaviour
         {
             moveX = (moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal")) / 2;
             moveY = (moveSpeed * Time.deltaTime * Input.GetAxis("Vertical")) / 2;
-            transform.GetChild(0).gameObject.SetActive(true); //자식객체 0번 불러와서 켜주기
+            transform.GetChild(1).gameObject.SetActive(true); //자식객체 0번 불러와서 켜주기
 
 
         }
@@ -67,7 +67,7 @@ public class June_PlayerMovement : MonoBehaviour
         {
             moveX = moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal");
             moveY = moveSpeed * Time.deltaTime * Input.GetAxis("Vertical");
-            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(1).gameObject.SetActive(false);
 
         }
 
