@@ -10,7 +10,7 @@ public class Kjh_Monster : MonoBehaviour
 {
     public AudioSource fishs;
     public AudioSource booms;
-    public AudioSource tos;
+
     public AudioSource lights;
     
 
@@ -71,9 +71,9 @@ public class Kjh_Monster : MonoBehaviour
         LightM2();
 
 
-        LighBim();
        
 
+       
     }
 
     void boomcoroutin()
@@ -91,11 +91,11 @@ public class Kjh_Monster : MonoBehaviour
         {
 
             
-            if (Kjh_fish.CountDeF <= 25)
+            if (Kjh_fish.CountDeF>= 25)
             {
                 Instantiate(fishs);
                 Invoke("fish_dir", 5);
-              
+                CountAll++;
             }
         }
 
@@ -112,12 +112,9 @@ public class Kjh_Monster : MonoBehaviour
 
     void toFuntion()
     {
-        if (boom2 != null && to != null)
-        {
             Instantiate(to, boom2.transform.position, Quaternion.identity);
-            Instantiate(tos);
-        }
-
+           
+        
 
     }
 
@@ -166,7 +163,7 @@ public class Kjh_Monster : MonoBehaviour
 
 
         lightM1 = Instantiate(lightM, lightMT.position, Quaternion.identity);
-        
+        LighBim();
         Destroy(lightM1,10);
 
     }
@@ -186,10 +183,9 @@ public class Kjh_Monster : MonoBehaviour
     }
     void LighBim()
     {
-        if (lightM != null && lightMR != null)
-        {
+       
             if (j == 0)
-                Invoke("bim", 1.2f);
+                Invoke("bim", 2f);
 
 
             j += Time.deltaTime;
@@ -211,8 +207,6 @@ public class Kjh_Monster : MonoBehaviour
 
                 }
             }
-
-        }
 
 
 
