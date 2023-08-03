@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 5089258321827956734}
   - component: {fileID: 5897895224067749220}
   - component: {fileID: 2152004261004114196}
-  - component: {fileID: 1563468916587547280}
+  - component: {fileID: 7528338099335521700}
   m_Layer: 0
   m_Name: Boss
   m_TagString: ENEMY
@@ -240,6 +240,8 @@ MonoBehaviour:
   target_player: {fileID: 0}
   HpBar: {fileID: 7618312784381822102, guid: d5e1eb8ed9e745f4c9897c3b82c3edb9, type: 3}
   HpBarObject: {fileID: 0}
+  boom1: {fileID: 4589569213402873778, guid: c1fa44149e8e7e048a7442106fdc8b55, type: 3}
+  boom2: {fileID: 6798699764392326260, guid: 46cb77e71d8c5fa44afd9b8b9d1d1257, type: 3}
   currPattern: 1
   lastPattern: 1
   SpawnPos: {x: 4.7, y: 17.3, z: 0}
@@ -322,7 +324,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0222945, y: 3.4760845}
   m_EdgeRadius: 0
---- !u!95 &1563468916587547280
+--- !u!95 &7528338099335521700
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -335,7 +337,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d63738abf0f639c438aaf9b642068250, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 

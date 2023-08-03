@@ -119,6 +119,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1215,33 +1228,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Effects_80
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 565
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cabf248dce46a074194948217e632861
-      internalID: -1618816022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Effects_81
       rect:
         serializedVersion: 2
-        x: 224
+        x: 228
         y: 565
-        width: 32
+        width: 27
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1252,27 +1244,6 @@ TextureImporter:
       bones: []
       spriteID: c804d8216ee8d9e448b03d32b8ee061e
       internalID: -1515660747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effects_82
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 565
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abe41ff94422d3843b244e5f6c4b37c3
-      internalID: -710577681
       vertices: []
       indices: 
       edges: []
@@ -1567,6 +1538,48 @@ TextureImporter:
       bones: []
       spriteID: 8a468da2fe3c65e4dbd2dc3d4f220766
       internalID: -437839896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_13
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 565
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f2a63b89c42ce45b00be250d96ec1e
+      internalID: -112721557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_22
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 565
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d5113f0fcbcbc4ebb554d2669de1e4
+      internalID: 588252269
       vertices: []
       indices: 
       edges: []

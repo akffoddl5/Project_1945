@@ -279,6 +279,7 @@ public class Kjh_player : MonoBehaviour
         if (collision.gameObject.CompareTag("ENEMY"))
         {
             Destroy(gameObject);
+            Debug.Log(collision.gameObject);
         }
     }
 

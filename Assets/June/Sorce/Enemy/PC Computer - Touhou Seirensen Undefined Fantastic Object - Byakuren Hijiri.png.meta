@@ -119,6 +119,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -127,12 +140,12 @@ TextureImporter:
         Hijiri_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 898
-        width: 95
-        height: 130
+        x: 9
+        y: 903
+        width: 79
+        height: 115
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,12 +162,12 @@ TextureImporter:
         Hijiri_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 898
-        width: 95
-        height: 130
+        x: 103
+        y: 903
+        width: 83
+        height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +184,12 @@ TextureImporter:
         Hijiri_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 898
-        width: 95
-        height: 130
+        x: 199
+        y: 903
+        width: 86
+        height: 112
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +206,12 @@ TextureImporter:
         Hijiri_3
       rect:
         serializedVersion: 2
-        x: 288
-        y: 898
-        width: 95
-        height: 130
+        x: 295
+        y: 903
+        width: 83
+        height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +228,12 @@ TextureImporter:
         Hijiri_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 95
-        height: 130
+        x: 9
+        y: 777
+        width: 79
+        height: 115
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,12 +250,12 @@ TextureImporter:
         Hijiri_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 768
-        width: 95
-        height: 130
+        x: 103
+        y: 778
+        width: 80
+        height: 104
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,12 +272,12 @@ TextureImporter:
         Hijiri_7
       rect:
         serializedVersion: 2
-        x: 192
-        y: 768
-        width: 95
-        height: 130
+        x: 198
+        y: 780
+        width: 81
+        height: 98
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,12 +294,12 @@ TextureImporter:
         Hijiri_8
       rect:
         serializedVersion: 2
-        x: 288
-        y: 768
-        width: 95
-        height: 130
+        x: 294
+        y: 780
+        width: 81
+        height: 98
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -303,12 +316,12 @@ TextureImporter:
         Hijiri_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 638
-        width: 95
-        height: 130
+        x: 9
+        y: 649
+        width: 79
+        height: 113
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,12 +338,12 @@ TextureImporter:
         Hijiri_10
       rect:
         serializedVersion: 2
-        x: 96
-        y: 638
-        width: 95
-        height: 130
+        x: 105
+        y: 650
+        width: 79
+        height: 112
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -347,12 +360,12 @@ TextureImporter:
         Hijiri_11
       rect:
         serializedVersion: 2
-        x: 192
-        y: 638
-        width: 95
-        height: 130
+        x: 205
+        y: 650
+        width: 75
+        height: 115
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -369,12 +382,12 @@ TextureImporter:
         Hijiri_12
       rect:
         serializedVersion: 2
-        x: 288
-        y: 638
-        width: 95
-        height: 130
+        x: 301
+        y: 650
+        width: 75
+        height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,12 +404,12 @@ TextureImporter:
         Hijiri_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 508
-        width: 95
-        height: 130
+        x: 9
+        y: 521
+        width: 79
+        height: 115
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -413,12 +426,12 @@ TextureImporter:
         Hijiri_14
       rect:
         serializedVersion: 2
-        x: 96
-        y: 508
-        width: 95
-        height: 130
+        x: 103
+        y: 522
+        width: 83
+        height: 115
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -435,12 +448,12 @@ TextureImporter:
         Hijiri_15
       rect:
         serializedVersion: 2
-        x: 192
-        y: 508
-        width: 95
-        height: 130
+        x: 199
+        y: 522
+        width: 83
+        height: 116
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -457,12 +470,12 @@ TextureImporter:
         Hijiri_16
       rect:
         serializedVersion: 2
-        x: 288
-        y: 508
-        width: 95
-        height: 130
+        x: 295
+        y: 522
+        width: 83
+        height: 118
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -479,10 +492,10 @@ TextureImporter:
         Hijiri_4
       rect:
         serializedVersion: 2
-        x: 388
-        y: 436
-        width: 69
-        height: 78
+        x: 409
+        y: 933
+        width: 36
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,10 +514,10 @@ TextureImporter:
         Hijiri_17
       rect:
         serializedVersion: 2
-        x: 388
-        y: 355
-        width: 69
-        height: 78
+        x: 1
+        y: 294
+        width: 384
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -523,6 +536,72 @@ TextureImporter:
         Hijiri_18
       rect:
         serializedVersion: 2
+        x: 387
+        y: 435
+        width: 70
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcae2abe0e942b42a12d36d6148cbe1
+      internalID: 1928497367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_19
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 354
+        width: 70
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3089e9452a5994040ac8c8a6801c0f6f
+      internalID: -385912172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_20
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 325
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13672cd50e462e14e8dc5e3ac855f162
+      internalID: -2042060967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren
+        Hijiri_21
+      rect:
+        serializedVersion: 2
         x: 26
         y: 37
         width: 208
@@ -534,8 +613,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dcae2abe0e942b42a12d36d6148cbe1
-      internalID: 1928497367
+      spriteID: f473dd2f142e3d84d8ee55c0fe74cc25
+      internalID: -2054574755
       vertices: []
       indices: 
       edges: []
@@ -566,16 +645,7 @@ TextureImporter:
       PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_2: -882328633
       PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_20: -2042060967
       PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_21: -2054574755
-      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_22: 408545961
-      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_23: 1688925632
-      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_24: -449991265
-      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_25: 1610273579
-      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_26: 999646395
-      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_27: -622322646
-      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_28: -771602980
-      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_29: -45804064
       PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_3: -1621126775
-      PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_30: -296022165
       PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_4: 439281078
       PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_5: -2121314102
       PC Computer - Touhou Seirensen Undefined Fantastic Object - Byakuren Hijiri_6: -1166734803
