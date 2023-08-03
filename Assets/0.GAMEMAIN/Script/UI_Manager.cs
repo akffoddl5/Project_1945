@@ -84,9 +84,9 @@ public class UI_Manager : MonoBehaviour
 
 	public void test(Scene arg0, LoadSceneMode arg1)
 	{
-		Debug.Log("test 시작");
 		StartCoroutine(FadeIn());
 		StartCoroutine(Playerspawn());
+		Debug.Log("스폰 시작, 페이드인 시작");
 	}
 
 	
@@ -108,7 +108,9 @@ public class UI_Manager : MonoBehaviour
 
 	public void GameClear_UI()
 	{
-		co_fadeOut = StartCoroutine(FadeOut());
+		StartCoroutine(PlayerReverseSpawn());
+		
+		StartCoroutine(FadeOut(2f));
 
 		gameStatus.text = "Game Clear";
 		obj_nextBtn.GetComponent<Button>().interactable = true;
@@ -120,6 +122,7 @@ public class UI_Manager : MonoBehaviour
 
 	}
 
+	
 
 
 	void GameOver_UI()
@@ -177,12 +180,38 @@ public class UI_Manager : MonoBehaviour
 			yield return new WaitForSeconds(0.01f); //지연
 			now_Player_Instance.transform.Translate(0, 3 * Time.deltaTime, 0); //플레이어 생성 위치로부터 맵으로 끌고 오기.
 
-			if (now_Player_Instance.transform.position.y > -2)  break;
+			if (now_Player_Instance.transform.position.y > -4)  break;
 
 		}
 
 		//스폰후처리
 		now_Player_Instance.GetComponent<Collider2D>().enabled = true;
+	}
+
+	IEnumerator PlayerReverseSpawn()
+	{
+
+		
+		//다형성으로 2D콜라이더 전부 Disable
+		if (now_Player_Instance.GetComponent<Collider2D>() != null)
+		{
+			now_Player_Instance.GetComponent<Collider2D>().enabled = false;
+		}
+
+
+		//리버스 스폰중..
+		while (true)
+		{
+			//1초마다
+			yield return new WaitForSeconds(0.01f); //지연
+			now_Player_Instance.transform.Translate(0, 9 * Time.deltaTime, 0); //플레이어 생성 위치로부터 맵으로 끌고 오기.
+
+			if (now_Player_Instance.transform.position.y > 6) break;
+
+		}
+
+		//yield return new WaitForSeconds(1);
+
 	}
 
 
@@ -212,7 +241,20 @@ public class UI_Manager : MonoBehaviour
 		yield break;
 	}
 
-	
+	IEnumerator FadeOut(float time_delay)
+	{
+		yield return new WaitForSeconds(time_delay);
+		Color tmp = new Color(0f, 0f, 0f, 0.05f);
+		while (obj_panel.GetComponent<Image>().color.a < 1)
+		{
+			yield return new WaitForSeconds(0.05f);
+			//Debug.Log(obj_panel.GetComponent<Image>().color.a);
+			obj_panel.GetComponent<Image>().color += tmp;
+		}
+		yield break;
+	}
+
+
 
 	IEnumerator LoadScene(int stage)
 	{

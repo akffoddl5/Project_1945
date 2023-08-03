@@ -53,7 +53,7 @@ public class June_PlayerShooting : MonoBehaviour
 
         cutimage = transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Image>();
 
-        PlayerDamage = 1;
+        PlayerDamage = 5;
         StartCoroutine(AutoFire());
         PlayerCharg = GameObject.Find("ChargeMagic").GetComponent<Image>();
     }

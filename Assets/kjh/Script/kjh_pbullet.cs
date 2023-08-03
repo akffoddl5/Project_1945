@@ -13,7 +13,7 @@ public class kjh_pbullet : MonoBehaviour
 
     public GameObject pbullet;
     public GameObject knife;
-    float speed = 3.0f;
+    float speed = 15.0f;
     float speedK = 100000.0f;
     public Transform pbulletF;
     public Transform pbulletL;
@@ -27,7 +27,7 @@ public class kjh_pbullet : MonoBehaviour
     static int countK = 0;
 
 
-    
+
 
     GameObject[] bulletObj = new GameObject[8];
 
@@ -53,11 +53,11 @@ public class kjh_pbullet : MonoBehaviour
 
         bullet();
         Knife();
-        Del();
+      //  Del();
     }
 
 
-    
+
     void bullet()
     {
         //if (ismove && Input.GetKey(KeyCode.Space))
@@ -78,19 +78,35 @@ public class kjh_pbullet : MonoBehaviour
             {
                 bulletObj[5] = Instantiate(pbullet, pbulletF.position, pbulletF.transform.rotation);
                 bulletObj[5].GetComponent<Rigidbody2D>().velocity = Vector3.up * speed;
-                Destroy(bulletObj[5],10);
+
+
+
+            }
+            else if (!Input.GetKey(KeyCode.Z)&&Input.GetKey(KeyCode.LeftControl))
+            {
+                bulletObj[5] = Instantiate(pbullet, pbulletF.position, pbulletF.transform.rotation);
+                bulletObj[5].GetComponent<Rigidbody2D>().velocity = Vector3.up * speed;
+
+
+
             }
             else if (!Input.GetKey(KeyCode.Z) && Input.GetKey(KeyCode.LeftArrow))
             {
                 bulletObj[6] = Instantiate(pbullet, pbulletL.position, pbulletL.transform.rotation);
                 bulletObj[6].GetComponent<Rigidbody2D>().velocity = Vector3.left * speed;
-                Destroy(bulletObj[6], 10);
+
+
+
             }
             else if (!Input.GetKey(KeyCode.Z) && Input.GetKey(KeyCode.RightArrow))
             {
                 bulletObj[7] = Instantiate(pbullet, pbulletR.position, pbulletR.transform.rotation);
                 bulletObj[7].GetComponent<Rigidbody2D>().velocity = Vector3.right * speed;
-                Destroy(bulletObj[7], 10);
+
+
+
+
+
             }
 
 
@@ -98,22 +114,19 @@ public class kjh_pbullet : MonoBehaviour
 
         }
 
-        
+
     }
-    private void Del()
-    {
-        GameObject gm = GameObject.FindGameObjectWithTag("Player_bullet");
-        if (gm.transform.position.x>=8|| gm.transform.position.x <=-8|| gm.transform.position.y >= 8|| gm.transform.position.x <= -8)
-        {
+    //private void Del()
+    //{
+    //    GameObject gm = GameObject.FindGameObjectWithTag("Player_bullet");
+    //    if (gm.transform.position.x >= 8 || gm.transform.position.x <= -8 || gm.transform.position.y >= 8 || gm.transform.position.x <= -8)
+    //    {
 
-            Destroy(bulletObj[5]);
-            Destroy(bulletObj[6]);
-            Destroy(bulletObj[7]);
-            Destroy(bulletObj[8]);
-
-        }
-    }
-
+    //        Destroy(bulletObj[5], 10);
+    //        Destroy(bulletObj[6], 10);
+    //        Destroy(bulletObj[7], 10);
+    //    }
+    //}
     void Knife()
     {
 
@@ -231,7 +244,7 @@ public class kjh_pbullet : MonoBehaviour
 
 
     }
-
+    
 }
 
 

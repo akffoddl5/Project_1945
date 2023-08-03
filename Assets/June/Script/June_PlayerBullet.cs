@@ -27,13 +27,13 @@ public class June_PlayerBullet : MonoBehaviour
 
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
-            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 1) //powerup에 따라서 총알 스프라이트 변경
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 5) //powerup에 따라서 총알 스프라이트 변경
                 spriteRenderer.sprite = Sprites[0];
-            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 2)
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 6)
                 spriteRenderer.sprite = Sprites[1];
-            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 3)
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 7)
                 spriteRenderer.sprite = Sprites[2];
-            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 4)
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<June_PlayerShooting>().PlayerDamage == 8)
                 spriteRenderer.sprite = Sprites[3];
 
 

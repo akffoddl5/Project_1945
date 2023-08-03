@@ -19,7 +19,7 @@ public class KYS_GameManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Fade_in());
+		//StartCoroutine(Fade_in());
 
         StartCoroutine(Furin_init());
         StartCoroutine(Unit_boori_init());

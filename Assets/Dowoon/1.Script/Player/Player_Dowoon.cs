@@ -27,7 +27,7 @@ public class Player_Dowoon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
         PowerGauge = MAX_POWER_GAUGE;
         ChangeGaugeValue();
         anim = GetComponent<Animator>();

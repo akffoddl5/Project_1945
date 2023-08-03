@@ -81,8 +81,8 @@ public class Kjh_Monster : MonoBehaviour
         Invoke("toFuntion", a);
 
 
-        if (CountAll % 7 == 1)
-        {
+        if (CountAll % 7 == 1){
+    
 
             Invoke("fish_dir", 2);
         }
@@ -92,9 +92,8 @@ public class Kjh_Monster : MonoBehaviour
 
             Invoke("LightM", 2);
         }
-
-
     }
+
 
 
 
@@ -201,6 +200,9 @@ public class Kjh_Monster : MonoBehaviour
     }
 
 
-   
+    private void OnBecameInvisible()
+    {
+      Destroy(gameObject);
+    }
 
 }

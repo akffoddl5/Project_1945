@@ -53,6 +53,11 @@ public class Chrome_Dowoon : MonoBehaviour
 
         isRotate = true;
 
+        for(int i=0; i< parts.Length;++i)
+        {
+            parts[i].GetComponent<ObstacleObject>().b_isCollideAble = true;
+        }
+
         yield return new WaitForSeconds(0.5f);
 
         speedOffset = 15.4f;

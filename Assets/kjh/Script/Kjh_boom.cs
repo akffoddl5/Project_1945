@@ -28,7 +28,7 @@ public class Kjh_boom : MonoBehaviour
         {
 
 
-            Destroy(collision.gameObject);
+          
 
 
             CountDeB++;

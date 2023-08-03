@@ -38,19 +38,24 @@ public class BombObject : MonoBehaviour
             }
     
         }
-        Destroy(bom1, 1f);
+        Destroy(bom1, 0.4f);
 
         yield return new WaitForSeconds(0.18f);
 
         var bom2 = Instantiate(bombSprite, transform.position, Quaternion.identity);
-        Destroy(bom2, 1f);
+        Destroy(bom2, 0.55f);
         yield return new WaitForSeconds(0.18f);
 
         var bom3 = Instantiate(bombSprite, transform.position, Quaternion.identity);
-        Destroy(bom3, 1f);
+        Destroy(bom3, 0.55f);
 
 
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 0.01f);
 
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 }
