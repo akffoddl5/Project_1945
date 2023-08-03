@@ -60,20 +60,21 @@ public class June_BossMovement : MonoBehaviour
     {
         BossHp = gameObject.GetComponent<June_Enemy>().Hp;
         BossHpBar.fillAmount = BossHp / BossOriginHp;
+            // StopCoroutine("playerspawn");
+            if (isMoving)
+            {
+                MoveTowardsTarget();
+            }
 
-        // StopCoroutine("playerspawn");
-        if (isMoving)
-        {
-            MoveTowardsTarget();
-        }
+            // 일정 시간마다 새로운 위치로 이동
+            if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+            {
+                targetPosition = GetRandomPosition();
+            }
 
-        // 일정 시간마다 새로운 위치로 이동
-        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
-        {
-            targetPosition = GetRandomPosition();
-        }
-        
-        if(BossHpBar.fillAmount <= 0.5f && isbossTalk5)
+       
+
+            if (BossHpBar.fillAmount <= 0.5f && isbossTalk5)
         {
             StartCoroutine(showBossTxt5());
         }
@@ -86,23 +87,24 @@ public class June_BossMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-      
+
     }
-
-
-
-    //void showBossTxt()
-    //{
-        
-    //    for (int i = 0; i < 10; i++)
-    //    {
-    //        transform.GetChild(1).transform.GetChild(0).transform.position += new Vector3(110, 0, 0)*Time.deltaTime;
-
-    //    }
-    //    transform.GetChild(1).transform.GetChild(0).transform.position = new Vector3(-1100, 638, 0);
-    //    isbossTalk5 = false;
-    //}
     
+    IEnumerator BossLastPattern()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            GameObject.Find("Rotate").transform.GetChild(0).transform.GetChild(0).GetComponent<Slider>().value += 0.1f;
+            yield return new WaitForSecondsRealtime(2.5f);
+
+        }
+        yield return new WaitForSecondsRealtime(2.5f);
+
+    }
+    
+
+
+
     IEnumerator showBossTxt5()
     {
         isbossTalk5 = false;

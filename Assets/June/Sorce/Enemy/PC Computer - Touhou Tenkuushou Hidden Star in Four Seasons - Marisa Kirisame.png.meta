@@ -1,0 +1,2591 @@
+fileFormatVersion: 2
+guid: 55f35c30863f6c643854b9371454ec00
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 219
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffac67339870ef546a183bc3ece2f7e1
+      internalID: 433569226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 219
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a16875c6073f7b4389cbbe24eef0414
+      internalID: -223938058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 219
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa75139e0f4ee0f498b96513c01e59d1
+      internalID: 1202121834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 219
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643976e5ea2144447a40c5c18871d676
+      internalID: 1642298195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 219
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dad901c58e1c6c4c8920277a5851672
+      internalID: 1008189832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 219
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57482693487fc34384bf0e33f039212
+      internalID: -730387467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 219
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d57e9c99f714ab479d7f22ed88b1975
+      internalID: 504188375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 219
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502d8751ab0ffe742831294bb5bb54d6
+      internalID: -654266942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_8
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 128
+        width: 254
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcc8174c38cf0c44a8742ae9eacda5a
+      internalID: -1034797102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_9
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 19
+        width: 84
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7863db2144facaa4ebffa2de8991de25
+      internalID: -1654589743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_10
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 136
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84a8710e93f69a4aae2ac603ed04b49
+      internalID: 19814932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_11
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 171
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad91f8eec1e27b4fa6aed0ddf5eff51
+      internalID: -2065963470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_12
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 171
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1935ba3e2b2d441be4d6fad493b567
+      internalID: 1068693101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 172
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec7d296dd807124b8cefb19c0e016e3
+      internalID: 1131389257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 172
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c47fba299bbf3f45aa67b6c67c48d11
+      internalID: -180978132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 172
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b29d807ec3ad143b597c7724a42536
+      internalID: 1815830364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_16
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 172
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b7f232556be874cab2375816d331fc
+      internalID: -1317028770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_17
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 172
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e4385e1a1dc6f4dadb078d5013ae60
+      internalID: -1753489203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_18
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 172
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd24d71c694d8614e80d30afc78ad0a6
+      internalID: -900394813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_19
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 123
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d22c07dd53b9647b0f0635d4f7b7f4
+      internalID: 745286078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_20
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 123
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b694c5dc64fd4fd4094ec678d0fa1db0
+      internalID: 1323678284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 123
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ecf936dd01ce64faaaded82fdff7a4
+      internalID: -1418213713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_22
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 123
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d76b8011980734391e372f0dda58ba
+      internalID: -512996949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_23
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 124
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223161a3fee6b694cae46bb03674fcae
+      internalID: 2031666362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_24
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 124
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d223d502ac67f45894f996598f7420
+      internalID: -1488988992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_25
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 124
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4861b96589791fa488ae383a28f4ce2d
+      internalID: -1764659802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_26
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 123
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bb9d1a5b43d2e49a4d8db9d055ba4d
+      internalID: 1369972455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_27
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 107
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4324a7685a3f834478e4785331f48a12
+      internalID: -1651443567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_28
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 106
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee5ad6b9c4bfbe49be3930dec9dff37
+      internalID: 929283992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_29
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 115
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507850fdf80202642b0bb3d3bb830780
+      internalID: 1821858767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_30
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 106
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cece40c13298e748abbaa1abb00b60e
+      internalID: 2073630149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_31
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 106
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45365e8169288ed4591b3ebbd98bf899
+      internalID: -1516848594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_32
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 107
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10378d02cc93a77429e43570b41bc60d
+      internalID: -1039886568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_33
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 107
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a61c865a741374f870c6381bce029b
+      internalID: 1581150683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_34
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 107
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b789c71dbbfe99e4aa01d94f21de7009
+      internalID: 560920852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_35
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 89
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f869c8f4e5b5a05469f5da4211f4f309
+      internalID: -1358265934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_36
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 106
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50b2c3953dd7094a84f7e039e2659a0
+      internalID: -930990089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_37
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 90
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472ad24746e279d4eb9d7f76fd583575
+      internalID: 1837384185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_38
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 90
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728614dfd66aa2948b9bde19b8634c26
+      internalID: -296053531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_39
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 99
+        width: 31
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2425242d9cf3a409aeb6a6d7d95cb8
+      internalID: 1506782436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_40
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 91
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f506c7807e55c49a5a4cf0a97b7442
+      internalID: -779715083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 91
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690709ae2945f0742b8f93aa347076d9
+      internalID: -573578731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_42
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 91
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4562f8e7972dfb549896c75ec5530cc0
+      internalID: 2052710540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_43
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 91
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6880d128fbf241940b99751de716feb7
+      internalID: -875355689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_44
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 91
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73caf2203472804486aefaa644e398a
+      internalID: -2146992547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_45
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 91
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99553d9b14381154aa88655c500a5c09
+      internalID: 759627779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_46
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 91
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea04217c1c9fe44d8caf34c30f2c051
+      internalID: 1620157892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_47
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 91
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd13fb9bf0bd710429a921b46b280d93
+      internalID: -1643723289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_48
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 60
+        width: 256
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b693f38ff51efa9478eb9b89a08a3311
+      internalID: 367439233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_49
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 60
+        width: 256
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cb5357e7388884f8bd34aaa4ab1f1e
+      internalID: 999598178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_50
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 45
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb4e46bb599e194fb5cd43181f75ef0
+      internalID: -588237293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_51
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 45
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7421d3c167fd7e543a5d2013dde10349
+      internalID: 1981495935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_52
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 45
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da337a8fd85ec7349a77060a987950c8
+      internalID: -897333840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_53
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 45
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbef3f28f5f66444804d04647fd4447
+      internalID: 1163547846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_54
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 45
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906af689d01ae5643805361fd7e3c7d0
+      internalID: -995672670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_55
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 45
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334bc4fadba774e458f3cba3bf764826
+      internalID: -1746877312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_56
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 45
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a09b3d9293352b45a8e811a3512619c
+      internalID: -1431851216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_57
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 45
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0335930afb1174a94bb757c1c6a928
+      internalID: -917472438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_58
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 45
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bea59b4e6dcbb42bd660f9288f471c
+      internalID: 1548197544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_59
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 45
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39df25160ead17842b56b9aa4d28b46b
+      internalID: 1471399953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_60
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 45
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99b99b8240b07c44853a69c9730f2fb
+      internalID: -1068869303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_61
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 45
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c5346c83beb144b998db1412cba8b6
+      internalID: -13862880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_62
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 45
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d02be760099bab4093bfe2a02882481
+      internalID: -1295802114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_63
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 45
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66e456237b58ba48a3a48117edd8c52
+      internalID: 1138941832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_64
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 41
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c535868c002e62c4baf862eccfddb40f
+      internalID: 178845783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_65
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 45
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f782a3f3e2488754cae0dd308176bc9d
+      internalID: -935446647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_66
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 45
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9a6212a2e08e74bae96d09c10f187b
+      internalID: 564466671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_67
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 45
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b6793655d0a0c42a9d37e91efacd25
+      internalID: -1627349220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_68
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 45
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c901156def9fef488d1fad8ae26278b
+      internalID: 1035073833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_69
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 10
+        width: 256
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dba90618ea8e3247a4781563c02a558
+      internalID: -1089903204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_70
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 10
+        width: 256
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715ba3082d70d164db90ccd78d722d78
+      internalID: 1182352352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_71
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 29
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd54826b8c94bb46a634d877eac494d
+      internalID: 797762151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_72
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 26
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca676f38986178448a7ca91af349ae26
+      internalID: 1891931258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_73
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 26
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b641c267fdf7c60498aeff53620c60e8
+      internalID: 762354691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_74
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0873f14a04f514cbbb1af9fc0dfb3c
+      internalID: -1608143332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_75
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 29
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d114d8ecf8da5d448f828203223b45a
+      internalID: -725055277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_76
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 29
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f7b89bcd7c7b24cba5886d65f80a19
+      internalID: -570804872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_77
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 26
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbdebc121009844b8da96a76fd7563e
+      internalID: -667485663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_78
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e051c1a46f1d644582ee26b5f15b01b
+      internalID: 1851598702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_79
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634335f6457bfca40978214340e14ca1
+      internalID: 394815438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_80
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2781ae05d6eaeef488c37ff291e7f4d0
+      internalID: 7540814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_81
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 29
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71431aa2cd7ab7458f91f505c9713aa
+      internalID: -1669855784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_82
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00a02a44323072408348665d978cb0b
+      internalID: 1141802130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_83
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 29
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1361fc1ead7d354a906366945488c8b
+      internalID: -1471105986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_84
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acfdccb38da01443ad7b55643d848c4
+      internalID: -1102427974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_85
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 29
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b793cbaf8565fd7479db08ca0962e37d
+      internalID: 1368607276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_86
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 29
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d665f3203c67ca449aa057ff8c2e81af
+      internalID: -1375905113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_87
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04512c839e65ba841b7d8973713ac647
+      internalID: 2132052547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_88
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 29
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effe69439bcde5d40b134c45b574bc44
+      internalID: -1405620900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_89
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 29
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e74e39f3509c8a4eb5c14b11b9e1f9f
+      internalID: -782126251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_90
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 29
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e834534340aab394a9ae1f5db527b04f
+      internalID: 1886990987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_91
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93cd06d54a172347be7578cff9caa9a
+      internalID: 1434063658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_92
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 29
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef21ade09886c844997d743f8606c89
+      internalID: -2727803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_93
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 12
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441acdfce46d83b4799ee1e2ee892403
+      internalID: 1778930767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_94
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa92f54a09c9fbf48ae617b8d5e594fa
+      internalID: -775375698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_95
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 12
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3156583d7c11d848a8d1acde3d8749a
+      internalID: -283466449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_96
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 12
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25c5c73a1a7d4d47b29d75d071fcd22
+      internalID: 956227487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_97
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c04b5abfcec7cb46952db04902903c8
+      internalID: 827236444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_98
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 12
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9802f2ab7368864a8d2f50e78465d45
+      internalID: -1139323939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_99
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 12
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c538aa4ff30d85b4d818ae8d8e557ebd
+      internalID: 322644954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_100
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 12
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b845a76027b567d45a7738e0ca5ee2e0
+      internalID: 1962892384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_101
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702e9f327cae4ba479686665c4687f03
+      internalID: 999368307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_102
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d382c9ec6d518140a1356f1aaaed950
+      internalID: -417560194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_103
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 12
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b051f712cb9574b8a3f4b14aa130da
+      internalID: 2080169826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_104
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 12
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9f4668849b9d243adfc28f9f6406b3
+      internalID: 1802325706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa
+        Kirisame_105
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 12
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b472467e7694044ca76e913b7abf5f6
+      internalID: -646607523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_0: 433569226
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_1: -223938058
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_10: 19814932
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_100: 1962892384
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_101: 999368307
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_102: -417560194
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_103: 2080169826
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_104: 1802325706
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_105: -646607523
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_11: -2065963470
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_12: 1068693101
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_13: 1131389257
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_14: -180978132
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_15: 1815830364
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_16: -1317028770
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_17: -1753489203
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_18: -900394813
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_19: 745286078
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_2: 1202121834
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_20: 1323678284
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_21: -1418213713
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_22: -512996949
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_23: 2031666362
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_24: -1488988992
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_25: -1764659802
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_26: 1369972455
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_27: -1651443567
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_28: 929283992
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_29: 1821858767
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_3: 1642298195
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_30: 2073630149
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_31: -1516848594
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_32: -1039886568
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_33: 1581150683
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_34: 560920852
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_35: -1358265934
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_36: -930990089
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_37: 1837384185
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_38: -296053531
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_39: 1506782436
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_4: 1008189832
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_40: -779715083
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_41: -573578731
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_42: 2052710540
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_43: -875355689
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_44: -2146992547
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_45: 759627779
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_46: 1620157892
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_47: -1643723289
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_48: 367439233
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_49: 999598178
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_5: -730387467
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_50: -588237293
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_51: 1981495935
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_52: -897333840
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_53: 1163547846
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_54: -995672670
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_55: -1746877312
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_56: -1431851216
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_57: -917472438
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_58: 1548197544
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_59: 1471399953
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_6: 504188375
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_60: -1068869303
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_61: -13862880
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_62: -1295802114
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_63: 1138941832
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_64: 178845783
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_65: -935446647
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_66: 564466671
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_67: -1627349220
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_68: 1035073833
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_69: -1089903204
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_7: -654266942
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_70: 1182352352
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_71: 797762151
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_72: 1891931258
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_73: 762354691
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_74: -1608143332
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_75: -725055277
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_76: -570804872
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_77: -667485663
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_78: 1851598702
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_79: 394815438
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_8: -1034797102
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_80: 7540814
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_81: -1669855784
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_82: 1141802130
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_83: -1471105986
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_84: -1102427974
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_85: 1368607276
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_86: -1375905113
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_87: 2132052547
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_88: -1405620900
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_89: -782126251
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_9: -1654589743
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_90: 1886990987
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_91: 1434063658
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_92: -2727803
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_93: 1778930767
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_94: -775375698
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_95: -283466449
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_96: 956227487
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_97: 827236444
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_98: -1139323939
+      PC Computer - Touhou Tenkuushou Hidden Star in Four Seasons - Marisa Kirisame_99: 322644954
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,813 @@
+fileFormatVersion: 2
+guid: 7b2c9065f7936fc449d6a0812274dc43
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1102
+        width: 281
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215466037eec2d8409726b59028adbff
+      internalID: 739625925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1102
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126802f44579c194f8ebfcd116d29807
+      internalID: -1367256765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_2
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1102
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee530a3a6e93274997573d0e670bdd9
+      internalID: 932030900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_3
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1102
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62e0a306f686d244b1564a8a246d5a9
+      internalID: 1003552276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_4
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1102
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7691414054ed9f849891763a5179e20d
+      internalID: 171290934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_5
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1102
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f279b645ab826104198eb9e2771bc1f7
+      internalID: -2056780813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_6
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1102
+        width: 284
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99769af116935bc479f03248ce65b89a
+      internalID: 1468993547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_7
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1102
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47e80a3c490e714a8c7d1208543f8fa
+      internalID: 696361664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_8
+      rect:
+        serializedVersion: 2
+        x: 2301
+        y: 1102
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3d7be66a5c2214aba767f3e64ae367
+      internalID: 1246494262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_9
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 1102
+        width: 281
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b843611b869d448419ac4c18797462d2
+      internalID: -1561448907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 281
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170d76442cd22b14c956d52fa47900c5
+      internalID: 2121192937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_11
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 550
+        width: 283
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab56a36d7fbb16749aa95cdf1e8e7cd5
+      internalID: 1032507689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_12
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 550
+        width: 283
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c2daf62c20ed14b808341e8dd4bca4
+      internalID: -1029609174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_13
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 550
+        width: 283
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d194f1988d478f24ca6e889ad4597b2b
+      internalID: 964564800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_14
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 550
+        width: 283
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafd1780ff87b464cb988a4fb9108a34
+      internalID: -788572505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_15
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 550
+        width: 283
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948bc6f7df738ac4bb319cf46a887317
+      internalID: 517123665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_16
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 550
+        width: 284
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feac5cd88a1c23141bf6e6057bfae7ad
+      internalID: -1348861935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_17
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 550
+        width: 283
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafa936c8c0718a4abfcd08828a0a6c5
+      internalID: 794312846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_18
+      rect:
+        serializedVersion: 2
+        x: 2301
+        y: 550
+        width: 283
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0c2dc971da13b4890658ea72f5fdfd
+      internalID: 1504619624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_19
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 550
+        width: 281
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b67ee1f3e8fd14b96fd0a7a22ced11
+      internalID: 904739563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 281
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29151cb109a133e44b1414f13cca1646
+      internalID: -12188019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_21
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22626e0e07bba3748813c2468a4addeb
+      internalID: -1548936982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_22
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 0
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796843aa94a876d40bc9c10fb81ee0aa
+      internalID: -1029412279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_23
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 0
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2cb0fe314502c47991f2b492bbe948
+      internalID: 1468472329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_24
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692c64318f1db284f80d5221dfe5d42b
+      internalID: 1489773648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_25
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 0
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a4d6c8c9353d240a9f1eff5d0be4b4
+      internalID: -1878677665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_26
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 0
+        width: 284
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bdec90335e3c64082bf39afead15e1
+      internalID: -1963444164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_27
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 0
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6adc78c2c8ae434e9c09c1bcc0c2187
+      internalID: 166876753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_28
+      rect:
+        serializedVersion: 2
+        x: 2301
+        y: 0
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11bdec9d731157428ad030c3b025ac7
+      internalID: 1937637815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_29
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 0
+        width: 281
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e3af52a412c8d47902fbe8226e4e5f
+      internalID: 314223294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_0: 739625925
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_1: -1367256765
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_10: 2121192937
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_11: 1032507689
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_12: -1029609174
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_13: 964564800
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_14: -788572505
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_15: 517123665
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_16: -1348861935
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_17: 794312846
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_18: 1504619624
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_19: 904739563
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_2: 932030900
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_20: -12188019
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_21: -1548936982
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_22: -1029412279
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_23: 1468472329
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_24: 1489773648
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_25: -1878677665
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_26: -1963444164
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_27: 166876753
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_28: 1937637815
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_29: 314223294
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_3: 1003552276
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_4: 171290934
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_5: -2056780813
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_6: 1468993547
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_7: 696361664
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_8: 1246494262
+      Arcade - Taiko no Tatsujin 2020 Version - Go-Go-Time Effect_9: -1561448907
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
