@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/kjh/Sceen/kjh_sceen1.unity
     guid: 8727db434e2595b428856ccc206ea93c
+  - enabled: 1
+    path: Assets/0.GAMEMAIN/GameEnd.unity
+    guid: 8e555f951d891b943861bbcae5c37b74
   m_configObjects: {}

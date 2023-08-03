@@ -59,8 +59,8 @@ public class UI_Manager : MonoBehaviour
 
 		scene_dict.Add(3, "Dowoon");
 		scene_dict.Add(2, "YONGSEOK");
-		scene_dict.Add(5, "Jiwon");
-		scene_dict.Add(1, "kjh_sceen1");
+		scene_dict.Add(1, "Jiwon");
+		scene_dict.Add(5, "kjh_sceen1");
 		scene_dict.Add(4, "June_Scene");
 		scene_dict.Add(6, "GameEnd");
 		scene_dict.Add(7, "GameEnd");
@@ -129,7 +129,7 @@ public class UI_Manager : MonoBehaviour
                 {
                     Debug.Log("ºÎÈ° ui ¿ÀÇÂ");
                     GetComponent<UI_Revive>().SetSelectUI(true);
-                    break;
+                  
 
                 }
             }
@@ -205,7 +205,9 @@ public class UI_Manager : MonoBehaviour
         GetComponent<UI_Revive>().SetSelectUI(true);
     }
 
-    IEnumerator PlayerRevive()
+	public void Revive() { StartCoroutine(PlayerRevive()); }
+
+	IEnumerator PlayerRevive()
     {
         if (now_Player_Instance != null)
         {
@@ -237,7 +239,9 @@ public class UI_Manager : MonoBehaviour
             if (now_Player_Instance.transform.position.y > -4) break;
 
         }
-    }
+
+		now_Player_Instance.GetComponent<Collider2D>().enabled = true;
+	}
     IEnumerator Playerspawn()
     {
         _Init();
