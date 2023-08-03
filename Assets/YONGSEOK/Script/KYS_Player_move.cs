@@ -91,7 +91,7 @@ public class KYS_Player_move : MonoBehaviour
         dash_time -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Space) )
         {
-            Debug.Log("dash.." + rb.velocity);
+            //Debug.Log("dash.." + rb.velocity);
             
             dash_cool_time = Time.deltaTime * 180;
             dash_time = Time.deltaTime * 6;

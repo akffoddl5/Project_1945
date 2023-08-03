@@ -767,8 +767,8 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
 
         Instantiate(boom2,transform.position, Quaternion.identity);
-
-        yield return new WaitForSeconds(0.1f);
+		UI_Manager.instance.GameClear_UI();
+		yield return new WaitForSeconds(0.1f);
 
         Destroy(this.gameObject);
     }
@@ -951,13 +951,13 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     {
         //0.5초 후에 시작
         yield return new WaitForSeconds(shotTime);
-
+        var mainTarget = GameObject.FindGameObjectWithTag("Player");
         for (int i = 0; i < objects.Count; i++)
         {
             if (objects[i] != null)
             {
                 //현재 총알의 위치에서 플레이의 위치의 벡터값을 뻴셈하여 방향을 구함
-                Vector3 targetDirection = target_player.transform.position - objects[i].position;
+                Vector3 targetDirection = mainTarget.transform.position - objects[i].position;
 
                 //x,y의 값을 조합하여 Z방향 값으로 변형함. -> ~도 단위로 변형
                 float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;

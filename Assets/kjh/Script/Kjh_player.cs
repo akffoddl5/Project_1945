@@ -10,7 +10,8 @@ using static UnityEditor.PlayerSettings;
 
 public class Kjh_player : MonoBehaviour
 {
-
+    public AudioSource moves;
+    public AudioSource dashs;
     float moveX;
     float moveY;
     public float movespeed = 1.3f;
@@ -75,11 +76,14 @@ public class Kjh_player : MonoBehaviour
 
             transform.Translate(move);
 
-
+            
         }
     }
 
-
+    void movesound()
+    {
+        Instantiate(moves);
+    }
 
 
     public void Boost()//부스트(주는 함수
@@ -92,6 +96,7 @@ public class Kjh_player : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftShift) && (moveX >= -0.5))
             {
                 moveX *= boost;
+                Instantiate(dashs);
 
             }
 
@@ -99,14 +104,14 @@ public class Kjh_player : MonoBehaviour
             {
                 moveX *= boost;
 
-
+                Instantiate(dashs);
             }
 
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && (moveY >= -0.5))
             {
                 moveY *= boost;
-
+                Instantiate(dashs);
             }
 
 
@@ -114,6 +119,7 @@ public class Kjh_player : MonoBehaviour
             {
 
                 moveY *= boost;
+                Instantiate(dashs);
             }
         }
     }
@@ -273,6 +279,7 @@ public class Kjh_player : MonoBehaviour
         if (collision.gameObject.CompareTag("ENEMY"))
         {
             Destroy(gameObject);
+            Debug.Log(collision.gameObject);
         }
     }
 

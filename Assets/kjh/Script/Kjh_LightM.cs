@@ -19,6 +19,7 @@ public class Kjh_LightM : MonoBehaviour
         
     }
 
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Kjh_Monster.CountAll++;

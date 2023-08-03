@@ -7,13 +7,13 @@ public class KYS_Furin_bullet : MonoBehaviour
 {
     public GameObject normal_bullet;
     public GameObject guide_bullet;
-    
+	public AudioSource audioSource;
 
-    private void Start()
+	private void Start()
     {
         //StartCoroutine(IE_Shoot_Cycle());
         StartCoroutine(IE_Shoot_Controll());
-
+        StartCoroutine(AudioPlay());
 
         //InvokeRepeating("Shoot_Fork", 2f,2f);        
         //StartCoroutine(IE_Shoot_Fork());
@@ -59,7 +59,16 @@ public class KYS_Furin_bullet : MonoBehaviour
         }
     }
 
-    IEnumerator IE_Shoot_Controll()
+	IEnumerator AudioPlay()
+	{
+        while (true)
+        {
+		    yield return new WaitForSeconds(8f);
+		    audioSource.Play();
+        }
+	}
+
+	IEnumerator IE_Shoot_Controll()
     {
         StartCoroutine(IE_Shoot_Fork());
         yield return new WaitForSeconds(3.0f);

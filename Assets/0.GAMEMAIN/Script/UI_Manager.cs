@@ -55,11 +55,11 @@ public class UI_Manager : MonoBehaviour
 		prefab_dict.Add(Charactor.도운, DW_Player);
 		prefab_dict.Add(Charactor.용석, YS_Player);
 
-		scene_dict.Add(2, "Dowoon");
-		scene_dict.Add(1, "YONGSEOK");
+		scene_dict.Add(3, "Dowoon");
+		scene_dict.Add(2, "YONGSEOK");
 		scene_dict.Add(5, "Jiwon");
-		scene_dict.Add(4, "kjh_sceen1");
-		scene_dict.Add(3, "June_Scene");
+		scene_dict.Add(1, "kjh_sceen1");
+		scene_dict.Add(4, "June_Scene");
 
 		current_stage = 1;
 	}
@@ -86,7 +86,7 @@ public class UI_Manager : MonoBehaviour
 	{
 		StartCoroutine(FadeIn());
 		StartCoroutine(Playerspawn());
-		Debug.Log("스폰 시작, 페이드인 시작");
+		//Debug.Log("스폰 시작, 페이드인 시작");
 	}
 
 	
@@ -152,6 +152,7 @@ public class UI_Manager : MonoBehaviour
 
 	IEnumerator Playerspawn()
 	{
+		_Init();
 		if (GameObject.FindGameObjectWithTag("Player") != now_Player_Instance)
 		{
 			Debug.Log("플레이어 삭제됨");
@@ -184,8 +185,8 @@ public class UI_Manager : MonoBehaviour
 
 		}
 
-		//스폰후처리
-		now_Player_Instance.GetComponent<Collider2D>().enabled = true;
+		//스폰후처리 (콜라이더 다시 킬지 말지)
+		//now_Player_Instance.GetComponent<Collider2D>().enabled = true;
 	}
 
 	IEnumerator PlayerReverseSpawn()

@@ -23,11 +23,10 @@ public class June_PlayerShooting : MonoBehaviour
     public GameObject Item;
     public int CountDestroy;
 
-    public float activationTime =4f;
+    public float activationTime =3f;
 
     private float timePressed = 0f;
     private bool isZKeyPressed = false;
-
 
 
 
@@ -44,12 +43,14 @@ public class June_PlayerShooting : MonoBehaviour
     [Range(0, 1)] public float m_interval = 0.15f;
     public int m_shotCountEveryInterval = 2; // 한번에 몇 개씩 발사할건지.
 
+    bool isZinput;
 
 
     void Start()
     {
-        
 
+
+        bool isZinput =false;
 
         cutimage = transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Image>();
 
@@ -86,9 +87,7 @@ public class June_PlayerShooting : MonoBehaviour
             Color c = cutimage.color; // 컷씬 컬러
             c.a = 0.8f;
             cutimage.color = c;
-            StartCoroutine(SpellShoot());
-            
-            
+            StartCoroutine(SpellShoot());            
 
             GameObject spell = Instantiate(Spell,new Vector3(-2.5f,-7f,0), Quaternion.identity);
             spell.GetComponent<Bullet_info>().att = PlayerDamage+10;
@@ -102,8 +101,7 @@ public class June_PlayerShooting : MonoBehaviour
             
             var _bullet =Instantiate(bullet, pos.position, Quaternion.identity); 
             _bullet.GetComponent<Bullet_info>().att = PlayerDamage;
-            
-
+            isZinput = true;
             isZKeyPressed = true;
             timePressed = 0f;
         }
@@ -112,6 +110,11 @@ public class June_PlayerShooting : MonoBehaviour
         {
             PlayerCharg.fillAmount += 0.005f; //마법진 생성 속도
             timePressed += Time.deltaTime;
+            if (timePressed >= activationTime)
+            {
+
+            }
+
         }
         if (isZKeyPressed && Input.GetKeyUp(KeyCode.Z))
         {
@@ -121,13 +124,20 @@ public class June_PlayerShooting : MonoBehaviour
             // Z 키를 누르고 있던 시간이 activationTime보다 크면 게임 오브젝트 생성
             if (timePressed >= activationTime)
             {
+
                 CrowCount++;
                 CreateCrow();
             }
         }
-
+        if(isZKeyPressed && timePressed >= activationTime &&isZinput)
+        {
+            AudioSource ChareDone = GameObject.Find("JuneSoundmanager").transform.GetChild(1).GetComponent<AudioSource>();
+            ChareDone.Play();
+            isZinput=false;
+        }
     }
-
+   
+    
     private void CreateCrow()
     {
         transform.GetChild(CrowCount+2).gameObject.SetActive(true);
@@ -137,7 +147,9 @@ public class June_PlayerShooting : MonoBehaviour
     
     IEnumerator SpellShoot()
     {
-        
+
+        AudioSource SpellVoice = GetComponent<AudioSource>();
+        SpellVoice.Play();
         Time.timeScale = 0;
 
         for (int i = 0; i < 10; i++)
@@ -150,7 +162,7 @@ public class June_PlayerShooting : MonoBehaviour
 
        }
        
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(2f);
         
         transform.GetChild(0).transform.GetChild(1).transform.position = new Vector3(-810, 0, 0);
         transform.GetChild(0).transform.GetChild(2).transform.position += new Vector3(-1100, 1100, 0);

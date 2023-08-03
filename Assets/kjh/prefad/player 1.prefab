@@ -240,6 +240,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8756b3cae3076ec46876825c417351c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  looks: {fileID: 6785510156193854759, guid: cd7befb270414544580cb34d0f2c0aac, type: 3}
+  knifs1: {fileID: 8027306130612001102, guid: a823903d49c4d864997e663d6e86901d, type: 3}
+  knifs2: {fileID: 6032182691300593803, guid: 6bc6cebc9a657034a8f5a9390f870734, type: 3}
+  knifs3: {fileID: 1520527305998322353, guid: 9916fd737936b654e84c1200bf3a4bbd, type: 3}
+  knifs4: {fileID: 6032182691300593803, guid: 6bc6cebc9a657034a8f5a9390f870734, type: 3}
+  knifs5: {fileID: 459792020856442793, guid: 874957c075a91824ba1d258b30d32c64, type: 3}
   pbullet: {fileID: 5106900149531664869, guid: fad09045b16ab0548972acd51fa42da6, type: 3}
   knife: {fileID: 6991457075074064008, guid: 0681e194f4933e2488d3a97d20436ad3, type: 3}
   pbulletF: {fileID: 8186267273868320149}
@@ -409,7 +415,7 @@ Transform:
   m_Children:
   - {fileID: 7053639241879515109}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6796245395557909689
 SpriteRenderer:
@@ -495,9 +501,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.008290548}
   serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Radius: 1.3873073
 --- !u!50 &3005364854417983406
 Rigidbody2D:
   serializedVersion: 4
@@ -537,6 +543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc31e72c8f3f9142a93a304fce905a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moves: {fileID: 0}
+  dashs: {fileID: 8591858982724086211, guid: 4d73b8e46a35b3c4ab6e105911fb9b54, type: 3}
   movespeed: 3
   boost: 50
 --- !u!95 &6311761293596641986

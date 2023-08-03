@@ -142,12 +142,12 @@ public class KYS_Razor3 : MonoBehaviour
         
     }
 
-	private void OnTriggerEnter2D(Collider2D collision)
-	{
-		//Debug.Log(collision.name);
-		if (collision.CompareTag("ENEMY"))
-		{
-			Destroy(gameObject, 0.02f);
-		}
-	}
+	//private void OnTriggerEnter2D(Collider2D collision)
+	//{
+	//	//Debug.Log(collision.name);
+	//	if (collision.CompareTag("ENEMY"))
+	//	{
+	//		Destroy(gameObject, 0.02f);
+	//	}
+	//}
 }
