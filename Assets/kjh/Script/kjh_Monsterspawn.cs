@@ -61,7 +61,7 @@ public class Kjh_Monster : MonoBehaviour
         LightM();
         // lightMR = GameObject.Find("LightMonster").transform.Find("Canvars").transform.Find("Panel").gameObject;
         boomcoroutin();
-
+        StartCoroutine(Boss_init());
 
 
     }
@@ -76,6 +76,18 @@ public class Kjh_Monster : MonoBehaviour
 
     }
 
+    IEnumerator Boss_init()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(9);
+            //Instantiate(fish);
+            fish_dir();
+            //Invoke("fish_dir", 5);
+
+        }
+    }
+
     void boomcoroutin()
     {
         
@@ -87,7 +99,7 @@ public class Kjh_Monster : MonoBehaviour
         Invoke("toFuntion", a);
 
 
-        if (CountAll %5 == 1)
+        if (CountAll %5 == 1 && 1==2)
         {
 
             
