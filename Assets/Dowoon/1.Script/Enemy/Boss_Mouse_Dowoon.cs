@@ -273,7 +273,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         bullets.Clear();
 
-        for (int i = 0; i < 60; ++i)
+        for (int i = 0; i < 50; ++i)
         {
 
             //총알 생성
@@ -351,6 +351,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         }
 
         go_box = Instantiate(boxPrefab, Box_Generator.position, Quaternion.identity);
+        go_box.GetComponent<Collider2D>().enabled = false;
         Destroy(go_box, 10f);
         var startPos = Box_Generator.position;
 
@@ -383,7 +384,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
             yield return new WaitForEndOfFrame();
         }
-        yield return new WaitForSeconds(0.73f);
+        yield return new WaitForSeconds(0.25f);
 
 
         Destroy(go_box);
@@ -405,7 +406,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
  
         while (true)
         {
-            var v = MoveToGoal(Pattern1_DragMove_1,0.2f);
+            var v = MoveToGoal(Pattern1_DragMove_1,0.6f);
             if (v <= 0.2f)
                 break;
 
@@ -420,7 +421,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         while (true)
         {
-            var v = MoveToGoal(Pattern1_DragMove_2, 0.2f);
+            var v = MoveToGoal(Pattern1_DragMove_2, 0.6f);
             if (v <= 0.2f)
                 break;
 
@@ -432,7 +433,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         while (true)
         {
-            var v = MoveToGoal(Pattern1_DragMove_3, 0.2f);
+            var v = MoveToGoal(Pattern1_DragMove_3, 0.6f);
             if (v <= 0.2f)
                 break;
 
@@ -445,7 +446,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         while (true)
         {
-            var v = MoveToGoal(Pattern1_DragMove_4, 0.2f);
+            var v = MoveToGoal(Pattern1_DragMove_4, 0.6f);
             if (v <= 0.2f)
                 break;
 
@@ -488,7 +489,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     IEnumerator RotateMouse(Vector3 lookPos, List<Transform> bullet)
     {
         float zOffset = 760;
-        float t = Random.Range(1.2f, 2.2f);
+        float t = Random.Range(0.5f, 1.0f);
         SetParents(bullet, false);
         while(true)
         {
@@ -515,7 +516,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         SetParents(bullet, true);
 
-        yield return new WaitForSeconds(0.45f);
+        yield return new WaitForSeconds(0.20f);
 
 
     }
@@ -536,7 +537,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
 
         bar = Instantiate(TaskBar, Box_Generator.position, Quaternion.identity);
         bar.transform.parent = Box_Generator.transform;
@@ -561,7 +562,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         //크롬 집으러감
         while (true)
         {
-            var v = MoveToGoal(Pattern2_3,0.3f);
+            var v = MoveToGoal(Pattern2_3,0.8f);
             if (v <= 0.2f)
             {
                 break;
@@ -570,7 +571,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
 
         }
-        yield return new WaitForSeconds(0.1f);
+       // yield return new WaitForSeconds(0.1f);
 
          chrome = bar.GetComponent<TaskBar_Dowoon>().Icon_Chrome;
 
@@ -615,12 +616,12 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
          }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
         var shot = StartCoroutine(Pattern2_Shot());
     
 
-        yield return StartCoroutine(MoveSide(Pattern2_6,Pattern2_5,2.3f,4));
+        yield return StartCoroutine(MoveSide(Pattern2_6,Pattern2_5,2.3f,3));
         StopCoroutine(shot);
 
 
@@ -642,7 +643,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         
 
 
@@ -691,7 +692,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
         }
 
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
 
 
         EndPattern(1.0f);

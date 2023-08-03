@@ -60,7 +60,7 @@ public class Chrome_Dowoon : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        speedOffset = 15.4f;
+        speedOffset = 45.4f;
         radiusOffset = 1.0f;
         bool _isIncrease = true;
         while(true)

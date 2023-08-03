@@ -59,6 +59,7 @@ public class ObjectPool_Dowoon : MonoBehaviour
     {
         for (int i=0; i< count; ++i)
         {
+            
             poolObjectQueue.Enqueue(CreateNewBullet(_btype));
         }
     }

@@ -18,6 +18,9 @@ public class UI_Manager : MonoBehaviour
     public string nextSceneName;
     public string nowSceneName;
 
+    [Header("콜라이더 보기용")]
+    public ColiderChecker _colliderChecker;
+
     public GameObject DW_Player;
     public GameObject JW_Player;
     public GameObject YS_Player;
@@ -78,6 +81,8 @@ public class UI_Manager : MonoBehaviour
     
     void Start()
     {
+        _colliderChecker = GetComponentInChildren<ColiderChecker>();
+
         SetResolutionScreen();
         _Init();
         co_fadeIn = StartCoroutine(FadeIn());
@@ -92,6 +97,9 @@ public class UI_Manager : MonoBehaviour
         gameStatus.gameObject.SetActive(false);
         obj_nextBtn.SetActive(false);
         obj_reBtn.SetActive(false);
+
+        _colliderChecker.BoxHide();
+
 
         if (b_first)
         {
@@ -138,12 +146,13 @@ public class UI_Manager : MonoBehaviour
 	public void test(Scene arg0, LoadSceneMode arg1)
 	{
 		StartCoroutine(FadeIn());
+
         //Debug.Log(arg0 + "   로드댐 " + arg0.name + " " + arg1.ToString());
         if (arg0.name != "GameEnd")
         {
-          
 
 
+         
             StartCoroutine(Playerspawn());
 
         }
@@ -154,18 +163,27 @@ public class UI_Manager : MonoBehaviour
 	{
       
             //Debug.Log("check 중..");
-            if (b_isGameStart)
+        if (b_isGameStart)
+        {
+            //Debug.Log("check 중22..");
+            if (now_Player_Instance == null)
             {
-                //Debug.Log("check 중22..");
-                if (now_Player_Instance == null)
-                {
-                    //Debug.Log("check 중33..");
-                    //Debug.Log("부활 ui 오픈");
-                    GetComponent<UI_Revive>().SetSelectUI(true);
+                //Debug.Log("check 중33..");
+                //Debug.Log("부활 ui 오픈");
+                GetComponent<UI_Revive>().SetSelectUI(true);
 
 
-                }
             }
+        }
+
+        if(Input.GetKeyDown(KeyCode.F3))
+        {
+            _colliderChecker.b_isVisible = _colliderChecker.b_isVisible == true ? false : true;
+
+            if (_colliderChecker.b_isVisible == false)
+                _colliderChecker.BoxHide();
+
+        }
         
     }
 
@@ -207,6 +225,8 @@ public class UI_Manager : MonoBehaviour
         gameStatus.gameObject.SetActive(true);
         obj_nextBtn.gameObject.SetActive(true);
         obj_reBtn.gameObject.SetActive(true);
+
+        _colliderChecker.BoxHide();
     }
 
     //void GameOver_UI()
@@ -272,6 +292,7 @@ public class UI_Manager : MonoBehaviour
     IEnumerator Playerspawn()
     {
         _Init();
+
         if (GameObject.FindGameObjectWithTag("Player") != now_Player_Instance)
         {
             Debug.Log("플레이어 삭제됨");
@@ -301,9 +322,10 @@ public class UI_Manager : MonoBehaviour
 		b_isGameStart = true;	
         //스폰후처리 (콜라이더 다시 킬지 말지)
         now_Player_Instance.GetComponent<Collider2D>().enabled = true;
-
         
-       
+
+
+
     }
     IEnumerator PlayerBlink()
     {

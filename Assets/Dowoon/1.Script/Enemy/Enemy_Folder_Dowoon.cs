@@ -46,6 +46,12 @@ public class Enemy_Folder_Dowoon : Enemy_Dowoon
             if (hp <= 0)
             {
                 hp = 0;
+                if(bomb_Prefab != null)
+                {
+                    var b = Instantiate(bomb_Prefab,transform.position,Quaternion.identity);
+                    b.transform.localScale = size;
+
+                }
                 Panel.GetComponent<EnemyPanel_Dowoon>().DestroyEnemy(this.gameObject);
             }
         }
