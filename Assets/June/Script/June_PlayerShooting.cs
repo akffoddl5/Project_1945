@@ -70,11 +70,11 @@ public class June_PlayerShooting : MonoBehaviour
     void Update()
     {
         m_target = GameObject.FindGameObjectWithTag("ENEMY");
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             
            GameObject missile = Instantiate(m_missilePrefab,pos.position,Quaternion.identity);
-           missile.GetComponent<Bullet_info>().att = PlayerDamage;
+           missile.GetComponent<Bullet_info>().att = PlayerDamage/7;
 
         }
 
