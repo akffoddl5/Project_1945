@@ -23,7 +23,7 @@ public class June_PlayerShooting : MonoBehaviour
     public GameObject Item;
     public int CountDestroy;
 
-    public float activationTime =3f;
+    public float activationTime =2f;
 
     private float timePressed = 0f;
     private bool isZKeyPressed = false;
