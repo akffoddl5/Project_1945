@@ -56,7 +56,10 @@ public class June_Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        if (collision.tag == "Wall")
+        {
+            Destroy(gameObject,1f);
+        }
 
         if (collision.gameObject.CompareTag("Player_bullet")) //Player에게 닿았을 때
         {

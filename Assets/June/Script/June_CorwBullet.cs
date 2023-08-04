@@ -22,8 +22,11 @@ public class June_CrowBullet : MonoBehaviour
         {
             dir = target.transform.position - transform.position; //a-b == a를 바라보는  b의 방향
             dirNo = dir.normalized;//방향만 잡아주기
+            transform.Translate(dirNo * Speed * Time.deltaTime);
+
         }
-        transform.Translate(dirNo * Speed * Time.deltaTime);
+        else
+        transform.Translate(Vector3.up * Speed * Time.deltaTime);
         //.Translate(Vector3.right * Speed * Time.deltaTime);
     }
 
