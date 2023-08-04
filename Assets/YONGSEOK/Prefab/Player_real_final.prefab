@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 959d7ed2a149a33408fad32469ae1775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 380
+  speed: 300
   dash_trail_h: {fileID: 5653396337059646219, guid: 90da9cde0f2a3304d87e865cf7eccb6f, type: 3}
   dash_trail_u: {fileID: 984290702037926216, guid: 3c8a3de41852a604398e73e92fcabd65, type: 3}
   dash_trail_d: {fileID: 3099290336464114111, guid: bb5ceb3f12d1c0441af82fc06a2e057b, type: 3}

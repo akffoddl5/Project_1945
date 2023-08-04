@@ -113,6 +113,13 @@ public class UI_Revive : MonoBehaviour
 
                 UI_Manager.instance.now_Player = instanceObject;
                 UI_Manager.instance.Revive();
+
+                GameObject[] tmp = GameObject.FindGameObjectsWithTag("ITEM");
+                for (int i = 0; i < tmp.Length; i++)
+                {
+                    Destroy(tmp[i]);
+                }
+                
                 //Debug.Log("ºÎÈ°µÊ");
                 UI_Manager.instance.audioSource_select.Play();
 
