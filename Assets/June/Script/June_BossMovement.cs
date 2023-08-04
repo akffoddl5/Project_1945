@@ -112,13 +112,13 @@ public class June_BossMovement : MonoBehaviour
         ImpSound.Play();
         for (int i = 0; i < 22; i++)
         {
-            transform.GetChild(1).transform.GetChild(1).transform.position += new Vector3(50, 0, 0);
+            transform.GetChild(1).transform.GetChild(1).transform.localPosition += new Vector3(50, 0, 0);
             yield return new WaitForSeconds(0f);
 
         }
 
         yield return new WaitForSeconds(1f);
-        transform.GetChild(1).transform.GetChild(1).transform.position = new Vector3(-1100, 638, 0);
+        transform.GetChild(1).transform.GetChild(1).transform.localPosition = new Vector3(-1100, 638, 0);
         isbossTalk5 = false;
     }
     IEnumerator showBossTxt3()
@@ -128,12 +128,12 @@ public class June_BossMovement : MonoBehaviour
         ImpSound.Play();
         for (int i = 0; i < 22; i++)
         {
-            transform.GetChild(1).transform.GetChild(0).transform.position += new Vector3(50, 0, 0);
+            transform.GetChild(1).transform.GetChild(0).transform.localPosition += new Vector3(50, 0, 0);
             yield return new WaitForSeconds(0.01f);
 
         }
         yield return new WaitForSeconds(1f);
-        transform.GetChild(1).transform.GetChild(0).transform.position = new Vector3(-1100, 638, 0);
+        transform.GetChild(1).transform.GetChild(0).transform.localPosition = new Vector3(-1100, 638, 0);
         isbossTalk3 = false;
     }
     void Stop()
