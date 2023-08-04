@@ -18,6 +18,7 @@ public class June_PlayerShooting : MonoBehaviour
     public Image PlayerCharg;
     public GameObject Spell;
 
+
     Image cutimage;
 
     public GameObject Item;
@@ -28,6 +29,9 @@ public class June_PlayerShooting : MonoBehaviour
     private float timePressed = 0f;
     private bool isZKeyPressed = false;
 
+
+
+    public GameObject TTarget;
 
 
     public GameObject m_missilePrefab; // πÃªÁ¿œ «¡∏Æ∆’.
@@ -53,6 +57,7 @@ public class June_PlayerShooting : MonoBehaviour
         isZinput = false;
 
         cutimage = transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Image>();
+        
 
         PlayerDamage = 5;
         StartCoroutine(AutoFire());
@@ -155,20 +160,34 @@ public class June_PlayerShooting : MonoBehaviour
         SpellVoice.Play();
         Time.timeScale = 0;
 
-        for (int i = 0; i < 10; i++)
+        transform.GetChild(0).transform.GetChild(1).transform.position = new Vector3(-800, 0, 0);
+        //while (true)
+        //{
+        //    Debug.Log("¡¬«• " + transform.position);
+        //    Debug.Log("local¡¬«• " + transform.localPosition);
+
+        //    transform.GetChild(0).transform.GetChild(1).transform.position += new Vector3(80, 0, 0);
+        //    transform.GetChild(0).transform.GetChild(2).transform.localPosition += new Vector3(110, -110, 0);
+        //    yield return new WaitForSecondsRealtime(0.01f);
+
+
+        //    if (transform.GetChild(0).transform.GetChild(1).transform.localPosition.x >= transform.GetChild(0).transform.GetChild(4).transform.localPosition.x)
+        //        break;
+        //}
+        if (transform.GetChild(0).transform.GetChild(1).transform.localPosition.x <= transform.GetChild(0).transform.GetChild(4).transform.localPosition.x)
         {
+            for (int i = 0; i < 10; i++)
+            {
+                transform.GetChild(0).transform.GetChild(1).transform.position += new Vector3(80, 0, 0);
+                transform.GetChild(0).transform.GetChild(2).transform.localPosition += new Vector3(110, -110, 0);
+                yield return new WaitForSecondsRealtime(0.01f);
 
-
-            transform.GetChild(0).transform.GetChild(1).transform.position += new Vector3(80, 0, 0);
-            transform.GetChild(0).transform.GetChild(2).transform.position += new Vector3(110, -110, 0);
-            yield return new WaitForSecondsRealtime(0.01f);
-
+            }
         }
-
         yield return new WaitForSecondsRealtime(2f);
 
-        transform.GetChild(0).transform.GetChild(1).transform.position = new Vector3(-810, 0, 0);
-        transform.GetChild(0).transform.GetChild(2).transform.position += new Vector3(-1100, 1100, 0);
+        transform.GetChild(0).transform.GetChild(1).transform.position = new Vector3(-800, 0, 0);
+        transform.GetChild(0).transform.GetChild(2).transform.localPosition = new Vector3(-1100, 1100, 0);
         Color c = cutimage.color;
         c.a = 0;
         cutimage.color = c;
