@@ -127,6 +127,7 @@ public abstract class Enemy_Dowoon : MonoBehaviour
 
             b.GetComponent<Bullet_Dowoon>().SetDirection(_dir);
         }
+        
     }
     
     public bool isTarget(out GameObject _target)
