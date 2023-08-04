@@ -36,7 +36,7 @@ public class June_PlayerGuidBullet : MonoBehaviour
                 float t = timeElapsed / duration;
 
                 // 4차 베지어 곡선 함수를 사용하여 새로운 위치를 계산
-                Vector3 newPos = CalculateBezierPoint(startPoint.position, startPoint.position + new Vector3(0, -0.5f, 0), startPoint.position + new Vector3(0, 1, 0), endPoint.position, t);
+                Vector3 newPos = CalculateBezierPoint(startPoint.position, startPoint.position + new Vector3(0, -0.3f, 0), startPoint.position + new Vector3(0, 0.7f, 0), endPoint.position, t);
 
                 // 오브젝트를 새로운 위치로 이동
                 transform.position = newPos;
