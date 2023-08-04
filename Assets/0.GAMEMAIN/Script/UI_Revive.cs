@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,13 +18,16 @@ public class UI_Revive : MonoBehaviour
 
     public int beforeIndex = 0;
 
+    Coroutine arrow;
+
     private void Start()
     {
       
-       // StartCoroutine(MoveArrow());
+        
     }
     public void SetSelectUI(bool b)
     {
+        
   
         SelectPanel.SetActive(b);
 
@@ -33,9 +35,15 @@ public class UI_Revive : MonoBehaviour
         SetArrowPos();
 
         if (b)
-            StartCoroutine(MoveArrow());
+        {
 
-        if (!b)
+            if(arrow == null)
+            arrow = StartCoroutine(MoveArrow());
+
+
+        }
+
+		if (!b)
             StopAllCoroutines();
     }
 
@@ -77,6 +85,7 @@ public class UI_Revive : MonoBehaviour
             
 
 
+
             if(Input.GetKeyDown(KeyCode.Return))
             {
                 GameObject instanceObject = null;
@@ -99,6 +108,8 @@ public class UI_Revive : MonoBehaviour
                         break;
 
                 }
+                ITEM_MANAGER.instance.current_character = (Charactor)(index + 1);
+
                 UI_Manager.instance.now_Player = instanceObject;
                 UI_Manager.instance.Revive();
                 Debug.Log("∫Œ»∞µ ");

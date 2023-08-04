@@ -140,7 +140,7 @@ public class June_BossMovement : MonoBehaviour
     {
         CarryBoss = false; //코루틴속 while문 멈추기
         //보스 조작, 충돌 활성
-        gameObject.GetComponent<CircleCollider2D>().enabled = true;
+        gameObject.GetComponent<CircleCollider2D>().enabled = false;
         StopCoroutine(BossSpawn());
 
 

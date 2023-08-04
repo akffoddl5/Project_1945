@@ -46,9 +46,11 @@ public class Bullet_Dowoon : Bullet_info
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-           
-            DestroySelf();
+			Destroy(collision.gameObject);
+			//DestroySelf();
         }
+
+        
 
     }
 

@@ -5,8 +5,6 @@ using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
-using static UnityEditor.PlayerSettings;
 
 public class Kjh_player : MonoBehaviour
 {

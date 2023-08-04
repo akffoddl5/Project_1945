@@ -12,6 +12,10 @@ public abstract class Enemy_Dowoon : MonoBehaviour
     public bool isArrive = false;
     public float moveSpeed = 8.5f;
 
+    [Header("Á×´ÂÀÌÆåÆ®")]
+    public GameObject bomb_Prefab;
+    public Vector3 size;
+
    protected float shootDelay = 0;
     int onHitCount = 0;
 
@@ -123,6 +127,7 @@ public abstract class Enemy_Dowoon : MonoBehaviour
 
             b.GetComponent<Bullet_Dowoon>().SetDirection(_dir);
         }
+        
     }
     
     public bool isTarget(out GameObject _target)
@@ -159,6 +164,13 @@ public abstract class Enemy_Dowoon : MonoBehaviour
 
     public virtual void Die()
     {
+
+        if (bomb_Prefab != null)
+        {
+            var b =Instantiate(bomb_Prefab, transform.position, Quaternion.identity);
+            b.transform.localScale = size;
+        }
+
         Destroy(this.gameObject);
     }
 

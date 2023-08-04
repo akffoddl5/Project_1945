@@ -485,8 +485,8 @@ Transform:
   - {fileID: 9190833825360613207}
   - {fileID: 7003089517050922497}
   - {fileID: 9073423119975017038}
-  - {fileID: 2514818399855202651}
   - {fileID: 3158241552275110481}
+  - {fileID: 2514818399855202651}
   - {fileID: 1820283778887064081}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -661,7 +661,7 @@ MonoBehaviour:
   Spell: {fileID: 700375181934918612, guid: 9456ccfc60b00c24b9c2768508671f62, type: 3}
   Item: {fileID: 0}
   CountDestroy: 0
-  activationTime: 3
+  activationTime: 2
   m_missilePrefab: {fileID: 5862707670822519475, guid: 4de9785013d46234e8bcd4162070658d, type: 3}
   m_target: {fileID: 0}
   m_speed: 2
@@ -940,12 +940,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

@@ -24,9 +24,14 @@ public class June_EnemyMiddleBulletSpawn : MonoBehaviour
     }
     void CreateBullte() //적 총알 생성
     {
-        for (int j = 0; j < 360; j += 30)
-            Instantiate(Bullet, ms.position, Quaternion.Euler(0, 0, j));
-        Invoke("CreateBullte", Delay);
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
+
+            for (int j = 0; j < 360; j += 30)
+                Instantiate(Bullet, ms.position, Quaternion.Euler(0, 0, j));
+            Invoke("CreateBullte", Delay);
+
+        }
 
 
 
@@ -44,8 +49,7 @@ public class June_EnemyMiddleBulletSpawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Hp -= 1; //나중에 bullet_info에서 공격력 가져오고 적용시키기
-        Destroy(collision.gameObject);
+        Hp -= collision.gameObject.GetComponent<Bullet_info>().att;
         Debug.Log(Hp);
         if (Hp <= 0)
         {

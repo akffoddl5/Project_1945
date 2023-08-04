@@ -23,7 +23,7 @@ public class June_PlayerShooting : MonoBehaviour
     public GameObject Item;
     public int CountDestroy;
 
-    public float activationTime =3f;
+    public float activationTime =2f;
 
     private float timePressed = 0f;
     private bool isZKeyPressed = false;
@@ -50,7 +50,7 @@ public class June_PlayerShooting : MonoBehaviour
     {
 
 
-        bool isZinput =false;
+        isZinput =false;
 
         cutimage = transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Image>();
 

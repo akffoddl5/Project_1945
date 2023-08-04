@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.PlasticSCM.Editor.WebApi;
+
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+
 
 public class Kjh_Monster : MonoBehaviour
 {
@@ -56,12 +56,12 @@ public class Kjh_Monster : MonoBehaviour
 
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player");
         anim = boom.GetComponent<Animator>();
         LightM();
         // lightMR = GameObject.Find("LightMonster").transform.Find("Canvars").transform.Find("Panel").gameObject;
         boomcoroutin();
-
+        StartCoroutine(Boss_init());
 
 
     }
@@ -71,23 +71,38 @@ public class Kjh_Monster : MonoBehaviour
         LightM2();
 
 
+      
        
 
-       
+    }
+
+    IEnumerator Boss_init()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(9);
+            //Instantiate(fish);
+            //fish_dir();
+            //Invoke("fish_dir", 5);
+            fish1 = Instantiate(fish, fishT.position, Quaternion.identity);
+
+            fish1.GetComponent<Rigidbody2D>().AddForce(Vector2.down * speedF);
+
+        }
     }
 
     void boomcoroutin()
     {
-
+        
         StartCoroutine(Boom());
 
-        Invoke("boomcoroutin", 4);
+        Invoke("boomcoroutin", 2);
 
         float a = Random.Range(1, 2.5f);
         Invoke("toFuntion", a);
 
 
-        if (CountAll %17 == 1)
+        if (CountAll %5 == 1 && 1==2)
         {
 
             
@@ -99,7 +114,7 @@ public class Kjh_Monster : MonoBehaviour
             }
         }
 
-        if (CountAll % 5 == 1)
+        if (CountAll % 3 == 1)
         {
 
             Invoke("LightM", 2);
@@ -112,6 +127,7 @@ public class Kjh_Monster : MonoBehaviour
 
     void toFuntion()
     {
+        if(boom2 != null && to != null)
             Instantiate(to, boom2.transform.position, Quaternion.identity);
            
         
@@ -143,8 +159,8 @@ public class Kjh_Monster : MonoBehaviour
     }
     void fish_dir()
     {
-
-        fish.transform.SetParent(player.transform);
+        
+            fish.transform.SetParent(player.transform);
 
         Vector3 fishV = player.transform.position - fishT.localPosition;
         fishV = fishV.normalized;
@@ -152,10 +168,12 @@ public class Kjh_Monster : MonoBehaviour
         fishY = fishV.y;
         fishY = Mathf.Abs(fishY);
         fishV.y = -fishY;
-        fish1 = Instantiate(fish, fishT.position, Quaternion.identity);
+
+            fish1 = Instantiate(fish, fishT.position, Quaternion.identity);
         
-        fish1.GetComponent<Rigidbody2D>().AddForce(fishV * speedF);
-        Destroy(fish1, 10);
+            fish1.GetComponent<Rigidbody2D>().AddForce(fishV * speedF);
+            Destroy(fish1, 10);
+        
     }
     void LightM()
     {
@@ -174,10 +192,11 @@ public class Kjh_Monster : MonoBehaviour
     {
 
 
-        if(lightM1 != null)
-        lightM1.transform.position = Vector2.SmoothDamp(lightM1.transform.position, Vector2.zero, ref vel, speedL);
-
-
+        if (lightM1 != null)
+        {
+            lightM1.transform.position = Vector2.SmoothDamp(lightM1.transform.position, Vector2.zero, ref vel, speedL);
+			LighBim();
+		}
 
 
     }

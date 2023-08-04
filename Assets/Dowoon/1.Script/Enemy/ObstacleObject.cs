@@ -31,8 +31,8 @@ public class ObstacleObject : MonoBehaviour
         {
             if(b_isCollideAble) 
             {
-                Debug.Log(" 방해물 맞음");
-            }
+				Destroy(collision.gameObject);
+			}
           
         }
     }

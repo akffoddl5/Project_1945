@@ -37,6 +37,9 @@ public class Ending : MonoBehaviour
 		// 처음에 버튼 안 보이게 SetActive(false)
 		btn_restart.SetActive(false);
 		btn_close.SetActive(false);
+		UI_Manager.instance._Init();
+		UI_Manager.instance.b_isGameStart = false;
+		UI_Manager.instance.GetComponent<UI_Revive>().SetSelectUI(false);
 	}
 	private void Update()
 	{
