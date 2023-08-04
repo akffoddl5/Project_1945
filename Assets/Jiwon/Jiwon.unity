@@ -1049,6 +1049,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 938353992868634132, guid: 2d3fb484ae178b24bb107ebfa109cb18, type: 3}
+      propertyPath: maxHp
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2679110918133526292, guid: 2d3fb484ae178b24bb107ebfa109cb18, type: 3}
       propertyPath: m_Name
       value: Sun
