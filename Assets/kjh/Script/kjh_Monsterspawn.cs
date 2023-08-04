@@ -114,7 +114,7 @@ public class Kjh_Monster : MonoBehaviour
             }
         }
 
-        if (CountAll % 3 == 1)
+        if (CountAll % 4== 1)
         {
 
             Invoke("LightM", 2);
