@@ -214,11 +214,11 @@ public class Kjh_Monster : MonoBehaviour
            
             
 
-            if (j >= 2)
+            if (j >= 0.7f)
             {
-                lightMR.transform.localScale = new Vector3(j * 1000, j * 1000, 0);
+                lightMR.transform.localScale = new Vector3(j * 140, j *140, 0);
                 
-                if (j >= 5)
+                if (j >= 2f)
                 {
                     j = 0;
 
