@@ -11,6 +11,7 @@ public class Boss_Jiwon : MonoBehaviour
 	public AudioClip sun_colSound;
 	public AudioClip sun_die;
 
+	[SerializeField]
 	float maxHp = 500;
 	float nowHp;
 
@@ -48,6 +49,8 @@ public class Boss_Jiwon : MonoBehaviour
 
 	// [붕어빵] 보스 총알
 	GameObject objCross;
+	GameObject objWarning;
+	GameObject objHRazer;
 
 	Rigidbody2D rb;
 
@@ -129,11 +132,14 @@ public class Boss_Jiwon : MonoBehaviour
 		if ((nowHp <= maxHp * (30 / 100.0f)) && !isPhase_03)
 		{
 			isPhase_03 = true;
-
 			// 페이즈2 패턴 코루틴 종료
-			StopCoroutine(co_hRazer);
-			StopCoroutine(co_triple);
-			StopCoroutine(co_tornado);
+			if(co_hRazer !=null) StopCoroutine(co_hRazer);
+			if (co_triple != null) StopCoroutine(co_triple);
+			if (co_tornado != null) StopCoroutine(co_tornado);
+
+			// 코루틴을 종료했는데 오브젝트가 남아있을 경우 삭제해주기
+			if (objWarning!=null) Destroy(objWarning);
+			if (objHRazer != null) Destroy(objHRazer);
 
 			// reflect
 			rb.AddForce(shootFirstDir * reflectPower);
@@ -154,7 +160,7 @@ public class Boss_Jiwon : MonoBehaviour
 
 			// HRazerY 위치에서 경고 프리팹 3번 깜빡깜빡
 			Vector3 hrPosition = new Vector3(0, hRazerY, 0);
-			GameObject objWarning = Instantiate(Pref_warning, hrPosition, Quaternion.identity);
+			objWarning = Instantiate(Pref_warning, hrPosition, Quaternion.identity);
 
 			for (int i = 0; i < WARN_COUNT; i++)
 			{
@@ -170,7 +176,7 @@ public class Boss_Jiwon : MonoBehaviour
 			// HRazer의 Scale y값을 0에서 HRazerY의 값만큼 슉하고 커지게
 			//hr.transform.localScale.y = 0; <- 이렇게 하면 에러남
 
-			GameObject objHRazer = Instantiate(Pref_HRazer, hrPosition, Quaternion.identity);
+			objHRazer = Instantiate(Pref_HRazer, hrPosition, Quaternion.identity);
 			Vector3 scaleOfHR = new Vector3(6, 1, 1); // HRazer의 사이즈
 			Vector3 scaleChange = new Vector3(0, 0.2f, 0); // (6, 0, 1) += scaleChange;로 scale 변경
 

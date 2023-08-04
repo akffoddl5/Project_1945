@@ -20,7 +20,8 @@ public class June_Spell_1 : MonoBehaviour
 
         if(!collision.CompareTag("Player") &&
            !collision.CompareTag("Wall") &&
-           !collision.CompareTag("Obstacle"))
+           !collision.CompareTag("Obstacle") &&
+           !collision.CompareTag("ENEMY"))
         {
             Destroy(collision.gameObject);
 

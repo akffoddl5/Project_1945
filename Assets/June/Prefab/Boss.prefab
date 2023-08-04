@@ -222,11 +222,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 0}
   dialogue:
-  - "\uC751\uC560"
-  - "\uB354 \uC774\uC0C1\uC740 \uC9C0\uB098\uAC08 \uC218 \uC5C6\uB2E4!"
-  - "\uC751! \uC560!"
+  - "\uC9C0\uB098 \uAC08 \uC218 \uC788\uC744\uAE4C?"
+  - "\uC774 \uC774\uC0C1\uC740 \uB108\uC758 \uC601\uC5ED\uC774 \uC544\uB2C8\uC57C"
+  - "\uD558\uC9C0\uB9CC \uD074\uB9AC\uC5B4\uB97C \uD574\uC57C \uD558\uB294\uAC78"
   - "\uB9D0\uC774 \uD1B5\uD558\uC9C0 \uC54A\uB124"
-  - "\uC751!!! \uC560!"
+  - "\uB3D9\uAC10\uD558\uB294 \uBC14\uC57C"
   wordSpeed: 0.02
   playerisclose: 0
   Txttime: {fileID: 0}
