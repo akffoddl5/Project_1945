@@ -11,13 +11,15 @@ public class Kjh_player : MonoBehaviour
     public AudioSource moves;
     public AudioSource dashs;
     float moveX;
-    float moveY;
-    public float movespeed = 1.3f;
+    float moveY; 
+    float moveX1;
+    float moveY1;
+    public float movespeed = 2.4f;
     Vector3 move;
-    public float boost = 50.0f;
+    public float boost = 100f;
 
     Animator anim;
-   
+
     bool stopTimes = true;
 
     public static bool stop;
@@ -29,12 +31,12 @@ public class Kjh_player : MonoBehaviour
 
     float BoostTime = 0;
 
-   
+
 
     float CoolTime = 0;
     bool coolTime = true;
 
- 
+
 
     void Start()
     {
@@ -51,12 +53,12 @@ public class Kjh_player : MonoBehaviour
         TimeAcction();
         Key();
         Movetree();
-       
+
 
 
 
     }
-   
+
     public void Move(bool b)
     {
         stop = b;
@@ -64,17 +66,17 @@ public class Kjh_player : MonoBehaviour
         {
 
 
-            moveX = Input.GetAxis("Horizontal") * Time.deltaTime * movespeed;//x,y버튼누르면 각각 숫자+ -1 나옴
-            moveY = Input.GetAxis("Vertical") * Time.deltaTime * movespeed;
+            moveX1= Input.GetAxis("Horizontal") * Time.deltaTime * movespeed;//x,y버튼누르면 각각 숫자+ -1 나옴
+            moveY1 = Input.GetAxis("Vertical") * Time.deltaTime * movespeed;
 
             Boost();
 
-            move = new Vector3(moveX, moveY, 0);
+            move = new Vector3(moveX1, moveY1, 0);
 
 
             transform.Translate(move);
 
-            
+
         }
     }
 
@@ -86,6 +88,7 @@ public class Kjh_player : MonoBehaviour
 
     public void Boost()//부스트(주는 함수
     {
+
         moveX = Input.GetAxis("Horizontal") * Time.deltaTime;
         moveY = Input.GetAxis("Vertical") * Time.deltaTime;
         if (coolTime == true)
@@ -93,14 +96,14 @@ public class Kjh_player : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && (moveX >= -0.5))
             {
-                moveX *= boost;
+                moveX1 *= boost;
                 Instantiate(dashs);
 
             }
 
             else if (Input.GetKeyDown(KeyCode.LeftShift) && (moveX <= 0.5))
             {
-                moveX *= boost;
+                moveX1 *= boost;
 
                 Instantiate(dashs);
             }
@@ -108,7 +111,7 @@ public class Kjh_player : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && (moveY >= -0.5))
             {
-                moveY *= boost;
+                moveY1 *= boost;
                 Instantiate(dashs);
             }
 
@@ -116,7 +119,7 @@ public class Kjh_player : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.LeftShift) && (moveY <= 0.5))
             {
 
-                moveY *= boost;
+                moveY1 *= boost;
                 Instantiate(dashs);
             }
         }
@@ -191,14 +194,14 @@ public class Kjh_player : MonoBehaviour
     }
     void Key()//스페셜 키
     {
-        
-            
-            if ((Kjh_Monster.CountZ >= 6)&&Input.GetKey(KeyCode.Z))
-            {
-                anim.SetBool("Zkey", true);
-                Kjh_Monster.CountZ = 0;
-                
-            }
+
+
+        if ((Kjh_Monster.CountZ >= 6) && Input.GetKey(KeyCode.Z))
+        {
+            anim.SetBool("Zkey", true);
+            Kjh_Monster.CountZ = 0;
+
+        }
         if (!Input.GetKey(KeyCode.Z))
         {
             anim.SetBool("Zkey", false);
@@ -234,7 +237,7 @@ public class Kjh_player : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftControl))
         {
             anim.SetBool("Control", true);
-      
+
 
 
         }
@@ -246,19 +249,19 @@ public class Kjh_player : MonoBehaviour
         }
 
 
-       
-       
+
+
     }
 
 
     void TimeAcction()// 애니메이션 누름  구별
     {
-      //  if (stopTimes == true)
-            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
-            {
-                anim.SetBool("Times", true);
-                anim.SetBool("1Time", false);
-            }
+        //  if (stopTimes == true)
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        {
+            anim.SetBool("Times", true);
+            anim.SetBool("1Time", false);
+        }
         if (!(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)))
         {
             anim.SetBool("Times", false);

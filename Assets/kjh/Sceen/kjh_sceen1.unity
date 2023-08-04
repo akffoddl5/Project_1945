@@ -1497,6 +1497,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6812000490297652841, guid: c2372f4db8879f145b39fa1f1ea46b6d, type: 3}
+      propertyPath: boost
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812000490297652841, guid: c2372f4db8879f145b39fa1f1ea46b6d, type: 3}
       propertyPath: dashs
       value: 
       objectReference: {fileID: 8591858982724086211, guid: 4d73b8e46a35b3c4ab6e105911fb9b54, type: 3}
@@ -1504,6 +1508,10 @@ PrefabInstance:
       propertyPath: moves
       value: 
       objectReference: {fileID: 4314013829954697369, guid: 382a1d3cee014fe43933f38da38d22df, type: 3}
+    - target: {fileID: 6812000490297652841, guid: c2372f4db8879f145b39fa1f1ea46b6d, type: 3}
+      propertyPath: movespeed
+      value: 2.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8500633120885111643, guid: c2372f4db8879f145b39fa1f1ea46b6d, type: 3}
       propertyPath: looks
       value: 
