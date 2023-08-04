@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/0.GAMEMAIN/GameEnd.unity
     guid: 8e555f951d891b943861bbcae5c37b74
+  - enabled: 1
+    path: Assets/0.GAMEMAIN/Main.unity
+    guid: 228ff4edac3fd5b469f58ca8f77caa97
   m_configObjects: {}

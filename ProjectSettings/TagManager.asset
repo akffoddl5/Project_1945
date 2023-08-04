@@ -9,6 +9,7 @@ TagManager:
   - Canvas
   - Wall
   - Obstacle
+  - ITEM
   layers:
   - Default
   - TransparentFX

@@ -64,12 +64,12 @@ public class UI_Manager : MonoBehaviour
         prefab_dict.Add(Charactor.도운, DW_Player);
         prefab_dict.Add(Charactor.용석, YS_Player);
 
-		scene_dict.Add(3, "Dowoon");
-		scene_dict.Add(1, "YONGSEOK");
-		scene_dict.Add(5, "Jiwon");
+		scene_dict.Add(1, "Dowoon");
+		scene_dict.Add(2, "YONGSEOK");
+		scene_dict.Add(3, "Jiwon");
 		//scene_dict.Add(1, "Jiwon");
-		scene_dict.Add(2, "kjh_sceen1");
-		scene_dict.Add(4, "June_Scene");
+		scene_dict.Add(4, "kjh_sceen1");
+		scene_dict.Add(5, "June_Scene");
 		scene_dict.Add(6, "GameEnd");
 		scene_dict.Add(7, "GameEnd");
 		scene_dict.Add(0, "CharacterSelect 1");
