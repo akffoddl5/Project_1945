@@ -54,6 +54,10 @@ public class Enemy_windowIcon_Dowoon : Enemy_Dowoon
 
                 yield return new WaitForSeconds(0.5f);
             }
+            else
+            {
+                yield return new WaitForSeconds(0.5f);
+            }
            
         }
         

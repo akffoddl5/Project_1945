@@ -31,7 +31,7 @@ public class June_PlayerBossTalk : MonoBehaviour
     public void Start()
     {
         June_Index = 0;
-       
+
 
         Aya = GameObject.Find("June_Canvas").transform.GetChild(4).gameObject;
         dncmgh = GameObject.Find("June_Canvas").transform.GetChild(5).gameObject;
@@ -64,7 +64,7 @@ public class June_PlayerBossTalk : MonoBehaviour
 
     }
 
-    
+
 
     private void Update()
     {
@@ -117,13 +117,16 @@ public class June_PlayerBossTalk : MonoBehaviour
     }
     private void OnEnable()
     {
-        
+
     }
     void DestroyTheTxt()
     {
         StartCoroutine(FadeOutStart());
         gameObject.GetComponent<June_BossBullet>().enabled = true;
         GameObject.Find("June_Canvas").transform.GetChild(3).gameObject.SetActive(false);
+
+        gameObject.GetComponent<CircleCollider2D>().enabled = true;
+
         StartCoroutine(CharactorFadeOutStart(0f, playerselection));
         StartCoroutine(CharactorFadeOutStart(0f, dncmgh));
         Aya.SetActive(false);
@@ -131,8 +134,8 @@ public class June_PlayerBossTalk : MonoBehaviour
         Jiwon.SetActive(false);
         jung.SetActive(false);
         Yong.SetActive(false);
-        Do .SetActive(false);
-        
+        Do.SetActive(false);
+
 
     }
 

@@ -35,6 +35,10 @@ public class June_Enemy1Bullet : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+        if (collision.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

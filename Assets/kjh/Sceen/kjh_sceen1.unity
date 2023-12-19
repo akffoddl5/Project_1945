@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 282416214}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,7 +422,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishs: {fileID: 1537942516837163292, guid: 2ff8b4bb1732d5f4c95154c9e600989d, type: 3}
   booms: {fileID: 8313233085070502817, guid: 34e167453c7c0c44f8ffaaa8f28ad79a, type: 3}
-  tos: {fileID: 6247083505898714912, guid: 0c1cb4085bf7dd4409c6cf14f4db227b, type: 3}
   lights: {fileID: 2993406905354082506, guid: 92900de80a2682d40a289add78c2318e, type: 3}
   player: {fileID: 8579610847061806868, guid: c2372f4db8879f145b39fa1f1ea46b6d, type: 3}
   boom: {fileID: 5811099232653946064, guid: 931c98484204dab489054b888f167429, type: 3}
@@ -681,7 +680,7 @@ GameObject:
   - component: {fileID: 1412845147}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -811,7 +810,7 @@ GameObject:
   - component: {fileID: 1419336640}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1317,7 +1316,7 @@ GameObject:
   - component: {fileID: 2026849025}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1498,6 +1497,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6812000490297652841, guid: c2372f4db8879f145b39fa1f1ea46b6d, type: 3}
+      propertyPath: boost
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812000490297652841, guid: c2372f4db8879f145b39fa1f1ea46b6d, type: 3}
       propertyPath: dashs
       value: 
       objectReference: {fileID: 8591858982724086211, guid: 4d73b8e46a35b3c4ab6e105911fb9b54, type: 3}
@@ -1505,6 +1508,10 @@ PrefabInstance:
       propertyPath: moves
       value: 
       objectReference: {fileID: 4314013829954697369, guid: 382a1d3cee014fe43933f38da38d22df, type: 3}
+    - target: {fileID: 6812000490297652841, guid: c2372f4db8879f145b39fa1f1ea46b6d, type: 3}
+      propertyPath: movespeed
+      value: 2.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8500633120885111643, guid: c2372f4db8879f145b39fa1f1ea46b6d, type: 3}
       propertyPath: looks
       value: 

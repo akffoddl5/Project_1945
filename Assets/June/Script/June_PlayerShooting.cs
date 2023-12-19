@@ -13,21 +13,25 @@ public class June_PlayerShooting : MonoBehaviour
     public Transform pos = null; //πÃªÁ¿œ πﬂªÁ
     public float FireSpeed = 0.2f;
     public GameObject Lazer;
-    public float PlayerDamage ;
+    public float PlayerDamage;
 
     public Image PlayerCharg;
     public GameObject Spell;
+
 
     Image cutimage;
 
     public GameObject Item;
     public int CountDestroy;
 
-    public float activationTime =3f;
+    public float activationTime = 2f;
 
     private float timePressed = 0f;
     private bool isZKeyPressed = false;
 
+
+
+    public GameObject TTarget;
 
 
     public GameObject m_missilePrefab; // πÃªÁ¿œ «¡∏Æ∆’.
@@ -50,9 +54,10 @@ public class June_PlayerShooting : MonoBehaviour
     {
 
 
-        isZinput =false;
+        isZinput = false;
 
         cutimage = transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Image>();
+        
 
         PlayerDamage = 5;
         StartCoroutine(AutoFire());
@@ -60,21 +65,24 @@ public class June_PlayerShooting : MonoBehaviour
     }
     private void OnEnable()
     {
-       // StartCoroutine(AutoFire());
-    } 
+        // StartCoroutine(AutoFire());
+    }
 
     int CrowCount = 0;
 
-      
-    
+
+
     void Update()
     {
         m_target = GameObject.FindGameObjectWithTag("ENEMY");
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.C))
         {
-            
-           GameObject missile = Instantiate(m_missilePrefab,pos.position,Quaternion.identity);
-           missile.GetComponent<Bullet_info>().att = PlayerDamage;
+
+            if (m_target != null)
+            {
+                GameObject missile = Instantiate(m_missilePrefab, pos.position, Quaternion.identity);
+                missile.GetComponent<Bullet_info>().att = PlayerDamage / 7;
+            }
 
         }
 
@@ -82,24 +90,24 @@ public class June_PlayerShooting : MonoBehaviour
         {
             transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
             transform.GetChild(0).gameObject.SetActive(true);
-            
+
 
             Color c = cutimage.color; // ƒ∆æ¿ ƒ√∑Ø
             c.a = 0.8f;
             cutimage.color = c;
-            StartCoroutine(SpellShoot());            
+            StartCoroutine(SpellShoot());
 
-            GameObject spell = Instantiate(Spell,new Vector3(-2.5f,-7f,0), Quaternion.identity);
-            spell.GetComponent<Bullet_info>().att = PlayerDamage+10;
+            GameObject spell = Instantiate(Spell, new Vector3(-2.5f, -7f, 0), Quaternion.identity);
+            spell.GetComponent<Bullet_info>().att = PlayerDamage + 10;
         }
         else
-    //        Time.timeScale = 1;
+        //        Time.timeScale = 1;
 
 
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J))
         {
-            
-            var _bullet =Instantiate(bullet, pos.position, Quaternion.identity); 
+
+            var _bullet = Instantiate(bullet, pos.position, Quaternion.identity);
             _bullet.GetComponent<Bullet_info>().att = PlayerDamage;
             isZinput = true;
             isZKeyPressed = true;
@@ -129,22 +137,22 @@ public class June_PlayerShooting : MonoBehaviour
                 CreateCrow();
             }
         }
-        if(isZKeyPressed && timePressed >= activationTime &&isZinput)
+        if (isZKeyPressed && timePressed >= activationTime && isZinput)
         {
             AudioSource ChareDone = GameObject.Find("JuneSoundmanager").transform.GetChild(1).GetComponent<AudioSource>();
             ChareDone.Play();
-            isZinput=false;
+            isZinput = false;
         }
     }
-   
-    
+
+
     private void CreateCrow()
     {
-        transform.GetChild(CrowCount+2).gameObject.SetActive(true);
+        transform.GetChild(CrowCount + 2).gameObject.SetActive(true);
     }
 
 
-    
+
     IEnumerator SpellShoot()
     {
 
@@ -152,20 +160,34 @@ public class June_PlayerShooting : MonoBehaviour
         SpellVoice.Play();
         Time.timeScale = 0;
 
-        for (int i = 0; i < 10; i++)
-       {
-          
-            
-           transform.GetChild(0).transform.GetChild(1).transform.position += new Vector3(80, 0, 0);
-           transform.GetChild(0).transform.GetChild(2).transform.position += new Vector3(110, -110, 0);
-        yield return new WaitForSecondsRealtime(0.01f);
+        transform.GetChild(0).transform.GetChild(1).transform.position = new Vector3(-800, 0, 0);
+        //while (true)
+        //{
+        //    Debug.Log("¡¬«• " + transform.position);
+        //    Debug.Log("local¡¬«• " + transform.localPosition);
 
-       }
-       
+        //    transform.GetChild(0).transform.GetChild(1).transform.position += new Vector3(80, 0, 0);
+        //    transform.GetChild(0).transform.GetChild(2).transform.localPosition += new Vector3(110, -110, 0);
+        //    yield return new WaitForSecondsRealtime(0.01f);
+
+
+        //    if (transform.GetChild(0).transform.GetChild(1).transform.localPosition.x >= transform.GetChild(0).transform.GetChild(4).transform.localPosition.x)
+        //        break;
+        //}
+        if (transform.GetChild(0).transform.GetChild(1).transform.localPosition.x <= transform.GetChild(0).transform.GetChild(4).transform.localPosition.x)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                transform.GetChild(0).transform.GetChild(1).transform.position += new Vector3(80, 0, 0);
+                transform.GetChild(0).transform.GetChild(2).transform.localPosition += new Vector3(110, -110, 0);
+                yield return new WaitForSecondsRealtime(0.01f);
+
+            }
+        }
         yield return new WaitForSecondsRealtime(2f);
-        
-        transform.GetChild(0).transform.GetChild(1).transform.position = new Vector3(-810, 0, 0);
-        transform.GetChild(0).transform.GetChild(2).transform.position += new Vector3(-1100, 1100, 0);
+
+        transform.GetChild(0).transform.GetChild(1).transform.position = new Vector3(-800, 0, 0);
+        transform.GetChild(0).transform.GetChild(2).transform.localPosition = new Vector3(-1100, 1100, 0);
         Color c = cutimage.color;
         c.a = 0;
         cutimage.color = c;
@@ -192,5 +214,5 @@ public class June_PlayerShooting : MonoBehaviour
     }
 
 
-    
+
 }

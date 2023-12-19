@@ -24,9 +24,14 @@ public class June_EnemyMiddleBulletSpawn : MonoBehaviour
     }
     void CreateBullte() //적 총알 생성
     {
-        for (int j = 0; j < 360; j += 30)
-            Instantiate(Bullet, ms.position, Quaternion.Euler(0, 0, j));
-        Invoke("CreateBullte", Delay);
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
+
+            for (int j = 0; j < 360; j += 30)
+                Instantiate(Bullet, ms.position, Quaternion.Euler(0, 0, j));
+            Invoke("CreateBullte", Delay);
+
+        }
 
 
 

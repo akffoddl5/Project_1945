@@ -49,11 +49,9 @@ public class June_BossBullet : MonoBehaviour
 
 
 
-           
 
-        
 
-    
+
 
 
 

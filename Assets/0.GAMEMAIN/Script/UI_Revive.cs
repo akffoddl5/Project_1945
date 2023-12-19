@@ -66,8 +66,8 @@ public class UI_Revive : MonoBehaviour
                 }
 
                 SetArrowPos();
-             
-            }
+				UI_Manager.instance.audioSource_slide.Play();
+			}
 
             if(Input.GetKeyDown(KeyCode.LeftArrow))
             {
@@ -80,7 +80,8 @@ public class UI_Revive : MonoBehaviour
                 }
 
                 SetArrowPos();
-            }
+				UI_Manager.instance.audioSource_slide.Play();
+			}
 
             
 
@@ -112,9 +113,18 @@ public class UI_Revive : MonoBehaviour
 
                 UI_Manager.instance.now_Player = instanceObject;
                 UI_Manager.instance.Revive();
-                Debug.Log("∫Œ»∞µ ");
+
+                GameObject[] tmp = GameObject.FindGameObjectsWithTag("ITEM");
+                for (int i = 0; i < tmp.Length; i++)
+                {
+                    Destroy(tmp[i]);
+                }
                 
-                SetSelectUI(false);
+                //Debug.Log("∫Œ»∞µ ");
+                UI_Manager.instance.audioSource_select.Play();
+
+
+				SetSelectUI(false);
             }
 
         }

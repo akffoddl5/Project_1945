@@ -171,6 +171,8 @@ MonoBehaviour:
   isAttackAble: 0
   isArrive: 0
   moveSpeed: 8.5
+  bomb_Prefab: {fileID: 4589569213402873778, guid: c1fa44149e8e7e048a7442106fdc8b55, type: 3}
+  size: {x: 2, y: 2, z: 2}
   goalPos: {x: 0, y: 0, z: 0}
   bulletPrefab: {fileID: 0}
   Panel: {fileID: 0}

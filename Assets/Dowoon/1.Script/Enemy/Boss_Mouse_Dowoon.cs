@@ -273,7 +273,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         bullets.Clear();
 
-        for (int i = 0; i < 40; ++i)
+        for (int i = 0; i < 50; ++i)
         {
 
             //총알 생성
@@ -312,24 +312,26 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
                 offset = -22f;
             }
 
-            temp.transform.rotation = Quaternion.Euler(0, 0, 45 + (i * offset)+i);
-            temp2.transform.rotation = Quaternion.Euler(0, 0, 135 + (i * offset)+i);
-            temp3.transform.rotation = Quaternion.Euler(0, 0, 225 + (i * offset)-i);
-            temp4.transform.rotation = Quaternion.Euler(0, 0, 315 + (i * offset)-i);
+            temp.transform.rotation = Quaternion.Euler(0, 0, 45 + (i * offset)+(i*3));
+            temp2.transform.rotation = Quaternion.Euler(0, 0, 135 + (i * offset)+ (i * 3));
+            temp3.transform.rotation = Quaternion.Euler(0, 0, 225 + (i * offset)- (i * 3));
+            temp4.transform.rotation = Quaternion.Euler(0, 0, 315 + (i * offset)- (i * 3));
 
             temp.gameObject.tag = "Obstacle";
             temp2.gameObject.tag = "Obstacle";
             temp3.gameObject.tag = "Obstacle";
             temp4.gameObject.tag = "Obstacle";
 
-             var t = 2.0f - (i * 0.05f);
+
+            // 사라지는 시간 
+             var t = 2.0f - (i * 0.033f);
             //var t = 2.0f;
            StartCoroutine(temp.GetComponent<Bullet_Dowoon>().StopBullet(t));
             StartCoroutine(temp2.GetComponent<Bullet_Dowoon>().StopBullet(t));
             StartCoroutine(temp3.GetComponent<Bullet_Dowoon>().StopBullet(t));
             StartCoroutine(temp4.GetComponent<Bullet_Dowoon>().StopBullet(t));
 
-            var bulletTime = 0.1f + (i * 0.01f);
+            var bulletTime = 0.05f;
          //  var bulletTime = 0.05f;
             yield return new WaitForSeconds(bulletTime);
         } 
@@ -349,6 +351,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         }
 
         go_box = Instantiate(boxPrefab, Box_Generator.position, Quaternion.identity);
+        go_box.GetComponent<Collider2D>().enabled = false;
         Destroy(go_box, 10f);
         var startPos = Box_Generator.position;
 
@@ -381,7 +384,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
             yield return new WaitForEndOfFrame();
         }
-        yield return new WaitForSeconds(0.73f);
+        yield return new WaitForSeconds(0.25f);
 
 
         Destroy(go_box);
@@ -403,7 +406,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
  
         while (true)
         {
-            var v = MoveToGoal(Pattern1_DragMove_1,0.2f);
+            var v = MoveToGoal(Pattern1_DragMove_1,0.6f);
             if (v <= 0.2f)
                 break;
 
@@ -418,7 +421,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         while (true)
         {
-            var v = MoveToGoal(Pattern1_DragMove_2, 0.2f);
+            var v = MoveToGoal(Pattern1_DragMove_2, 0.6f);
             if (v <= 0.2f)
                 break;
 
@@ -430,7 +433,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         while (true)
         {
-            var v = MoveToGoal(Pattern1_DragMove_3, 0.2f);
+            var v = MoveToGoal(Pattern1_DragMove_3, 0.6f);
             if (v <= 0.2f)
                 break;
 
@@ -443,7 +446,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         while (true)
         {
-            var v = MoveToGoal(Pattern1_DragMove_4, 0.2f);
+            var v = MoveToGoal(Pattern1_DragMove_4, 0.6f);
             if (v <= 0.2f)
                 break;
 
@@ -486,7 +489,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
     IEnumerator RotateMouse(Vector3 lookPos, List<Transform> bullet)
     {
         float zOffset = 760;
-        float t = Random.Range(1.2f, 2.2f);
+        float t = Random.Range(0.5f, 1.0f);
         SetParents(bullet, false);
         while(true)
         {
@@ -513,7 +516,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
 
         SetParents(bullet, true);
 
-        yield return new WaitForSeconds(0.45f);
+        yield return new WaitForSeconds(0.20f);
 
 
     }
@@ -534,7 +537,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
 
         bar = Instantiate(TaskBar, Box_Generator.position, Quaternion.identity);
         bar.transform.parent = Box_Generator.transform;
@@ -559,7 +562,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
         //크롬 집으러감
         while (true)
         {
-            var v = MoveToGoal(Pattern2_3,0.3f);
+            var v = MoveToGoal(Pattern2_3,0.8f);
             if (v <= 0.2f)
             {
                 break;
@@ -568,7 +571,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
 
         }
-        yield return new WaitForSeconds(0.1f);
+       // yield return new WaitForSeconds(0.1f);
 
          chrome = bar.GetComponent<TaskBar_Dowoon>().Icon_Chrome;
 
@@ -613,12 +616,12 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
          }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
         var shot = StartCoroutine(Pattern2_Shot());
     
 
-        yield return StartCoroutine(MoveSide(Pattern2_6,Pattern2_5,2.3f,4));
+        yield return StartCoroutine(MoveSide(Pattern2_6,Pattern2_5,2.3f,3));
         StopCoroutine(shot);
 
 
@@ -640,7 +643,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         
 
 
@@ -689,7 +692,7 @@ public class Boss_Mouse_Dowoon : Enemy_Dowoon
             yield return new WaitForEndOfFrame();
         }
 
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
 
 
         EndPattern(1.0f);

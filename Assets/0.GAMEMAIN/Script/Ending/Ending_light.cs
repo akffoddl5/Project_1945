@@ -46,6 +46,7 @@ public class Ending_light : MonoBehaviour
         while(pan.GetComponent<Image>().color.a > 0f)
         {
             tmp.a -= 0.03f;
+          
 			pan.GetComponent<Image>().color = tmp;
             yield return new WaitForEndOfFrame();
 		}
