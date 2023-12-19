@@ -93,13 +93,16 @@ public class KYS_Toong_Bullet : MonoBehaviour
     //세모 만들기
     public void Shoot_Triangle(float _radius, Vector3 _rotate, int _bullet_val){
         GameObject current_bullet;
+        Bullet_Type type = Bullet_Type.NORMAL;
         if (_bullet_val == 0)
         {
             current_bullet = guide_bullet;
+            type = Bullet_Type.GUIDE;
         }
         else
         {
             current_bullet = normal_bullet;
+            type = Bullet_Type.NORMAL;
         }
         float min_x = -0.5f;
         float max_x = 0.5f;
@@ -118,17 +121,20 @@ public class KYS_Toong_Bullet : MonoBehaviour
 
             if (tmp_x >= -0.3f && tmp_x <= 0.3f) {
 
-                GameObject a1 = Instantiate(current_bullet, transform.position + new Vector3(tmp_x, tmp_y1,0) * radius, Quaternion.identity);
+                //GameObject a1 = Instantiate(current_bullet, transform.position + new Vector3(tmp_x, tmp_y1,0) * radius, Quaternion.identity);
+                GameObject a1 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(tmp_x, tmp_y1, 0) * radius, Quaternion.identity);
                 tmp_list.Add(a1);
             }
             if (tmp_y2 < 0.5f && tmp_y2 >= -0.2f)
             {
-                GameObject a2 = Instantiate(current_bullet, transform.position + new Vector3(tmp_x, tmp_y2,0) * radius, Quaternion.identity);
+                //GameObject a2 = Instantiate(current_bullet, transform.position + new Vector3(tmp_x, tmp_y2,0) * radius, Quaternion.identity);
+                GameObject a2 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(tmp_x, tmp_y2, 0) * radius, Quaternion.identity);
                 tmp_list.Add(a2);
             }
             if (tmp_y3 < 0.5f && tmp_y3 >= -0.2f)
             {
-                GameObject a3 = Instantiate(current_bullet, transform.position + new Vector3(tmp_x, tmp_y3,0) * radius, Quaternion.identity);
+                //GameObject a3 = Instantiate(current_bullet, transform.position + new Vector3(tmp_x, tmp_y3,0) * radius, Quaternion.identity);
+                GameObject a3 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(tmp_x, tmp_y3, 0) * radius, Quaternion.identity);
                 tmp_list.Add(a3);
             }
         }
@@ -140,13 +146,16 @@ public class KYS_Toong_Bullet : MonoBehaviour
     public void Shoot_Square(float _radius, Vector3 _rotate, int _bullet_val)
     {
         GameObject current_bullet;
+        Bullet_Type type = Bullet_Type.NORMAL;
         if (_bullet_val == 0)
         {
             current_bullet = guide_bullet;
+            type = Bullet_Type.GUIDE;
         }
         else
         {
             current_bullet = normal_bullet;
+            type = Bullet_Type.NORMAL;
         }
         float min_x = -0.55f;
         float max_x = 0.5f;
@@ -173,16 +182,23 @@ public class KYS_Toong_Bullet : MonoBehaviour
 
                 if (tmp_x >= 0)
                 {
-                    GameObject a1 = Instantiate(current_bullet, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y1, 0) * radius, Quaternion.identity);
-                    GameObject a4 = Instantiate(current_bullet, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y4, 0) * radius, Quaternion.identity);
+                    //GameObject a1 = Instantiate(current_bullet, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y1, 0) * radius, Quaternion.identity);
+                    //GameObject a4 = Instantiate(current_bullet, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y4, 0) * radius, Quaternion.identity);
+                    GameObject a1 = KYS_ObjectPool.instance.Instantiate(type, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y1, 0) * radius, Quaternion.identity);
+                    GameObject a4 = KYS_ObjectPool.instance.Instantiate(type, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y4, 0) * radius, Quaternion.identity);
+                    
                     tmp_list.Add(a1);
                     tmp_list.Add(a4);
                 }
 
                 if (tmp_x <= 0)
                 {
-                    GameObject a2 = Instantiate(current_bullet, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y2, 0) * radius, Quaternion.identity);
-                    GameObject a3 = Instantiate(current_bullet, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y3, 0) * radius, Quaternion.identity);
+                    //GameObject a2 = Instantiate(current_bullet, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y2, 0) * radius, Quaternion.identity);
+                    //GameObject a3 = Instantiate(current_bullet, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y3, 0) * radius, Quaternion.identity);
+
+                    GameObject a2 = KYS_ObjectPool.instance.Instantiate(type, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y2, 0) * radius, Quaternion.identity);
+                    GameObject a3 = KYS_ObjectPool.instance.Instantiate(type, offset[tc] + transform.position + new Vector3(tmp_x, tmp_y3, 0) * radius, Quaternion.identity);
+
                     tmp_list.Add(a2);
                     tmp_list.Add(a3);
                 }
@@ -224,8 +240,8 @@ public class KYS_Toong_Bullet : MonoBehaviour
             //GameObject tmp = Instantiate(normal_bullet, transform.position, Quaternion.Euler(new Vector3(0, 0, angle * i)));
             float dir_x = Mathf.Cos(angle * i / 180 * Mathf.PI);
             float dir_y = Mathf.Sin(angle * i / 180 * Mathf.PI);
-            GameObject tmp = Instantiate(normal_bullet, transform.position + new Vector3(dir_x, dir_y, 0) * radian, Quaternion.identity);
-
+            //GameObject tmp = Instantiate(normal_bullet, transform.position + new Vector3(dir_x, dir_y, 0) * radian, Quaternion.identity);
+            GameObject tmp = KYS_ObjectPool.instance.Instantiate(Bullet_Type.NORMAL, transform.position + new Vector3(dir_x, dir_y, 0) * radian, Quaternion.identity);
             Vector3 new_dir = transform.position - tmp.transform.position;
 
             tmp.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(new_dir.x, new_dir.y), 0.3f);
@@ -264,13 +280,17 @@ public class KYS_Toong_Bullet : MonoBehaviour
     {
 
         GameObject current_bullet;
-        if (bullet_val == 1)
+
+        Bullet_Type type = Bullet_Type.NORMAL;
+        if (bullet_val == 0)
         {
-            current_bullet = normal_bullet;
+            current_bullet = guide_bullet;
+            type = Bullet_Type.GUIDE;
         }
         else
         {
-            current_bullet = guide_bullet;
+            current_bullet = normal_bullet;
+            type = Bullet_Type.NORMAL;
         }
 
 
@@ -289,12 +309,16 @@ public class KYS_Toong_Bullet : MonoBehaviour
             float tmp2_x = current_x;
             float tmp2_y = Mathf.Tan(current_x) * 3 /2.0f ;
 
-            GameObject a1 = Instantiate(current_bullet, transform.position + new Vector3(tmp_x + offset_x, tmp_y, 0), Quaternion.identity);
-            GameObject a2 = Instantiate(current_bullet, transform.position + new Vector3(tmp2_x + offset_x, tmp2_y, 0), Quaternion.identity);
+            //GameObject a1 = Instantiate(current_bullet, transform.position + new Vector3(tmp_x + offset_x, tmp_y, 0), Quaternion.identity);
+            //GameObject a2 = Instantiate(current_bullet, transform.position + new Vector3(tmp2_x + offset_x, tmp2_y, 0), Quaternion.identity);
+            GameObject a1 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(tmp_x + offset_x, tmp_y, 0), Quaternion.identity);
+            GameObject a2 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(tmp2_x + offset_x, tmp2_y, 0), Quaternion.identity);
 
             //반전
-            GameObject a3 = Instantiate(current_bullet, transform.position + new Vector3(-tmp_x + offset_x, tmp_y, 0), Quaternion.identity);
-            GameObject a4 = Instantiate(current_bullet, transform.position + new Vector3(-tmp2_x + offset_x, tmp2_y, 0), Quaternion.identity);
+            //GameObject a3 = Instantiate(current_bullet, transform.position + new Vector3(-tmp_x + offset_x, tmp_y, 0), Quaternion.identity);
+            //GameObject a4 = Instantiate(current_bullet, transform.position + new Vector3(-tmp2_x + offset_x, tmp2_y, 0), Quaternion.identity);
+            GameObject a3 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(-tmp_x + offset_x, tmp_y, 0), Quaternion.identity);
+            GameObject a4 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(-tmp2_x + offset_x, tmp2_y, 0), Quaternion.identity);
 
 
             //두번쨰
@@ -302,12 +326,18 @@ public class KYS_Toong_Bullet : MonoBehaviour
             float tmp3_y = Mathf.Atan(current_x);
             float tmp4_x = current_x;
             float tmp4_y = Mathf.Tan(current_x) / 5;
-            GameObject a5 = Instantiate(current_bullet, transform.position + new Vector3(tmp3_x + offset_x, tmp3_y, 0), Quaternion.identity);
-            GameObject a6 = Instantiate(current_bullet, transform.position + new Vector3(tmp4_x + offset_x, tmp4_y, 0), Quaternion.identity);
+            //GameObject a5 = Instantiate(current_bullet, transform.position + new Vector3(tmp3_x + offset_x, tmp3_y, 0), Quaternion.identity);
+            //GameObject a6 = Instantiate(current_bullet, transform.position + new Vector3(tmp4_x + offset_x, tmp4_y, 0), Quaternion.identity);
+            GameObject a5 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(tmp3_x + offset_x, tmp3_y, 0), Quaternion.identity);
+            GameObject a6 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(tmp4_x + offset_x, tmp4_y, 0), Quaternion.identity);
+
 
             //반전
-            GameObject a7 = Instantiate(current_bullet, transform.position + new Vector3(-tmp3_x + offset_x, tmp3_y, 0), Quaternion.identity);
-            GameObject a8 = Instantiate(current_bullet, transform.position + new Vector3(-tmp4_x + offset_x, tmp4_y, 0), Quaternion.identity);
+            //GameObject a7 = Instantiate(current_bullet, transform.position + new Vector3(-tmp3_x + offset_x, tmp3_y, 0), Quaternion.identity);
+            //GameObject a8 = Instantiate(current_bullet, transform.position + new Vector3(-tmp4_x + offset_x, tmp4_y, 0), Quaternion.identity);
+            GameObject a7 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(-tmp3_x + offset_x, tmp3_y, 0), Quaternion.identity);
+            GameObject a8 = KYS_ObjectPool.instance.Instantiate(type, transform.position + new Vector3(-tmp4_x + offset_x, tmp4_y, 0), Quaternion.identity);
+
 
             a1.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
             a2.GetComponent<KYS_Enemy_Bullet_normal>().Shoot(new Vector2(0, -1), 0.5f);
